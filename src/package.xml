@@ -2,121 +2,10 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <version>39.0</version>
     <types>
-        <members>ALMAccount</members>
-        <members>ALMAccount1</members>
-        <members>ALMBuild1</members>
-        <members>ALMBuild2</members>
-        <members>ALMBuild3</members>
-        <members>ALMFeb1</members>
-        <members>ALMFeb2</members>
-        <members>ALMMarch09Test1</members>
-        <members>ALMTest2</members>
-        <members>April26Account1</members>
-        <members>CancelDeploy1</members>
-        <members>CancelDeploy2</members>
-        <members>CheckinTwoProj1</members>
-        <members>CheckinTwoProj2</members>
-        <members>CreatingAccount11</members>
-        <members>CreatingAccount18</members>
-        <members>DummyBuildTest1</members>
-        <members>FEB21Apex1</members>
-        <members>Feb27Class1</members>
-        <members>Feb27Class2</members>
-        <members>FinalJan03Test1</members>
-        <members>FinalJan03Test2</members>
-        <members>FinalJan03Test3</members>
-        <members>FinalJan03Test4</members>
-        <members>FinalJan03Test5</members>
-        <members>FirstClass1</members>
-        <members>JiraTest1</members>
-        <members>JiraTest2</members>
-        <members>Jul07Apex1</members>
-        <members>Jul07Apex2</members>
-        <members>Jul07Apex3</members>
-        <members>Jul07Apex4</members>
-        <members>Jul07Apex5</members>
-        <members>Jul13Apex1</members>
-        <members>Jun22Test1</members>
-        <members>Jun22Test2</members>
-        <members>Jun22Test3</members>
-        <members>Jun30Class1</members>
-        <members>Jun30Class2</members>
-        <members>PlDepNov23Final</members>
-        <members>PlDepNov23Final2</members>
-        <members>PlDepNov23Test1</members>
-        <members>Prevalidation1</members>
-        <members>Prevalidation2</members>
-        <members>PrevalidationTest3</members>
-        <members>RameshAccount1</members>
-        <members>RamsOrgNov01</members>
-        <members>RetrieveCommitTest1</members>
-        <members>RetrieveCommitTest2</members>
-        <members>RetrieveCommitTest3</members>
-        <members>RetriveCommitTest1</members>
-        <members>SaiMay13Test1</members>
-        <members>SaiMay13Test2</members>
-        <members>ScheduleCheckNov23</members>
-        <members>ScheduleCheckNov23Final</members>
-        <members>ScheduleCheckNov23Test2</members>
-        <members>Sep15Test1</members>
-        <members>TestFeb21</members>
-        <members>VOneDec29Test1</members>
-        <members>VOneDec29Test2</members>
-        <members>VOneDec29Test3</members>
-        <members>VOneJan03Test1</members>
-        <members>VOneJan03Test2</members>
-        <members>prevalidationTest1</members>
-        <members>prevalidationTest2</members>
-        <name>ApexClass</name>
-    </types>
-    <types>
         <members>Job_Candidate_Help</members>
         <name>ApexPage</name>
     </types>
     <types>
-        <members>Salesforce1</members>
-        <name>AppMenu</name>
-    </types>
-    <types>
-        <members>Case.Standard</members>
-        <members>Lead.Standard</members>
-        <name>AssignmentRule</name>
-    </types>
-    <types>
-        <members>Case</members>
-        <members>Lead</members>
-        <name>AssignmentRules</name>
-    </types>
-    <types>
-        <members>Case</members>
-        <members>Lead</members>
-        <name>AutoResponseRules</name>
-    </types>
-    <types>
-        <members>DataCloudGeoLocation</members>
-        <name>CleanDataService</name>
-    </types>
-    <types>
-        <members>Internal Zone</members>
-        <name>Community</name>
-    </types>
-    <types>
-        <members>Charitable</members>
-        <members>Garage</members>
-        <members>standard__AppLauncher</members>
-        <members>standard__Chatter</members>
-        <members>standard__Community</members>
-        <members>standard__Content</members>
-        <members>standard__Marketing</members>
-        <members>standard__Platform</members>
-        <members>standard__Sales</members>
-        <members>standard__Service</members>
-        <members>standard__ServiceConsole</members>
-        <members>standard__Sites</members>
-        <name>CustomApplication</name>
-    </types>
-    <types>
-        <members>ALMsample__c.WorkItemNum__c</members>
         <members>Account.AccountNumber</members>
         <members>Account.AccountSource</members>
         <members>Account.Active__c</members>
@@ -672,7 +561,6 @@
         <name>CustomField</name>
     </types>
     <types>
-        <members>ALMsample__c</members>
         <members>Account</members>
         <members>AccountCleanInfo</members>
         <members>AccountContactRole</members>
@@ -744,120 +632,10 @@
         <name>CustomObject</name>
     </types>
     <types>
-        <members>ALMsample__c-en_US</members>
-        <members>April11Obj2__c-en_US</members>
-        <members>April11Obj3__c-en_US</members>
-        <members>April11Obj__c-en_US</members>
-        <members>Buildobject5__c-en_US</members>
-        <members>Campsite_Reservation__c-en_US</members>
-        <members>Campsite__c-en_US</members>
-        <members>Candidate__c-en_US</members>
-        <members>DeployMay02Test1__c-en_US</members>
-        <members>Fundraiser__c-en_US</members>
-        <members>JiraTestObj1__c-en_US</members>
-        <members>Jul13Obj1__c-en_US</members>
-        <members>Jun30Obj1__c-en_US</members>
-        <members>LoginPage__c-en_US</members>
-        <members>ParallelDepTest12__c-en_US</members>
-        <members>ParallelTest__c-en_US</members>
-        <members>RameshRabit__c-en_US</members>
-        <members>TestNewFebDemo__c-en_US</members>
-        <members>Test__c-en_US</members>
-        <members>Trail__c-en_US</members>
-        <members>Vehicle__c-en_US</members>
-        <members>aug31obj__c-en_US</members>
-        <members>march09Test__c-en_US</members>
-        <name>CustomObjectTranslation</name>
-    </types>
-    <types>
         <members>Fundraiser__c</members>
         <members>Test__c</members>
         <members>Vehicle__c</members>
         <name>CustomTab</name>
-    </types>
-    <types>
-        <members>Case.Standard</members>
-        <name>EscalationRule</name>
-    </types>
-    <types>
-        <members>DE Default</members>
-        <name>HomePageLayout</name>
-    </types>
-    <types>
-        <members>agf</members>
-        <members>sf_com_apps</members>
-        <name>InstalledPackage</name>
-    </types>
-    <types>
-        <members>ALMsample__c-ALMsample Layout</members>
-        <members>Account-Account %28Marketing%29 Layout</members>
-        <members>Account-Account %28Sales%29 Layout</members>
-        <members>Account-Account %28Support%29 Layout</members>
-        <members>Account-Account Layout</members>
-        <members>April11Obj2__c-April11Obj2 Layout</members>
-        <members>April11Obj3__c-April11Obj3 Layout</members>
-        <members>April11Obj__c-April11Obj Layout</members>
-        <members>Asset-Asset Layout</members>
-        <members>Buildobject5__c-Buildobject5 Layout</members>
-        <members>Campaign-Campaign Layout</members>
-        <members>CampaignMember-Campaign Member Page Layout</members>
-        <members>Campsite_Reservation__c-Campsite Reservation Layout</members>
-        <members>Campsite__c-Campsite Layout</members>
-        <members>Candidate__c-Candidate Layout</members>
-        <members>Case-Case %28Marketing%29 Layout</members>
-        <members>Case-Case %28Sales%29 Layout</members>
-        <members>Case-Case %28Support%29 Layout</members>
-        <members>Case-Case Layout</members>
-        <members>CaseClose-Close Case Layout</members>
-        <members>Contact-Contact %28Marketing%29 Layout</members>
-        <members>Contact-Contact %28Sales%29 Layout</members>
-        <members>Contact-Contact %28Support%29 Layout</members>
-        <members>Contact-Contact Layout</members>
-        <members>ContentVersion-Content Version Layout</members>
-        <members>Contract-Contract Layout</members>
-        <members>DandBCompany-D%26B Company Layout</members>
-        <members>DeployMay02Test1__c-DeployMay02Test1 Layout</members>
-        <members>DuplicateRecordSet-Duplicate Record Set Layout</members>
-        <members>Event-Event Layout</members>
-        <members>FeedItem-Feed Item Layout</members>
-        <members>Fundraiser__c-Fundraiser Layout</members>
-        <members>Global-Global Layout</members>
-        <members>Idea-Idea Layout</members>
-        <members>JiraTestObj1__c-JiraTestObj1 Layout</members>
-        <members>Jul13Obj1__c-Jul13Obj1 Layout</members>
-        <members>Jun30Obj1__c-Jun30Obj1 Layout</members>
-        <members>Lead-Lead %28Marketing%29 Layout</members>
-        <members>Lead-Lead %28Sales%29 Layout</members>
-        <members>Lead-Lead %28Support%29 Layout</members>
-        <members>Lead-Lead Layout</members>
-        <members>LoginPage__c-LoginPage Layout</members>
-        <members>Macro-Macro Layout</members>
-        <members>Opportunity-Opportunity %28Marketing%29 Layout</members>
-        <members>Opportunity-Opportunity %28Sales%29 Layout</members>
-        <members>Opportunity-Opportunity %28Support%29 Layout</members>
-        <members>Opportunity-Opportunity Layout</members>
-        <members>OpportunityLineItem-Opportunity Product Layout</members>
-        <members>Order-Order Layout</members>
-        <members>OrderItem-Order Product Layout</members>
-        <members>ParallelDepTest12__c-ParallelDepTest12 Layout</members>
-        <members>ParallelTest__c-ParallelTest Layout</members>
-        <members>Pricebook2-Price Book Layout</members>
-        <members>PricebookEntry-Price Book Entry Layout</members>
-        <members>Product2-Product Layout</members>
-        <members>RameshRabit__c-RameshRabit Layout</members>
-        <members>Solution-Solution Layout</members>
-        <members>Task-Task Layout</members>
-        <members>TestNewFebDemo__c-TestNewFebDemo Layout</members>
-        <members>Test__c-Test Layout</members>
-        <members>Trail__c-Trail Layout</members>
-        <members>User-User Layout</members>
-        <members>UserProvAccount-User Provisioning Account Layout</members>
-        <members>UserProvisioningLog-User Provisioning Log Layout</members>
-        <members>UserProvisioningRequest-User Provisioning Request Layout</members>
-        <members>Vehicle__c-Vehicle Layout</members>
-        <members>aug31obj__c-aug31obj Layout</members>
-        <members>march09Test__c-march09Test Layout</members>
-        <name>Layout</name>
     </types>
     <types>
         <members>Account.AllAccounts</members>
