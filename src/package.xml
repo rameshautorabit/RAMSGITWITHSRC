@@ -2,6 +2,7 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <version>39.0</version>
     <types>
+        <members>GetVcs</members>
         <members>SetupController</members>
         <name>ApexClass</name>
     </types>
