@@ -583,6 +583,7 @@
         <members>Candidate__c</members>
         <members>Case</members>
         <members>CaseContactRole</members>
+        <members>Commit_History__c</members>
         <members>Contact</members>
         <members>ContactCleanInfo</members>
         <members>ContentVersion</members>
