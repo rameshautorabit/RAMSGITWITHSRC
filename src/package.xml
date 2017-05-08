@@ -3,6 +3,7 @@
     <version>39.0</version>
     <types>
         <members>GetVcs</members>
+        <members>MC4SF__APITest</members>
         <members>SetupController</members>
         <name>ApexClass</name>
     </types>
