@@ -4,6 +4,7 @@
     <types>
         <members>GetVcs</members>
         <members>MC4SF__APITest</members>
+        <members>MC4SF__CampaignRecipientsControllerTest</members>
         <members>SetupController</members>
         <name>ApexClass</name>
     </types>
