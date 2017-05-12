@@ -2,6 +2,8 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <version>39.0</version>
     <types>
+        <members>ARApexclass2345</members>
+        <members>Ac2</members>
         <members>GetVcs</members>
         <members>MC4SF__APITest</members>
         <members>MC4SF__CampaignRecipientsControllerTest</members>
