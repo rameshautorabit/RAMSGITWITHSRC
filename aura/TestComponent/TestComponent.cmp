@@ -1,0 +1,17 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" controller="TestApexClass">
+    
+    <ltng:require styles="/resource/SLDS/assets/styles/salesforce-lightning-design-system-ltng.css"/>
+    
+    <!-- <aura:handler name="init" action="{!c.initialFunction}" value="{!this}" /> -->
+    
+    <div class="autorabit-com">
+        <ui:button label="test" />
+        
+        <h1>AutoRABIT</h1>
+        <h1>Sample Test</h1>
+        
+    </div>
+    
+    <h1>AutoRABIT</h1>
+    <h1>Sample Test</h1>
+</aura:component>

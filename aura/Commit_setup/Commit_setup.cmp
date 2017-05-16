@@ -1,0 +1,78 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes" access="global" >
+    <ltng:require styles="/resource/SLDS/assets/styles/salesforce-lightning-design-system-ltng.css"/>
+    
+    <tr>
+    <td height="40"><p>This is a one time setup</p></td>
+  </tr>
+    
+<tr>
+    <td>
+      <tr>
+        <td><span >Please authenticate your Salesforce Org by pressing the "Authenticate" button</span></td>
+          &nbsp;&nbsp;&nbsp;
+			<td align="right">
+				<lightning:button variant="brand" label="Authenticate" onclick="{! c.handleClick }" />
+			</td>
+      </tr> 
+	</td>
+</tr>
+       
+<tr>
+    <td>
+        <br></br>
+        <br></br>
+    </td>
+</tr>    
+<tr><td><span >Register your version control Repo and Branches</span></td>
+	
+</tr>
+
+<div class="slds-form--horizontal">
+  <!--<div class="slds-form-element">
+    <label class="slds-form-element__label" for="inputSample2">Repository Name</label>
+    <div class="slds-form-element__control">
+      <input id="inputSample2" class="slds-input" type="text" placeholder="Enter a label for your repository" />
+    </div>
+  </div> -->
+    
+<div class="slds-form-element">
+    <lightning:input name="RepositoryName" value="1234567890" label="Repository Name" maxlength="60" />
+</div>
+    
+    
+    
+    
+    
+    
+<div class="slds-form-element">
+    <label class="slds-form-element__label" for="inputSample2">Remote URL</label>
+    <div class="slds-form-element__control">
+      <input id="inputSample2" class="slds-input" type="text" placeholder="Enter your Repository URL" />
+    </div>
+  </div>          
+<div class="slds-form-element">
+    <label class="slds-form-element__label" for="inputSample2">Username</label>
+    <div class="slds-form-element__control">
+      <input id="inputSample2" class="slds-input" type="text" placeholder="Please enter your Repository URL" />
+    </div>
+  </div>          
+<div class="slds-form-element">
+    <label class="slds-form-element__label" for="inputSample2">Password</label>
+    <div class="slds-form-element__control">
+      <input id="inputSample2" class="slds-input" type="password" placeholder="Please enter your password" />
+    </div>
+  </div>
+<div class="slds-form-element">
+    <label class="slds-form-element__label" for="inputSample2">Branch Name(s)</label>
+    <div class="slds-form-element__control">
+      <input id="inputSample2" class="slds-input" type="password" placeholder="Please enter your registered branch names separated by comma" />
+    </div>
+  </div>          
+<tr>
+<td align="right">
+            <lightning:button variant="brand" label="Validate and save" onclick="{! c.validateHandler}" />
+</td>
+</tr> 
+          
+</div>  
+</aura:component>
