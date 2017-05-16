@@ -1,0 +1,9 @@
+<aura:component controller="ContactController" implements="force:appHostable">
+	<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="contacts" type="Contact[]"/>
+    <aura:iteration var="contact" items="{!v.contacts}">
+        <!-- If you’re using a namespace, replace with myNamespace:contactList -->
+        <p>{!contact.Id}</p>
+        <c:ContactList contact="{!contact}"/>
+    </aura:iteration>
+</aura:component>

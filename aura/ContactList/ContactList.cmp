@@ -1,0 +1,11 @@
+<aura:component implements="force:appHostable">
+	<aura:attribute name="contact" type="Contact"></aura:attribute>
+    <div class="{!v.contact.Level__c == 'Primary' ? 'row primary' : 'row '}" >
+        <div onClick="{!c.gotoRecord}">
+            <force:recordView recordId="{!v.contact.Id}" type="MINI"></force:recordView> 
+        </div>
+        <p>{!v.contact.FirstName}</p>
+        <ui:button press="{!c.editRecord}" label="Edit"></ui:button>
+        <ui:button press="{!c.relatedList}" label="View Cases"></ui:button>
+    </div>
+</aura:component>
