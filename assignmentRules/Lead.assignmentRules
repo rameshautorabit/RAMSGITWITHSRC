@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>Web to Lead Routing</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>prashanth.s@autorabit.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.LastName</field>
+                <operation>contains</operation>
+                <value>test</value>
+            </criteriaItems>
+            <template>unfiled$public/Lead_Notification_Web_to_Lead</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>aleem.k@autorabit.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Website - Webinar</value>
+            </criteriaItems>
+            <template>unfiled$public/Lead_Notification_Web_to_Lead_Webinar</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>navneeth@39demo.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>notEqual</operation>
+                <value>United States</value>
+            </criteriaItems>
+            <template>unfiled$public/Lead_Notification_Web_to_Lead</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>brad.b@techsophy.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.LastName</field>
+                <operation>notEqual</operation>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>United States</value>
+            </criteriaItems>
+            <template>unfiled$public/Lead_Notification_Web_to_Lead</template>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

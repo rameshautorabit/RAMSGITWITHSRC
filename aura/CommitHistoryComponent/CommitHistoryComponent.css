@@ -1,0 +1,12 @@
+.THIS {
+}
+ .THIS.noCommits {
+    color : token(noCommitsTextColor);
+    padding-top : 20px;
+}
+
+.THIS.userNameClass{
+    color : token(noCommitsTextColor);
+    padding-top : 10px;
+    padding-bottom : 10px;
+}
