@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <version>39.0</version>
     <types>
         <members>A21</members>
         <members>AClass1</members>
         <members>ALMAccount</members>
         <members>ALMAccount1</members>
         <members>ARApexclass2</members>
+        <members>ARApexclass234</members>
         <members>ARPTCls1</members>
+        <members>AccountSelectClassController</members>
         <members>Apc111</members>
         <members>Apcl1</members>
         <members>Apcl2</members>
@@ -415,6 +418,34 @@
     </types>
     <types>
         <members>Account</members>
+        <members>Activities</members>
+        <members>Address</members>
+        <members>BusinessHours</members>
+        <members>Case</members>
+        <members>Company</members>
+        <members>Contract</members>
+        <members>Entitlement</members>
+        <members>FileUploadAndDownloadSecurity</members>
+        <members>Forecasting</members>
+        <members>Ideas</members>
+        <members>Knowledge</members>
+        <members>LiveAgent</members>
+        <members>Macro</members>
+        <members>Mobile</members>
+        <members>Name</members>
+        <members>Opportunity</members>
+        <members>Order</members>
+        <members>OrgPreference</members>
+        <members>PathAssistant</members>
+        <members>PersonalJourney</members>
+        <members>Product</members>
+        <members>Quote</members>
+        <members>Search</members>
+        <members>Security</members>
+        <name>Settings</name>
+    </types>
+    <types>
+        <members>Account</members>
         <members>Asset</members>
         <members>Bike__c</members>
         <members>Campaign</members>
@@ -531,33 +562,4 @@
         <members>UserProvisioningRequest</members>
         <name>Workflow</name>
     </types>
-    <types>
-        <members>Account</members>
-        <members>Activities</members>
-        <members>Address</members>
-        <members>BusinessHours</members>
-        <members>Case</members>
-        <members>Company</members>
-        <members>Contract</members>
-        <members>Entitlement</members>
-        <members>FileUploadAndDownloadSecurity</members>
-        <members>Forecasting</members>
-        <members>Ideas</members>
-        <members>Knowledge</members>
-        <members>LiveAgent</members>
-        <members>Macro</members>
-        <members>Mobile</members>
-        <members>Name</members>
-        <members>Opportunity</members>
-        <members>Order</members>
-        <members>OrgPreference</members>
-        <members>PathAssistant</members>
-        <members>PersonalJourney</members>
-        <members>Product</members>
-        <members>Quote</members>
-        <members>Search</members>
-        <members>Security</members>
-        <name>Settings</name>
-    </types>
-    <version>39.0</version>
 </Package>
