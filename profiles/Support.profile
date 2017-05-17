@@ -201,6 +201,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>RamsLighteningQA1</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>Sample</apexClass>
         <enabled>true</enabled>
     </classAccesses>
