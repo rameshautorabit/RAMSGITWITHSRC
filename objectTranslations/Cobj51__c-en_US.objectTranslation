@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Cobj51</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Cobj51s</value>
+    </caseValues>
+    <fields>
+        <label><!-- Field1 --></label>
+        <name>Field1__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- RT1 --></label>
+        <name>RT1</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RT2 --></label>
+        <name>RT2</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RT3 --></label>
+        <name>RT3</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RT4 --></label>
+        <name>RT4</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RT5 --></label>
+        <name>RT5</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

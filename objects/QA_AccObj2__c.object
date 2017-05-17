@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>QAAccField6__c</fullName>
+        <externalId>false</externalId>
+        <label>QAAccField6</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>QaACField5__c</fullName>
+        <description>Add comment for QaACField5</description>
+        <externalId>false</externalId>
+        <label>QaACField5</label>
+        <length>40</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QaAcField1__c</fullName>
+        <description>Add Field1</description>
+        <externalId>false</externalId>
+        <label>QaAcField1</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QaAccField3__c</fullName>
+        <externalId>false</externalId>
+        <label>QaAccField3</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QaAccField4__c</fullName>
+        <externalId>false</externalId>
+        <label>QaAccField4</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QatestField2__c</fullName>
+        <description>Add comment for QatestField2</description>
+        <externalId>false</externalId>
+        <label>QatestField2</label>
+        <length>40</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>QA-AccObj2</label>
+    <nameField>
+        <label>QA-AccObj2 Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>QAAccObj2s</pluralLabel>
+    <recordTypes>
+        <fullName>AR_recordType2</fullName>
+        <active>false</active>
+        <label>AR-recordType2</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>AR_reecordTpes</fullName>
+        <active>true</active>
+        <description>Add comment for AR reecordTpes</description>
+        <label>AR reecordTpes</label>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <sharingReasons>
+        <fullName>AR_sharing_reaSson1__c</fullName>
+        <label>AR sharing reason1</label>
+    </sharingReasons>
+    <sharingReasons>
+        <fullName>AR_sharing_reason2__c</fullName>
+        <label>AR-sharing reason2</label>
+    </sharingReasons>
+    <validationRules>
+        <fullName>AR_ValidationRule1</fullName>
+        <active>true</active>
+        <description>Add   Comment for  this AR Validation  Rule1</description>
+        <errorConditionFormula>ISBLANK( QaAcField1__c )</errorConditionFormula>
+        <errorMessage>Please Enter a Value</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>AR_validationrule2</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK( QatestField2__c )</errorConditionFormula>
+        <errorMessage>please enter a value</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>ARweblink</fullName>
+        <availability>online</availability>
+        <description>Add Comment for ARweblink</description>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>ARweblink</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>{!ISBLANK( QA_AccObj2__c.QaAcField1__c )}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>ARweblink2</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>ARweblink2</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>{!ISBLANK( QA_AccObj2__c.QatestField2__c )}</url>
+    </webLinks>
+</CustomObject>

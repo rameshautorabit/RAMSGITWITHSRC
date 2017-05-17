@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>AR-ACCObject</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>AR-ACCObjects</value>
+    </caseValues>
+    <fields>
+        <label><!-- AR-Field1 --></label>
+        <name>AR_Field1__c</name>
+    </fields>
+    <fields>
+        <label><!-- PAr field --></label>
+        <name>PAr_field__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAR field2 --></label>
+        <name>SAR_field2__c</name>
+    </fields>
+    <fields>
+        <label><!-- SARfIeld2 --></label>
+        <name>SARfIeld2__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Pleae enter a value --></errorMessage>
+        <name>Ar_veldaterule1</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- enter a value --></errorMessage>
+        <name>PAr_valruel1</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- eanter a value --></errorMessage>
+        <name>sARvaldaterule2</name>
+    </validationRules>
+</CustomObjectTranslation>

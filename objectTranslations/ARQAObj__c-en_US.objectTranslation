@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>ARQAObj</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>ARQAObjs</value>
+    </caseValues>
+    <fields>
+        <label><!-- FieldAR1 --></label>
+        <name>FieldAR1__c</name>
+    </fields>
+    <fields>
+        <label><!-- fieldAr2 --></label>
+        <name>fieldAr2__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please Enter a value --></errorMessage>
+        <name>ValRule1</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please  enter a value --></errorMessage>
+        <name>ValRule2</name>
+    </validationRules>
+</CustomObjectTranslation>
