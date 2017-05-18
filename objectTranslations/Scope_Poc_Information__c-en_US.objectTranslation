@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Scope - Poc Information</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Scope Information</value>
+    </caseValues>
+    <fields>
+        <label><!-- Approver --></label>
+        <name>Approver__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pre-requisites --></label>
+        <name>Assumptions__c</name>
+    </fields>
+    <fields>
+        <label><!-- AutoRABIT POC --></label>
+        <name>AutoRABIT_POC__c</name>
+        <relationshipLabel><!-- Scope Information --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Demo Completed --></label>
+        <name>Demo_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is primary --></label>
+        <name>Is_primary__c</name>
+    </fields>
+    <fields>
+        <label><!-- License &amp; Provision Complete --></label>
+        <name>License_provision_complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Scope Information --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Out of Scope --></label>
+        <name>Out_ofScope__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person to Contact --></label>
+        <name>Person_to_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Poc End Date --></label>
+        <name>Poc_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Poc Scope --></label>
+        <name>Poc_Scope__c</name>
+    </fields>
+    <fields>
+        <label><!-- Poc- Start Date --></label>
+        <name>Poc_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- In Scope --></label>
+        <name>Scope__c</name>
+        <picklistValues>
+            <masterLabel>Automated Deployment</masterLabel>
+            <translation><!-- Automated Deployment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Loader</masterLabel>
+            <translation><!-- Data Loader --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Selective Deployment</masterLabel>
+            <translation><!-- Selective Deployment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sync Orgs</masterLabel>
+            <translation><!-- Sync Orgs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test Automation</masterLabel>
+            <translation><!-- Test Automation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Version Control -EZ Commits</masterLabel>
+            <translation><!-- Version Control -EZ Commits --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sign-off Criteria --></label>
+        <name>sign_off_Criteria__c</name>
+    </fields>
+    <layouts>
+        <layout>Scope - Poc Information Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Scope Details --></label>
+            <section>Scope Details</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

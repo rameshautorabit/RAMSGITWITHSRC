@@ -1,0 +1,147 @@
+<apex:page controller="WebtoCaseController" sidebar="false" showHeader="false">
+<style>
+body {
+    background-color: #e6f5ff;
+} 
+.tbl1 {
+   
+    background:#de0000;
+        }
+
+       .fix{
+    position:fixed;
+    bottom:0px;
+    right:0%;
+    }
+        .textheader {
+            float: left;
+            width: 100%;
+            text-align: right;
+        }
+        
+        .textarea {
+            width: 100%;
+            height: 35px;
+        }
+        
+        .header img {
+            float: top;
+            width: 180px;
+        }
+        td{
+        font-weight: bold;
+          }
+        .form-style {
+            width: 650px;
+            padding: 30px;
+            margin: 40px auto;
+            background: #FFF;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+            -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+            -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+        }
+        
+        .button {
+        background-color: #66c2ff; /* Green */
+        border: none;
+        color: white;
+        padding: 10px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+      .button4 {border-radius: 12px;}
+      
+        h5 {
+        font-size: 25px;
+        padding: 0px 0px 10px 40px;
+        margin: -10px -15px 30px -10px;;
+        color: #888;
+        }
+        
+    
+</style>
+
+<apex:form styleClass="form-style" style=" width: 660px;position:absolute;left:50%;margin-left:-350px;height:auto;">
+      
+<table style="width:660px;">
+
+  <tr>
+    <td><img align="top" src="{!$Resource.AutorabitLogo}" width="200px" /></td>
+    <td valign="middle"><h5>Log a Ticket with AutoRABIT</h5></td>
+  </tr>
+  <tr>
+    <td style="align:center" colspan="2"><apex:pageMessages id="showmsg"></apex:pageMessages></td>
+  </tr>
+  <tr>
+    <td  colspan="2">
+    <table cellspacing="0px" cellpadding="5px" style=" margin: 20px 0px 0px 110px; ">
+
+            <tr>
+                <td>Your Name:</td>
+                <td>Your Email:</td>
+            </tr>
+            
+            <tr>
+                <td><apex:inputText value="{!companyName}" disabled="true"/></td>
+                <td><apex:inputText value="{!Emailval}" disabled="true" /></td>
+            </tr>
+            
+            <tr>
+                <td>Mobile #:</td>
+                <td>Login URL:</td>
+            </tr>
+            
+            <tr>
+                <td><apex:inputText value="{!phoneVal}" disabled="true"/></td>
+                <td><apex:inputText value="{!loginurlTypeVal}" disabled="true"/></td>
+            </tr>
+           
+            <tr>
+                <td>Organization:</td>
+                <td><apex:outputLabel value="Feature Type" for="accts"></apex:outputLabel></td>
+                
+            </tr>
+            
+            <tr>
+                <td><apex:inputText value="{!companyNameVal}" disabled="true"/></td>             
+                <td><apex:selectList id="accts" value="{!featureTypeVal}" size="1" title="Contact">
+                    <apex:selectOptions value="{!Category}"></apex:selectOptions></apex:selectList></td>
+
+            </tr>
+            <tr>
+                <td>Subject:</td>
+                <td>Comments:</td>
+            </tr>
+            
+            <tr> 
+                <td valign="top"><apex:inputText value="{!subjectVal}"/></td>             
+                <td><apex:inputTextArea styleclass="textarea" rows="3" value="{!decriptopnVal}"/></td>
+                <td><apex:inputText id="Tt" value="{!caseTypeVal}" disabled="true"/></td>
+                <script>document.getElementById('{!$Component.Tt}').style.display = 'none';</script>
+                
+            </tr>
+            <tr>
+                <td>Upload Attachment (if Any):</td>
+            </tr>
+            
+            <tr>
+                <td><apex:inputfile value="{!attach.body}" filename="{!attach.name}"></apex:inputfile></td>
+                <td><apex:commandButton value="Submit Case" action="{!Save}" style="background-color:#4d88ff;background-image:none;color:#FFF;border-radius: 12px;"/></td>
+            </tr>
+</table>
+</td>
+</tr>
+            <tr>
+                 <td align="right" colspan="2"><img src="{!$Resource.NoDeploymentLogo}" width="80" /></td>
+            </tr>
+</table> 
+</apex:form>
+
+</apex:page>

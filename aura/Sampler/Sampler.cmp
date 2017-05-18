@@ -1,0 +1,13 @@
+<aura:component >
+    <aura:handler name="init" action="{!c.some}" value="{!this}" />
+    
+    
+    
+	 <aura:set attribute="body">
+        <!--START BODY-->
+         <div aura:id="ElementHere" body=""></div>
+        <div aura:id="asas" >Body part</div>
+        <ui:button label="Push Me"/>
+        <!--END BODY-->
+    </aura:set>
+</aura:component>

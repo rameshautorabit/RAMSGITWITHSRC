@@ -1,0 +1,32 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,forceCommunity:availableForAllPageTypes" access="global">
+    <ltng:require styles="/resource/SLDS/assets/styles/salesforce-lightning-design-system-ltng.css"/>
+  
+ <!--   <aura:handler name="init" action="{!c.some}" value="{!this}" /> -->
+    
+   
+    <lightning:tabset >
+            <lightning:tab body="test2">
+                <aura:set attribute="label">
+                    Setup
+                    <lightning:icon iconName="utility:connected_apps" />
+                </aura:set>
+            </lightning:tab>
+            <lightning:tab >
+                <aura:set attribute="label">
+                    Commit
+                    <lightning:icon iconName="utility:connected_apps" />
+                </aura:set>
+            </lightning:tab>
+            <lightning:tab >
+                <aura:set attribute="label">
+                    History
+                    <lightning:icon iconName="utility:connected_apps" />
+                </aura:set>
+            </lightning:tab>
+        </lightning:tabset>
+         <div decription="Content replacable div" aura:id="framerDiv">
+            <c:CommitTestComponent />
+        </div>
+        
+  
+</aura:component>
