@@ -7,8 +7,4 @@
     <tab>standard-ContentSearch</tab>
     <tab>standard-ContentSubscriptions</tab>
     <tab>standard-ContentFavorites</tab>
-    <tab>AR_Obj1__c</tab>
-    <tab>Bag__c</tab>
-    <tab>Cobj50__c</tab>
-    <tab>Cobj51__c</tab>
 </CustomApplication>

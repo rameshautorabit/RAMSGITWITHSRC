@@ -226,32 +226,24 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N2800000DNZwk</field>
-            <label>AutorabitExtId__c</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N28000008Qgz7</field>
+            <field>00N2800000HroGO</field>
             <label>Current Generator(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N28000008Qgz8</field>
+            <field>00N2800000HroGP</field>
             <label>Delivery/Installation Status</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N28000008Qgz9</field>
+            <field>00N2800000HroGQ</field>
             <label>Main Competitor(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N28000008QgzA</field>
+            <field>00N2800000HroGR</field>
             <label>Order Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N28000008QgzB</field>
+            <field>00N2800000HroGS</field>
             <label>Tracking Number</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>PARTNER.NAME</field>
-            <label>Account Name</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsSelectedSettings>
             <field>OPPORTUNITY.NAME</field>
@@ -287,13 +279,11 @@
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
-            <field>00N2800000DNZwk</field>
-            <field>00N28000008Qgz7</field>
-            <field>00N28000008Qgz8</field>
-            <field>00N28000008Qgz9</field>
-            <field>00N28000008QgzA</field>
-            <field>00N28000008QgzB</field>
-            <field>PARTNER.NAME</field>
+            <field>00N2800000HroGO</field>
+            <field>00N2800000HroGP</field>
+            <field>00N2800000HroGQ</field>
+            <field>00N2800000HroGR</field>
+            <field>00N2800000HroGS</field>
         </opportunityListFieldsUnselectedSettings>
         <quotasSettings>
             <showQuotas>false</showQuotas>
@@ -448,32 +438,24 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N2800000DNZwk</field>
-            <label>AutorabitExtId__c</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N28000008Qgz7</field>
+            <field>00N2800000HroGO</field>
             <label>Current Generator(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N28000008Qgz8</field>
+            <field>00N2800000HroGP</field>
             <label>Delivery/Installation Status</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N28000008Qgz9</field>
+            <field>00N2800000HroGQ</field>
             <label>Main Competitor(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N28000008QgzA</field>
+            <field>00N2800000HroGR</field>
             <label>Order Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N28000008QgzB</field>
+            <field>00N2800000HroGS</field>
             <label>Tracking Number</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>PARTNER.NAME</field>
-            <label>Partner Account</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsSelectedSettings>
             <field>OPPORTUNITY.NAME</field>
@@ -509,13 +491,11 @@
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
-            <field>00N2800000DNZwk</field>
-            <field>00N28000008Qgz7</field>
-            <field>00N28000008Qgz8</field>
-            <field>00N28000008Qgz9</field>
-            <field>00N28000008QgzA</field>
-            <field>00N28000008QgzB</field>
-            <field>PARTNER.NAME</field>
+            <field>00N2800000HroGO</field>
+            <field>00N2800000HroGP</field>
+            <field>00N2800000HroGQ</field>
+            <field>00N2800000HroGR</field>
+            <field>00N2800000HroGS</field>
         </opportunityListFieldsUnselectedSettings>
         <quotasSettings>
             <showQuotas>false</showQuotas>
@@ -670,32 +650,24 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N2800000DNZwk</field>
-            <label>AutorabitExtId__c</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N28000008Qgz7</field>
+            <field>00N2800000HroGO</field>
             <label>Current Generator(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N28000008Qgz8</field>
+            <field>00N2800000HroGP</field>
             <label>Delivery/Installation Status</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N28000008Qgz9</field>
+            <field>00N2800000HroGQ</field>
             <label>Main Competitor(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N28000008QgzA</field>
+            <field>00N2800000HroGR</field>
             <label>Order Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N28000008QgzB</field>
+            <field>00N2800000HroGS</field>
             <label>Tracking Number</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>PARTNER.NAME</field>
-            <label>Account Name</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsSelectedSettings>
             <field>OPPORTUNITY.NAME</field>
@@ -731,13 +703,11 @@
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
-            <field>00N2800000DNZwk</field>
-            <field>00N28000008Qgz7</field>
-            <field>00N28000008Qgz8</field>
-            <field>00N28000008Qgz9</field>
-            <field>00N28000008QgzA</field>
-            <field>00N28000008QgzB</field>
-            <field>PARTNER.NAME</field>
+            <field>00N2800000HroGO</field>
+            <field>00N2800000HroGP</field>
+            <field>00N2800000HroGQ</field>
+            <field>00N2800000HroGR</field>
+            <field>00N2800000HroGS</field>
         </opportunityListFieldsUnselectedSettings>
         <quotasSettings>
             <showQuotas>false</showQuotas>
@@ -892,32 +862,24 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N2800000DNZwk</field>
-            <label>AutorabitExtId__c</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N28000008Qgz7</field>
+            <field>00N2800000HroGO</field>
             <label>Current Generator(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N28000008Qgz8</field>
+            <field>00N2800000HroGP</field>
             <label>Delivery/Installation Status</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N28000008Qgz9</field>
+            <field>00N2800000HroGQ</field>
             <label>Main Competitor(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N28000008QgzA</field>
+            <field>00N2800000HroGR</field>
             <label>Order Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N28000008QgzB</field>
+            <field>00N2800000HroGS</field>
             <label>Tracking Number</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>PARTNER.NAME</field>
-            <label>Partner Account</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsSelectedSettings>
             <field>OPPORTUNITY.NAME</field>
@@ -953,13 +915,11 @@
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
-            <field>00N2800000DNZwk</field>
-            <field>00N28000008Qgz7</field>
-            <field>00N28000008Qgz8</field>
-            <field>00N28000008Qgz9</field>
-            <field>00N28000008QgzA</field>
-            <field>00N28000008QgzB</field>
-            <field>PARTNER.NAME</field>
+            <field>00N2800000HroGO</field>
+            <field>00N2800000HroGP</field>
+            <field>00N2800000HroGQ</field>
+            <field>00N2800000HroGR</field>
+            <field>00N2800000HroGS</field>
         </opportunityListFieldsUnselectedSettings>
         <quotasSettings>
             <showQuotas>false</showQuotas>
@@ -1122,32 +1082,24 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N2800000DNZwk</field>
-            <label>AutorabitExtId__c</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N28000008Qgz7</field>
+            <field>00N2800000HroGO</field>
             <label>Current Generator(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N28000008Qgz8</field>
+            <field>00N2800000HroGP</field>
             <label>Delivery/Installation Status</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N28000008Qgz9</field>
+            <field>00N2800000HroGQ</field>
             <label>Main Competitor(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N28000008QgzA</field>
+            <field>00N2800000HroGR</field>
             <label>Order Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N28000008QgzB</field>
+            <field>00N2800000HroGS</field>
             <label>Tracking Number</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>PARTNER.NAME</field>
-            <label>Partner Account</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsSelectedSettings>
             <field>OPPORTUNITY.NAME</field>
@@ -1185,13 +1137,11 @@
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
-            <field>00N2800000DNZwk</field>
-            <field>00N28000008Qgz7</field>
-            <field>00N28000008Qgz8</field>
-            <field>00N28000008Qgz9</field>
-            <field>00N28000008QgzA</field>
-            <field>00N28000008QgzB</field>
-            <field>PARTNER.NAME</field>
+            <field>00N2800000HroGO</field>
+            <field>00N2800000HroGP</field>
+            <field>00N2800000HroGQ</field>
+            <field>00N2800000HroGR</field>
+            <field>00N2800000HroGS</field>
         </opportunityListFieldsUnselectedSettings>
         <quotasSettings>
             <showQuotas>false</showQuotas>
