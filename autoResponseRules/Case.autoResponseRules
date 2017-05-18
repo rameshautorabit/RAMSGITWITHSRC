@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AutoResponseRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <autoResponseRule>
+        <fullName>ARSL1</fullName>
+        <active>false</active>
+    </autoResponseRule>
+    <autoResponseRule>
+        <fullName>BAutoresponseRule1</fullName>
+        <active>false</active>
+    </autoResponseRule>
+    <autoResponseRule>
+        <fullName>ECCasereponseruleTest1</fullName>
+        <active>false</active>
+        <ruleEntry>
+            <senderEmail>saikumar.k@autorabit.com</senderEmail>
+            <senderName>testCase</senderName>
+            <template>unfiled$public/CommunityForgotPasswordEmailTemplate</template>
+        </ruleEntry>
+    </autoResponseRule>
+    <autoResponseRule>
+        <fullName>ECSCaseAutoResponseRule1</fullName>
+        <active>true</active>
+    </autoResponseRule>
+    <autoResponseRule>
+        <fullName>ECSCaseAutoResponseRule2</fullName>
+        <active>false</active>
+    </autoResponseRule>
+</AutoResponseRules>

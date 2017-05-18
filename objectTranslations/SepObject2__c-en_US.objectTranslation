@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>SepObject2</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>SepObject2s</value>
+    </caseValues>
+    <fields>
+        <label><!-- SeObject2Field2 --></label>
+        <name>SeObject2Field2__c</name>
+    </fields>
+    <fields>
+        <label><!-- SepFeield3 --></label>
+        <name>SepFeield3__c</name>
+    </fields>
+    <fields>
+        <label><!-- SepObject2Field1 --></label>
+        <name>SepObject2Field1__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>
