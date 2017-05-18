@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>SAccOb1</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>SAccOb1s</value>
+    </caseValues>
+    <fields>
+        <label><!-- Accnewfield2 --></label>
+        <name>Accnewfield2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sf1 --></label>
+        <name>Sf1s__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sf3o3 --></label>
+        <name>Sf3o3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sfo1 --></label>
+        <name>Sfo1__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please enter a value --></errorMessage>
+        <name>TestVal1</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Pleaase enter a value --></errorMessage>
+        <name>TestVal3</name>
+    </validationRules>
+</CustomObjectTranslation>

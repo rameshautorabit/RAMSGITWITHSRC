@@ -4,4 +4,8 @@
     <formFactors>Large</formFactors>
     <tab>standard-Chatter</tab>
     <tab>standard-Sites</tab>
+    <tab>AR_Obj1__c</tab>
+    <tab>Bag__c</tab>
+    <tab>Cobj50__c</tab>
+    <tab>Cobj51__c</tab>
 </CustomApplication>

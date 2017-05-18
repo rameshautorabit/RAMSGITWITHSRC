@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>sharingCriteraiaRule1</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>sharingCriteraiaRule1</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>COO</roleAndSubordinatesInternal>
+        </sharedTo>
+        <criteriaItems>
+            <field>AR_SFFeid3__c</field>
+            <operation>notEqual</operation>
+            <value>sai</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>SharingOwnerRule1</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>SharingOwnerRule1</label>
+        <sharedTo>
+            <roleAndSubordinates>COO</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <role>CFO</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

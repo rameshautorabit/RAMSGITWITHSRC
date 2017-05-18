@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>AR_Field1__c</fullName>
+        <description>Add AR-Field1</description>
+        <externalId>false</externalId>
+        <label>AR-Field1</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PAr_field__c</fullName>
+        <externalId>false</externalId>
+        <label>PAr field</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SAR_field2__c</fullName>
+        <externalId>false</externalId>
+        <label>SAR field2</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SARfIeld2__c</fullName>
+        <description>ADD SARfIeld2</description>
+        <externalId>false</externalId>
+        <label>SARfIeld2</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <label>AR-ACCObject</label>
+    <nameField>
+        <label>AR-Object Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>AR-ACCObjects</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Ar_veldaterule1</fullName>
+        <active>true</active>
+        <description>AR-ACCObject</description>
+        <errorConditionFormula>ISBLANK( AR_Field1__c )</errorConditionFormula>
+        <errorMessage>Pleae enter a value</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>PAr_valruel1</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK( PAr_field__c )</errorConditionFormula>
+        <errorMessage>enter a value</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>sARvaldaterule2</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK( SARfIeld2__c )</errorConditionFormula>
+        <errorMessage>eanter a value</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

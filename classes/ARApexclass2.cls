@@ -6,7 +6,5 @@ Account acc112 = new Account();
 acc112.Name = name;
 return acc112;
 //this is the test comment
-
-//add new Comment
 }
 }

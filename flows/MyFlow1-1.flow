@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <name>My_assignment</name>
+        <label>My assignment</label>
+        <locationX>337</locationX>
+        <locationY>256</locationY>
+        <assignmentItems>
+            <assignToReference>x</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>2</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <interviewLabel>MyFlow1 {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>MyFlow1</label>
+    <processType>AutoLaunchedFlow</processType>
+    <startElementReference>My_assignment</startElementReference>
+    <variables>
+        <name>x</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>
