@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Add Comment for this  ARObj1</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>AR_SField1__c</fullName>
+        <description>Add Description1</description>
+        <externalId>false</externalId>
+        <label>AR-SField1</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AR_SField2__c</fullName>
+        <description>Add Description2</description>
+        <externalId>false</externalId>
+        <label>AR-SField2</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AR_SField3__c</fullName>
+        <externalId>false</externalId>
+        <label>AR-SField3</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AR_SField4__c</fullName>
+        <externalId>false</externalId>
+        <label>AR-SField4</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <label>AR-Obj1</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>AR-Obj1 Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>AR-Obj1s</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>ARPValidationRule1</fullName>
+        <active>true</active>
+        <description>Add validate comment</description>
+        <errorConditionFormula>ISBLANK( AR_SField2__c )</errorConditionFormula>
+        <errorDisplayField>AR_SField2__c</errorDisplayField>
+        <errorMessage>Please Enter a value</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ARSValidationRule1</fullName>
+        <active>true</active>
+        <description>Add Comment  for this Validationrule</description>
+        <errorConditionFormula>ISBLANK(AR_SField1__c)</errorConditionFormula>
+        <errorDisplayField>AR_SField1__c</errorDisplayField>
+        <errorMessage>Please enter a phone number</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ARSValidationRule3</fullName>
+        <active>true</active>
+        <description>Add comment for this  ARSValidationRule3</description>
+        <errorConditionFormula>ISBLANK( AR_SField3__c )</errorConditionFormula>
+        <errorDisplayField>AR_SField3__c</errorDisplayField>
+        <errorMessage>Please enter avalue</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ARpValidationRule4</fullName>
+        <active>true</active>
+        <description>Add comment</description>
+        <errorConditionFormula>ISBLANK( AR_SField4__c )</errorConditionFormula>
+        <errorMessage>PLease enter avalue</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

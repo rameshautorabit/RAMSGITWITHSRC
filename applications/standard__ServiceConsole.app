@@ -174,7 +174,23 @@
     <tab>standard-Opportunity</tab>
     <tab>standard-Lead</tab>
     <tab>standard-Knowledge</tab>
+    <tab>AR_Obj1__c</tab>
+    <tab>Bag__c</tab>
+    <tab>Cobj50__c</tab>
+    <tab>Cobj51__c</tab>
     <workspaceMappings>
+        <mapping>
+            <tab>AR_Obj1__c</tab>
+        </mapping>
+        <mapping>
+            <tab>Bag__c</tab>
+        </mapping>
+        <mapping>
+            <tab>Cobj50__c</tab>
+        </mapping>
+        <mapping>
+            <tab>Cobj51__c</tab>
+        </mapping>
         <mapping>
             <tab>standard-Account</tab>
         </mapping>

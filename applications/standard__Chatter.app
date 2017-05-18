@@ -7,4 +7,8 @@
     <tab>standard-OtherUserProfile</tab>
     <tab>standard-CollaborationGroup</tab>
     <tab>standard-File</tab>
+    <tab>AR_Obj1__c</tab>
+    <tab>Bag__c</tab>
+    <tab>Cobj50__c</tab>
+    <tab>Cobj51__c</tab>
 </CustomApplication>

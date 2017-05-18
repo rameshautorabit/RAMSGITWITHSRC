@@ -1,10 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
     <assignmentRule>
-        <fullName>Standard</fullName>
+        <fullName>AAssignRule1</fullName>
         <active>true</active>
+    </assignmentRule>
+    <assignmentRule>
+        <fullName>CaseRule1</fullName>
+        <active>false</active>
+    </assignmentRule>
+    <assignmentRule>
+        <fullName>ECSCase rule1</fullName>
+        <active>false</active>
+    </assignmentRule>
+    <assignmentRule>
+        <fullName>ECSRule2</fullName>
+        <active>false</active>
+    </assignmentRule>
+    <assignmentRule>
+        <fullName>Standard</fullName>
+        <active>false</active>
         <ruleEntry>
-            <assignedTo>eswar.reddy34@ar.com</assignedTo>
+            <assignedTo>saikumar.demo3@autorabit.com</assignedTo>
             <assignedToType>User</assignedToType>
             <criteriaItems>
                 <field>Account.BillingCountry</field>
@@ -23,7 +39,7 @@
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>eswar.reddy34@ar.com</assignedTo>
+            <assignedTo>saikumar.demo3@autorabit.com</assignedTo>
             <assignedToType>User</assignedToType>
             <criteriaItems>
                 <field>Account.BillingCountry</field>
@@ -42,7 +58,7 @@
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>eswar.reddy34@ar.com</assignedTo>
+            <assignedTo>saikumar.demo3@autorabit.com</assignedTo>
             <assignedToType>User</assignedToType>
             <criteriaItems>
                 <field>Account.BillingCountry</field>
@@ -61,7 +77,7 @@
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>eswar.reddy34@ar.com</assignedTo>
+            <assignedTo>saikumar.demo3@autorabit.com</assignedTo>
             <assignedToType>User</assignedToType>
             <criteriaItems>
                 <field>Account.BillingCountry</field>
@@ -80,7 +96,7 @@
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>eswar.reddy34@ar.com</assignedTo>
+            <assignedTo>saikumar.demo3@autorabit.com</assignedTo>
             <assignedToType>User</assignedToType>
             <criteriaItems>
                 <field>Account.Type</field>

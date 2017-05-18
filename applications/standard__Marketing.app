@@ -9,4 +9,8 @@
     <tab>standard-Opportunity</tab>
     <tab>standard-report</tab>
     <tab>standard-Dashboard</tab>
+    <tab>AR_Obj1__c</tab>
+    <tab>Bag__c</tab>
+    <tab>Cobj50__c</tab>
+    <tab>Cobj51__c</tab>
 </CustomApplication>

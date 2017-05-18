@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>SAcc-TestObj1</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>SAcc1</value>
+    </caseValues>
+    <fields>
+        <label><!-- SAcc-Field3 --></label>
+        <name>SAcc_Field3__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAcc-Field4 --></label>
+        <name>SAcc_Field4__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAcc-Field5 --></label>
+        <name>SAcc_Field5__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAcc-Field6 --></label>
+        <name>SAcc_Field6__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAcc-Field7 --></label>
+        <name>SAcc_Field7__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAcc-Field8 --></label>
+        <name>SAcc_Field8__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>
