@@ -1,0 +1,6 @@
+<apex:page controller="CreateNewCaseLineController" action="{!navigateToURL}">
+	<apex:form >
+		<apex:sectionHeader title="Case Line Item Edit" subTitle="New Case Line Item" />
+		<apex:pageMessages />
+	</apex:form>
+</apex:page>

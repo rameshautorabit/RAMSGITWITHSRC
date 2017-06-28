@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CONTACT</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>Activity.InMoment_Interaction_Type__c</field>
+    </columns>
+    <columns>
+        <field>Activity.InMoment_Who__c</field>
+    </columns>
+    <columns>
+        <field>Activity.InMoment_Reason__c</field>
+    </columns>
+    <columns>
+        <field>WHAT_NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Calls &amp; Emails Logged This Week</description>
+    <filter>
+        <criteriaItems>
+            <column>Activity.InMoment_Interaction_Type__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Inbound Call,Outbound Call,Email Reply</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity.InMoment_Who__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Customer,Customer’s Spouse,Gallery,Designer,Assistant,Gift Recipient,Delivery Agent,Trade Customer,Transfer,Field Leader,Vendor/Merchant,Freight Forwarder</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CREATED_BY</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Robert Van Tuinen,Robin Swanson,Sherrie Soeun,Darin Smith,Sok Heng Proeng,Patricia Peralta,Liliana Parreiras,Sonya McIntyre,Elisa Huggins,Jackie Gilliard,Robert Galbadores,Diana Dittus,Stephanie Delgado,Rene Comstock,Courtnie Cann,Filomena Anderson,Kathrina Albright,courtney wilke,rachel hisel,ciara mitchell,alexandra francois</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CREATED_BY</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>PS  Interactions This Week</name>
+    <params>
+        <name>closed</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>type</name>
+        <value>t</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Activity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Activity.InMoment_Who__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <endDate>2017-06-13</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2017-06-13</startDate>
+    </timeFrameFilter>
+</Report>

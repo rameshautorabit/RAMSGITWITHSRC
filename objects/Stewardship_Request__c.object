@@ -1,0 +1,1341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>These requests are created by users to indicate that a related record needs to be reviewed by the stewardship team.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>Complete_Time_Stamp__c</fullName>
+        <description>This field gets updated by the Workflow Rule, &quot;Time stamp complete stewardship request&quot; when the status on the request is updated to Complete, Closed - Successful, or Closed - Unsuccessful.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates when the Stewardship Review Request has been moved to Complete</inlineHelpText>
+        <label>Complete Time Stamp</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Date__c</fullName>
+        <description>Created for use with the MDM project by Traction on Demand. Field does not appear on any Stewardship page layouts as the functionality of this field is extraneous.</description>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK( Complete_Time_Stamp__c ), Complete_Time_Stamp__c , CreatedDate )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <description>This is the field for users to write details about their request. Specifically, if the request is to merge more than 2 records, or to take care of something other than cleaning up duplicates, users should add as many details as possible here.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please provide specific details for your request:
+-The number of duplicate records found
+-The record that should be the &quot;master,&quot; ie the one with the correct name and address
+-The pieces of data that are correct, including name, email address, or phone</inlineHelpText>
+        <label>Description</label>
+        <length>1000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Duplicate_Address__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Created for use with the MDM project by Traction on Demand. Field is used to indicate the duplicate address  record.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Use this field to indicate the duplicate record for this address. If there are more than 2 records for this person, indicate that in the Description field.</inlineHelpText>
+        <label>Duplicate Address</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Address__c.Id</field>
+                <operation>notEqual</operation>
+                <valueField>$Source.Source_Address__c</valueField>
+            </filterItems>
+            <isOptional>true</isOptional>
+        </lookupFilter>
+        <referenceTo>Address__c</referenceTo>
+        <relationshipLabel>Stewardship Requests (Duplicate Address)</relationshipLabel>
+        <relationshipName>Stewardship_Review_Requests1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Duplicate_Business_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Created for use with the MDM project by Traction on Demand. Field is used to indicate the duplicate business contact record.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Use this field to indicate the duplicate record for this business contact. If there are more than 2 records for this person, indicate that in the Description field.</inlineHelpText>
+        <label>Duplicate Business Contact</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Contact.IsPersonAccount</field>
+                <operation>equals</operation>
+                <value>False</value>
+            </filterItems>
+            <filterItems>
+                <field>Contact.Id</field>
+                <operation>notEqual</operation>
+                <value>Stewardship Review Request: Source Contact</value>
+            </filterItems>
+            <isOptional>true</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Stewardship Requests (Duplicate Business Contact)</relationshipLabel>
+        <relationshipName>Stewardship_Review_Requests1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Duplicate_Company__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Created for use with the MDM project by Traction on Demand. Field is used to indicate the duplicate company record.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Use this field to indicate the duplicate record for this company. If there are more than 2 records for this company, indicate that in the Description field.</inlineHelpText>
+        <label>Duplicate Company</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Account.IsPersonAccount</field>
+                <operation>equals</operation>
+                <value>False</value>
+            </filterItems>
+            <filterItems>
+                <field>Account.Id</field>
+                <operation>notEqual</operation>
+                <valueField>$Source.Source_Account__c</valueField>
+            </filterItems>
+            <isOptional>true</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Stewardship Requests (Duplicate Company)</relationshipLabel>
+        <relationshipName>Stewardship_Review_Requests2</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Duplicate_Person_Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Created for use with the MDM project by Traction on Demand. Field is used to indicate the duplicate Person record.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Use this field to indicate the duplicate record for this person. If there are more than 2 records for this person, indicate that in the Description field.</inlineHelpText>
+        <label>Duplicate Person Account</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Account.IsPersonAccount</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <filterItems>
+                <field>Account.Id</field>
+                <operation>notEqual</operation>
+                <valueField>$Source.Source_Account__c</valueField>
+            </filterItems>
+            <isOptional>true</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Stewardship Requests (Duplicate Person Account)</relationshipLabel>
+        <relationshipName>Stewardship_Review_Requests1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>In_Review_Time_Stamp__c</fullName>
+        <description>This field gets updated by the Workflow Rule, &quot;Time stamp in review stewardship request&quot; when the status on the request is updated to In Review, or if the status is Complete or Closed and the In Review Time Stamp is blank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates when the Stewardship Review Request has been moved to In Review</inlineHelpText>
+        <label>In Review Time Stamp</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Merge_Record_URL__c</fullName>
+        <description>This field will display a link called &quot;Merge Duplicate&quot; when both the Source and the Duplicate fields are complete. The link takes the Data Steward to either the Account or Contact merge wizard.</description>
+        <externalId>false</externalId>
+        <formula>IF(Source_Account__r.IsPersonAccount &amp;&amp; !ISBLANK(Duplicate_Person_Account__c) &amp;&amp; Duplicate_Person_Account__c != Source_Account__c,
+   HYPERLINK(&quot;/merge/accmergewizard.jsp?goNext=+Next+&amp;cid=&quot;&amp;Source_Account__c&amp;&quot;&amp;cid=&quot;&amp;Duplicate_Person_Account__c, &quot;Merge Duplicate&quot;), IF(!Source_Account__r.IsPersonAccount &amp;&amp; !ISBLANK(Duplicate_Company__c) &amp;&amp; Duplicate_Company__c != Source_Account__c,
+   HYPERLINK(&quot;/merge/accmergewizard.jsp?goNext=+Next+&amp;cid=&quot;&amp;Source_Account__c&amp;&quot;&amp;cid=&quot;&amp;Duplicate_Company__c, &quot;Merge Duplicate&quot;), IF(!ISBLANK(Source_Contact__c) &amp;&amp; !ISBLANK(Duplicate_Business_Contact__c) &amp;&amp; Duplicate_Business_Contact__c != Source_Contact__c,
+   HYPERLINK(&quot;/merge/conmergewizard.jsp?id=&quot;&amp;Duplicate_Business_Contact__r.AccountId&amp;&quot;&amp;goNext=+Next+&amp;cid=&quot;&amp; Source_Contact__c&amp;&quot;&amp;cid=&quot;&amp;Duplicate_Business_Contact__c, &quot;Merge Duplicate&quot;)
+,&quot;&quot;)))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Merge Record URL</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Request_Age_Days__c</fullName>
+        <description>Used to track the age of Stewardship Requests.</description>
+        <externalId>false</externalId>
+        <formula>(NOW() - CreatedDate)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Request Age (Days)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Request_Age_Minutes__c</fullName>
+        <description>Used to track the age of Stewardship Requests.</description>
+        <externalId>false</externalId>
+        <formula>(NOW() - CreatedDate)*24*60</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Request Age (Minutes)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Request_Type__c</fullName>
+        <description>Different values in this picklist display based on the record type. For users, most requests will fall into either Duplicate Record or Other. We decided that updating the Person of Interest Type on Person Accounts and Business Contacts did not need to be a Stewardship Request, so the &quot;Flag as Person of Interest&quot; value is extraneous. Over time, this list may grow as we determine other types of data changes that will require stewardship.</description>
+        <externalId>false</externalId>
+        <label>Request Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Duplicate Record</fullName>
+                    <default>false</default>
+                    <label>Duplicate Record</label>
+                </value>
+                <value>
+                    <fullName>Flag as Person of Interest</fullName>
+                    <default>false</default>
+                    <label>Flag as Person of Interest</label>
+                </value>
+                <value>
+                    <fullName>Incorrect Customer/ Order Link</fullName>
+                    <default>false</default>
+                    <label>Incorrect Customer/ Order Link</label>
+                </value>
+                <value>
+                    <fullName>Convert Business Type</fullName>
+                    <default>false</default>
+                    <label>Convert Business Type</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>System Detected Change - Possible Mismatch</fullName>
+                    <default>false</default>
+                    <label>System Detected Change - Possible Mismatch</label>
+                </value>
+                <value>
+                    <fullName>System Detected Record Creation Error</fullName>
+                    <default>false</default>
+                    <label>System Detected Record Creation Error</label>
+                </value>
+                <value>
+                    <fullName>System Detected Record Update Error</fullName>
+                    <default>false</default>
+                    <label>System Detected Record Update Error</label>
+                </value>
+                <value>
+                    <fullName>Membership</fullName>
+                    <default>false</default>
+                    <label>Membership</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Source_Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The account from which this request was created.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This account likely should be the master record once all duplicate records have been merged.</inlineHelpText>
+        <label>Source Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Stewardship Requests (Source Account)</relationshipLabel>
+        <relationshipName>Stewardship_Review_Requests</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Source_Address__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The address from which this request was created.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The address from which this request was created.</inlineHelpText>
+        <label>Source Address</label>
+        <referenceTo>Address__c</referenceTo>
+        <relationshipName>Stewardship_Review_Requests</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Source_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The contact from which this request was created.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This contact likely should be the master record once all duplicate records have been merged.</inlineHelpText>
+        <label>Source Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Stewardship Requests (Source Contact)</relationshipLabel>
+        <relationshipName>Stewardship_Review_Requests</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Source_Order__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The order from which this request was created.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The order from which this request was created.</inlineHelpText>
+        <label>Source Order</label>
+        <referenceTo>RH_Order__c</referenceTo>
+        <relationshipName>Stewardship_Review_Requests</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Source_Ship_To__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The ship to from which this request was created.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The ship to from which this request was created.</inlineHelpText>
+        <label>Source Ship To</label>
+        <referenceTo>Ship_To__c</referenceTo>
+        <relationshipName>Stewardship_Review_Requests</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Source_System_View__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Lookup for stewardship requests associated with Source System View records that fail to spawn correctly</description>
+        <externalId>false</externalId>
+        <label>Source System View</label>
+        <referenceTo>Source_System_View__c</referenceTo>
+        <relationshipName>Stewardship_Review_Requests</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Source_Tier_Name__c</fullName>
+        <description>Not in use for Phase 1 as Tier was removed from Phase 1 scope</description>
+        <externalId>false</externalId>
+        <formula>If(!isblank(Source_Account__c), Source_Account__r.PersonContact.Tier_Name__c,Source_Contact__r.Tier_Name__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Source Tier Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Source_Tier__c</fullName>
+        <description>Not in use for Phase 1 as Tier was removed from Phase 1 scope.</description>
+        <externalId>false</externalId>
+        <formula>If(!isblank(Source_Account__c), Source_Account__r.PersonContact.Tier_Display__c ,Source_Contact__r.Tier_Display__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Source Tier</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <description>When Data Stewards accept requests, the Status automatically updates to &quot;In Review&quot; by way of the Workflow Rule named &quot;Update Status to In Review.&quot; The Status field is editable by those with the Data Stewardship Permission Set Only.</description>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>true</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>In Review</fullName>
+                    <default>false</default>
+                    <label>In Review</label>
+                </value>
+                <value>
+                    <fullName>Closed - Successful</fullName>
+                    <default>false</default>
+                    <label>Closed - Successful</label>
+                </value>
+                <value>
+                    <fullName>Closed - Unsuccessful</fullName>
+                    <default>false</default>
+                    <label>Closed - Unsuccessful</label>
+                </value>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                    <label>Complete</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Stewardship_Notes__c</fullName>
+        <description>For use by Data Stewards only to capture notes about the request. Specifically should be used in situations where the request will be set to Closed - Unsuccessful so that the requestor and subsequent users know why the request could not be completed.</description>
+        <externalId>false</externalId>
+        <label>Stewardship Notes</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Sub_status__c</fullName>
+        <description>This field is intended to be used when Data Stewards need further information from requestors and when requestors provide the additional information. It is dependent on the &quot;In Review&quot; Status option. All users can edit this field.</description>
+        <externalId>false</externalId>
+        <label>Sub status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Status__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>More info requested</fullName>
+                    <default>false</default>
+                    <label>More info requested</label>
+                </value>
+                <value>
+                    <fullName>Requested info provided</fullName>
+                    <default>false</default>
+                    <label>Requested info provided</label>
+                </value>
+                <value>
+                    <fullName>Requested info not provided</fullName>
+                    <default>false</default>
+                    <label>Requested info not provided</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>In Review</controllingFieldValue>
+                <valueName>More info requested</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>In Review</controllingFieldValue>
+                <valueName>Requested info provided</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Closed - Unsuccessful</controllingFieldValue>
+                <valueName>Requested info not provided</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Time_to_Complete_Days__c</fullName>
+        <description>Used to track how long it takes to close out Stewardship Requests.</description>
+        <externalId>false</externalId>
+        <formula>Complete_Time_Stamp__c - In_Review_Time_Stamp__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Time to Complete (Days)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Time_to_Complete_Minutes__c</fullName>
+        <description>Used to track how long it takes to close out Stewardship Requests.</description>
+        <externalId>false</externalId>
+        <formula>(Complete_Time_Stamp__c - In_Review_Time_Stamp__c)*24*60</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Time to Complete (Minutes)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Stewardship Request</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Status__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>Request_Type__c</columns>
+        <columns>Description__c</columns>
+        <columns>Source_Account__c</columns>
+        <columns>Source_Contact__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NAME</field>
+            <operation>startsWith</operation>
+            <value>SR</value>
+        </filters>
+        <filters>
+            <field>CREATEDBY_USER</field>
+            <operation>notEqual</operation>
+            <value>SSV Process User</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Closed - Successful,Closed - Unsuccessful,Complete</value>
+        </filters>
+        <label>All Closed</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Open</fullName>
+        <columns>NAME</columns>
+        <columns>Status__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>Request_Type__c</columns>
+        <columns>Description__c</columns>
+        <columns>Source_Account__c</columns>
+        <columns>Source_Contact__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NAME</field>
+            <operation>startsWith</operation>
+            <value>SR</value>
+        </filters>
+        <filters>
+            <field>CREATEDBY_USER</field>
+            <operation>notEqual</operation>
+            <value>SSV Process User</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>New,In Review</value>
+        </filters>
+        <label>All Open</label>
+    </listViews>
+    <listViews>
+        <fullName>CON_Business_Accounts_and_Contacts</fullName>
+        <booleanFilter>1 AND 2 AND (3 OR 4 OR 5) AND 6</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Request_Type__c</columns>
+        <columns>Status__c</columns>
+        <columns>In_Review_Time_Stamp__c</columns>
+        <columns>Source_Account__c</columns>
+        <columns>Source_Contact__c</columns>
+        <columns>Description__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Stewardship_Request__c.Business_Account_Stewardship_Request,Stewardship_Request__c.Business_Contact_Stewardship_Request</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>New,In Review</value>
+        </filters>
+        <filters>
+            <field>Request_Type__c</field>
+            <operation>notEqual</operation>
+            <value>System Detected Change - Possible Mismatch</value>
+        </filters>
+        <filters>
+            <field>Request_Type__c</field>
+            <operation>notEqual</operation>
+            <value>System Detected Record Creation Error</value>
+        </filters>
+        <filters>
+            <field>Request_Type__c</field>
+            <operation>notEqual</operation>
+            <value>System Detected Record Update Error</value>
+        </filters>
+        <filters>
+            <field>CREATEDBY_USER</field>
+            <operation>notEqual</operation>
+            <value>SSV Process User</value>
+        </filters>
+        <label>CON Business Accounts and Contacts</label>
+        <queue>Stewardship_Request_Queue</queue>
+        <sharedTo>
+            <group>Data_Stewards</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>CSC_Person_Accounts</fullName>
+        <booleanFilter>1 AND 2 AND (3 OR 4 OR 5) AND 6</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Status__c</columns>
+        <columns>Sub_status__c</columns>
+        <columns>Request_Type__c</columns>
+        <columns>Source_Account__c</columns>
+        <columns>Duplicate_Person_Account__c</columns>
+        <columns>Description__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Stewardship_Request__c.Consumer_Stewardship_Request</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>New,In Review</value>
+        </filters>
+        <filters>
+            <field>Request_Type__c</field>
+            <operation>notEqual</operation>
+            <value>System Detected Change - Possible Mismatch</value>
+        </filters>
+        <filters>
+            <field>Request_Type__c</field>
+            <operation>notEqual</operation>
+            <value>System Detected Record Creation Error</value>
+        </filters>
+        <filters>
+            <field>Request_Type__c</field>
+            <operation>notEqual</operation>
+            <value>System Detected Record Update Error</value>
+        </filters>
+        <filters>
+            <field>CREATEDBY_USER</field>
+            <operation>notEqual</operation>
+            <value>SSV Process User</value>
+        </filters>
+        <label>CSC Person Accounts</label>
+        <sharedTo>
+            <group>Data_Stewards</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>My_Open_Requests</fullName>
+        <columns>NAME</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>Request_Type__c</columns>
+        <columns>Status__c</columns>
+        <columns>Source_Account__c</columns>
+        <columns>Source_Contact__c</columns>
+        <columns>Source_Tier_Name__c</columns>
+        <columns>Description__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>New,In Review</value>
+        </filters>
+        <label>My Open Requests</label>
+        <sharedTo>
+            <group>Data_Stewards</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Non_CON_or_CSC_Requests</fullName>
+        <columns>NAME</columns>
+        <columns>Request_Type__c</columns>
+        <columns>Status__c</columns>
+        <columns>In_Review_Time_Stamp__c</columns>
+        <columns>Source_Account__c</columns>
+        <columns>Source_Contact__c</columns>
+        <columns>Description__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>notEqual</operation>
+            <value>Stewardship_Request__c.Business_Account_Stewardship_Request,Stewardship_Request__c.Business_Contact_Stewardship_Request</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>notEqual</operation>
+            <value>Stewardship_Request__c.Consumer_Stewardship_Request</value>
+        </filters>
+        <filters>
+            <field>Request_Type__c</field>
+            <operation>notEqual</operation>
+            <value>System Detected Record Creation Error,System Detected Record Update Error</value>
+        </filters>
+        <filters>
+            <field>Request_Type__c</field>
+            <operation>notEqual</operation>
+            <value>System Detected Change - Possible Mismatch</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>New,In Review</value>
+        </filters>
+        <label>Non CON or CSC Requests</label>
+        <queue>Stewardship_Request_Queue</queue>
+        <sharedTo>
+            <group>Data_Stewards</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>System_Generated_Requests</fullName>
+        <booleanFilter>(1 OR 2 OR 3) AND 4</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Request_Type__c</columns>
+        <columns>Description__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>Request_Type__c</field>
+            <operation>equals</operation>
+            <value>System Detected Change - Possible Mismatch</value>
+        </filters>
+        <filters>
+            <field>Request_Type__c</field>
+            <operation>equals</operation>
+            <value>System Detected Record Creation Error</value>
+        </filters>
+        <filters>
+            <field>Request_Type__c</field>
+            <operation>equals</operation>
+            <value>System Detected Record Update Error</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>New</value>
+        </filters>
+        <label>System Generated Requests</label>
+        <queue>Stewardship_Request_Queue</queue>
+        <sharedTo>
+            <role>Administration</role>
+        </sharedTo>
+    </listViews>
+    <nameField>
+        <displayFormat>SR-{000000}</displayFormat>
+        <label>Stewardship Request Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Stewardship Requests</pluralLabel>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Address_Stewardship_Request</fullName>
+        <active>true</active>
+        <description>Request review of an address record</description>
+        <label>Address Stewardship Request</label>
+        <picklistValues>
+            <picklist>Request_Type__c</picklist>
+            <values>
+                <fullName>Duplicate Record</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Closed - Successful</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed - Unsuccessful</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sub_status__c</picklist>
+            <values>
+                <fullName>More info requested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Requested info not provided</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Requested info provided</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Business_Account_Stewardship_Request</fullName>
+        <active>true</active>
+        <description>Business Account Stewardship Request</description>
+        <label>Business Account Stewardship Request</label>
+        <picklistValues>
+            <picklist>Request_Type__c</picklist>
+            <values>
+                <fullName>Convert Business Type</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Duplicate Record</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Closed - Successful</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed - Unsuccessful</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sub_status__c</picklist>
+            <values>
+                <fullName>More info requested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Requested info not provided</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Requested info provided</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Business_Contact_Stewardship_Request</fullName>
+        <active>true</active>
+        <description>Request review of a business contact record</description>
+        <label>Business Contact Stewardship Request</label>
+        <picklistValues>
+            <picklist>Request_Type__c</picklist>
+            <values>
+                <fullName>Duplicate Record</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Closed - Successful</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed - Unsuccessful</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sub_status__c</picklist>
+            <values>
+                <fullName>More info requested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Requested info not provided</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Requested info provided</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Consumer_Stewardship_Request</fullName>
+        <active>true</active>
+        <description>Request review of a consumer record</description>
+        <label>Consumer Stewardship Request</label>
+        <picklistValues>
+            <picklist>Request_Type__c</picklist>
+            <values>
+                <fullName>Duplicate Record</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Membership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Closed - Successful</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed - Unsuccessful</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sub_status__c</picklist>
+            <values>
+                <fullName>More info requested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Requested info not provided</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Requested info provided</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Order_Stewardship_Request</fullName>
+        <active>true</active>
+        <description>Request review of an order record</description>
+        <label>Order Stewardship Request</label>
+        <picklistValues>
+            <picklist>Request_Type__c</picklist>
+            <values>
+                <fullName>Incorrect Customer%2F Order Link</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Closed - Successful</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed - Unsuccessful</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sub_status__c</picklist>
+            <values>
+                <fullName>More info requested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Requested info not provided</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Requested info provided</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Ship_To_Stewardship_Request</fullName>
+        <active>true</active>
+        <description>Request review of ship to record</description>
+        <label>Ship To Stewardship Request</label>
+        <picklistValues>
+            <picklist>Request_Type__c</picklist>
+            <values>
+                <fullName>Incorrect Customer%2F Order Link</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Closed - Successful</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed - Unsuccessful</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sub_status__c</picklist>
+            <values>
+                <fullName>More info requested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Requested info not provided</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Requested info provided</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Source_System_View_Request</fullName>
+        <active>true</active>
+        <description>Requests logged by the system during Source System View processing</description>
+        <label>Source System View Request</label>
+        <picklistValues>
+            <picklist>Request_Type__c</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>System Detected Change - Possible Mismatch</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>System Detected Record Creation Error</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Closed - Successful</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed - Unsuccessful</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sub_status__c</picklist>
+            <values>
+                <fullName>More info requested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Requested info not provided</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Requested info provided</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>Request_Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Description__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Source_Account__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Source_Contact__c</customTabListAdditionalFields>
+        <excludedStandardButtons>New</excludedStandardButtons>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Description_Req_if_Request_Type_Other</fullName>
+        <active>true</active>
+        <description>Description field required if Request Type is Other</description>
+        <errorConditionFormula>OR(
+ISPICKVAL(Request_Type__c, &quot;Other&quot;),
+ISPICKVAL(Request_Type__c, &quot;Incorrect Customer/ Order Link&quot;))
+&amp;&amp;
+ISBLANK( Description__c)</errorConditionFormula>
+        <errorDisplayField>Description__c</errorDisplayField>
+        <errorMessage>Description is Required for this Request Type</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Duplicate_Lookup_Req_if_Request_Type_Dup</fullName>
+        <active>true</active>
+        <description>Duplicate lookup is required if Request Type is Duplicate Record</description>
+        <errorConditionFormula>ISPICKVAL(Request_Type__c, &quot;Duplicate Record&quot;) 
+&amp;&amp;
+(
+(RecordType.Name = &quot;Address Stewardship Request&quot; &amp;&amp; ISBLANK(Duplicate_Address__c))
+||
+(RecordType.Name = &quot;Business Contact Stewardship Request&quot; &amp;&amp; ISBLANK(Duplicate_Business_Contact__c))
+||
+(RecordType.Name = &quot;Business Account Stewardship Request&quot; &amp;&amp; ISBLANK(Duplicate_Company__c))
+||
+(RecordType.Name = &quot;Consumer Stewardship Request&quot; &amp;&amp; ISBLANK(Duplicate_Person_Account__c))
+)
+&amp;&amp;
+ISBLANK(Description__c)</errorConditionFormula>
+        <errorMessage>The duplicate lookup or description is required when Request Type is Duplicate Record</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>New_Stewardship_Request</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Stewardship Request</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <url>/{!$Setup.Stewardship_Request_Buttons_ID_Mappings__c.Object_URL_Id__c}/e?{!$Setup.Stewardship_Request_Buttons_ID_Mappings__c.Business_Lookup_Name__c}={!Account.Name}&amp;{!$Setup.Stewardship_Request_Buttons_ID_Mappings__c.Business_Lookup_Name__c}_lkid={!Account.Id}&amp;retURL=%2F{!Account.Id}&amp;RecordType={!$Setup.Stewardship_Request_Buttons_ID_Mappings__c.Record_Type_Value_Consumer__c}&amp;ent={!$Setup.Stewardship_Request_Buttons_ID_Mappings__c.Entity_Id_Value__c}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Stewardship_Request_Address</fullName>
+        <availability>online</availability>
+        <description>Address record type</description>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Stewardship Request Address</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/{!$Setup.Stewardship_Request_Buttons_ID_Mappings__c.Object_URL_Id__c}/e?{!$Setup.Stewardship_Request_Buttons_ID_Mappings__c.Address_Lookup_Name__c}={!Address__c.Name}&amp;{!$Setup.Stewardship_Request_Buttons_ID_Mappings__c.Address_Lookup_Name__c}_lkid={!Address__c.Id}&amp;retURL=%2F{!Address__c.Id}&amp;RecordType={!$Setup.Stewardship_Request_Buttons_ID_Mappings__c.Record_Type_Value_Address__c}&amp;ent={!$Setup.Stewardship_Request_Buttons_ID_Mappings__c.Entity_Id_Value__c}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Stewardship_Request_Bus_Contact</fullName>
+        <availability>online</availability>
+        <description>Business Contact record type</description>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Stewardship Request Contact</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/{!$Setup.Stewardship_Request_Buttons_ID_Mappings__c.Object_URL_Id__c}/e?{!$Setup.Stewardship_Request_Buttons_ID_Mappings__c.Business_Contact_Lookup_Name__c}={!Contact.Name}&amp;{!$Setup.Stewardship_Request_Buttons_ID_Mappings__c.Business_Contact_Lookup_Name__c}_lkid={!Contact.Id}&amp;retURL=%2F{!Contact.Id}&amp;RecordType={!$Setup.Stewardship_Request_Buttons_ID_Mappings__c.Record_Type_Value_Business_Contact__c}&amp;ent={!$Setup.Stewardship_Request_Buttons_ID_Mappings__c.Entity_Id_Value__c}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Stewardship_Request_Business</fullName>
+        <availability>online</availability>
+        <description>Business record type</description>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Stewardship Request Business</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/{!$Setup.Stewardship_Request_Buttons_ID_Mappings__c.Object_URL_Id__c}/e?{!$Setup.Stewardship_Request_Buttons_ID_Mappings__c.Business_Lookup_Name__c}={!Account.Name}&amp;{!$Setup.Stewardship_Request_Buttons_ID_Mappings__c.Business_Lookup_Name__c}_lkid={!Account.Id}&amp;retURL=%2F{!Account.Id}&amp;RecordType={!$Setup.Stewardship_Request_Buttons_ID_Mappings__c.Record_Type_Value_Business__c}&amp;ent={!$Setup.Stewardship_Request_Buttons_ID_Mappings__c.Entity_Id_Value__c}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Stewardship_Request_Consumer</fullName>
+        <availability>online</availability>
+        <description>Consumer record type</description>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Stewardship Request Consumer</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/{!$Setup.Stewardship_Request_Buttons_ID_Mappings__c.Object_URL_Id__c}/e?{!$Setup.Stewardship_Request_Buttons_ID_Mappings__c.Business_Lookup_Name__c}={!Account.Name}&amp;{!$Setup.Stewardship_Request_Buttons_ID_Mappings__c.Business_Lookup_Name__c}_lkid={!Account.Id}&amp;retURL=%2F{!Account.Id}&amp;RecordType={!$Setup.Stewardship_Request_Buttons_ID_Mappings__c.Record_Type_Value_Consumer__c}&amp;ent={!$Setup.Stewardship_Request_Buttons_ID_Mappings__c.Entity_Id_Value__c}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Stewardship_Request_Order</fullName>
+        <availability>online</availability>
+        <description>Order record type</description>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Stewardship Request Order</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/{!$Setup.Stewardship_Request_Buttons_ID_Mappings__c.Object_URL_Id__c}/e?{!$Setup.Stewardship_Request_Buttons_ID_Mappings__c.Order_Lookup_Name__c}={!RH_Order__c.Name}&amp;{!$Setup.Stewardship_Request_Buttons_ID_Mappings__c.Order_Lookup_Name__c}_lkid={!RH_Order__c.Id}&amp;retURL=%2F{!RH_Order__c.Id}&amp;RecordType={!$Setup.Stewardship_Request_Buttons_ID_Mappings__c.Record_Type_Value_Order__c}&amp;ent={!$Setup.Stewardship_Request_Buttons_ID_Mappings__c.Entity_Id_Value__c}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Stewardship_Request_Ship_To</fullName>
+        <availability>online</availability>
+        <description>Ship To record type</description>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Stewardship Request Ship To</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/{!$Setup.Stewardship_Request_Buttons_ID_Mappings__c.Object_URL_Id__c}/e?{!$Setup.Stewardship_Request_Buttons_ID_Mappings__c.Ship_To_Lookup_Name__c}={!Ship_To__c.Name}&amp;{!$Setup.Stewardship_Request_Buttons_ID_Mappings__c.Ship_To_Lookup_Name__c}_lkid={!Ship_To__c.Id}&amp;retURL=%2F{!Ship_To__c.Id}&amp;RecordType={!$Setup.Stewardship_Request_Buttons_ID_Mappings__c.Record_Type_Value_Ship_To__c}&amp;ent={!$Setup.Stewardship_Request_Buttons_ID_Mappings__c.Record_Type_Value_Ship_To__c}</url>
+    </webLinks>
+</CustomObject>

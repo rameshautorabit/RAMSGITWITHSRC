@@ -1,0 +1,11 @@
+Hi {!Contact.FirstName},
+ 
+Please find the attached price list for your project {!Opportunity.Name}, per your request.
+
+Stock is not reserved until your order is placed. All lead times reflect current stock and are subject to change. Pricing does not include applicable sales tax or freight fees.
+
+Contact me to complete a formal quote, or to answer any questions you may have.
+
+Thank you,
+
+{!Opportunity.Ops_Contact__c}

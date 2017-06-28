@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Product2.Product_Image_Thumbnail__c</field>
+    </columns>
+    <columns>
+        <field>Product2.CW_Item_Description__c</field>
+    </columns>
+    <columns>
+        <field>Product2.Color__c</field>
+    </columns>
+    <columns>
+        <field>Product2.Member_Price__c</field>
+    </columns>
+    <columns>
+        <field>NAME</field>
+    </columns>
+    <columns>
+        <field>Product2.STSSku__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Italia Taper arm Pad</description>
+    <filter>
+        <criteriaItems>
+            <column>Product2.STSSku__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>41820694,69960813,67380834,37200196,37200188,59510990,61030482,61190365,61590341,69290015,65390826,65770112,40450195,40200797,40200854,68910104,68270220,68600136,68450981,68450835,15370996,40410107,31020560,40410143,40410142,40410168,40410170,40410173,40410204,40410219,40500862,18500245,18500246,18500205,18500215,18030127,18030128,18030155,18030125,18030156,18030140,16380456,16100007</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>B103</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ProductList</reportType>
+    <showDetails>true</showDetails>
+    <sortColumn>Product2.CW_Item_Description__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

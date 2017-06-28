@@ -1,0 +1,41 @@
+<apex:page standardController="Case" extensions="CreateNewCase" tabStyle="Case">
+<apex:sectionHeader title="New Case" subtitle="Select Case Record Type"/>
+    <div style="font-family:Arial; font-size:109%">
+        Select a record type for the new case
+    </div><br/>
+    <apex:pageMessages id="casePageMsg"/>
+    <apex:form >
+        <apex:pageBlock title="Select Case Record Type">
+            <apex:pageBlockButtons location="bottom">
+                <apex:commandButton value="Create Case" action="{!CreateCase}" status="loadingStatus"/>
+                
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection >
+                <apex:selectList label="Record Type of new record" value="{!selectedRecordTypeId}" multiselect="false" size="1" required="true">
+                    <apex:selectOptions value="{!recordTypeList}"/>
+                </apex:selectList>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+        <!--
+        <div style="font-family:Arial; font-size:109%; font-weight: bold">
+            Available Case Record Types
+        </div><br/>
+        
+        <apex:dataTable value="{!caseRecordType}" var="crt" border="5" columns="2" style="border-color:grey;"> 
+            <apex:column headerValue="Record Type Name" value="{!crt.Name}" width="20%"/>
+            <apex:column headerValue="Description" value="{!crt.Description}" width="70%"/>
+        </apex:dataTable>-->
+    </apex:form>
+    
+      <apex:actionstatus id="loadingStatus">
+        <apex:facet name="start">
+            <div class="waitingSearchDiv" id="el_loading" style="background-color: #fbfbfb; height: 100%;opacity:0.65;width:100%;"> 
+                <div class="waitingHolder" style="top: 74.2px; width: 91px;">
+                    <img class="waitingImage" src="/img/loading.gif" title="Please Wait..." />
+                    <span class="waitingDescription">Loading...</span>
+                </div>
+            </div>
+        </apex:facet>
+    </apex:actionstatus>
+
+</apex:page>

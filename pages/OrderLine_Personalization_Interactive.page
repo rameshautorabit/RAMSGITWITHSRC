@@ -1,0 +1,87 @@
+<apex:page standardController="Order_Line_Items__c" extensions="OrderLine_PersonalizationIntCtrlExt" readOnly="true" sidebar="true" showHeader="true">
+	<apex:sectionHeader title="Personalizations for Order Line" subtitle="{!Order_Line_Items__c.EXT_OrderShipToLine_Number__c}"/>
+	<head>
+    	<apex:includescript value="https://code.jquery.com/jquery-1.11.1.min.js" / >
+		<apex:includescript value="https://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js" />
+		<apex:stylesheet value="https://cdn.datatables.net/1.10.4/css/jquery.dataTables.css" />
+		<apex:includeScript value="/soap/ajax/35.0/connection.js"/>
+    	<apex:includeScript value="/support/console/35.0/integration.js"/>
+    	
+    	<script type="text/javascript">
+   		// If the Order Line Personalization UI is called from the Console then open a new subtab to display it underneath the main tab for the Order Line
+ 
+    	function addLoadEvent(func){ 
+  			var oldonload = window.onload; 
+  			if (typeof window.onload != 'function') 
+  				{ 
+     				window.onload = func; 
+  				} 
+  			else
+  				{
+      				window.onload = function()  
+      				{ 
+        				if (oldonload) 
+        				{ 
+           					oldonload(); 
+        				} 
+        				func(); 
+      				} 
+   				} 
+			} 
+    	
+    	addLoadEvent(function(){ 
+   			openOrderLinePersonalizationsSubtab();
+		});
+    	
+    	
+    	function openOrderLinePersonalizationsSubtab() {
+        	//First find the ID of the primary tab to put the new subtab in
+            sforce.console.getEnclosingPrimaryTabId(openSubtab);
+        };
+		
+     	var openSubtab = function openSubtab(result){
+         	var primaryTabId = result.id;
+        	sforce.console.setTabTitle('Order Notes');
+        };    
+   		
+		j$ = jQuery.noConflict();
+		j$(document).ready( function () {
+			var orderLinePersonalizationTable = j$('[id$="orderlinepersonalizationtable"]').DataTable({
+			"aaSorting": [],
+			"aoColumnDefs": [ { "bSortable": false, "aTargets": [ 1, 2, 3 ] } ],
+			"iDisplayLength": 100,
+			"aLengthMenu": [[5, 10, 25, 50, 100], [5, 10, 25, 50, 100]],
+			"language": {
+      			"emptyTable": "No personalizations for this order line."
+    			}		
+			});
+		});
+		</script>
+	</head>
+	<body>
+		<table id="orderlinepersonalizationtable" class="display">
+		<caption title=""><strong>{!Order_Line_Items__c.EXT_OrderShipToLine_Number__c}</strong></caption>
+			<thead>
+				<tr>
+					<th>Personalization Sequence Number</th>
+					<th>Personalization Standard Text</th>
+					<th>Personalization Type</th>
+					<th>Personalization Text</th>
+				</tr>
+			</thead>
+			<tbody>
+				<apex:repeat value="{!orderLinePersonalizationList}" var="olPersonalization">
+					<tr>
+						<td>{!olPersonalization.PersonalizationSequenceNumber}</td>
+						<td>{!olPersonalization.PersonalizationStandardText}</td>	
+						<td>{!olPersonalization.PersonalizationType}</td>
+						<td>{!olPersonalization.PersonalizationText}</td>	
+					</tr>
+				</apex:repeat>
+			</tbody>
+		</table>
+	</body>
+	<apex:pageblock >
+    	<apex:pageMessages id="showmsg"></apex:pageMessages>
+   	</apex:pageblock>		
+</apex:page>

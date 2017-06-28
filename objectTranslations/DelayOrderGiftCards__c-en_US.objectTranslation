@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>DelayOrderGiftCards</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>DelayOrderGiftCards</value>
+    </caseValues>
+    <fields>
+        <label><!-- Gift Card - Tier 1 --></label>
+        <name>Gift_Card_Tier_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gift Card - Tier 2 --></label>
+        <name>Gift_Card_Tier_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase Value Range High --></label>
+        <name>Purchase_Value_Range_High__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase Value Range Low --></label>
+        <name>Purchase_Value_Range_Low__c</name>
+    </fields>
+    <fields>
+        <label><!-- Up To Purchase Value --></label>
+        <name>Up_To_Purchase_Value__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

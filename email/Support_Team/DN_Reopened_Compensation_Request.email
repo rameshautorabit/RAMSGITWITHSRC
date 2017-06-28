@@ -1,0 +1,14 @@
+Dear {!Case.Contact},
+ 
+Thank you for contacting RH regarding the delay on your order # {!Case.Order_Number__c}.
+ 
+While we fully expect to receive our merchandise from our vendors in a timely manner, these ship dates are subject to change at any time due to unforeseen circumstances such as delays in shipment, strong demand of item, crafting, or material shortages.  This does mean that these dates cannot be guaranteed.
+ 
+We make every effort to keep our customers updated and informed about the status of their order.  Please be assured that we are working diligently with our manufacturer to fulfill your order as quickly as possible. It is possible that upon investigation with our vendor partners your item may arrive sooner than this date quoted to you. We will make every effort to deliver your item or items as soon as possible. Upon receipt of your order in first quality condition we will discuss any further actions to show our appreciation for your patience and inconvenience.
+ 
+In the meantime, let us know if you need further assistance via email at webcs@restorationhardware.com or by calling 877.777.7059 or internationally 209.834.1044.
+
+Again, thank you for contacting RH.
+
+Regards, 
+RH Customer Care

@@ -1,0 +1,7 @@
+<messaging:emailTemplate subject="{!relatedTo.Email_Subject_Brand__c} Order Update - Order # {!relatedTo.Order_Number__r.Name}" recipientType="Contact" relatedToType="Manual_Reservation__c">
+    <messaging:htmlEmailBody >
+        
+        <c:ManualReservation manResId="{!relatedTo.Id}" />
+        
+    </messaging:htmlEmailBody>
+</messaging:emailTemplate>

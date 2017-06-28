@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Contract_Letterhead</letterhead>
+    <name>Contract Membership Welcome_CSC 2016</name>
+    <style>freeForm</style>
+    <subject>Welcome to Restoration Hardware Contract</subject>
+    <textOnly>Welcome to RH Contract. We offer curated design and luxury furnishings for the global hospitality, commercial and residential sectors.
+
+
+
+We are pleased to welcome: {!Account.Name}
+
+RH Contract Membership #: {!Account.Membership_Number__c}
+
+
+
+We’d like to take this opportunity to introduce you to RH Contract.
+
+
+
+OUR UNIQUE POSITION
+
+
+RH Contract is a unique, multi-category supplier of luxury furnishings for the global Hospitality, Commercial and Residential segments.  We leverage the powerful capabilities of RH in product design and curation, global sourcing and product craftsmanship to offer contract-quality, price-competitive solutions to Hospitality, Commercial and Residential business clients in the US and internationally.
+
+
+Whether a project entails outfitting hotel guestrooms, public spaces or restaurants, creating reimagined commercial offices or educational environments, or supplying high-quality installed products for single-family or multi-family residential developments, RH Contract is dedicated to offering unparalleled customer service, high-quality products and innovative project solutions.
+
+
+OUR PRODUCTS
+
+
+We offer the broadest range of product categories combined with the simplicity of single source supply. Our product offering is crafted by the world&apos;s most esteemed artisans and includes case goods, upholstered products, bath products, lighting and outdoor furniture. Our furniture is designed to meet or exceed the codes required for large-scale Hospitality and Commercial projects, and our bath and lighting products meet Residential development environmental performance and code requirements. We have COM and COL capabilities, and can also modify products for large projects to meet aesthetic requirements, commercial standards or client budgets.
+
+
+OUR PRICING
+
+
+We leverage the spending power of our multi-million dollar retail business to offer competitive, wholesale pricing for large projects.
+
+
+OUR OPERATIONAL CAPABILITIES
+
+Whether your business is in the United States, overseas or is multi-national in scope, we understand and embrace unique regional differences and tailor our product supply and logistics support to meet your specific requirements. Ideally, we work with sufficient lead times to special order products directly from our manufacturing centers to supply projects directly. We also hold a core assortment of products in our distribution centers to provide fast track support for some projects, and can sometimes access retail inventory for last minute project needs.
+
+OUR TEAM
+
+We have vetted the industry&apos;s best to assemble a team like no other. As an RH Contract customer, you&apos;ll enjoy personalized service through our dedicated project management and sales teams. All members of our team have extensive experience working in the Hospitality, Commercial or Residential sectors and understand the special dynamics and challenges of projects within these industries. Along with years of industry experience, we have the passion and purpose to deliver unparalleled results, project after project.
+
+
+
+To learn more about RH Contract, discuss your large-scale project needs or request a quote, please email us at contractsupport@rh.com or call 855.406.6199.
+
+
+
+Thank you for your interest in RH Contract. We look forward to working with you.
+
+
+
+Kind Regards,
+
+
+
+RH Contract
+
+855.406.6199
+
+contractsupport@rh.com</textOnly>
+    <type>html</type>
+</EmailTemplate>

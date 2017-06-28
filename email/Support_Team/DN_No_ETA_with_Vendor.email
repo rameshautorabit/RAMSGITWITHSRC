@@ -1,0 +1,12 @@
+Dear {!Case.Contact},
+ 
+Thank you for your recent purchase. We are reaching out to you to inform you that the (Items Name) from your order # {!Case.Order_Number__c}, has been delayed with no currently available Estimated Time of Arrival.
+ 
+We do everything possible to deliver a customer experience that equals the quality of our product and are working diligently with our vendor partners to deliver an item in line with our high standards of quality. Please accept our sincerest apologies for any inconvenience this delay may cause.
+ 
+If you have any questions, please do not hesitate to contact us at 800.318.4893  or email us at webcs@restorationhardware.com.
+ 
+Thank you for being a valued customer to RH.
+
+Regards, 
+RH Customer Care

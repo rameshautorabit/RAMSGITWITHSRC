@@ -1,0 +1,2618 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddToCampaign</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ChangeStatus</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Convert</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>FindDup</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ListClean</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <fields>
+        <fullName>Address</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>AnnualRevenue</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Annual_Spend_on_Furnishing__c</fullName>
+        <externalId>false</externalId>
+        <label>Annual Spend on Furnishing</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Between $100,000 and $300,000</fullName>
+                    <default>false</default>
+                    <label>Between $100,000 and $300,000</label>
+                </value>
+                <value>
+                    <fullName>Between $300,000 and $1,000,000</fullName>
+                    <default>false</default>
+                    <label>Between $300,000 and $1,000,000</label>
+                </value>
+                <value>
+                    <fullName>More than $1,000,000</fullName>
+                    <default>false</default>
+                    <label>More than $1,000,000</label>
+                </value>
+                <value>
+                    <fullName>Up to $100,000</fullName>
+                    <default>false</default>
+                    <label>Up to $100,000</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Application_Number__c</fullName>
+        <description>Auto-assigned on Web to Lead, online application project 110909 LALO</description>
+        <displayFormat>{DD}{MM}{YY}-{00}</displayFormat>
+        <externalId>true</externalId>
+        <label>Application#</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>Associate_First_Name__c</fullName>
+        <description>The first name of the Associate who submits the Lead</description>
+        <externalId>false</externalId>
+        <label>Associate First Name</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Associate_Last_Name__c</fullName>
+        <description>The last name of the Associate who submits the Lead</description>
+        <externalId>false</externalId>
+        <label>Associate Last Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Associate_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Associate Number</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CampaignId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Charge_Tax__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <label>Charge Tax</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Closest_Store__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Assigned according to Transporatation Dept&apos;s &quot;air miles&quot; from zip to closest store. Where zip not indicated, assigned to store 000. 041811LALO</inlineHelpText>
+        <label>Closest Store</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>001</fullName>
+                    <default>false</default>
+                    <label>001</label>
+                </value>
+                <value>
+                    <fullName>002</fullName>
+                    <default>false</default>
+                    <label>002</label>
+                </value>
+                <value>
+                    <fullName>003</fullName>
+                    <default>false</default>
+                    <label>003</label>
+                </value>
+                <value>
+                    <fullName>004</fullName>
+                    <default>false</default>
+                    <label>004</label>
+                </value>
+                <value>
+                    <fullName>005</fullName>
+                    <default>false</default>
+                    <label>005</label>
+                </value>
+                <value>
+                    <fullName>006</fullName>
+                    <default>false</default>
+                    <label>006</label>
+                </value>
+                <value>
+                    <fullName>007</fullName>
+                    <default>false</default>
+                    <label>007</label>
+                </value>
+                <value>
+                    <fullName>008</fullName>
+                    <default>false</default>
+                    <label>008</label>
+                </value>
+                <value>
+                    <fullName>009</fullName>
+                    <default>false</default>
+                    <label>009</label>
+                </value>
+                <value>
+                    <fullName>010</fullName>
+                    <default>false</default>
+                    <label>010</label>
+                </value>
+                <value>
+                    <fullName>011</fullName>
+                    <default>false</default>
+                    <label>011</label>
+                </value>
+                <value>
+                    <fullName>012</fullName>
+                    <default>false</default>
+                    <label>012</label>
+                </value>
+                <value>
+                    <fullName>013</fullName>
+                    <default>false</default>
+                    <label>013</label>
+                </value>
+                <value>
+                    <fullName>014</fullName>
+                    <default>false</default>
+                    <label>014</label>
+                </value>
+                <value>
+                    <fullName>015</fullName>
+                    <default>false</default>
+                    <label>015</label>
+                </value>
+                <value>
+                    <fullName>016</fullName>
+                    <default>false</default>
+                    <label>016</label>
+                </value>
+                <value>
+                    <fullName>017</fullName>
+                    <default>false</default>
+                    <label>017</label>
+                </value>
+                <value>
+                    <fullName>018</fullName>
+                    <default>false</default>
+                    <label>018</label>
+                </value>
+                <value>
+                    <fullName>019</fullName>
+                    <default>false</default>
+                    <label>019</label>
+                </value>
+                <value>
+                    <fullName>020</fullName>
+                    <default>false</default>
+                    <label>020</label>
+                </value>
+                <value>
+                    <fullName>021</fullName>
+                    <default>false</default>
+                    <label>021</label>
+                </value>
+                <value>
+                    <fullName>022</fullName>
+                    <default>false</default>
+                    <label>022</label>
+                </value>
+                <value>
+                    <fullName>023</fullName>
+                    <default>false</default>
+                    <label>023</label>
+                </value>
+                <value>
+                    <fullName>024</fullName>
+                    <default>false</default>
+                    <label>024</label>
+                </value>
+                <value>
+                    <fullName>025</fullName>
+                    <default>false</default>
+                    <label>025</label>
+                </value>
+                <value>
+                    <fullName>026</fullName>
+                    <default>false</default>
+                    <label>026</label>
+                </value>
+                <value>
+                    <fullName>027</fullName>
+                    <default>false</default>
+                    <label>027</label>
+                </value>
+                <value>
+                    <fullName>028</fullName>
+                    <default>false</default>
+                    <label>028</label>
+                </value>
+                <value>
+                    <fullName>029</fullName>
+                    <default>false</default>
+                    <label>029</label>
+                </value>
+                <value>
+                    <fullName>030</fullName>
+                    <default>false</default>
+                    <label>030</label>
+                </value>
+                <value>
+                    <fullName>031</fullName>
+                    <default>false</default>
+                    <label>031</label>
+                </value>
+                <value>
+                    <fullName>032</fullName>
+                    <default>false</default>
+                    <label>032</label>
+                </value>
+                <value>
+                    <fullName>033</fullName>
+                    <default>false</default>
+                    <label>033</label>
+                </value>
+                <value>
+                    <fullName>034</fullName>
+                    <default>false</default>
+                    <label>034</label>
+                </value>
+                <value>
+                    <fullName>035</fullName>
+                    <default>false</default>
+                    <label>035</label>
+                </value>
+                <value>
+                    <fullName>036</fullName>
+                    <default>false</default>
+                    <label>036</label>
+                </value>
+                <value>
+                    <fullName>037</fullName>
+                    <default>false</default>
+                    <label>037</label>
+                </value>
+                <value>
+                    <fullName>038</fullName>
+                    <default>false</default>
+                    <label>038</label>
+                </value>
+                <value>
+                    <fullName>039</fullName>
+                    <default>false</default>
+                    <label>039</label>
+                </value>
+                <value>
+                    <fullName>040</fullName>
+                    <default>false</default>
+                    <label>040</label>
+                </value>
+                <value>
+                    <fullName>041</fullName>
+                    <default>false</default>
+                    <label>041</label>
+                </value>
+                <value>
+                    <fullName>042</fullName>
+                    <default>false</default>
+                    <label>042</label>
+                </value>
+                <value>
+                    <fullName>043</fullName>
+                    <default>false</default>
+                    <label>043</label>
+                </value>
+                <value>
+                    <fullName>044</fullName>
+                    <default>false</default>
+                    <label>044</label>
+                </value>
+                <value>
+                    <fullName>045</fullName>
+                    <default>false</default>
+                    <label>045</label>
+                </value>
+                <value>
+                    <fullName>046</fullName>
+                    <default>false</default>
+                    <label>046</label>
+                </value>
+                <value>
+                    <fullName>047</fullName>
+                    <default>false</default>
+                    <label>047</label>
+                </value>
+                <value>
+                    <fullName>048</fullName>
+                    <default>false</default>
+                    <label>048</label>
+                </value>
+                <value>
+                    <fullName>049</fullName>
+                    <default>false</default>
+                    <label>049</label>
+                </value>
+                <value>
+                    <fullName>050</fullName>
+                    <default>false</default>
+                    <label>050</label>
+                </value>
+                <value>
+                    <fullName>051</fullName>
+                    <default>false</default>
+                    <label>051</label>
+                </value>
+                <value>
+                    <fullName>052</fullName>
+                    <default>false</default>
+                    <label>052</label>
+                </value>
+                <value>
+                    <fullName>053</fullName>
+                    <default>false</default>
+                    <label>053</label>
+                </value>
+                <value>
+                    <fullName>054</fullName>
+                    <default>false</default>
+                    <label>054</label>
+                </value>
+                <value>
+                    <fullName>055</fullName>
+                    <default>false</default>
+                    <label>055</label>
+                </value>
+                <value>
+                    <fullName>056</fullName>
+                    <default>false</default>
+                    <label>056</label>
+                </value>
+                <value>
+                    <fullName>057</fullName>
+                    <default>false</default>
+                    <label>057</label>
+                </value>
+                <value>
+                    <fullName>058</fullName>
+                    <default>false</default>
+                    <label>058</label>
+                </value>
+                <value>
+                    <fullName>059</fullName>
+                    <default>false</default>
+                    <label>059</label>
+                </value>
+                <value>
+                    <fullName>060</fullName>
+                    <default>false</default>
+                    <label>060</label>
+                </value>
+                <value>
+                    <fullName>061</fullName>
+                    <default>false</default>
+                    <label>061</label>
+                </value>
+                <value>
+                    <fullName>062</fullName>
+                    <default>false</default>
+                    <label>062</label>
+                </value>
+                <value>
+                    <fullName>063</fullName>
+                    <default>false</default>
+                    <label>063</label>
+                </value>
+                <value>
+                    <fullName>064</fullName>
+                    <default>false</default>
+                    <label>064</label>
+                </value>
+                <value>
+                    <fullName>065</fullName>
+                    <default>false</default>
+                    <label>065</label>
+                </value>
+                <value>
+                    <fullName>066</fullName>
+                    <default>false</default>
+                    <label>066</label>
+                </value>
+                <value>
+                    <fullName>067</fullName>
+                    <default>false</default>
+                    <label>067</label>
+                </value>
+                <value>
+                    <fullName>068</fullName>
+                    <default>false</default>
+                    <label>068</label>
+                </value>
+                <value>
+                    <fullName>069</fullName>
+                    <default>false</default>
+                    <label>069</label>
+                </value>
+                <value>
+                    <fullName>070</fullName>
+                    <default>false</default>
+                    <label>070</label>
+                </value>
+                <value>
+                    <fullName>071</fullName>
+                    <default>false</default>
+                    <label>071</label>
+                </value>
+                <value>
+                    <fullName>072</fullName>
+                    <default>false</default>
+                    <label>072</label>
+                </value>
+                <value>
+                    <fullName>073</fullName>
+                    <default>false</default>
+                    <label>073</label>
+                </value>
+                <value>
+                    <fullName>074</fullName>
+                    <default>false</default>
+                    <label>074</label>
+                </value>
+                <value>
+                    <fullName>075</fullName>
+                    <default>false</default>
+                    <label>075</label>
+                </value>
+                <value>
+                    <fullName>076</fullName>
+                    <default>false</default>
+                    <label>076</label>
+                </value>
+                <value>
+                    <fullName>077</fullName>
+                    <default>false</default>
+                    <label>077</label>
+                </value>
+                <value>
+                    <fullName>078</fullName>
+                    <default>false</default>
+                    <label>078</label>
+                </value>
+                <value>
+                    <fullName>079</fullName>
+                    <default>false</default>
+                    <label>079</label>
+                </value>
+                <value>
+                    <fullName>080</fullName>
+                    <default>false</default>
+                    <label>080</label>
+                </value>
+                <value>
+                    <fullName>081</fullName>
+                    <default>false</default>
+                    <label>081</label>
+                </value>
+                <value>
+                    <fullName>082</fullName>
+                    <default>false</default>
+                    <label>082</label>
+                </value>
+                <value>
+                    <fullName>083</fullName>
+                    <default>false</default>
+                    <label>083</label>
+                </value>
+                <value>
+                    <fullName>084</fullName>
+                    <default>false</default>
+                    <label>084</label>
+                </value>
+                <value>
+                    <fullName>085</fullName>
+                    <default>false</default>
+                    <label>085</label>
+                </value>
+                <value>
+                    <fullName>086</fullName>
+                    <default>false</default>
+                    <label>086</label>
+                </value>
+                <value>
+                    <fullName>087</fullName>
+                    <default>false</default>
+                    <label>087</label>
+                </value>
+                <value>
+                    <fullName>088</fullName>
+                    <default>false</default>
+                    <label>088</label>
+                </value>
+                <value>
+                    <fullName>089</fullName>
+                    <default>false</default>
+                    <label>089</label>
+                </value>
+                <value>
+                    <fullName>090</fullName>
+                    <default>false</default>
+                    <label>090</label>
+                </value>
+                <value>
+                    <fullName>091</fullName>
+                    <default>false</default>
+                    <label>091</label>
+                </value>
+                <value>
+                    <fullName>092</fullName>
+                    <default>false</default>
+                    <label>092</label>
+                </value>
+                <value>
+                    <fullName>093</fullName>
+                    <default>false</default>
+                    <label>093</label>
+                </value>
+                <value>
+                    <fullName>094</fullName>
+                    <default>false</default>
+                    <label>094</label>
+                </value>
+                <value>
+                    <fullName>095</fullName>
+                    <default>false</default>
+                    <label>095</label>
+                </value>
+                <value>
+                    <fullName>096</fullName>
+                    <default>false</default>
+                    <label>096</label>
+                </value>
+                <value>
+                    <fullName>097</fullName>
+                    <default>false</default>
+                    <label>097</label>
+                </value>
+                <value>
+                    <fullName>098</fullName>
+                    <default>false</default>
+                    <label>098</label>
+                </value>
+                <value>
+                    <fullName>099</fullName>
+                    <default>false</default>
+                    <label>099</label>
+                </value>
+                <value>
+                    <fullName>100</fullName>
+                    <default>false</default>
+                    <label>100</label>
+                </value>
+                <value>
+                    <fullName>101</fullName>
+                    <default>false</default>
+                    <label>101</label>
+                </value>
+                <value>
+                    <fullName>102</fullName>
+                    <default>false</default>
+                    <label>102</label>
+                </value>
+                <value>
+                    <fullName>103</fullName>
+                    <default>false</default>
+                    <label>103</label>
+                </value>
+                <value>
+                    <fullName>104</fullName>
+                    <default>false</default>
+                    <label>104</label>
+                </value>
+                <value>
+                    <fullName>105</fullName>
+                    <default>false</default>
+                    <label>105</label>
+                </value>
+                <value>
+                    <fullName>106</fullName>
+                    <default>false</default>
+                    <label>106</label>
+                </value>
+                <value>
+                    <fullName>107</fullName>
+                    <default>false</default>
+                    <label>107</label>
+                </value>
+                <value>
+                    <fullName>108</fullName>
+                    <default>false</default>
+                    <label>108</label>
+                </value>
+                <value>
+                    <fullName>109</fullName>
+                    <default>false</default>
+                    <label>109</label>
+                </value>
+                <value>
+                    <fullName>110</fullName>
+                    <default>false</default>
+                    <label>110</label>
+                </value>
+                <value>
+                    <fullName>111</fullName>
+                    <default>false</default>
+                    <label>111</label>
+                </value>
+                <value>
+                    <fullName>112</fullName>
+                    <default>false</default>
+                    <label>112</label>
+                </value>
+                <value>
+                    <fullName>113</fullName>
+                    <default>false</default>
+                    <label>113</label>
+                </value>
+                <value>
+                    <fullName>114</fullName>
+                    <default>false</default>
+                    <label>114</label>
+                </value>
+                <value>
+                    <fullName>115</fullName>
+                    <default>false</default>
+                    <label>115</label>
+                </value>
+                <value>
+                    <fullName>116</fullName>
+                    <default>false</default>
+                    <label>116</label>
+                </value>
+                <value>
+                    <fullName>117</fullName>
+                    <default>false</default>
+                    <label>117</label>
+                </value>
+                <value>
+                    <fullName>118</fullName>
+                    <default>false</default>
+                    <label>118</label>
+                </value>
+                <value>
+                    <fullName>119</fullName>
+                    <default>false</default>
+                    <label>119</label>
+                </value>
+                <value>
+                    <fullName>120</fullName>
+                    <default>false</default>
+                    <label>120</label>
+                </value>
+                <value>
+                    <fullName>121</fullName>
+                    <default>false</default>
+                    <label>121</label>
+                </value>
+                <value>
+                    <fullName>122</fullName>
+                    <default>false</default>
+                    <label>122</label>
+                </value>
+                <value>
+                    <fullName>123</fullName>
+                    <default>false</default>
+                    <label>123</label>
+                </value>
+                <value>
+                    <fullName>124</fullName>
+                    <default>false</default>
+                    <label>124</label>
+                </value>
+                <value>
+                    <fullName>125</fullName>
+                    <default>false</default>
+                    <label>125</label>
+                </value>
+                <value>
+                    <fullName>126</fullName>
+                    <default>false</default>
+                    <label>126</label>
+                </value>
+                <value>
+                    <fullName>127</fullName>
+                    <default>false</default>
+                    <label>127</label>
+                </value>
+                <value>
+                    <fullName>128</fullName>
+                    <default>false</default>
+                    <label>128</label>
+                </value>
+                <value>
+                    <fullName>129</fullName>
+                    <default>false</default>
+                    <label>129</label>
+                </value>
+                <value>
+                    <fullName>130</fullName>
+                    <default>false</default>
+                    <label>130</label>
+                </value>
+                <value>
+                    <fullName>131</fullName>
+                    <default>false</default>
+                    <label>131</label>
+                </value>
+                <value>
+                    <fullName>132</fullName>
+                    <default>false</default>
+                    <label>132</label>
+                </value>
+                <value>
+                    <fullName>133</fullName>
+                    <default>false</default>
+                    <label>133</label>
+                </value>
+                <value>
+                    <fullName>134</fullName>
+                    <default>false</default>
+                    <label>134</label>
+                </value>
+                <value>
+                    <fullName>135</fullName>
+                    <default>false</default>
+                    <label>135</label>
+                </value>
+                <value>
+                    <fullName>136</fullName>
+                    <default>false</default>
+                    <label>136</label>
+                </value>
+                <value>
+                    <fullName>137</fullName>
+                    <default>false</default>
+                    <label>137</label>
+                </value>
+                <value>
+                    <fullName>138</fullName>
+                    <default>false</default>
+                    <label>138</label>
+                </value>
+                <value>
+                    <fullName>139</fullName>
+                    <default>false</default>
+                    <label>139</label>
+                </value>
+                <value>
+                    <fullName>140</fullName>
+                    <default>false</default>
+                    <label>140</label>
+                </value>
+                <value>
+                    <fullName>141</fullName>
+                    <default>false</default>
+                    <label>141</label>
+                </value>
+                <value>
+                    <fullName>142</fullName>
+                    <default>false</default>
+                    <label>142</label>
+                </value>
+                <value>
+                    <fullName>143</fullName>
+                    <default>false</default>
+                    <label>143</label>
+                </value>
+                <value>
+                    <fullName>144</fullName>
+                    <default>false</default>
+                    <label>144</label>
+                </value>
+                <value>
+                    <fullName>145</fullName>
+                    <default>false</default>
+                    <label>145</label>
+                </value>
+                <value>
+                    <fullName>146</fullName>
+                    <default>false</default>
+                    <label>146</label>
+                </value>
+                <value>
+                    <fullName>147</fullName>
+                    <default>false</default>
+                    <label>147</label>
+                </value>
+                <value>
+                    <fullName>148</fullName>
+                    <default>false</default>
+                    <label>148</label>
+                </value>
+                <value>
+                    <fullName>149</fullName>
+                    <default>false</default>
+                    <label>149</label>
+                </value>
+                <value>
+                    <fullName>150</fullName>
+                    <default>false</default>
+                    <label>150</label>
+                </value>
+                <value>
+                    <fullName>501</fullName>
+                    <default>false</default>
+                    <label>501</label>
+                </value>
+                <value>
+                    <fullName>502</fullName>
+                    <default>false</default>
+                    <label>502</label>
+                </value>
+                <value>
+                    <fullName>503</fullName>
+                    <default>false</default>
+                    <label>503</label>
+                </value>
+                <value>
+                    <fullName>504</fullName>
+                    <default>false</default>
+                    <label>504</label>
+                </value>
+                <value>
+                    <fullName>600</fullName>
+                    <default>false</default>
+                    <label>600</label>
+                </value>
+                <value>
+                    <fullName>601</fullName>
+                    <default>false</default>
+                    <label>601</label>
+                </value>
+                <value>
+                    <fullName>602</fullName>
+                    <default>false</default>
+                    <label>602</label>
+                </value>
+                <value>
+                    <fullName>603</fullName>
+                    <default>false</default>
+                    <label>603</label>
+                </value>
+                <value>
+                    <fullName>604</fullName>
+                    <default>false</default>
+                    <label>604</label>
+                </value>
+                <value>
+                    <fullName>605</fullName>
+                    <default>false</default>
+                    <label>605</label>
+                </value>
+                <value>
+                    <fullName>606</fullName>
+                    <default>false</default>
+                    <label>606</label>
+                </value>
+                <value>
+                    <fullName>607</fullName>
+                    <default>false</default>
+                    <label>607</label>
+                </value>
+                <value>
+                    <fullName>608</fullName>
+                    <default>false</default>
+                    <label>608</label>
+                </value>
+                <value>
+                    <fullName>609</fullName>
+                    <default>false</default>
+                    <label>609</label>
+                </value>
+                <value>
+                    <fullName>610</fullName>
+                    <default>false</default>
+                    <label>610</label>
+                </value>
+                <value>
+                    <fullName>611</fullName>
+                    <default>false</default>
+                    <label>611</label>
+                </value>
+                <value>
+                    <fullName>612</fullName>
+                    <default>false</default>
+                    <label>612</label>
+                </value>
+                <value>
+                    <fullName>613</fullName>
+                    <default>false</default>
+                    <label>613</label>
+                </value>
+                <value>
+                    <fullName>614</fullName>
+                    <default>false</default>
+                    <label>614</label>
+                </value>
+                <value>
+                    <fullName>615</fullName>
+                    <default>false</default>
+                    <label>615</label>
+                </value>
+                <value>
+                    <fullName>616</fullName>
+                    <default>false</default>
+                    <label>616</label>
+                </value>
+                <value>
+                    <fullName>617</fullName>
+                    <default>false</default>
+                    <label>617</label>
+                </value>
+                <value>
+                    <fullName>618</fullName>
+                    <default>false</default>
+                    <label>618</label>
+                </value>
+                <value>
+                    <fullName>619</fullName>
+                    <default>false</default>
+                    <label>619</label>
+                </value>
+                <value>
+                    <fullName>620</fullName>
+                    <default>false</default>
+                    <label>620</label>
+                </value>
+                <value>
+                    <fullName>000</fullName>
+                    <default>false</default>
+                    <label>000</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Company</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>CurrencyIsoCode</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Data_Quality_Description__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Data_Quality_Score__c =100,&quot;All Lead Details Captured&quot;, &quot;Missing: &quot;&amp;IF( LEN( FirstName)=0,&quot;First Name, &quot;,&quot;&quot;)&amp;&quot;&quot;&amp;IF(LEN(LastName)=0, &quot;Last Name, &quot;,&quot;&quot;)&amp;&quot;&quot;&amp;IF( LEN(Company)=0, &quot;Company, &quot;,&quot;&quot;)&amp;&quot;&quot;&amp;IF( LEN(Phone)=0, &quot;Phone, &quot;,&quot;&quot;)&amp;&quot;&quot;&amp;IF( ISPICKVAL(Salutation,&quot;&quot;), &quot;Salutation, &quot;,&quot;&quot;)&amp;&quot;&quot;&amp;IF( ISPICKVAL(Rating,&quot;&quot;), &quot;Rating, &quot;,&quot;&quot;)&amp;&quot;&quot;&amp;IF( LEN(City)=0, &quot;Complete Address, &quot;,&quot;&quot;)&amp;&quot;&quot;&amp;IF( LEN(Email)=0, &quot;Email&quot;,&quot;&quot;))</formula>
+        <label>Data Quality Description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Data_Quality_Score__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(LEN( FirstName ) = 0, 0,15) + IF(LEN( LastName ) = 0, 0,15) + IF(LEN( Company ) = 0, 0,15) + IF(LEN( Phone ) = 0, 0,15) + IF( ISPICKVAL( Salutation,&quot;&quot;), 0,10) + IF( ISPICKVAL(Rating,&quot;&quot;), 0,10) + IF( LEN( City ) = 0, 0,10) + IF( LEN( Email ) = 0, 0,10)</formula>
+        <label>Data Quality Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Deal_Size__c</fullName>
+        <externalId>false</externalId>
+        <label>Deal Size</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Small</fullName>
+                    <default>false</default>
+                    <label>Small</label>
+                </value>
+                <value>
+                    <fullName>Medium</fullName>
+                    <default>false</default>
+                    <label>Medium</label>
+                </value>
+                <value>
+                    <fullName>Large</fullName>
+                    <default>false</default>
+                    <label>Large</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Department__c</fullName>
+        <externalId>false</externalId>
+        <label>Department</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Accounting</fullName>
+                    <default>false</default>
+                    <label>Accounting</label>
+                </value>
+                <value>
+                    <fullName>Architecture/Construction</fullName>
+                    <default>false</default>
+                    <label>Architecture/Construction</label>
+                </value>
+                <value>
+                    <fullName>Concept Development</fullName>
+                    <default>false</default>
+                    <label>Concept Development</label>
+                </value>
+                <value>
+                    <fullName>Development</fullName>
+                    <default>false</default>
+                    <label>Development</label>
+                </value>
+                <value>
+                    <fullName>Executive</fullName>
+                    <default>false</default>
+                    <label>Executive</label>
+                </value>
+                <value>
+                    <fullName>Furn Fixt &amp; Equip</fullName>
+                    <default>false</default>
+                    <label>Furn Fixt &amp; Equip</label>
+                </value>
+                <value>
+                    <fullName>Interior Design</fullName>
+                    <default>false</default>
+                    <label>Interior Design</label>
+                </value>
+                <value>
+                    <fullName>Marketing</fullName>
+                    <default>false</default>
+                    <label>Marketing</label>
+                </value>
+                <value>
+                    <fullName>Op Supp &amp; Equip</fullName>
+                    <default>false</default>
+                    <label>Op Supp &amp; Equip</label>
+                </value>
+                <value>
+                    <fullName>Project Manager</fullName>
+                    <default>false</default>
+                    <label>Project Manager</label>
+                </value>
+                <value>
+                    <fullName>Purchasing</fullName>
+                    <default>false</default>
+                    <label>Purchasing</label>
+                </value>
+                <value>
+                    <fullName>Transport</fullName>
+                    <default>false</default>
+                    <label>Transport</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>DoNotCall</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>EIN_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>EIN Number</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Email_Additional1__c</fullName>
+        <externalId>false</externalId>
+        <label>Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email_Additional2__c</fullName>
+        <externalId>false</externalId>
+        <label>Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Fax</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Fax_Additional_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Fax</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Fax_Additional_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Fax</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>First_Name_Additional1__c</fullName>
+        <externalId>false</externalId>
+        <label>First Name</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>First_Name_Additional2__c</fullName>
+        <externalId>false</externalId>
+        <label>First Name</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HasOptedOutOfEmail</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>HasOptedOutOfFax</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>INFA_AV__Address_Validation_Status__c</fullName>
+        <defaultValue>&quot;Not Verified&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Address Validation Status</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Industry</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Jigsaw</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>LastTransferDate</fullName>
+    </fields>
+    <fields>
+        <fullName>Last_Name_Additional1__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Name</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Name_Additional2__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Name</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LeadSource</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Lead__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>This maps to the account to accommodate the trade verified workflow</description>
+        <externalId>false</externalId>
+        <label>Lead</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Level__c</fullName>
+        <externalId>false</externalId>
+        <label>Level</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>HQ/Brand</fullName>
+                    <default>false</default>
+                    <label>HQ/Brand</label>
+                </value>
+                <value>
+                    <fullName>Owner/Mgt Group</fullName>
+                    <default>false</default>
+                    <label>Owner/Mgt Group</label>
+                </value>
+                <value>
+                    <fullName>Subsidiary</fullName>
+                    <default>false</default>
+                    <label>Subsidiary</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Membership_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Membership Number</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Membership_Support_Doc_Rec_d__c</fullName>
+        <description>Added field to calculate difference between date application rec&apos;d and date supporting docs received.  This is to take into account when looking at CSC productivity.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select date that Supporting Membership Documentation was received in the Trade Membership Outlook Box.</inlineHelpText>
+        <label>Membership Support Doc Rec&apos;d</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>MobilePhone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>NumberOfEmployees</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Number_of_Employees__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Employees</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Less than 10</fullName>
+                    <default>false</default>
+                    <label>Less than 10</label>
+                </value>
+                <value>
+                    <fullName>Between 10 and 50</fullName>
+                    <default>false</default>
+                    <label>Between 10 and 50</label>
+                </value>
+                <value>
+                    <fullName>Between 50 and 200</fullName>
+                    <default>false</default>
+                    <label>Between 50 and 200</label>
+                </value>
+                <value>
+                    <fullName>More than 200</fullName>
+                    <default>false</default>
+                    <label>More than 200</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PartnerAccountId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Phone_Additional1__c</fullName>
+        <externalId>false</externalId>
+        <label>Phone</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Phone_Additional2__c</fullName>
+        <externalId>false</externalId>
+        <label>Phone</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Proof_of_Qualification__c</fullName>
+        <externalId>false</externalId>
+        <label>Proof of Qualification</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Current Business License</fullName>
+                    <default>false</default>
+                    <label>Current Business License</label>
+                </value>
+                <value>
+                    <fullName>Current ASID Membership</fullName>
+                    <default>false</default>
+                    <label>Current ASID Membership</label>
+                </value>
+                <value>
+                    <fullName>Current AI/IDI provincial registration</fullName>
+                    <default>false</default>
+                    <label>Current AI/IDI provincial registration</label>
+                </value>
+                <value>
+                    <fullName>Interior Design Certification (NCID/CCIDC)</fullName>
+                    <default>false</default>
+                    <label>Interior Design Certification (NCID/CCIDC)</label>
+                </value>
+                <value>
+                    <fullName>State Professional License</fullName>
+                    <default>false</default>
+                    <label>State Professional License</label>
+                </value>
+                <value>
+                    <fullName>W9 / Federal ID / EIN Form</fullName>
+                    <default>false</default>
+                    <label>W9 / Federal ID / EIN Form</label>
+                </value>
+                <value>
+                    <fullName>Business ID number</fullName>
+                    <default>false</default>
+                    <label>Business ID number</label>
+                </value>
+                <value>
+                    <fullName>Resale/Sales Tax Certificate</fullName>
+                    <default>false</default>
+                    <label>Resale/Sales Tax Certificate</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Rating</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Region__c</fullName>
+        <externalId>false</externalId>
+        <label>Region</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>West</fullName>
+                    <default>false</default>
+                    <label>West</label>
+                </value>
+                <value>
+                    <fullName>East</fullName>
+                    <default>false</default>
+                    <label>East</label>
+                </value>
+                <value>
+                    <fullName>Central</fullName>
+                    <default>false</default>
+                    <label>Central</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Request_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Application Requested</fullName>
+                    <default>false</default>
+                    <label>Application Requested</label>
+                </value>
+                <value>
+                    <fullName>Potential Opportunity</fullName>
+                    <default>false</default>
+                    <label>Potential Opportunity</label>
+                </value>
+                <value>
+                    <fullName>No Current Opportunity</fullName>
+                    <default>false</default>
+                    <label>No Current Opportunity</label>
+                </value>
+                <value>
+                    <fullName>Not Viable</fullName>
+                    <default>false</default>
+                    <label>Not Viable</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Resale_ID_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Resale ID Number</label>
+        <length>64</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Lead__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Sales Lead</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Leads</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Segment__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Industry</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Commercial Architecture Firm</fullName>
+                    <default>false</default>
+                    <label>Commercial Architecture Firm</label>
+                </value>
+                <value>
+                    <fullName>Commercial Design Firm</fullName>
+                    <default>false</default>
+                    <label>Commercial Design Firm</label>
+                </value>
+                <value>
+                    <fullName>Hospitality Architecture Firm</fullName>
+                    <default>false</default>
+                    <label>Hospitality Architecture Firm</label>
+                </value>
+                <value>
+                    <fullName>Hospitality Design Firm</fullName>
+                    <default>false</default>
+                    <label>Hospitality Design Firm</label>
+                </value>
+                <value>
+                    <fullName>Residential Architecture Firm</fullName>
+                    <default>false</default>
+                    <label>Residential Architecture Firm</label>
+                </value>
+                <value>
+                    <fullName>Residential Interior Design Firm (B2B)</fullName>
+                    <default>false</default>
+                    <label>Residential Interior Design Firm (B2B)</label>
+                </value>
+                <value>
+                    <fullName>Landscape Design Firm</fullName>
+                    <default>false</default>
+                    <label>Landscape Design Firm</label>
+                </value>
+                <value>
+                    <fullName>Model Home Stager</fullName>
+                    <default>false</default>
+                    <label>Model Home Stager</label>
+                </value>
+                <value>
+                    <fullName>General Contractor</fullName>
+                    <default>false</default>
+                    <label>General Contractor</label>
+                </value>
+                <value>
+                    <fullName>Lighting Product Installer/Contractor</fullName>
+                    <default>false</default>
+                    <label>Lighting Product Installer/Contractor</label>
+                </value>
+                <value>
+                    <fullName>Plumbing Product Installer/Contractor</fullName>
+                    <default>false</default>
+                    <label>Plumbing Product Installer/Contractor</label>
+                </value>
+                <value>
+                    <fullName>Cabinet Product Installer/Contractor</fullName>
+                    <default>false</default>
+                    <label>Cabinet Product Installer/Contractor</label>
+                </value>
+                <value>
+                    <fullName>Purchasing Firm</fullName>
+                    <default>false</default>
+                    <label>Purchasing Firm</label>
+                </value>
+                <value>
+                    <fullName>Country Club Owner</fullName>
+                    <default>false</default>
+                    <label>Country Club Owner</label>
+                </value>
+                <value>
+                    <fullName>Furniture Dealer</fullName>
+                    <default>false</default>
+                    <label>Furniture Dealer</label>
+                </value>
+                <value>
+                    <fullName>Commercial Developer</fullName>
+                    <default>false</default>
+                    <label>Commercial Developer</label>
+                </value>
+                <value>
+                    <fullName>Commercial Office Owner</fullName>
+                    <default>false</default>
+                    <label>Commercial Office Owner</label>
+                </value>
+                <value>
+                    <fullName>Shared Office Space Provider</fullName>
+                    <default>false</default>
+                    <label>Shared Office Space Provider</label>
+                </value>
+                <value>
+                    <fullName>Furniture Rental Company</fullName>
+                    <default>false</default>
+                    <label>Furniture Rental Company</label>
+                </value>
+                <value>
+                    <fullName>Sporting Stadium</fullName>
+                    <default>false</default>
+                    <label>Sporting Stadium</label>
+                </value>
+                <value>
+                    <fullName>University</fullName>
+                    <default>false</default>
+                    <label>University</label>
+                </value>
+                <value>
+                    <fullName>K-12 School</fullName>
+                    <default>false</default>
+                    <label>K-12 School</label>
+                </value>
+                <value>
+                    <fullName>Fraternity/Sorority</fullName>
+                    <default>false</default>
+                    <label>Fraternity/Sorority</label>
+                </value>
+                <value>
+                    <fullName>City Government Department</fullName>
+                    <default>false</default>
+                    <label>City Government Department</label>
+                </value>
+                <value>
+                    <fullName>State Government Department</fullName>
+                    <default>false</default>
+                    <label>State Government Department</label>
+                </value>
+                <value>
+                    <fullName>Federal Government Department</fullName>
+                    <default>false</default>
+                    <label>Federal Government Department</label>
+                </value>
+                <value>
+                    <fullName>Assisted Living Facility</fullName>
+                    <default>false</default>
+                    <label>Assisted Living Facility</label>
+                </value>
+                <value>
+                    <fullName>Hospital</fullName>
+                    <default>false</default>
+                    <label>Hospital</label>
+                </value>
+                <value>
+                    <fullName>Independent Restaurant Owner</fullName>
+                    <default>false</default>
+                    <label>Independent Restaurant Owner</label>
+                </value>
+                <value>
+                    <fullName>Luxury Boutique Hotel/Group</fullName>
+                    <default>false</default>
+                    <label>Luxury Boutique Hotel/Group</label>
+                </value>
+                <value>
+                    <fullName>Luxury Brand Hotel/Group</fullName>
+                    <default>false</default>
+                    <label>Luxury Brand Hotel/Group</label>
+                </value>
+                <value>
+                    <fullName>Luxury Casino/Group</fullName>
+                    <default>false</default>
+                    <label>Luxury Casino/Group</label>
+                </value>
+                <value>
+                    <fullName>Luxury Hotel Owner/Mgmt Group</fullName>
+                    <default>false</default>
+                    <label>Luxury Hotel Owner/Mgmt Group</label>
+                </value>
+                <value>
+                    <fullName>Luxury Independent Hotel</fullName>
+                    <default>false</default>
+                    <label>Luxury Independent Hotel</label>
+                </value>
+                <value>
+                    <fullName>Non-Luxury Boutique Hotel/Group</fullName>
+                    <default>false</default>
+                    <label>Non-Luxury Boutique Hotel/Group</label>
+                </value>
+                <value>
+                    <fullName>Non-Luxury Brand Hotel/Group</fullName>
+                    <default>false</default>
+                    <label>Non-Luxury Brand Hotel/Group</label>
+                </value>
+                <value>
+                    <fullName>Non-Luxury Casino/Group</fullName>
+                    <default>false</default>
+                    <label>Non-Luxury Casino/Group</label>
+                </value>
+                <value>
+                    <fullName>Non-Luxury Hotel Owner/Mgmt Group</fullName>
+                    <default>false</default>
+                    <label>Non-Luxury Hotel Owner/Mgmt Group</label>
+                </value>
+                <value>
+                    <fullName>Non-Luxury Independent Hotel</fullName>
+                    <default>false</default>
+                    <label>Non-Luxury Independent Hotel</label>
+                </value>
+                <value>
+                    <fullName>Resort Hotel Owner</fullName>
+                    <default>false</default>
+                    <label>Resort Hotel Owner</label>
+                </value>
+                <value>
+                    <fullName>Restaurant/Bar Chain Owner</fullName>
+                    <default>false</default>
+                    <label>Restaurant/Bar Chain Owner</label>
+                </value>
+                <value>
+                    <fullName>Spa Owner</fullName>
+                    <default>false</default>
+                    <label>Spa Owner</label>
+                </value>
+                <value>
+                    <fullName>Winery Owner</fullName>
+                    <default>false</default>
+                    <label>Winery Owner</label>
+                </value>
+                <value>
+                    <fullName>Single Family Production Builder</fullName>
+                    <default>false</default>
+                    <label>Single Family Production Builder</label>
+                </value>
+                <value>
+                    <fullName>Custom Builder</fullName>
+                    <default>false</default>
+                    <label>Custom Builder</label>
+                </value>
+                <value>
+                    <fullName>Multi-Family Residential Developer</fullName>
+                    <default>false</default>
+                    <label>Multi-Family Residential Developer</label>
+                </value>
+                <value>
+                    <fullName>Apartment Leasing Company</fullName>
+                    <default>false</default>
+                    <label>Apartment Leasing Company</label>
+                </value>
+                <value>
+                    <fullName>Vacation Residential Developer</fullName>
+                    <default>false</default>
+                    <label>Vacation Residential Developer</label>
+                </value>
+                <value>
+                    <fullName>Active Adult Community Developer</fullName>
+                    <default>false</default>
+                    <label>Active Adult Community Developer</label>
+                </value>
+                <value>
+                    <fullName>Student Housing Developer</fullName>
+                    <default>false</default>
+                    <label>Student Housing Developer</label>
+                </value>
+                <value>
+                    <fullName>**Types below are working directly with homeowner**</fullName>
+                    <default>false</default>
+                    <label>**Types below are working directly with homeowner**</label>
+                </value>
+                <value>
+                    <fullName>Residential Interior Designer</fullName>
+                    <default>false</default>
+                    <label>Residential Interior Designer</label>
+                </value>
+                <value>
+                    <fullName>Residential Home Stager</fullName>
+                    <default>false</default>
+                    <label>Residential Home Stager</label>
+                </value>
+                <value>
+                    <fullName>Residential General Contractor</fullName>
+                    <default>false</default>
+                    <label>Residential General Contractor</label>
+                </value>
+                <value>
+                    <fullName>Residential Architect</fullName>
+                    <default>false</default>
+                    <label>Residential Architect</label>
+                </value>
+                <value>
+                    <fullName>Retailer</fullName>
+                    <default>false</default>
+                    <label>Retailer</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Hospitality</controllingFieldValue>
+                <valueName>Hospitality Architecture Firm</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Hospitality</controllingFieldValue>
+                <valueName>Hospitality Design Firm</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Hospitality</controllingFieldValue>
+                <controllingFieldValue>Commercial</controllingFieldValue>
+                <controllingFieldValue>Residential</controllingFieldValue>
+                <valueName>Landscape Design Firm</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Hospitality</controllingFieldValue>
+                <controllingFieldValue>Commercial</controllingFieldValue>
+                <controllingFieldValue>Residential</controllingFieldValue>
+                <valueName>General Contractor</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Hospitality</controllingFieldValue>
+                <controllingFieldValue>Commercial</controllingFieldValue>
+                <controllingFieldValue>Residential</controllingFieldValue>
+                <valueName>Lighting Product Installer/Contractor</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Hospitality</controllingFieldValue>
+                <controllingFieldValue>Commercial</controllingFieldValue>
+                <controllingFieldValue>Residential</controllingFieldValue>
+                <valueName>Plumbing Product Installer/Contractor</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Hospitality</controllingFieldValue>
+                <controllingFieldValue>Commercial</controllingFieldValue>
+                <controllingFieldValue>Residential</controllingFieldValue>
+                <valueName>Cabinet Product Installer/Contractor</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Hospitality</controllingFieldValue>
+                <controllingFieldValue>Commercial</controllingFieldValue>
+                <valueName>Purchasing Firm</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Hospitality</controllingFieldValue>
+                <valueName>Country Club Owner</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Hospitality</controllingFieldValue>
+                <valueName>Independent Restaurant Owner</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Hospitality</controllingFieldValue>
+                <valueName>Luxury Boutique Hotel/Group</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Hospitality</controllingFieldValue>
+                <valueName>Luxury Brand Hotel/Group</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Hospitality</controllingFieldValue>
+                <valueName>Luxury Casino/Group</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Hospitality</controllingFieldValue>
+                <valueName>Luxury Hotel Owner/Mgmt Group</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Hospitality</controllingFieldValue>
+                <valueName>Luxury Independent Hotel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Hospitality</controllingFieldValue>
+                <valueName>Non-Luxury Boutique Hotel/Group</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Hospitality</controllingFieldValue>
+                <valueName>Non-Luxury Brand Hotel/Group</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Hospitality</controllingFieldValue>
+                <valueName>Non-Luxury Casino/Group</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Hospitality</controllingFieldValue>
+                <valueName>Non-Luxury Hotel Owner/Mgmt Group</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Hospitality</controllingFieldValue>
+                <valueName>Non-Luxury Independent Hotel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Hospitality</controllingFieldValue>
+                <valueName>Resort Hotel Owner</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Hospitality</controllingFieldValue>
+                <valueName>Restaurant/Bar Chain Owner</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Hospitality</controllingFieldValue>
+                <valueName>Spa Owner</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Hospitality</controllingFieldValue>
+                <valueName>Winery Owner</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Commercial</controllingFieldValue>
+                <valueName>Commercial Architecture Firm</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Commercial</controllingFieldValue>
+                <valueName>Commercial Design Firm</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Commercial</controllingFieldValue>
+                <valueName>Furniture Dealer</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Commercial</controllingFieldValue>
+                <valueName>Commercial Developer</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Commercial</controllingFieldValue>
+                <valueName>Commercial Office Owner</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Commercial</controllingFieldValue>
+                <valueName>Shared Office Space Provider</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Commercial</controllingFieldValue>
+                <valueName>Furniture Rental Company</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Commercial</controllingFieldValue>
+                <valueName>Sporting Stadium</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Commercial</controllingFieldValue>
+                <valueName>University</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Commercial</controllingFieldValue>
+                <valueName>K-12 School</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Commercial</controllingFieldValue>
+                <valueName>Fraternity/Sorority</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Commercial</controllingFieldValue>
+                <valueName>City Government Department</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Commercial</controllingFieldValue>
+                <valueName>State Government Department</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Commercial</controllingFieldValue>
+                <valueName>Federal Government Department</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Commercial</controllingFieldValue>
+                <valueName>Assisted Living Facility</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Commercial</controllingFieldValue>
+                <valueName>Hospital</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Commercial</controllingFieldValue>
+                <valueName>Retailer</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Residential</controllingFieldValue>
+                <valueName>Residential Architecture Firm</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Residential</controllingFieldValue>
+                <valueName>Residential Interior Design Firm (B2B)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Residential</controllingFieldValue>
+                <valueName>Model Home Stager</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Residential</controllingFieldValue>
+                <valueName>Single Family Production Builder</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Residential</controllingFieldValue>
+                <valueName>Custom Builder</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Residential</controllingFieldValue>
+                <valueName>Multi-Family Residential Developer</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Residential</controllingFieldValue>
+                <valueName>Apartment Leasing Company</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Residential</controllingFieldValue>
+                <valueName>Vacation Residential Developer</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Residential</controllingFieldValue>
+                <valueName>Active Adult Community Developer</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Residential</controllingFieldValue>
+                <valueName>Student Housing Developer</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Residential</controllingFieldValue>
+                <valueName>**Types below are working directly with homeowner**</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Residential</controllingFieldValue>
+                <valueName>Residential Interior Designer</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Residential</controllingFieldValue>
+                <valueName>Residential Home Stager</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Residential</controllingFieldValue>
+                <valueName>Residential General Contractor</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Residential</controllingFieldValue>
+                <valueName>Residential Architect</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Store_Number__c</fullName>
+        <description>The number of the store from which the Lead was submitted</description>
+        <externalId>false</externalId>
+        <label>Store Number</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Title</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Title_Additional1__c</fullName>
+        <externalId>false</externalId>
+        <label>Title</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Title_Additional2__c</fullName>
+        <externalId>false</externalId>
+        <label>Title</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Trade_Verified__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Trade Verified</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Web_Source__c</fullName>
+        <externalId>false</externalId>
+        <label>Web Source</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Online Application</fullName>
+                    <default>false</default>
+                    <label>Online Application</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Website</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>cirrusadv__Created_by_Cirrus_Insight__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates that this record was created by Cirrus Insight. This checkbox does not have to be included on the page layout, except with Contact Manager, Group, and Professional Edition organizations.</description>
+        <externalId>false</externalId>
+        <label>Created by Cirrus Insight</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rrpu__Alert_Message__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is installed by Riptide Pop-up Alerts and is used in conjunction with the Pop-up Alert S-Control.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If you enter text into this field the text will be displayed in a pop-up message whenever someone views this record.</inlineHelpText>
+        <label>Alert Message</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <listViews>
+        <fullName>AllOpenLeads</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>LEAD.COMPANY</columns>
+        <columns>LEAD.STATE</columns>
+        <columns>LEAD.PHONE</columns>
+        <columns>LEAD.EMAIL</columns>
+        <columns>LEAD.STATUS</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>LEAD.CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>LEAD.STATUS</field>
+            <operation>notEqual</operation>
+            <value>Qualified</value>
+        </filters>
+        <label>All Open Leads</label>
+    </listViews>
+    <listViews>
+        <fullName>CSC_Business_Administrators_Lead</fullName>
+        <filterScope>Queue</filterScope>
+        <label>CSC Business Administrators</label>
+        <queue>CSC_Business_Administrators</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Online_Applicaton_Leads</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>LEAD.COMPANY</columns>
+        <columns>LEAD.STATE</columns>
+        <columns>LEAD.EMAIL</columns>
+        <columns>LEAD.STATUS</columns>
+        <columns>LEAD.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>LEAD.UNREAD</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Web_Source__c</field>
+            <operation>equals</operation>
+            <value>Online Application</value>
+        </filters>
+        <filters>
+            <field>LEAD.STATUS</field>
+            <operation>equals</operation>
+            <value>Open</value>
+        </filters>
+        <label>Online Applicaton Leads</label>
+    </listViews>
+    <listViews>
+        <fullName>Today_s_Leads</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>LEAD.COMPANY</columns>
+        <columns>LEAD.STATUS</columns>
+        <columns>LEAD.LEAD_SOURCE</columns>
+        <columns>Web_Source__c</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>LEAD.CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <label>Today&apos;s Leads</label>
+    </listViews>
+    <listViews>
+        <fullName>TodaysLeads</fullName>
+        <columns>Sales_Lead__c</columns>
+        <columns>LEAD.CREATED_DATE</columns>
+        <columns>FULL_NAME</columns>
+        <columns>LEAD.COMPANY</columns>
+        <columns>LEAD.INDUSTRY</columns>
+        <columns>Segment__c</columns>
+        <columns>LEAD.URL</columns>
+        <columns>LEAD.STATE</columns>
+        <columns>LEAD.COUNTRY</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.FIRST_NAME</field>
+            <operation>contains</operation>
+            <value>Olivia,Trish</value>
+        </filters>
+        <filters>
+            <field>Web_Source__c</field>
+            <operation>equals</operation>
+            <value>Online Application</value>
+        </filters>
+        <filters>
+            <field>LEAD.STATUS</field>
+            <operation>equals</operation>
+            <value>Open</value>
+        </filters>
+        <label>Online Contract Leads</label>
+    </listViews>
+    <searchLayouts>
+        <customTabListAdditionalFields>FULL_NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>LEAD.COMPANY</customTabListAdditionalFields>
+        <customTabListAdditionalFields>LEAD.PHONE</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>FULL_NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>LEAD.COMPANY</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>FULL_NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>LEAD.COMPANY</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Web_Source__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>LEAD.LEAD_SOURCE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>LEAD.STATUS</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.ALIAS</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>FULL_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Application_Number__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LEAD.COMPANY</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LEAD.STATUS</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LEAD.LEAD_SOURCE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Web_Source__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWriteTransfer</sharingModel>
+    <validationRules>
+        <fullName>Country_Format_Correction</fullName>
+        <active>false</active>
+        <errorConditionFormula>!$User.Single_View_of_Customer_Process_User__c &amp;&amp; 
+(Country = &quot;USA&quot; ||
+Country = &quot;U.S.A.&quot; ||
+Country = &quot;United States&quot; ||
+Country = &quot;Canada&quot; ||
+Country = &quot;Can&quot;)</errorConditionFormula>
+        <errorDisplayField>Country</errorDisplayField>
+        <errorMessage>Please enter the &quot;Country&quot; information for this company&apos;s address exactly as follows: - For United States, enter &quot;US&quot; - For Canada, enter &quot;CA&quot;</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Invalid_Picklist_Value</fullName>
+        <active>true</active>
+        <description>do not allow user to choose: **Types below are working directly with homeowner**</description>
+        <errorConditionFormula>ISPICKVAL(Segment__c, &quot;**Types below are working directly with homeowner**&quot;)</errorConditionFormula>
+        <errorDisplayField>Segment__c</errorDisplayField>
+        <errorMessage>**Types below are working directly with homeowner** is not a valid selection.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>APXTConga4__Conga_Composer_OAuth</fullName>
+        <availability>online</availability>
+        <description>*** DO NOT USE THIS BUTTON ON A PAGE LAYOUT *** 
+
+OAuth buttons require additional setup. Please see the Composer Installation Guide for more details.
+
+COPY THE URL FROM THIS BUTTON and paste it into your own custom button or link. Then add optional parameters to finely tune the button&apos;s behavior. See the Composer Configuration Guide for details.</description>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>660</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Conga Composer (OAuth)</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/apex/APXTConga4__Conga_Composer
+?id={!Lead.Id}</url>
+        <width>900</width>
+    </webLinks>
+    <webLinks>
+        <fullName>APXTConga4__Conga_Mail_Merge</fullName>
+        <availability>online</availability>
+        <description>*** DO NOT USE THIS BUTTON ON A PAGE LAYOUT *** 
+
+COPY THE URL FROM THIS BUTTON and paste it into your own custom button or link. Then add optional parameters to finely tune the button&apos;s behavior. See the Conga Configuration Guide for details.</description>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>false</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>450</height>
+        <isResizable>false</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Conga Composer</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://composer.congamerge.com
+?sessionId={!API.Session_ID}
+&amp;serverUrl={!API.Partner_Server_URL_290}
+&amp;id={!Lead.Id}</url>
+        <width>625</width>
+    </webLinks>
+    <webLinks>
+        <fullName>Contract_Membership_Denied_Ltr</fullName>
+        <availability>online</availability>
+        <description>Sent to Contract Members when denied.</description>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Contract Membership Denied Ltr</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://composer.congamerge.com
+?sessionId={!API.Session_ID}
+&amp;serverUrl={!API.Partner_Server_URL_80}
+&amp;id={!Lead.Id}
+&amp;TemplateId= a0U500000079hL5
+&amp;DS4=1
+&amp;DS7=2
+&amp;LG1=Quote+Generated
+&amp;LG3=1
+&amp;LG4=1
+&amp;EmailTemplateId= 00X50000001uxl2
+&amp;DefaultPDF=1
+&amp;BML=File+will+be+attached+to+Lead+and+Email.
+&amp;OFN={!Lead.Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>INFA_AV__Verify_Address</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Verify Address</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>if((&apos;{!JSENCODE(Lead.Country) }&apos;==&apos;&apos; || &apos;{!JSENCODE(Lead.Country)}&apos;==null) &amp;&amp;(&apos;{!JSENCODE(Lead.Street)}&apos;==&apos;&apos; || &apos;{!JSENCODE(Lead.Street)}&apos;==null) &amp;&amp;(&apos;{!JSENCODE(Lead.City)}&apos;==&apos;&apos; || &apos;{!JSENCODE(Lead.City)}&apos;==null) &amp;&amp;(&apos;{!JSENCODE(Lead.State)}&apos;==&apos;&apos; || &apos;{!JSENCODE(Lead.State)}&apos;==null) &amp;&amp;(&apos;{!JSENCODE(Lead.PostalCode)}&apos;==&apos;&apos; || &apos;{!JSENCODE(Lead.PostalCode)}&apos;==null)) 
+{ 
+var url=&quot;/apex/INFA_AV__selectaddress?id=&quot;+&quot;{!Lead.Id}&quot;+&quot;&amp;type=&quot;+&quot;lead&quot;+&quot;&amp;mode=1&quot;; 
+var val = window.open(url,&apos;&apos;,&apos;width=850,height=490,left=250,top=100&apos;); 
+//window.top.location.reload(true); 
+} 
+else if(&apos;{!Lead.INFA_AV__Address_Validation_Status__c}&apos;!=&apos;Address Verified&apos; 
+) 
+{ 
+if((&apos;{!JSENCODE(Lead.Country)}&apos;==&apos;&apos; || &apos;{!JSENCODE(Lead.Country)}&apos;==null) &amp;&amp;((&apos;{!JSENCODE(Lead.Street)}&apos;!=&apos;&apos; &amp;&amp; &apos;{!JSENCODE(Lead.Street)}&apos;!=null) ||(&apos;{!JSENCODE(Lead.City)}&apos;!=&apos;&apos; &amp;&amp; &apos;{!JSENCODE(Lead.City)}&apos;!=null) ||(&apos;{!JSENCODE(Lead.State)}&apos;!=&apos;&apos; &amp;&amp; &apos;{!JSENCODE(Lead.State)}&apos;!=null) ||(&apos;{!JSENCODE(Lead.PostalCode)}&apos;!=&apos;&apos; &amp;&amp; &apos;{!JSENCODE(Lead.PostalCode)}&apos;!=null))) 
+{ 
+alert(&apos;Country is mandatory&apos;); 
+} 
+else 
+{ 
+var url=&quot;/apex/INFA_AV__verifyAddress?id=&quot;+&quot;{!Lead.Id}&quot;+&quot;&amp;type=&quot;+&quot;lead&quot;+&quot;&amp;mode=1&quot;; 
+var val = window.open(url,&apos;&apos;,&apos;width=850,height=490,left=250,top=100,scrollbars=yes&apos;); 
+//window.top.location.reload(true); 
+} 
+} 
+else if(&apos;{!Lead.INFA_AV__Address_Validation_Status__c}&apos;==&apos;Address Verified&apos;) 
+{ 
+alert(&apos;Address is already verified&apos;); 
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Re_subscribe_in_ExactTarget</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Re-subscribe in ExactTarget</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>http://members.exacttarget.com/Integration/SalesforceUI/SFResubscribe.aspx?subtype=Lead&amp;sfid={!Lead.Id}&amp;sessid={!API.Session_ID}&amp;sessurl={!API.Partner_Server_URL_60}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>SendExactTargetEmail</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Send ExactTarget Email</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>http://members.exacttarget.com/Integration/SalesforceUI/EmailSend.aspx?sendtype=Lead&amp;sfid={!Lead_ID}&amp;sessid={!API_Session_ID}&amp;sessurl={!API_Partner_Server_URL_60}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>financialprofile</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>true</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>true</hasToolbar>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>financial profile</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>true</showsLocation>
+        <showsStatus>true</showsStatus>
+        <url>http://hoovers.com/free/search/simple/xmillion/index.xhtml?query_string={!Account_Name}&amp;which=company&amp;page=1</url>
+    </webLinks>
+    <webLinks>
+        <fullName>map</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>true</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>true</hasToolbar>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>map</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>true</showsLocation>
+        <showsStatus>true</showsStatus>
+        <url>http://maps.yahoo.com/py/maps.py?cn={!Lead_Country}&amp;csz={!Lead_City}+{!Lead_State}+{!Lead_PostalCode}+&amp;addr={!Lead_Address}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>news</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>true</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>true</hasToolbar>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>news</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>true</showsLocation>
+        <showsStatus>true</showsStatus>
+        <url>http://news.altavista.com/search?nc=0&amp;q={!Lead_Company}</url>
+    </webLinks>
+</CustomObject>

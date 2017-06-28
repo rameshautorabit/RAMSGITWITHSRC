@@ -1,0 +1,1400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Add</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Actual_Product_Name__c</fullName>
+        <description>to house the text product name for use in quotes</description>
+        <externalId>false</externalId>
+        <label>Actual Product Name</label>
+        <length>200</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Additional_Measurements__c</fullName>
+        <externalId>false</externalId>
+        <label>Additional Measurements</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Average_Weighted_Cost__c</fullName>
+        <description>ipim field map: Direct Average Weighted Cost</description>
+        <externalId>false</externalId>
+        <inlineHelpText>ipim field map: Direct Average Weighted Cost</inlineHelpText>
+        <label>Average Weighted Cost</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BOM_Component_Qty__c</fullName>
+        <description>ipim field map: Component Qty, where indicating # of components skus associated with this header sku, not the # of total pieces. No systemic flag for skus that are components at this time.  032111LALO</description>
+        <externalId>false</externalId>
+        <label>BOM Component Qty</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BOM_Sku__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>ipim field map: Kit Type S For header item, where S = BOM, checkbox is TRUE/checked. 032111LALO</description>
+        <externalId>false</externalId>
+        <label>BOM Sku</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>B_C_Product__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>B&amp;C Product</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CW_Color__c</fullName>
+        <description>ipim field map: Color Code. 032111LALO</description>
+        <externalId>false</externalId>
+        <label>CW Color</label>
+        <length>128</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CW_External_Id__c</fullName>
+        <description>Commercial Ware External Id</description>
+        <externalId>true</externalId>
+        <label>CW External Id</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CW_Item_Description__c</fullName>
+        <description>upload from ipim. field map: CW Item Description. 121311LALO</description>
+        <externalId>false</externalId>
+        <label>CW Item Description</label>
+        <length>150</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CW_Item_Num__c</fullName>
+        <description>ipim field map: Item Number, where 8 digits, no punctuation. 032111LALO</description>
+        <externalId>false</externalId>
+        <label>CW Item Num</label>
+        <length>64</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CW_Size__c</fullName>
+        <description>ipim field map: Size Code, where TR = Trade, for Trade Only Inventory (TOI). Note: Trade split w/ Contract in 2009.  032111LALO</description>
+        <externalId>false</externalId>
+        <label>CW Size</label>
+        <length>32</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Category_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Category Number</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Category__c</fullName>
+        <description>weekly IPIM map to PIM Division (column B). 011612LALO</description>
+        <externalId>false</externalId>
+        <label>Category</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Class_Code__c</fullName>
+        <description>Code for Class Description</description>
+        <externalId>false</externalId>
+        <label>Class Code</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Class_Formula__c</fullName>
+        <externalId>false</externalId>
+        <formula>Class_Code__c &amp; &quot; - &quot; &amp; Class__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Class</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Class__c</fullName>
+        <externalId>false</externalId>
+        <label>Class</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Collection__c</fullName>
+        <description>Weekly IPIM load, column BW. 011612LALO</description>
+        <externalId>false</externalId>
+        <label>Collection</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Color__c</fullName>
+        <description>If there is a color listed in Secondary Color, use that information, otherwise, use what is in the CW Color field.</description>
+        <externalId>false</externalId>
+        <formula>CASE( CW_Color__c , &quot;NOT APPLICABLE&quot;,  Secondary_Color__c ,  CW_Color__c )</formula>
+        <label>Color</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ContractOnlySKU__c</fullName>
+        <description>Product SKU unique to Contract Department</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Searchable Cross-reference field for corresponding retail product.</inlineHelpText>
+        <label>ContractOnlySKU</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_Cross_Reference_SKU__c</fullName>
+        <description>Retail SKU related to a Contract-only product.</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Searchable Cross-reference field for corresponding Contract-only product.</inlineHelpText>
+        <label>Core Cross-Reference SKU</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Country_of_Origin__c</fullName>
+        <description>ipim field map: Country of Origin.  032111LALO</description>
+        <externalId>false</externalId>
+        <label>Country of Origin</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cubic_Meters_CBM__c</fullName>
+        <description>Field to place under Sizing Information Section on Product Layout --&gt;Contract</description>
+        <externalId>false</externalId>
+        <formula>( ( Metric_Package_Length_cm__c  *  Metric_Package_Width_cm__c  *  Metric_Package_Height_cm__c )* 1) / 1000000</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Cubic Meters (CBM)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CurrencyIsoCode</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Custom_Item__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Custom Item</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DMMSSku__c</fullName>
+        <description>ipim field map: CWLINK, where field is concatenation of fields Item#,  Color Code, Size Code.  032111LALO</description>
+        <externalId>true</externalId>
+        <label>DMMSSku</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Department__c</fullName>
+        <externalId>false</externalId>
+        <label>Department</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Department_formula__c</fullName>
+        <externalId>false</externalId>
+        <formula>Dept_Code__c &amp; &quot; - &quot; &amp; Department__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Department</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Dept_Code__c</fullName>
+        <description>Code for Department Description</description>
+        <externalId>false</externalId>
+        <label>Dept Code</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Diff_between_Original_Current_Price__c</fullName>
+        <externalId>false</externalId>
+        <formula>Direct_Original_Price__c - Direct_Current_Price__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Diff between Original &amp; Current Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Direct_Current_Price__c</fullName>
+        <description>ipim field map: Direct Current Price 032110LALO</description>
+        <externalId>false</externalId>
+        <label>Direct Current Price</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Direct_First_Cost__c</fullName>
+        <externalId>false</externalId>
+        <label>Direct First Cost</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Direct_Landing_Factor__c</fullName>
+        <externalId>false</externalId>
+        <label>Direct Landing Factor</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Direct_Original_Price__c</fullName>
+        <description>ipim field map: Direct Original Price. 032111LALO</description>
+        <externalId>false</externalId>
+        <label>Direct Original Price</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Direct_Pricing_Status__c</fullName>
+        <description>ipim field map: Direct Pricing Status, where R=regular; M=permanent Markdown; T=Temporary Markdown.  032111LALO</description>
+        <externalId>false</externalId>
+        <inlineHelpText>R=regular; 
+M=permanent Markdown; 
+T=Temporary Markdown</inlineHelpText>
+        <label>Direct Pricing Status</label>
+        <length>4</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DisplayUrl</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Dropship__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Added per Trade Planning Manager to identify items set up to be dropshipped from vendor. 051809LALO.  ipim field map: SKU Drop Ship, where Y=True &amp; N=False. 032111LALO</description>
+        <externalId>false</externalId>
+        <label>SPO</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ECommerce_Display_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>ECommerce Display Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>ELC__c</fullName>
+        <description>Added per Trade Planning Manager to assist in calculating margin. 051809LALO.   ipim field map: Direct Landed Cost. 032111LALO</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Use Estimated Landed Cost (ELC)</inlineHelpText>
+        <label>ELC</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Ecommerce_Description__c</fullName>
+        <description>Description from Ecommerce site</description>
+        <externalId>false</externalId>
+        <label>Ecommerce Description</label>
+        <length>10000</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ExternalDataSourceId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ExternalId</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>FOB__c</fullName>
+        <description>ipim field map: Freight On Board. 032111LALO</description>
+        <externalId>false</externalId>
+        <label>FOB</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Family</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Fulfilling_Warehouse__c</fullName>
+        <description>ipim field map:  Fulfilling Warehouse, where F=Furniture &amp; S=Shelf Stock.  032111LALO,</description>
+        <externalId>false</externalId>
+        <label>Fulfilling Warehouse</label>
+        <length>4</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Harmonize_Code__c</fullName>
+        <description>For the purpose of completing Commercial Invoices. Added to ipim mapping 082611 LALO</description>
+        <externalId>false</externalId>
+        <label>Harmonize Code</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Inner_Pack__c</fullName>
+        <externalId>false</externalId>
+        <label>Inner Pack</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Inventory__c</fullName>
+        <description>Used to house JSON (denormalized) data from CW sent by Mule to break out into components displayed in a Visualforce Page section on the Product Layout. This field will be hidden except maybe for visibility for development puposes.</description>
+        <externalId>false</externalId>
+        <label>Inventory</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>IsActive</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Item_Class__c</fullName>
+        <externalId>false</externalId>
+        <label>Item Class</label>
+        <length>3</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MOQ__c</fullName>
+        <description>ipim field map: Min Vendor Order Qty. 032111LALO</description>
+        <externalId>false</externalId>
+        <label>MOQ</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Master_Pack__c</fullName>
+        <description>ipim field map: Direct Master Vendor Pack Qty.  032111LALO</description>
+        <externalId>false</externalId>
+        <label>Master Pack</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Member_Price__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(OR(Direct_Pricing_Status__c = &apos;M&apos;,Direct_Pricing_Status__c =&apos;T&apos;) , FLOOR(Direct_Current_Price__c *(0.8)), FLOOR(Direct_Original_Price__c * (0.75)))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Member Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Metric_Package_Height_cm__c</fullName>
+        <description>Field to place under Sizing Information Section on Product Layout --&gt;Contract</description>
+        <externalId>false</externalId>
+        <formula>Package_Height__c  * 2.54</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Metric Package Height (cm)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Metric_Package_Length_cm__c</fullName>
+        <description>Field to place under Sizing Information Section on Product Layout --&gt;Contract</description>
+        <externalId>false</externalId>
+        <formula>Package_Length__c  * 2.54</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Metric Package Length (cm)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Metric_Package_Weight_kg__c</fullName>
+        <description>Field to place under Sizing Information Section on Product Layout --&gt;Contract</description>
+        <externalId>false</externalId>
+        <formula>Package_Weight__c  * 0.453592</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Metric Package Weight (kg)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Metric_Package_Width_cm__c</fullName>
+        <description>Field to place under Sizing Information Section on Product Layout --&gt;Contract</description>
+        <externalId>false</externalId>
+        <formula>Package_Width__c  * 2.54</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Metric Package Width (cm)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Metric_Product_Height_cm__c</fullName>
+        <description>Field to place under Sizing Information Section on Product Layout --&gt;Contract</description>
+        <externalId>false</externalId>
+        <formula>Product_Height__c  * 2.54</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Metric Product Height (cm)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Metric_Product_Length_cm__c</fullName>
+        <description>Field to place under Sizing Information Section on Product Layout --&gt;Contract</description>
+        <externalId>false</externalId>
+        <formula>Product_Length__c  * 2.54</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Metric Product Length (cm)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Metric_Product_Weight_kg__c</fullName>
+        <description>Field to place under Sizing Information Section on Product Layout --&gt;Contract</description>
+        <externalId>false</externalId>
+        <formula>Product_Weight__c  * 0.453592</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Metric Product Weight (kg)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Metric_Product_Width_cm__c</fullName>
+        <description>Field to place under Sizing Information Section on Product Layout --&gt;Contract</description>
+        <externalId>false</externalId>
+        <formula>Product_Width__c  * 2.54</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Metric Product Width (cm)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Monogram_able__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Monogram-able</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Multi_Box_Formula__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(OR(ISBLANK( Multi_Box__c ), Multi_Box__c = &quot;NA&quot;), Inner_Pack__c , Multi_Box__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Multi-Box</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Multi_Box__c</fullName>
+        <externalId>false</externalId>
+        <label>Multi-Box</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <inlineHelpText>upload from web file: RH ACC CW SKU report.  field map: Display Name. 121311LALO</inlineHelpText>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>New_Product_URL_Text__c</fullName>
+        <externalId>false</externalId>
+        <formula>&quot;http://media.restorationhardware.com/is/image/rhis/&quot; &amp; ProductID__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>New Product URL Text (DEP)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>No_Gallery_Return__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked, means this product will not be included on the Return Receipt generated by an In-Gallery Return.</inlineHelpText>
+        <label>No Gallery Return</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PIM_Division_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>PIMDivisionCode</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PIM_Division__c</fullName>
+        <externalId>false</externalId>
+        <label>PIMDivisionName</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Package_Height__c</fullName>
+        <description>Added to ipim mapping 082611 LALO</description>
+        <externalId>false</externalId>
+        <label>Package Height</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Package_Length__c</fullName>
+        <description>Added to ipim mapping 082611 LALO</description>
+        <externalId>false</externalId>
+        <inlineHelpText>(may be referred to as depth)</inlineHelpText>
+        <label>Package Length</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Package_Weight__c</fullName>
+        <description>Added to ipim mapping 082611 LALO</description>
+        <externalId>false</externalId>
+        <label>Package Weight</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Package_Width__c</fullName>
+        <description>Added to ipim mapping 082611 LALO</description>
+        <externalId>false</externalId>
+        <label>Package Width</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ProductCode</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ProductID__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>From RH Web Operations - this ID determines the Image URL for the Product on RH Web properties.  This field is maintained via periodic administrator upload.</inlineHelpText>
+        <label>ProductID</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Height__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Height</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Image_Thumbnail__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(Product_Image_URL__c), IMAGE(&quot;http://media.restorationhardware.com/is/image/rhis/noimage?wid=500&amp;hei=500&amp;fmt=gif&amp;qlt=85,1&amp;op_sharpen=0&amp;quantize=adaptive,diffuse,255,&amp;resMode=bilin&amp;op_usm=0,0,0,0&amp;iccEmbed=1&quot; 
+,&quot;Product Image&quot;, 80, 80),IMAGE( Product_Image_URL__c ,&quot;Product Image&quot;, 80, 80))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product Image Thumbnail</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Image_URL_New__c</fullName>
+        <externalId>false</externalId>
+        <formula>/* Original Version of Formula*/ 
+/* IF(ISBLANK(ProductID__c),&quot;No Image Available&quot;,HYPERLINK(&quot;http://media.restorationhardware.com/is/image/rhis/&quot; &amp; ProductID__c,&quot;Click to View Image&quot;)) */ 
+
+/* DN 11DEC14 Updated version leverages updated ecommerce Web Service that returns image based on the SKU */ 
+IF( Category__c = &quot;BABY &amp; CHILD&quot;, 
+(IF(LEN(TRIM(Name)) &gt; 10, 
+HYPERLINK(&quot;http://www.rhbabyandchild.com/resto/imageForSku?skuId=&quot; &amp; LEFT(TRIM(Name),6) &amp; &quot;%20&quot; &amp; 
+MID(TRIM(Name), 7, 4) &amp; &quot;%20&quot; &amp; MID(TRIM(Name), 11, 4) ,&quot;Click to View Image&quot;), 
+HYPERLINK(&quot;http://www.rhbabyandchild.com/resto/imageForSku?skuId=&quot; &amp; LEFT(TRIM(Name),6) &amp; &quot;%20&quot; &amp; 
+MID(TRIM(Name), 7, 4) ,&quot;Click to View Image&quot;))), 
+
+HYPERLINK(&quot;http://www.restorationhardware.com/resto/imageForSku?skuId=&quot; &amp; 
+LEFT(TRIM(Name),8) &amp; &quot;%20&quot; &amp; MID(TRIM(Name), 9, 4) ,&quot;Click to View Image&quot;))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product Image URL (DEP)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Image_URL__c</fullName>
+        <description>the url where the image of the product resides</description>
+        <externalId>false</externalId>
+        <label>Product Image URL</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Product_Image__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(Product_Image_URL__c), IMAGE(&quot;http://media.restorationhardware.com/is/image/rhis/noimage?wid=500&amp;hei=500&amp;fmt=gif&amp;qlt=85,1&amp;op_sharpen=0&amp;quantize=adaptive,diffuse,255,&amp;resMode=bilin&amp;op_usm=0,0,0,0&amp;iccEmbed=1&quot;
+,&quot;Image Not Available&quot;, 461, 449),IMAGE( Product_Image_URL__c ,&quot;Image Not Available&quot;, 461, 449))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product Image</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Length__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Length</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Name_Plus_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Name &amp; &quot;&quot; &amp; Actual_Product_Name__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product Name/#</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Weight__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Weight</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Width__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Width</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Production_Lead_Time__c</fullName>
+        <description>ipim field map: Production Lead Time</description>
+        <externalId>false</externalId>
+        <label>Production Lead Time</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QuantityUnitOfMeasure</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SKU_Search__c</fullName>
+        <externalId>false</externalId>
+        <formula>Name &amp; ContractOnlySKU__c &amp; Core_Cross_Reference_SKU__c</formula>
+        <label>SKU Search</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SKU_Ship_Via__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Ship Via</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SKU_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>SKU Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Accommodation</fullName>
+                    <default>false</default>
+                    <label>Accommodation</label>
+                </value>
+                <value>
+                    <fullName>Accommodation Gift Card</fullName>
+                    <default>false</default>
+                    <label>Accommodation Gift Card</label>
+                </value>
+                <value>
+                    <fullName>Accommodation Gift Card Zero Dollar</fullName>
+                    <default>false</default>
+                    <label>Accommodation Gift Card Zero Dollar</label>
+                </value>
+                <value>
+                    <fullName>Accommodation Zero Dollar</fullName>
+                    <default>false</default>
+                    <label>Accommodation Zero Dollar</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SPO__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field is part of an integration, but should be deleted.</description>
+        <externalId>false</externalId>
+        <label>itemdropship</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>STSSku__c</fullName>
+        <description>ipim field map; RH Retail SKU. 032111LALO</description>
+        <externalId>false</externalId>
+        <label>STSSku</label>
+        <length>8</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Secondary_Color__c</fullName>
+        <externalId>false</externalId>
+        <label>Secondary Color</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Shipping_Lead_Time__c</fullName>
+        <description>ipim field map: Shipping Lead Time. 032111LALO</description>
+        <externalId>false</externalId>
+        <label>Shipping Lead Time</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Size__c</fullName>
+        <externalId>false</externalId>
+        <label>Size</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sku_Status__c</fullName>
+        <description>ipim field map: Sku Status, where A=Active, D=Discontinued, 
+N - Non-selling; P – Part ; Q –  Quality Hold;  S – Swatch.  032111LALO</description>
+        <externalId>false</externalId>
+        <label>Sku Status</label>
+        <length>4</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sold_Out_Control__c</fullName>
+        <description>ipim field map: Sold Out Control, where B= sell OH/OO; C=sell OH, don&apos;t sell what&apos;s on order.  032111LALO</description>
+        <externalId>false</externalId>
+        <label>Sold Out Control</label>
+        <length>4</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sub_Department_Formula__c</fullName>
+        <externalId>false</externalId>
+        <formula>Sub_Dept_Code__c &amp; &quot; - &quot; &amp; Sub_Department__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sub-Department</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sub_Department__c</fullName>
+        <externalId>false</externalId>
+        <label>Sub Department</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sub_Dept_Code__c</fullName>
+        <description>Code for Sub Department Description</description>
+        <externalId>false</externalId>
+        <label>Sub Dept Code</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Surcharge_Per_Item__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Includes add&apos;l calculated order fees such as for heavy/oversized items.  Typically this is $50-$100 per unit.</inlineHelpText>
+        <label>Surcharge Per Item</label>
+        <precision>7</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Tax_Attribute__c</fullName>
+        <externalId>false</externalId>
+        <label>Tax Attribute</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Template_Size__c</fullName>
+        <externalId>false</externalId>
+        <formula>if( 
+OR(Size__c = &quot;NA&quot;,Size__c=&quot;NOT APPLICABLE&quot;,Size__c=&quot;None&quot;), 
+&quot;&quot;, 
+Size__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Template Size</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Lead_Time__c</fullName>
+        <externalId>false</externalId>
+        <formula>Production_Lead_Time__c +  Shipping_Lead_Time__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Lead Time</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Quantity_On_Hand__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Quantity On Hand</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UPC__c</fullName>
+        <externalId>false</externalId>
+        <label>UPC</label>
+        <length>12</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Vendor_Name__c</fullName>
+        <description>ipim field map: Vendor Name, where PRIMARY ONLY. If more than one vendor per product, there is no systematic way to indicate this. 032111LALO</description>
+        <externalId>false</externalId>
+        <label>Vendor Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Vendor_Number__c</fullName>
+        <description>ipim field map: Vendor Number (up to 9999), where PRIMARY ONLY. If more than one vendor per product, there is no systematic way to indicate this.. 032111LALO</description>
+        <externalId>false</externalId>
+        <label>Vendor Number</label>
+        <length>5</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Vendor_Style_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Vendor Style Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Web_Description__c</fullName>
+        <description>ipim field map: Web Description</description>
+        <externalId>false</externalId>
+        <label>Web Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <listViews>
+        <fullName>AllProducts</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All Products</label>
+    </listViews>
+    <listViews>
+        <fullName>Color_Not_Applicable</fullName>
+        <columns>PRODUCT2.NAME</columns>
+        <columns>Actual_Product_Name__c</columns>
+        <columns>CW_Color__c</columns>
+        <columns>Secondary_Color__c</columns>
+        <columns>CW_Item_Description__c</columns>
+        <columns>Direct_Current_Price__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CW_Color__c</field>
+            <operation>equals</operation>
+            <value>NOT APPLICABLE</value>
+        </filters>
+        <filters>
+            <field>PRODUCT2.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Color Not Applicable</label>
+    </listViews>
+    <listViews>
+        <fullName>Inactive_Products</fullName>
+        <columns>PRODUCT2.NAME</columns>
+        <columns>Actual_Product_Name__c</columns>
+        <columns>CW_Item_Description__c</columns>
+        <columns>CW_Color__c</columns>
+        <columns>Direct_Current_Price__c</columns>
+        <columns>Direct_Original_Price__c</columns>
+        <columns>PRODUCT2.ACTIVE</columns>
+        <columns>PRODUCT2.LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>PRODUCT2.ACTIVE</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Inactive Products</label>
+    </listViews>
+    <listViews>
+        <fullName>No_Category</fullName>
+        <columns>PRODUCT2.NAME</columns>
+        <columns>PRODUCT2.CUSTOMER_PRODUCT_ID</columns>
+        <columns>Category__c</columns>
+        <columns>PRODUCT2.DESCRIPTION</columns>
+        <columns>PRODUCT2.CREATED_DATE</columns>
+        <columns>PRODUCT2.LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Category__c</field>
+            <operation>equals</operation>
+        </filters>
+        <label>No Category</label>
+    </listViews>
+    <listViews>
+        <fullName>With_Category</fullName>
+        <columns>PRODUCT2.NAME</columns>
+        <columns>PRODUCT2.CUSTOMER_PRODUCT_ID</columns>
+        <columns>Category__c</columns>
+        <columns>PRODUCT2.DESCRIPTION</columns>
+        <columns>PRODUCT2.CREATED_DATE</columns>
+        <columns>PRODUCT2.LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Category__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>With Category</label>
+    </listViews>
+    <searchLayouts>
+        <customTabListAdditionalFields>PRODUCT2.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</customTabListAdditionalFields>
+        <customTabListAdditionalFields>PRODUCT2.DESCRIPTION</customTabListAdditionalFields>
+        <customTabListAdditionalFields>PRODUCT2.FAMILY</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Direct_Current_Price__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Web_Description__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>PRODUCT2.ACTIVE</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>PRODUCT2.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PRODUCT2.DESCRIPTION</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PRODUCT2.FAMILY</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Direct_Current_Price__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Web_Description__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PRODUCT2.ACTIVE</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PRODUCT2.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PRODUCT2.DESCRIPTION</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PRODUCT2.FAMILY</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Direct_Current_Price__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Web_Description__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PRODUCT2.ACTIVE</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>PRODUCT2.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>STSSku__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Direct_Current_Price__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ECommerce_Display_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CW_Item_Description__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PRODUCT2.ACTIVE</searchResultsAdditionalFields>
+    </searchLayouts>
+    <validationRules>
+        <fullName>CSC_No_Change</fullName>
+        <active>true</active>
+        <description>In order to search for and view inactive Product records, profiles must have edit permission on the Product object.  This validation rule prevents Product record edit for certain profiles.</description>
+        <errorConditionFormula>AND(
+  NOT(ISNEW()),
+  NOT($Profile.Name  = &quot;Business Administrator&quot;),
+  NOT($Profile.Name  = &quot;System Administrator&quot;),
+  NOT($Profile.Name = &quot;API Only&quot;)
+)</errorConditionFormula>
+        <errorMessage>Insufficient privileges.  You do not have the necessary privileges for the action you are attempting.  Please contact your system administrator if you need to perform this action.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Generate_Spec_Sheet_Primary_7_Fields_Manual_Fields</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Generate Spec Sheet (Primary 7 Fields + Manual Fields)</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://composer.congamerge.com/
+?sessionId={!API.Session_ID}
+&amp;serverUrl={!API.Partner_Server_URL_80}
+&amp;id={!Product2.Id}
+&amp;TemplateId=a0U50000005esEm
+&amp;DS4=1
+&amp;DS7=2
+&amp;LG1=Product+Specification+Sheet
+&amp;LG3=1
+&amp;LG4=1
+&amp;EmailTemplateId=00X50000001DlVs
+&amp;EmailRelatedToId={!Product2.Id}
+&amp;DefaultPDF=0
+&amp;BML=File+will+be+attached+to+Product+Record+and+Email.
+&amp;OFN={!Product2.Actual_Product_Name__c}+Specification Sheet</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Generate_Spec_Sheet_Primary_7_Fields_Only</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Generate Spec Sheet (Primary 7 Fields Only)</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://composer.congamerge.com/
+?sessionId={!API.Session_ID}
+&amp;serverUrl={!API.Partner_Server_URL_80}
+&amp;id={!Product2.Id}
+&amp;TemplateId=a0U50000005dlnO
+&amp;DS4=1
+&amp;DS7=2
+&amp;LG1=Product+Specification+Sheet
+&amp;LG3=1
+&amp;LG4=1
+&amp;EmailTemplateId=00X50000001DlVs
+&amp;EmailRelatedToId={!Product2.Id}
+&amp;DefaultPDF=0
+&amp;BML=File+will+be+attached+to+Product+Record+and+Email.
+&amp;OFN={!Product2.Actual_Product_Name__c}+Specification Sheet</url>
+    </webLinks>
+</CustomObject>

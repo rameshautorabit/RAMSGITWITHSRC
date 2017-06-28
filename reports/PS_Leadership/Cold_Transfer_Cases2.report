@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>Pie</chartType>
+        <enableHoverLabels>true</enableHoverLabels>
+        <expandOthers>false</expandOthers>
+        <groupingColumn>Product2.Cases__r$RecordType</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Product2.Cases__r$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>Product2.Cases__r.Case_Line_Items__r$Name</field>
+    </columns>
+    <columns>
+        <field>Product2$Name</field>
+    </columns>
+    <columns>
+        <field>Product2.Cases__r$LastModifiedDate</field>
+    </columns>
+    <columns>
+        <field>Product2.Cases__r$LastModifiedBy</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Cases that are in In Progress and owned by Product Specialist Queue that were not transferred by the PS Team, Merchants or DCs</description>
+    <filter>
+        <criteriaItems>
+            <column>Product2.Cases__r$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.Product_Information,Case.Replacement_Parts</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Product2.Cases__r$IsClosed</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Product2.Cases__r$Status</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>In Progress,Re-open</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Product2.Cases__r$LastModifiedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Vitalina Parshutkin,Adena Williamson,Lysandra Bailen,Katie Dutra,Kenny Walter,Diana Kwan,Taylor Wiese,Burree Cowherd,Lexi Dingman,Hilary Hall,Cori Lewis,Christopher Woo,America Gutierrez,Sorcha McGrillen,Alanna Gandelman,Samantha Armann,Teal Johnson,Sarah Knowles,Claire Palmer,Chandler Chase,Meredith Miller,Claire Lassetter,Elizabeth Durkin,Kesha Wheldon,Cleveland Wise,Christina Bird,Donna Lamon,Michael Pearson,David Valverde,Luis Anaya,Traci Hughes,Matt Machabee,Ted Valdez</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Product2.Cases__r$Owner</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Product Specialist Queue</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Product2$LastModifiedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Filomena Anderson,Jeff Boileau,Sharayah Cruz,Stephanie Delgado,Diana Dittus,Shiloh Dutra,Robert Galbadores,Jackie Gilliard,Elisa Huggins,Timothy Hughes,Stephanie Jackson,Virginia Jackson,Liza Lopez,Sonya McIntyre,Liliana Parreiras,Sok Heng Proeng,Brianna Shaw,Darin Smith,Sherrie Soeun,Robin Swanson,Michael Torres,Robert Van Tuinen,Rene Worden,Ashly Gonsalez,Vallie Foreman,Alex Whitt,Jhenya Agapova</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Product2.Cases__r$Action__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>CW Data Entry Needed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Product2.Cases__r$Case_Last_Modified_Role__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>CSC Product Specialist Advocate,CSC Product Specialist Lead</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Product2.Cases__r$RecordType</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Cold Transfer Cases</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Product_with_Case_with_Case_Line_Item_with_RP_Data__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Product2$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Ship To</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Ship Tos</value>
+    </caseValues>
+    <fields>
+        <label><!-- Accommodation Amount --></label>
+        <name>Accommodation_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Ship To --></label>
+        <name>Account_Ship_To__c</name>
+        <relationshipLabel><!-- Account Ship Tos --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account Sold To --></label>
+        <name>Account_Sold_To__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Ship Tos --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Charge --></label>
+        <name>Additional_Charge_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Charge Code --></label>
+        <name>Additional_Charge_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Charge Credit Code --></label>
+        <name>Additional_Charge_Credit_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Charge Credit Description --></label>
+        <name>Additional_Charge_Credit_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Charge Credited --></label>
+        <name>Additional_Charge_Credited_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Charge Credited --></label>
+        <name>Additional_Charge_Credited__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Charge Description --></label>
+        <name>Additional_Charge_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Charge --></label>
+        <name>Additional_Charge__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Freight Code --></label>
+        <name>Additional_Freight_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Freight Description --></label>
+        <name>Additional_Freight_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Freight --></label>
+        <name>Additional_Freight__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Ship To --></label>
+        <name>Address_Ship_To__c</name>
+        <relationshipLabel><!-- Ship Tos --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- AutorabitExtId__c --></label>
+        <name>AutorabitExtId__c</name>
+    </fields>
+    <fields>
+        <label><!-- CW Customer Ship To --></label>
+        <name>CW_Customer_Ship_To__c</name>
+        <relationshipLabel><!-- Ship Tos (CW Customer Ship To) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- CW Customer Sold To --></label>
+        <name>CW_Customer_Sold_To__c</name>
+        <relationshipLabel><!-- Ship Tos (CW Customer Sold Tos) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- CW Upload Date/Time --></label>
+        <name>CW_Upload_DateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Ship To --></label>
+        <name>Contact_Ship_To__c</name>
+        <relationshipLabel><!-- Contact Ship Tos --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact Sold To --></label>
+        <name>Contact_Sold_To__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Address Ship To --></label>
+        <name>Customer_Address_Ship_To__c</name>
+        <relationshipLabel><!-- Ship Tos --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DA Ship To Update --></label>
+        <name>DA_Ship_To_Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- EXT OrderShipTo Number --></label>
+        <name>EXT_OrderShipTo_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Freight --></label>
+        <name>Freight__c</name>
+    </fields>
+    <fields>
+        <label><!-- Handling Charges --></label>
+        <name>Handling_Charges__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merchandise Subtotal --></label>
+        <name>Merchandise_Subtotal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name --></label>
+        <name>Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Company --></label>
+        <name>New_Company__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Address 1 --></label>
+        <name>New_Ship_to_Address_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Address 2 --></label>
+        <name>New_Ship_to_Address_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- New City --></label>
+        <name>New_Ship_to_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Country --></label>
+        <name>New_Ship_to_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Day Phone --></label>
+        <name>New_Ship_to_Day_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Email --></label>
+        <name>New_Ship_to_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- New First Name --></label>
+        <name>New_Ship_to_First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Last Name --></label>
+        <name>New_Ship_to_Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Night Phone --></label>
+        <name>New_Ship_to_Night_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- New State --></label>
+        <name>New_Ship_to_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Zip --></label>
+        <name>New_Ship_to_Zip__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Ship Tos --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Order Amount for Timeline --></label>
+        <name>Order_Amount_for_Timeline__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Closed --></label>
+        <name>Order_Closed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Date --></label>
+        <name>Order_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Description --></label>
+        <name>Order_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Number and Amount --></label>
+        <name>Order_Number_and_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Open --></label>
+        <name>Order_Open__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Status Other --></label>
+        <name>Order_Status_Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Status --></label>
+        <name>Order_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order --></label>
+        <name>Order__c</name>
+        <relationshipLabel><!-- Ship Tos --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Order Number --></label>
+        <name>RH_Order_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Contact Address --></label>
+        <name>Ship_To_Contact_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address 1 --></label>
+        <name>Ship_to_Address_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address 2 --></label>
+        <name>Ship_to_Address_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address --></label>
+        <name>Ship_to_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>Ship_to_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship to Company --></label>
+        <name>Ship_to_Company__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country Code --></label>
+        <name>Ship_to_Country_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Ship_to_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Number --></label>
+        <name>Ship_to_Customer_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day Phone --></label>
+        <name>Ship_to_Day_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Ship_to_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Name --></label>
+        <name>Ship_to_First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Name --></label>
+        <name>Ship_to_Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Night Phone --></label>
+        <name>Ship_to_Night_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship to Number --></label>
+        <name>Ship_to_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>Ship_to_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zip --></label>
+        <name>Ship_to_Zip__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax --></label>
+        <name>Tax__c</name>
+    </fields>
+    <layouts>
+        <layout>DRS</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Ship To Information --></label>
+            <section>Ship To Information</section>
+        </sections>
+        <sections>
+            <label><!-- Ship To Total --></label>
+            <section>Ship To Total</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Ship To Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Information --></label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Ship To Information --></label>
+            <section>Ship To Information</section>
+        </sections>
+        <sections>
+            <label><!-- Ship To Total --></label>
+            <section>Ship To Total</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Ship To Number cannot be changed. --></errorMessage>
+        <name>Cannot_Change_Ship_To_Name</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- New_Stewardship_Review_Request --></label>
+        <name>New_Stewardship_Review_Request</name>
+    </webLinks>
+</CustomObjectTranslation>

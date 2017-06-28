@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>38.0</apiVersion>
+    <available>true</available>
+    <description>For expiring CCs, Renewal Notices, and past expiration messaging</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Membership Reminder</name>
+    <style>none</style>
+    <type>visualforce</type>
+</EmailTemplate>

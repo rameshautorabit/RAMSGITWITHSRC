@@ -1,0 +1,2029 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Issue</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Issues</value>
+    </caseValues>
+    <fields>
+        <label><!-- Action Taken --></label>
+        <name>Action_Taken__c</name>
+        <picklistValues>
+            <masterLabel>Air Ship Merchandise</masterLabel>
+            <translation><!-- Air Ship Merchandise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bi-Coastal Transfer</masterLabel>
+            <translation><!-- Bi-Coastal Transfer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancel w/Re-selection</masterLabel>
+            <translation><!-- Cancel w/Re-selection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancel w/o Re-selection</masterLabel>
+            <translation><!-- Cancel w/o Re-selection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NC Exchange</masterLabel>
+            <translation><!-- NC Exchange --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ship Directly to Market (circumvent DC)</masterLabel>
+            <translation><!-- Ship Directly to Market (circumvent DC) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sourced from Alternate Vendor</masterLabel>
+            <translation><!-- Sourced from Alternate Vendor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sourced from Future Dated Order</masterLabel>
+            <translation><!-- Sourced from Future Dated Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sourced from Gallery</masterLabel>
+            <translation><!-- Sourced from Gallery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendor Expedited Production</masterLabel>
+            <translation><!-- Vendor Expedited Production --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Activity Notes --></label>
+        <name>Activity_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Product Name --></label>
+        <name>Actual_Product_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- CW SKU ID --></label>
+        <name>CW_SKU_ID__c</name>
+        <relationshipLabel><!-- Issues --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Case Line Item --></label>
+        <name>Case_Line_Item__c</name>
+        <relationshipLabel><!-- Issues --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Issues --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Class --></label>
+        <name>Class__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collection --></label>
+        <name>Collection__c</name>
+    </fields>
+    <fields>
+        <label><!-- Color --></label>
+        <name>Color__c</name>
+    </fields>
+    <fields>
+        <label><!-- Compared To --></label>
+        <name>Compared_to__c</name>
+        <picklistValues>
+            <masterLabel>Another Product</masterLabel>
+            <translation><!-- Another Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CW</masterLabel>
+            <translation><!-- CW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DQ</masterLabel>
+            <translation><!-- DQ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Part of Set</masterLabel>
+            <translation><!-- Part of Set --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sourcebook</masterLabel>
+            <translation><!-- Sourcebook --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swatch</masterLabel>
+            <translation><!-- Swatch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web</masterLabel>
+            <translation><!-- Web --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contract Issue --></label>
+        <name>Contract_Issue__c</name>
+        <picklistValues>
+            <masterLabel>Billing Complexity</masterLabel>
+            <translation><!-- Billing Complexity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billing Error</masterLabel>
+            <translation><!-- Billing Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Damage</masterLabel>
+            <translation><!-- Damage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delay COI</masterLabel>
+            <translation><!-- Delay COI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delay COM/COL Order</masterLabel>
+            <translation><!-- Delay COM/COL Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delay Core Backorder</masterLabel>
+            <translation><!-- Delay Core Backorder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delay Custom Order</masterLabel>
+            <translation><!-- Delay Custom Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delay Drop Ship</masterLabel>
+            <translation><!-- Delay Drop Ship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delay SPO</masterLabel>
+            <translation><!-- Delay SPO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivery Damage</masterLabel>
+            <translation><!-- Delivery Damage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivery Documents</masterLabel>
+            <translation><!-- Delivery Documents --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivery Error</masterLabel>
+            <translation><!-- Delivery Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivery Provider Challange</masterLabel>
+            <translation><!-- Delivery Provider Challange --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivery Return Challenge</masterLabel>
+            <translation><!-- Delivery Return Challenge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Documents</masterLabel>
+            <translation><!-- Documents --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Information</masterLabel>
+            <translation><!-- Product Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Parts</masterLabel>
+            <translation><!-- Product Parts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product_Condition</masterLabel>
+            <translation><!-- Product_Condition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Return Provider</masterLabel>
+            <translation><!-- Return Provider --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service CSC Team Member</masterLabel>
+            <translation><!-- Service CSC Team Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Contract Team Member</masterLabel>
+            <translation><!-- Service Contract Team Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Gallery Team Member</masterLabel>
+            <translation><!-- Service Gallery Team Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service HDL Team Member</masterLabel>
+            <translation><!-- Service HDL Team Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Site Damage</masterLabel>
+            <translation><!-- Site Damage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrong Items</masterLabel>
+            <translation><!-- Wrong Items --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrong Quantity</masterLabel>
+            <translation><!-- Wrong Quantity --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Department --></label>
+        <name>Department__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dept Code --></label>
+        <name>Dept_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disposition --></label>
+        <name>Disposition__c</name>
+        <picklistValues>
+            <masterLabel>1st Quality</masterLabel>
+            <translation><!-- 1st Quality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2nd Quality</masterLabel>
+            <translation><!-- 2nd Quality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3rd Quality</masterLabel>
+            <translation><!-- 3rd Quality --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Expected Completion Date --></label>
+        <name>Expected_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hazardous Issue --></label>
+        <name>Hazardous_Issue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inventory --></label>
+        <name>Inventory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Issue Sharing Update --></label>
+        <name>Issue_Sharing_Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- Issue Type --></label>
+        <name>Issue_Type__c</name>
+        <picklistValues>
+            <masterLabel>Attitude</masterLabel>
+            <translation><!-- Attitude --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Balance Due</masterLabel>
+            <translation><!-- Balance Due --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CSC Service Issue</masterLabel>
+            <translation><!-- CSC Service Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Carton Damage</masterLabel>
+            <translation><!-- Carton Damage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Color/ Finish</masterLabel>
+            <translation><!-- Color/ Finish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Construction</masterLabel>
+            <translation><!-- Construction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contamination</masterLabel>
+            <translation><!-- Contamination --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Due</masterLabel>
+            <translation><!-- Credit Due --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Preference (Product As Expected)</masterLabel>
+            <translation><!-- Customer Preference (Product As Expected) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Specific Requirements</masterLabel>
+            <translation><!-- Customer Specific Requirements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Unavailable</masterLabel>
+            <translation><!-- Customer Unavailable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customs</masterLabel>
+            <translation><!-- Customs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Damage</masterLabel>
+            <translation><!-- Damage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Decline</masterLabel>
+            <translation><!-- Decline --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delayed</masterLabel>
+            <translation><!-- Delayed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivery Service Issue</masterLabel>
+            <translation><!-- Delivery Service Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Drayage</masterLabel>
+            <translation><!-- Drayage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fabric</masterLabel>
+            <translation><!-- Fabric --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fabrics/ Leather/ Fur</masterLabel>
+            <translation><!-- Fabrics/ Leather/ Fur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finish</masterLabel>
+            <translation><!-- Finish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Frame</masterLabel>
+            <translation><!-- Frame --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Function</masterLabel>
+            <translation><!-- Function --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gallery Service Issue</masterLabel>
+            <translation><!-- Gallery Service Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grouped/ Not</masterLabel>
+            <translation><!-- Grouped/ Not --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hardware</masterLabel>
+            <translation><!-- Hardware --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incorrect</masterLabel>
+            <translation><!-- Incorrect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoice Missing</masterLabel>
+            <translation><!-- Invoice Missing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lack of Knowledge</masterLabel>
+            <translation><!-- Lack of Knowledge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lack of Response</masterLabel>
+            <translation><!-- Lack of Response --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late Arrival</masterLabel>
+            <translation><!-- Late Arrival --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late/ Cx V Promise</masterLabel>
+            <translation><!-- Late/ Cx V Promise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Looks Cheap</masterLabel>
+            <translation><!-- Looks Cheap --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manufacturing Schedule Change</masterLabel>
+            <translation><!-- Manufacturing Schedule Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mis-Ship</masterLabel>
+            <translation><!-- Mis-Ship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing</masterLabel>
+            <translation><!-- Missing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing Parts</masterLabel>
+            <translation><!-- Missing Parts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monogramming</masterLabel>
+            <translation><!-- Monogramming --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Brand Appropriate</masterLabel>
+            <translation><!-- Not Brand Appropriate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order Issue</masterLabel>
+            <translation><!-- Order Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Raw Material Shortage</masterLabel>
+            <translation><!-- Other Raw Material Shortage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Packaging</masterLabel>
+            <translation><!-- Packaging --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Packing</masterLabel>
+            <translation><!-- Packing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Packing List Missing</masterLabel>
+            <translation><!-- Packing List Missing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Past Due</masterLabel>
+            <translation><!-- Past Due --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personalization</masterLabel>
+            <translation><!-- Personalization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poor Communication</masterLabel>
+            <translation><!-- Poor Communication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Possible Fire</masterLabel>
+            <translation><!-- Possible Fire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Damage</masterLabel>
+            <translation><!-- Product Damage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Doesn&apos;t Fit</masterLabel>
+            <translation><!-- Product Doesn&apos;t Fit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Not Ready for Pickup</masterLabel>
+            <translation><!-- Product Not Ready for Pickup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Not Received/ Delayed</masterLabel>
+            <translation><!-- Product Not Received/ Delayed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Proof of Delivery Missing</masterLabel>
+            <translation><!-- Proof of Delivery Missing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Provider Canceled</masterLabel>
+            <translation><!-- Provider Canceled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reconcile</masterLabel>
+            <translation><!-- Reconcile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Safety</masterLabel>
+            <translation><!-- Safety --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scheduling Challenge</masterLabel>
+            <translation><!-- Scheduling Challenge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scheduling_Challenge</masterLabel>
+            <translation><!-- Scheduling_Challenge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Short-Ship</masterLabel>
+            <translation><!-- Short-Ship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shortage</masterLabel>
+            <translation><!-- Shortage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surface</masterLabel>
+            <translation><!-- Surface --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>System Issue</masterLabel>
+            <translation><!-- System Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terms Management</masterLabel>
+            <translation><!-- Terms Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Too Many Handoffs</masterLabel>
+            <translation><!-- Too Many Handoffs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unacceptable Experience</masterLabel>
+            <translation><!-- Unacceptable Experience --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendor QA</masterLabel>
+            <translation><!-- Vendor QA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vessel Delay</masterLabel>
+            <translation><!-- Vessel Delay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrinkled</masterLabel>
+            <translation><!-- Wrinkled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrong Product</masterLabel>
+            <translation><!-- Wrong Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrong Quantity</masterLabel>
+            <translation><!-- Wrong Quantity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrong Side Marks</masterLabel>
+            <translation><!-- Wrong Side Marks --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Issue --></label>
+        <name>Issue__c</name>
+        <picklistValues>
+            <masterLabel>Alternate Delivery Provider</masterLabel>
+            <translation><!-- Alternate Delivery Provider --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assembled Incorrectly</masterLabel>
+            <translation><!-- Assembled Incorrectly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assembly - Components Misaligned/ Non-Functioning Hardware</masterLabel>
+            <translation><!-- Assembly - Components Misaligned/ Non-Functioning Hardware --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billing Issue</masterLabel>
+            <translation><!-- Billing Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blemishes</masterLabel>
+            <translation><!-- Blemishes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bowing/ Warping</masterLabel>
+            <translation><!-- Bowing/ Warping --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Broken Part</masterLabel>
+            <translation><!-- Broken Part --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bubbling/ Lifting</masterLabel>
+            <translation><!-- Bubbling/ Lifting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bugs/ Vermin</masterLabel>
+            <translation><!-- Bugs/ Vermin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Burning Smell</masterLabel>
+            <translation><!-- Burning Smell --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CSC Service Issue</masterLabel>
+            <translation><!-- CSC Service Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cannot Contact HDL</masterLabel>
+            <translation><!-- Cannot Contact HDL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Color Clash</masterLabel>
+            <translation><!-- Color Clash --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Color Slightly off</masterLabel>
+            <translation><!-- Color Slightly off --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cracks/ Splits</masterLabel>
+            <translation><!-- Cracks/ Splits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Creases</masterLabel>
+            <translation><!-- Creases --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Crushed Corner</masterLabel>
+            <translation><!-- Crushed Corner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Preference - Product As Expected</masterLabel>
+            <translation><!-- Customer Preference - Product As Expected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC</masterLabel>
+            <translation><!-- DC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivery Service Issue</masterLabel>
+            <translation><!-- Delivery Service Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dings/ Dents/ Gouges</masterLabel>
+            <translation><!-- Dings/ Dents/ Gouges --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dirt</masterLabel>
+            <translation><!-- Dirt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dirtied Home</masterLabel>
+            <translation><!-- Dirtied Home --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distressing</masterLabel>
+            <translation><!-- Distressing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Does Not Fit</masterLabel>
+            <translation><!-- Does Not Fit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Does Not Turn On</masterLabel>
+            <translation><!-- Does Not Turn On --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Doors Do Not Open or Close Properly</masterLabel>
+            <translation><!-- Doors Do Not Open or Close Properly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Drawers Do Not Open or Close Properly</masterLabel>
+            <translation><!-- Drawers Do Not Open or Close Properly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Duplicate Order</masterLabel>
+            <translation><!-- Duplicate Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Element Does Not Align</masterLabel>
+            <translation><!-- Element Does Not Align --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Excessive Wear</masterLabel>
+            <translation><!-- Excessive Wear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exploded</masterLabel>
+            <translation><!-- Exploded --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exposed Nail/ Screw</masterLabel>
+            <translation><!-- Exposed Nail/ Screw --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fabric/ Leather /Fur</masterLabel>
+            <translation><!-- Fabric/ Leather /Fur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fabric/ Leather Stretched Out</masterLabel>
+            <translation><!-- Fabric/ Leather Stretched Out --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fading</masterLabel>
+            <translation><!-- Fading --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Feathers Coming Out/ Leaking</masterLabel>
+            <translation><!-- Feathers Coming Out/ Leaking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Feces</masterLabel>
+            <translation><!-- Feces --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fire</masterLabel>
+            <translation><!-- Fire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fraying/ Snagging</masterLabel>
+            <translation><!-- Fraying/ Snagging --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gaps in Product</masterLabel>
+            <translation><!-- Gaps in Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HDL</masterLabel>
+            <translation><!-- HDL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Heat</masterLabel>
+            <translation><!-- Heat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Holes</masterLabel>
+            <translation><!-- Holes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incomplete Product delivered</masterLabel>
+            <translation><!-- Incomplete Product delivered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indentations</masterLabel>
+            <translation><!-- Indentations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Is Not Comfortable</masterLabel>
+            <translation><!-- Is Not Comfortable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Items Not Available</masterLabel>
+            <translation><!-- Items Not Available --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Knots</masterLabel>
+            <translation><!-- Knots --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leaks Water</masterLabel>
+            <translation><!-- Leaks Water --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost Item/ Never Arrived</masterLabel>
+            <translation><!-- Lost Item/ Never Arrived --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Melted</masterLabel>
+            <translation><!-- Melted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing Part - Arrived Missing</masterLabel>
+            <translation><!-- Missing Part - Arrived Missing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mold</masterLabel>
+            <translation><!-- Mold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nail Holes</masterLabel>
+            <translation><!-- Nail Holes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Follow-up</masterLabel>
+            <translation><!-- No Follow-up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Service Provided</masterLabel>
+            <translation><!-- No Service Provided --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Noisy</masterLabel>
+            <translation><!-- Noisy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Level</masterLabel>
+            <translation><!-- Not Level --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not assembled</masterLabel>
+            <translation><!-- Not assembled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Odor</masterLabel>
+            <translation><!-- Odor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ordered Multiple to Keep One</masterLabel>
+            <translation><!-- Ordered Multiple to Keep One --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Over</masterLabel>
+            <translation><!-- Over --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Packing_List_Missing</masterLabel>
+            <translation><!-- Packing_List_Missing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Part Came Off</masterLabel>
+            <translation><!-- Part Came Off --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Part Came Off - Broke Off After Delivery</masterLabel>
+            <translation><!-- Part Came Off - Broke Off After Delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parts That Should Move Don&apos;t</masterLabel>
+            <translation><!-- Parts That Should Move Don&apos;t --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Peeling/ Chipping</masterLabel>
+            <translation><!-- Peeling/ Chipping --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pilling</masterLabel>
+            <translation><!-- Pilling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Property Damage</masterLabel>
+            <translation><!-- Property Damage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Punctuality/ Time Scheduled</masterLabel>
+            <translation><!-- Punctuality/ Time Scheduled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rip/ Tear</masterLabel>
+            <translation><!-- Rip/ Tear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ripped</masterLabel>
+            <translation><!-- Ripped --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rude/ Bad Attitude</masterLabel>
+            <translation><!-- Rude/ Bad Attitude --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rusting/ Corrosion</masterLabel>
+            <translation><!-- Rusting/ Corrosion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sagging</masterLabel>
+            <translation><!-- Sagging --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scratches</masterLabel>
+            <translation><!-- Scratches --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seam Ripping</masterLabel>
+            <translation><!-- Seam Ripping --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seams Coming Apart</masterLabel>
+            <translation><!-- Seams Coming Apart --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sharp Edges/ Points</masterLabel>
+            <translation><!-- Sharp Edges/ Points --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shattered</masterLabel>
+            <translation><!-- Shattered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shedding</masterLabel>
+            <translation><!-- Shedding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shipped to Wrong Address</masterLabel>
+            <translation><!-- Shipped to Wrong Address --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shipping Overcharge</masterLabel>
+            <translation><!-- Shipping Overcharge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shock</masterLabel>
+            <translation><!-- Shock --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Singed/ Scorched</masterLabel>
+            <translation><!-- Singed/ Scorched --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Size Too Big</masterLabel>
+            <translation><!-- Size Too Big --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Size Too Small</masterLabel>
+            <translation><!-- Size Too Small --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sliced</masterLabel>
+            <translation><!-- Sliced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Smoke</masterLabel>
+            <translation><!-- Smoke --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sparks</masterLabel>
+            <translation><!-- Sparks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Splinters</masterLabel>
+            <translation><!-- Splinters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stained</masterLabel>
+            <translation><!-- Stained --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Still at Vendor</masterLabel>
+            <translation><!-- Still at Vendor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Structure Not Aligned/ Gaps</masterLabel>
+            <translation><!-- Structure Not Aligned/ Gaps --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Style Clash</masterLabel>
+            <translation><!-- Style Clash --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surface Too Rough</masterLabel>
+            <translation><!-- Surface Too Rough --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surface Too Smooth</masterLabel>
+            <translation><!-- Surface Too Smooth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surface Uneven</masterLabel>
+            <translation><!-- Surface Uneven --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tarnished</masterLabel>
+            <translation><!-- Tarnished --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tear</masterLabel>
+            <translation><!-- Tear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Theft</masterLabel>
+            <translation><!-- Theft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Too Big</masterLabel>
+            <translation><!-- Too Big --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Too Dark</masterLabel>
+            <translation><!-- Too Dark --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Too Flat</masterLabel>
+            <translation><!-- Too Flat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Too Light</masterLabel>
+            <translation><!-- Too Light --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Too Shiny</masterLabel>
+            <translation><!-- Too Shiny --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Too Small</masterLabel>
+            <translation><!-- Too Small --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UPS</masterLabel>
+            <translation><!-- UPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unable to deliver</masterLabel>
+            <translation><!-- Unable to deliver --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under</masterLabel>
+            <translation><!-- Under --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wait time too long</masterLabel>
+            <translation><!-- Wait time too long --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Water Stain</masterLabel>
+            <translation><!-- Water Stain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waterlogged</masterLabel>
+            <translation><!-- Waterlogged --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wobbly/ Unstable</masterLabel>
+            <translation><!-- Wobbly/ Unstable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrinkled</masterLabel>
+            <translation><!-- Wrinkled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrong Color</masterLabel>
+            <translation><!-- Wrong Color --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrong Design</masterLabel>
+            <translation><!-- Wrong Design --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrong Dimensions</masterLabel>
+            <translation><!-- Wrong Dimensions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrong Initials</masterLabel>
+            <translation><!-- Wrong Initials --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrong Item Delivered</masterLabel>
+            <translation><!-- Wrong Item Delivered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrong Item Ordered</masterLabel>
+            <translation><!-- Wrong Item Ordered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrong Placement</masterLabel>
+            <translation><!-- Wrong Placement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrong Quantity Delivered</masterLabel>
+            <translation><!-- Wrong Quantity Delivered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrong Quantity Ordered</masterLabel>
+            <translation><!-- Wrong Quantity Ordered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrong Shipping Method</masterLabel>
+            <translation><!-- Wrong Shipping Method --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrong Size</masterLabel>
+            <translation><!-- Wrong Size --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Occurred When --></label>
+        <name>Occurred_When__c</name>
+        <picklistValues>
+            <masterLabel>After Delivery</masterLabel>
+            <translation><!-- After Delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Assembly</masterLabel>
+            <translation><!-- Customer Assembly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>During Delivery</masterLabel>
+            <translation><!-- During Delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In DC</masterLabel>
+            <translation><!-- In DC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In HDL</masterLabel>
+            <translation><!-- In HDL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Order Date --></label>
+        <name>Order_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order --></label>
+        <name>Order__c</name>
+        <relationshipLabel><!-- Issues --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Issue Details --></label>
+        <name>Other_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Problem Notes --></label>
+        <name>Problem_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Problem --></label>
+        <name>Problem__c</name>
+        <picklistValues>
+            <masterLabel>B/O Delays</masterLabel>
+            <translation><!-- B/O Delays --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billing</masterLabel>
+            <translation><!-- Billing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivery Issues</masterLabel>
+            <translation><!-- Delivery Issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grouping/Ungrouping Issues</masterLabel>
+            <translation><!-- Grouping/Ungrouping Issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Item Sold Out</masterLabel>
+            <translation><!-- Item Sold Out --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing Items</masterLabel>
+            <translation><!-- Missing Items --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premature Delivery</masterLabel>
+            <translation><!-- Premature Delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quality Concern</masterLabel>
+            <translation><!-- Quality Concern --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPO Delays</masterLabel>
+            <translation><!-- SPO Delays --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>System Hold Error</masterLabel>
+            <translation><!-- System Hold Error --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product SKU --></label>
+        <name>Product_SKU__c</name>
+    </fields>
+    <fields>
+        <help><!-- How many components/ products are affected by this issue? --></help>
+        <label><!-- Quantity --></label>
+        <name>Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship Date --></label>
+        <name>Ship_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To 1 --></label>
+        <name>Ship_To_1__c</name>
+        <relationshipLabel><!-- Issues --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sold to City --></label>
+        <name>Sold_to_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold to State --></label>
+        <name>Sold_to_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed - No Issue Found</masterLabel>
+            <translation><!-- Closed - No Issue Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resolved - Action Taken</masterLabel>
+            <translation><!-- Resolved - Action Taken --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resolved - No Action Taken</masterLabel>
+            <translation><!-- Resolved - No Action Taken --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sub-Department --></label>
+        <name>Sub_Department__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub Issue --></label>
+        <name>Sub_Issue__c</name>
+        <picklistValues>
+            <masterLabel>Backorder</masterLabel>
+            <translation><!-- Backorder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billing confusing</masterLabel>
+            <translation><!-- Billing confusing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Carrier Mislabeled</masterLabel>
+            <translation><!-- Carrier Mislabeled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer provided wrong address</masterLabel>
+            <translation><!-- Customer provided wrong address --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Feel the Frame</masterLabel>
+            <translation><!-- Feel the Frame --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missed Window Early</masterLabel>
+            <translation><!-- Missed Window Early --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missed Window Late</masterLabel>
+            <translation><!-- Missed Window Late --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No-Show</masterLabel>
+            <translation><!-- No-Show --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Distressed Enough</masterLabel>
+            <translation><!-- Not Distressed Enough --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Overcharged</masterLabel>
+            <translation><!-- Overcharged --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Production Delay</masterLabel>
+            <translation><!-- Production Delay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RH Mislabeled</masterLabel>
+            <translation><!-- RH Mislabeled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stale Backorder</masterLabel>
+            <translation><!-- Stale Backorder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sticking</masterLabel>
+            <translation><!-- Sticking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Too Big</masterLabel>
+            <translation><!-- Too Big --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Too Deep</masterLabel>
+            <translation><!-- Too Deep --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Too Distressed</masterLabel>
+            <translation><!-- Too Distressed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Too Hard</masterLabel>
+            <translation><!-- Too Hard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Too Hard to Open</masterLabel>
+            <translation><!-- Too Hard to Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Too Rough</masterLabel>
+            <translation><!-- Too Rough --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Too Shallow</masterLabel>
+            <translation><!-- Too Shallow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Too Small</masterLabel>
+            <translation><!-- Too Small --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Won&apos;t Stay Closed</masterLabel>
+            <translation><!-- Won&apos;t Stay Closed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Time in Home (Days) --></label>
+        <name>Time_in_Home__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor Name --></label>
+        <name>Vendor_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor Number --></label>
+        <name>Vendor_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor Style Number --></label>
+        <name>Vendor_Style_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Web Description --></label>
+        <name>Web_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Type --></label>
+        <name>What_Product_Type_is_the_SKU__c</name>
+        <picklistValues>
+            <masterLabel>Bath Furniture</masterLabel>
+            <translation><!-- Bath Furniture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bath Water Supply</masterLabel>
+            <translation><!-- Bath Water Supply --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bed/ Crib/ Toddler Bed /Bunk Bed</masterLabel>
+            <translation><!-- Bed/ Crib/ Toddler Bed /Bunk Bed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Casegoods/ Shelving</masterLabel>
+            <translation><!-- Casegoods/ Shelving --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cushion/ Pillows</masterLabel>
+            <translation><!-- Cushion/ Pillows --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Décor - Wall Decor/ Frames/ Lit Decor/ Holiday</masterLabel>
+            <translation><!-- Décor - Wall Decor/ Frames/ Lit Decor/ Holiday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fire Pits/ Fire Bowls/ Heaters</masterLabel>
+            <translation><!-- Fire Pits/ Fire Bowls/ Heaters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hardware</masterLabel>
+            <translation><!-- Hardware --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jewelry</masterLabel>
+            <translation><!-- Jewelry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kitchenware/ Tableware</masterLabel>
+            <translation><!-- Kitchenware/ Tableware --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lighting</masterLabel>
+            <translation><!-- Lighting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mirrors</masterLabel>
+            <translation><!-- Mirrors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plumbing Fixtures/ Bath Water Supply</masterLabel>
+            <translation><!-- Plumbing Fixtures/ Bath Water Supply --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rugs</masterLabel>
+            <translation><!-- Rugs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seating</masterLabel>
+            <translation><!-- Seating --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sinks/ Basins</masterLabel>
+            <translation><!-- Sinks/ Basins --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tables/ Desks</masterLabel>
+            <translation><!-- Tables/ Desks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Textiles</masterLabel>
+            <translation><!-- Textiles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Umbrellas/ Shade</masterLabel>
+            <translation><!-- Umbrellas/ Shade --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Problem Location --></label>
+        <name>Where_is_the_Problem__c</name>
+        <picklistValues>
+            <masterLabel>Arm(s)</masterLabel>
+            <translation><!-- Arm(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Back</masterLabel>
+            <translation><!-- Back --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Backing</masterLabel>
+            <translation><!-- Backing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Base/ Pedestal</masterLabel>
+            <translation><!-- Base/ Pedestal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Binding</masterLabel>
+            <translation><!-- Binding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bottom</masterLabel>
+            <translation><!-- Bottom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bowl</masterLabel>
+            <translation><!-- Bowl --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bulb Holder</masterLabel>
+            <translation><!-- Bulb Holder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bulbs</masterLabel>
+            <translation><!-- Bulbs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Burner</masterLabel>
+            <translation><!-- Burner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cabinet Doors</masterLabel>
+            <translation><!-- Cabinet Doors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cabinet Drawers</masterLabel>
+            <translation><!-- Cabinet Drawers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canopy</masterLabel>
+            <translation><!-- Canopy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Casters/ Wheels</masterLabel>
+            <translation><!-- Casters/ Wheels --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chain</masterLabel>
+            <translation><!-- Chain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clasp</masterLabel>
+            <translation><!-- Clasp --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cord</masterLabel>
+            <translation><!-- Cord --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Crystals</masterLabel>
+            <translation><!-- Crystals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cushion</masterLabel>
+            <translation><!-- Cushion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Door(s)</masterLabel>
+            <translation><!-- Door(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Drain</masterLabel>
+            <translation><!-- Drain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Drawer Pulls</masterLabel>
+            <translation><!-- Drawer Pulls --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Drawer(s)</masterLabel>
+            <translation><!-- Drawer(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electrical - Bulb Holder</masterLabel>
+            <translation><!-- Electrical - Bulb Holder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electrical - Cords</masterLabel>
+            <translation><!-- Electrical - Cords --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electrical - Plug</masterLabel>
+            <translation><!-- Electrical - Plug --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electrical - Switch</masterLabel>
+            <translation><!-- Electrical - Switch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Embellishments/ Attachments</masterLabel>
+            <translation><!-- Embellishments/ Attachments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Faucet</masterLabel>
+            <translation><!-- Faucet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fill/ Foam/ Batting/ Feathers</masterLabel>
+            <translation><!-- Fill/ Foam/ Batting/ Feathers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finish</masterLabel>
+            <translation><!-- Finish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Footboard</masterLabel>
+            <translation><!-- Footboard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fork</masterLabel>
+            <translation><!-- Fork --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Frame</masterLabel>
+            <translation><!-- Frame --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gas Line</masterLabel>
+            <translation><!-- Gas Line --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Glass</masterLabel>
+            <translation><!-- Glass --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Glass/ Cup/ Mug</masterLabel>
+            <translation><!-- Glass/ Cup/ Mug --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Glides/ Levelers</masterLabel>
+            <translation><!-- Glides/ Levelers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Handheld Shower</masterLabel>
+            <translation><!-- Handheld Shower --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Handle/ Knob</masterLabel>
+            <translation><!-- Handle/ Knob --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hardware - Nuts/ Bolts/ Screws/ Hangers/ Anti-Tip</masterLabel>
+            <translation><!-- Hardware - Nuts/ Bolts/ Screws/ Hangers/ Anti-Tip --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Headboard</masterLabel>
+            <translation><!-- Headboard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hinges</masterLabel>
+            <translation><!-- Hinges --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Igniter</masterLabel>
+            <translation><!-- Igniter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Knife</masterLabel>
+            <translation><!-- Knife --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Knob</masterLabel>
+            <translation><!-- Knob --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leg(s)/ Base</masterLabel>
+            <translation><!-- Leg(s)/ Base --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lid</masterLabel>
+            <translation><!-- Lid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marble/ Stone Top</masterLabel>
+            <translation><!-- Marble/ Stone Top --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mast</masterLabel>
+            <translation><!-- Mast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mechanism</masterLabel>
+            <translation><!-- Mechanism --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medicine Cabinet</masterLabel>
+            <translation><!-- Medicine Cabinet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Overflow</masterLabel>
+            <translation><!-- Overflow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pattern</masterLabel>
+            <translation><!-- Pattern --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pendant</masterLabel>
+            <translation><!-- Pendant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personalization</masterLabel>
+            <translation><!-- Personalization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pile</masterLabel>
+            <translation><!-- Pile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plate/ Platter</masterLabel>
+            <translation><!-- Plate/ Platter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plating</masterLabel>
+            <translation><!-- Plating --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plunger</masterLabel>
+            <translation><!-- Plunger --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Propane Tank</masterLabel>
+            <translation><!-- Propane Tank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reflective Coating</masterLabel>
+            <translation><!-- Reflective Coating --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rocks</masterLabel>
+            <translation><!-- Rocks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rug Pad</masterLabel>
+            <translation><!-- Rug Pad --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seams</masterLabel>
+            <translation><!-- Seams --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seat</masterLabel>
+            <translation><!-- Seat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shade</masterLabel>
+            <translation><!-- Shade --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shelf/ Divider</masterLabel>
+            <translation><!-- Shelf/ Divider --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shower Head</masterLabel>
+            <translation><!-- Shower Head --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shower Rod</masterLabel>
+            <translation><!-- Shower Rod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Side(s)</masterLabel>
+            <translation><!-- Side(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spoon</masterLabel>
+            <translation><!-- Spoon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spout</masterLabel>
+            <translation><!-- Spout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stiching</masterLabel>
+            <translation><!-- Stiching --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Straps/ Ties</masterLabel>
+            <translation><!-- Straps/ Ties --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Top</masterLabel>
+            <translation><!-- Top --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trim - Buttons/ Grommets</masterLabel>
+            <translation><!-- Trim - Buttons/ Grommets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tub Fill</masterLabel>
+            <translation><!-- Tub Fill --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upholstery Fabric/ Leather</masterLabel>
+            <translation><!-- Upholstery Fabric/ Leather --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Valve &amp; Trim Set</masterLabel>
+            <translation><!-- Valve &amp; Trim Set --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Water Supply Lines</masterLabel>
+            <translation><!-- Water Supply Lines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Whole Product</masterLabel>
+            <translation><!-- Whole Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zipper/ Snaps/ Buttons/ Grommets</masterLabel>
+            <translation><!-- Zipper/ Snaps/ Buttons/ Grommets --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Billing Issue - Contract</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Issue Details --></label>
+            <section>Issue Details</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Delay Issue - Contract</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Issue Details --></label>
+            <section>Issue Details</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Delight HQ Issue</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Issue Details --></label>
+            <section>Issue Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Delivery Issue - Contract</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Issue Details --></label>
+            <section>Issue Details</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Order Issue</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Issue Details --></label>
+            <section>Issue Details</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Product Issue</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- HDL Follow Up Report --></label>
+            <section>HDL Follow Up Report</section>
+        </sections>
+        <sections>
+            <label><!-- Initial Issue Report --></label>
+            <section>Initial Issue Report</section>
+        </sections>
+        <sections>
+            <label><!-- Inventory --></label>
+            <section>Inventory</section>
+        </sections>
+        <sections>
+            <label><!-- Product Details --></label>
+            <section>Product Details</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Product Issue - Contract</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Inventory --></label>
+            <section>Inventory</section>
+        </sections>
+        <sections>
+            <label><!-- Issue Details --></label>
+            <section>Issue Details</section>
+        </sections>
+        <sections>
+            <label><!-- Product Details --></label>
+            <section>Product Details</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Service Issue</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Issue Details --></label>
+            <section>Issue Details</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Service Issue - Contract</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Issue Details --></label>
+            <section>Issue Details</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Billing Issue - Contract --></label>
+        <name>Billing_Issue_Contract</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Delay Issue - Contract --></label>
+        <name>Delay_Issue_Contract</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Delight HQ Issue --></label>
+        <name>Delight_HQ_Issue</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Customer Delivery Issue - Contract --></label>
+        <name>Delivery_Issue_Contract</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Order Issue --></label>
+        <name>Order_Issue</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Product Issue --></label>
+        <name>Product_Issue</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Product Issue - Contract --></label>
+        <name>Product_Issue_Contract</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Service Issue --></label>
+        <name>Service_Issue</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Service Issue - Contract --></label>
+        <name>Service_Issue_Contract</name>
+    </recordTypes>
+    <sharingReasons>
+        <label><!-- Supplier Access --></label>
+        <name>Supplier_Access</name>
+    </sharingReasons>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please do not update Order or CW SKU ID manually --></errorMessage>
+        <name>Do_not_update_order_or_sku</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- New_Case_Issue --></label>
+        <name>New_Case_Issue</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Case_Line_Issue --></label>
+        <name>New_Case_Line_Issue</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Issue --></label>
+        <name>New_Issue</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Issue_Partners --></label>
+        <name>New_Issue_Partners</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,19 @@
+The following SFDC Project/Request Case has been closed:
+{!Case.Link}
+
+with the following resolution note:
+"{!Case.Resolution_Description__c}"
+
+If you have any comments on the Case Resolution, please use the "Case Comments" related list to add your comment and help record the ongoing history of the issue.  If you have a related but net new request, please submit a new Case record.
+
+If you do not have a Salesforce.com User account and would like to comment, please reply to this email directly.
+
+Here are the details of the original Case submission: 
+Priority: {!Case.Priority} 
+Primary Object/Config(s): {!Case.Primary_Object_Config__c} 
+
+Subject: 
+{!Case.Subject} 
+
+Description: 
+{!Case.Description}

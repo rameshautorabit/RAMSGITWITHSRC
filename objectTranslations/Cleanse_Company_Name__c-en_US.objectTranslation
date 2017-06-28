@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Cleanse Company Name</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Cleanse Company Names</value>
+    </caseValues>
+    <fields>
+        <label><!-- Match Type --></label>
+        <name>Match_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Word Match String --></label>
+        <name>Word_Match_String__c</name>
+    </fields>
+    <fields>
+        <label><!-- Word Replace String --></label>
+        <name>Word_Replace_String__c</name>
+    </fields>
+    <layouts>
+        <layout>Cleanse Company Name Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

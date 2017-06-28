@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Direct Original Price</value>
+        </caseValues>
+        <name>quotelineitem_listprice</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Contract Price</value>
+        </caseValues>
+        <name>quotelineitem_salesprice</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Total Contract Price</value>
+        </caseValues>
+        <name>quotelineitem_totalprice</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <help><!-- List Price minus Sales Price times quantity --></help>
+        <label><!-- $ Total Discount --></label>
+        <name>Amount_Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- CW Item Description --></label>
+        <name>CW_Item_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- CW N/C Flag --></label>
+        <name>CW_N_C_Flag__c</name>
+        <picklistValues>
+            <masterLabel>N</masterLabel>
+            <translation><!-- N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Y</masterLabel>
+            <translation><!-- Y --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Color --></label>
+        <name>Color__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Location --></label>
+        <name>Customer_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Spec # --></label>
+        <name>Customer_Spec__c</name>
+    </fields>
+    <fields>
+        <label><!-- Price --></label>
+        <name>DA_Direct_Current_Price_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Price --></label>
+        <name>DA_Direct_Current_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name --></label>
+        <name>DA_ECommerce_Display_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Image --></label>
+        <name>DA_Image__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item # --></label>
+        <name>DA_Item_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Member Price --></label>
+        <name>DA_Member_Price_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Member Price --></label>
+        <name>DA_Member_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quantity --></label>
+        <name>DA_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- DA Total Formula --></label>
+        <name>DA_Total_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total --></label>
+        <name>DA_Total_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total --></label>
+        <name>DA_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- DMMSSku --></label>
+        <name>DMMSSku__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Delivery Date --></label>
+        <name>Delivery_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount % --></label>
+        <name>Discount_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- ELC Update --></label>
+        <name>ELC_Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- ELC --></label>
+        <name>ELC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Est. Delivery Date --></label>
+        <name>Est_Delivery_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Customer Delivery Date --></label>
+        <name>Expected_Customer_Delivery_Date__c</name>
+        <picklistValues>
+            <masterLabel>1-2 days</masterLabel>
+            <translation><!-- 1-2 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1-2 weeks</masterLabel>
+            <translation><!-- 1-2 weeks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>120-150 days</masterLabel>
+            <translation><!-- 120-150 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2-3 Weeks</masterLabel>
+            <translation><!-- 2-3 Weeks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3-4 Weeks</masterLabel>
+            <translation><!-- 3-4 Weeks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3-7 days</masterLabel>
+            <translation><!-- 3-7 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4-6 Weeks</masterLabel>
+            <translation><!-- 4-6 Weeks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>45-60 days</masterLabel>
+            <translation><!-- 45-60 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60-90 days</masterLabel>
+            <translation><!-- 60-90 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Est. to Ship TBD</masterLabel>
+            <translation><!-- Est. to Ship TBD --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Fulfillment Method --></label>
+        <name>Fulfillment_Method__c</name>
+        <picklistValues>
+            <masterLabel>COM/COL</masterLabel>
+            <translation><!-- COM/COL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract Inventory</masterLabel>
+            <translation><!-- Contract Inventory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract SPO</masterLabel>
+            <translation><!-- Contract SPO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation><!-- Custom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Drop Ship</masterLabel>
+            <translation><!-- Drop Ship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail Inventory</masterLabel>
+            <translation><!-- Retail Inventory --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- IsQuoteSynced --></label>
+        <name>IsQuoteSynced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Member --></label>
+        <name>Is_Member__c</name>
+    </fields>
+    <fields>
+        <label><!-- Line Item Total List Price --></label>
+        <name>Line_Item_Total_List_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Line Item total Contract Price --></label>
+        <name>Line_Item_total_Contract_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- MMU --></label>
+        <name>MMU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- OpportunityLineItemId --></label>
+        <name>OpportunityLineItemId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ovr Code --></label>
+        <name>Ovr_Code__c</name>
+        <picklistValues>
+            <masterLabel>/</masterLabel>
+            <translation><!-- / --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A</masterLabel>
+            <translation><!-- A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G</masterLabel>
+            <translation><!-- G --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K</masterLabel>
+            <translation><!-- K --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M</masterLabel>
+            <translation><!-- M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N</masterLabel>
+            <translation><!-- N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>O</masterLabel>
+            <translation><!-- O --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P</masterLabel>
+            <translation><!-- P --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R</masterLabel>
+            <translation><!-- R --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S</masterLabel>
+            <translation><!-- S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>U</masterLabel>
+            <translation><!-- U --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V</masterLabel>
+            <translation><!-- V --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>W</masterLabel>
+            <translation><!-- W --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>X</masterLabel>
+            <translation><!-- X --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Z</masterLabel>
+            <translation><!-- Z --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pdct Total Weight --></label>
+        <name>Pdct_Total_Weight__c</name>
+    </fields>
+    <fields>
+        <label><!-- ProductId --></label>
+        <name>ProductId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Description --></label>
+        <name>Product_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Name --></label>
+        <name>Product_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Products w/Shipping Fees --></label>
+        <name>Products_w_Shipping_Fees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quote Item Description --></label>
+        <name>Quote_Item_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quote Item --></label>
+        <name>Quote_Item__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requires Handling Fees --></label>
+        <name>Requires_Handling_Fees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship Via --></label>
+        <name>Ship_Via__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sidemark --></label>
+        <name>Sidemark__c</name>
+    </fields>
+    <fields>
+        <label><!-- Size --></label>
+        <name>Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort Order --></label>
+        <name>Sort_Order__c</name>
+    </fields>
+    <fields>
+        <help><!-- Applied on a product level.  This field will be set by Workflow if any Products on this order contain surcharges.  The surcharges will then be added automatically to the total line item contract price. --></help>
+        <label><!-- Surcharge Amount --></label>
+        <name>Surcharge_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Surcharges --></label>
+        <name>Surcharges__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Contract Price for Quote Line Item --></label>
+        <name>Total_Contract_Price_for_Quote_Line_Item__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit Price --></label>
+        <name>Unit_Price__c</name>
+    </fields>
+    <layouts>
+        <layout>Admin Quote Line Item</layout>
+        <sections>
+            <label><!-- Formula fields for Admin --></label>
+            <section>Formula fields for Admin</section>
+        </sections>
+        <sections>
+            <label><!-- Product Specifics --></label>
+            <section>Product Specifics</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Quote Line Item Layout</layout>
+        <sections>
+            <label><!-- Product Specifics --></label>
+            <section>Product Specifics</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

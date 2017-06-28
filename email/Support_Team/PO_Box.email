@@ -1,0 +1,12 @@
+Dear {!Case.Contact},
+ 
+Thank you for your recent order number {!Case.Order_Number__c} with Restoration Hardware. Regrettably, we are unable to ship this order to a Post Office Box.
+ 
+At your earliest convenience, please call our Customer Care Center at 877-777-7059, to update the shipping address, so that we may process your order in a timely fashion.
+ 
+If you have additional questions, feel free to contact us by the phone number listed above or via email at webcs@restorationhardware.com.
+ 
+Thank you for shopping with Restoration Hardware.
+
+Regards, 
+RH Customer Care

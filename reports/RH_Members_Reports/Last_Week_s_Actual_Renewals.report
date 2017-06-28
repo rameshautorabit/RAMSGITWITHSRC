@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>RH_Order__c.Sales_Order_Line_Items__r$CW_SKU_Name__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>91020003BC30,91020005RH30,91020006EXPR,91020007EXPR,91020009BC1Y,91020008RH1Y</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RH_Order__c$Membership_ID_Lookup__c.Member_Country_for_Reports__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>United States</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>RH_Order__c.Sales_Order_Line_Items__r$CW_SKU_Name__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>RH_Order__c$Order_Type_Description__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>RH_Order__c$Membership_ID_Lookup__c.Member_Country_for_Reports__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>RH_Order__c$Membership_ID_Lookup__c.Member_State__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Last Week&apos;s Actual Renewals</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Orders_with_Order_Lines_for_Membership__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>RH_Order__c$Order_Date__c</dateColumn>
+        <interval>INTERVAL_LASTWEEK</interval>
+    </timeFrameFilter>
+</Report>

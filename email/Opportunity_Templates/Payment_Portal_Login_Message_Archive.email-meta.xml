@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>041817 Keep This Version as backup (testing new shorter version of existing message)</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Contract_Letterhead</letterhead>
+    <name>Payment Portal Login Message ARCHIVE</name>
+    <style>freeForm</style>
+    <subject>Your {!Organization.Name} Payment Portal Username &amp; Password</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+Your Restoration Hardware Payment Portal username and password information is listed at the bottom-left corner of this message.
+
+You will receive another email shortly containing a link to submit payment for your recent Restoration Hardware order.  When you are ready to submit payment, click on that link and use the username and password in this message to login to the Payment Portal.
+
+Please note: if someone else at your organization will be supplying payment information, please do not login to the Payment Portal. Instead, forward this message to the individual responsible for supplying payment information, as well as any subsequent payment emails you may receive.
+
+Thank you,
+
+Restoration Hardware Customer Support
+
+Note: This email is sent via our automated payment system.  Please do not reply to this message, as responses will not be received.
+
+Instead, if you have questions about our Payment Portal or your payments, please contact your RH Contract sales representative.</textOnly>
+    <type>html</type>
+</EmailTemplate>

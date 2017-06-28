@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email to Customer w/ Product Specification Sheet</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Contract_Letterhead</letterhead>
+    <name>Product Specification</name>
+    <style>freeForm</style>
+    <subject>Your RH Product Specification Sheet for {!Product2.Actual_Product_Name__c}</subject>
+    <textOnly>We appreciate you thinking of Restoration Hardware Contract for this project!
+
+Attached you will find the specification sheet for the Restoration Hardware Product you requested for:
+{!Product2.Actual_Product_Name__c}
+
+Kindly contact us if you should have any further questions about this product.
+
+Thank you,
+{!User.FirstName}</textOnly>
+    <type>html</type>
+</EmailTemplate>

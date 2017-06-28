@@ -1,0 +1,5 @@
+<apex:page standardController="Case" extensions="Case_ReturnReceiptCtlExt" tabStyle="Case" sidebar="false" id="rrHTMLPage" >
+    <!--
+    <c:ReturnReceipt id="returnReceiptData" htmlmap="{!subMap}" isPackingSlip="{!isPackingSlip}" />
+    -->
+</apex:page>

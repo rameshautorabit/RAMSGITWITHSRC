@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>RH Brand</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>RH Brand</value>
+    </caseValues>
+    <fields>
+        <label><!-- Brand Home Page URL --></label>
+        <name>Brand_Home_Page_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brand Logo Height --></label>
+        <name>Brand_Logo_Height__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brand Logo URL --></label>
+        <name>Brand_Logo_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brand Logo Width --></label>
+        <name>Brand_Logo_Width__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brand Logo --></label>
+        <name>Brand_Logo__c</name>
+    </fields>
+    <fields>
+        <label><!-- ContactUsURL --></label>
+        <name>ContactUsURL__c</name>
+    </fields>
+    <fields>
+        <label><!-- CustomerServiceURL --></label>
+        <name>CustomerServiceURL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delay Notification Email --></label>
+        <name>Delay_Notification_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delay Notification Phone --></label>
+        <name>Delay_Notification_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Subject Brand --></label>
+        <name>Email_Subject_Brand__c</name>
+    </fields>
+    <fields>
+        <label><!-- FrequentlyAskedQuestionsURL --></label>
+        <name>FrequentlyAskedQuestionsURL__c</name>
+    </fields>
+    <fields>
+        <label><!-- GalleryNearestYouURL --></label>
+        <name>GalleryNearestYouURL__c</name>
+    </fields>
+    <fields>
+        <label><!-- MembershipRenewalURL --></label>
+        <name>MembershipRenewalURL__c</name>
+    </fields>
+    <fields>
+        <label><!-- PrivacyPolicyURL --></label>
+        <name>PrivacyPolicyURL__c</name>
+    </fields>
+    <fields>
+        <label><!-- RH Members Program Profile URL --></label>
+        <name>RH_Members_Program_Profile_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- TermsAndConditionsURL --></label>
+        <name>TermsAndConditionsURL__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

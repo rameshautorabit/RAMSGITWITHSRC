@@ -1,0 +1,2820 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>false</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>false</enableSharing>
+    <enableStreamingApi>false</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>Accommodation_Line_Item_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Accommodation Line Item Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Accommodation_Line_Total_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Accommodation Line Total Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Accommodation_Quantity__c</fullName>
+        <externalId>false</externalId>
+        <label>Accommodation Quantity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Accommodation_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Accommodation Reason</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Balance Transfer</fullName>
+                    <default>false</default>
+                    <label>Balance Transfer</label>
+                </value>
+                <value>
+                    <fullName>Carrier Caused - HDL</fullName>
+                    <default>false</default>
+                    <label>Carrier Caused - HDL</label>
+                </value>
+                <value>
+                    <fullName>Carrier Caused - UPS</fullName>
+                    <default>false</default>
+                    <label>Carrier Caused - UPS</label>
+                </value>
+                <value>
+                    <fullName>Damaged/Defective Product</fullName>
+                    <default>false</default>
+                    <label>Damaged/Defective Product</label>
+                </value>
+                <value>
+                    <fullName>Delay - Backorder</fullName>
+                    <default>false</default>
+                    <label>Delay - Backorder</label>
+                </value>
+                <value>
+                    <fullName>Delay - DC</fullName>
+                    <default>false</default>
+                    <label>Delay - DC</label>
+                </value>
+                <value>
+                    <fullName>Delay - Vendor</fullName>
+                    <default>false</default>
+                    <label>Delay - Vendor</label>
+                </value>
+                <value>
+                    <fullName>Delight Shipping</fullName>
+                    <default>false</default>
+                    <label>Delight Shipping</label>
+                </value>
+                <value>
+                    <fullName>Freight - Canadian Adjustment/Refund</fullName>
+                    <default>false</default>
+                    <label>Freight - Canadian Adjustment/Refund</label>
+                </value>
+                <value>
+                    <fullName>Freight - Flat Rate Delivery Fee Refund</fullName>
+                    <default>false</default>
+                    <label>Freight - Flat Rate Delivery Fee Refund</label>
+                </value>
+                <value>
+                    <fullName>Freight Refund</fullName>
+                    <default>false</default>
+                    <label>Freight Refund</label>
+                </value>
+                <value>
+                    <fullName>Freight - US Adjustment/Refund</fullName>
+                    <default>false</default>
+                    <label>Freight - US Adjustment/Refund</label>
+                </value>
+                <value>
+                    <fullName>Gift Box Fee Refund</fullName>
+                    <default>false</default>
+                    <label>Gift Box Fee Refund</label>
+                </value>
+                <value>
+                    <fullName>Gift Return</fullName>
+                    <default>false</default>
+                    <label>Gift Return</label>
+                </value>
+                <value>
+                    <fullName>Mailed in Gift Card</fullName>
+                    <default>false</default>
+                    <label>Mailed in Gift Card</label>
+                </value>
+                <value>
+                    <fullName>Manual Charge</fullName>
+                    <default>false</default>
+                    <label>Manual Charge</label>
+                </value>
+                <value>
+                    <fullName>Out Of Policy Return</fullName>
+                    <default>false</default>
+                    <label>Out Of Policy Return</label>
+                </value>
+                <value>
+                    <fullName>Personalization Fee Refund</fullName>
+                    <default>false</default>
+                    <label>Personalization Fee Refund</label>
+                </value>
+                <value>
+                    <fullName>Pre-Bill Refund</fullName>
+                    <default>false</default>
+                    <label>Pre-Bill Refund</label>
+                </value>
+                <value>
+                    <fullName>Refund for GC/SC/Reward MOP</fullName>
+                    <default>false</default>
+                    <label>Refund for GC/SC/Reward MOP</label>
+                </value>
+                <value>
+                    <fullName>Tax Refund</fullName>
+                    <default>false</default>
+                    <label>Tax Refund</label>
+                </value>
+                <value>
+                    <fullName>Price Match - Sale/Promo</fullName>
+                    <default>false</default>
+                    <label>Price Match - Sale/Promo</label>
+                </value>
+                <value>
+                    <fullName>Reissue System Refund - Incorrect/Cancelled/Did Not Generate</fullName>
+                    <default>false</default>
+                    <label>Reissue System Refund - Incorrect/Cancelled/Did Not Generate</label>
+                </value>
+                <value>
+                    <fullName>Price Match – Sale/Promo</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Price Match – Sale/Promo</label>
+                </value>
+                <value>
+                    <fullName>Reissue System Refund – Incorrect/Cancelled/Did Not Generate</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Reissue System Refund – Incorrect/Cancelled/Did Not Generate</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Accommodation_Sub_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Accommodation Sub-Reason</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Business</fullName>
+                    <default>false</default>
+                    <label>Business</label>
+                </value>
+                <value>
+                    <fullName>Customer</fullName>
+                    <default>false</default>
+                    <label>Customer</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CW_SKU_ID__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>CW SKU ID</label>
+        <referenceTo>Product2</referenceTo>
+        <relationshipName>Investments</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Case_Line_Item__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Case Line Item</label>
+        <referenceTo>Case_Line_Items__c</referenceTo>
+        <relationshipName>Investments</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Case__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Case</label>
+        <referenceTo>Case</referenceTo>
+        <relationshipName>Investments</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Expected_Completion_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>Case__r.Expected_Completion__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Expected Completion Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Final_Line_Requested_Percentage__c</fullName>
+        <externalId>false</externalId>
+        <label>Final Line Requested Percentage</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Issue__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Issue</label>
+        <referenceTo>Issue__c</referenceTo>
+        <relationshipName>Investments</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Notes</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Order__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Order</label>
+        <referenceTo>RH_Order__c</referenceTo>
+        <relationshipName>Investments</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Requested_Flat_Rate_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Requested Flat Rate Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Requested_Percentage__c</fullName>
+        <externalId>false</externalId>
+        <label>Requested Percentage</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Ship_To_1__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Ship To 1</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Ship_To__c.Order__c</field>
+                <operation>equals</operation>
+                <valueField>$Source.Order__c</valueField>
+            </filterItems>
+            <infoMessage>Ship To 1 must reference the same order record referenced in the Order field.</infoMessage>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Ship_To__c</referenceTo>
+        <relationshipLabel>Resolutions</relationshipLabel>
+        <relationshipName>Resolutions</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Tax_Included__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Tax Included</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Discount</fullName>
+                    <default>false</default>
+                    <label>Discount</label>
+                </value>
+                <value>
+                    <fullName>Gift</fullName>
+                    <default>false</default>
+                    <label>Gift</label>
+                </value>
+                <value>
+                    <fullName>Gift Card</fullName>
+                    <default>false</default>
+                    <label>Gift Card</label>
+                </value>
+                <value>
+                    <fullName>Loaner</fullName>
+                    <default>false</default>
+                    <label>Loaner</label>
+                </value>
+                <value>
+                    <fullName>Product</fullName>
+                    <default>false</default>
+                    <label>Product</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Resolution</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Resolutions</fullName>
+        <columns>NAME</columns>
+        <columns>Issue__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>Amount__c</columns>
+        <columns>Notes__c</columns>
+        <filterScope>Mine</filterScope>
+        <label>My Resolutions</label>
+        <sharedTo>
+            <role>Administration</role>
+            <role>HospitalityProductSupplyManager</role>
+            <role>LargeIncrementalSalesRep</role>
+            <role>LargeIncrlSalesLeader</role>
+        </sharedTo>
+    </listViews>
+    <nameField>
+        <displayFormat>Resolution-{0}</displayFormat>
+        <label>Resolution Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Resolutions</pluralLabel>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Accommodation_Cash</fullName>
+        <active>true</active>
+        <description>Compensation for for an issue on an order -must be approved by POD Leader</description>
+        <label>Accommodation - Cash</label>
+        <picklistValues>
+            <picklist>Accommodation_Reason__c</picklist>
+            <values>
+                <fullName>Balance Transfer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Carrier Caused - HDL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Carrier Caused - UPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Damaged%2FDefective Product</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - Backorder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - DC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - Vendor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delight Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - Canadian Adjustment%2FRefund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - Flat Rate Delivery Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - US Adjustment%2FRefund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Box Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Return</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mailed in Gift Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manual Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out Of Policy Return</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Personalization Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-Bill Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Price Match - Sale%2FPromo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refund for GC%2FSC%2FReward MOP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reissue System Refund - Incorrect%2FCancelled%2FDid Not Generate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tax Refund</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Accommodation_Sub_Reason__c</picklist>
+            <values>
+                <fullName>Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Discount</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loaner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Accommodation_Freight_Discount</fullName>
+        <active>true</active>
+        <description>Adjust freight on the order due to transportation or delivery failiures</description>
+        <label>Accommodation - Freight Discount</label>
+        <picklistValues>
+            <picklist>Accommodation_Reason__c</picklist>
+            <values>
+                <fullName>Balance Transfer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Carrier Caused - HDL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Carrier Caused - UPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Damaged%2FDefective Product</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - Backorder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - DC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - Vendor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delight Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - Canadian Adjustment%2FRefund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - Flat Rate Delivery Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - US Adjustment%2FRefund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Box Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Return</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mailed in Gift Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manual Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out Of Policy Return</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Personalization Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-Bill Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Price Match - Sale%2FPromo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refund for GC%2FSC%2FReward MOP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reissue System Refund - Incorrect%2FCancelled%2FDid Not Generate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tax Refund</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Accommodation_Sub_Reason__c</picklist>
+            <values>
+                <fullName>Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Discount</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loaner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Accommodation_Gift_Certificate</fullName>
+        <active>true</active>
+        <description>Compensation for for an issue on an order -must be approved by POD Leader</description>
+        <label>Accommodation - Gift Certificate</label>
+        <picklistValues>
+            <picklist>Accommodation_Reason__c</picklist>
+            <values>
+                <fullName>Balance Transfer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Carrier Caused - HDL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Carrier Caused - UPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Damaged%2FDefective Product</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - Backorder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - DC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - Vendor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delight Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - Canadian Adjustment%2FRefund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - Flat Rate Delivery Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - US Adjustment%2FRefund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Box Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Return</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mailed in Gift Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manual Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out Of Policy Return</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Personalization Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-Bill Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Price Match - Sale%2FPromo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refund for GC%2FSC%2FReward MOP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reissue System Refund - Incorrect%2FCancelled%2FDid Not Generate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tax Refund</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Accommodation_Sub_Reason__c</picklist>
+            <values>
+                <fullName>Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Discount</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loaner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Accommodation_Product_Gift</fullName>
+        <active>true</active>
+        <description>Compensation for for an issue on an order -must be approved by POD Leader</description>
+        <label>Accommodation - Product Gift</label>
+        <picklistValues>
+            <picklist>Accommodation_Reason__c</picklist>
+            <values>
+                <fullName>Balance Transfer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Carrier Caused - HDL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Carrier Caused - UPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Damaged%2FDefective Product</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - Backorder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - DC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - Vendor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delight Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - Canadian Adjustment%2FRefund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - Flat Rate Delivery Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - US Adjustment%2FRefund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Box Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Return</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mailed in Gift Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manual Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out Of Policy Return</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Personalization Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-Bill Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Price Match - Sale%2FPromo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refund for GC%2FSC%2FReward MOP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reissue System Refund - Incorrect%2FCancelled%2FDid Not Generate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tax Refund</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Accommodation_Sub_Reason__c</picklist>
+            <values>
+                <fullName>Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Discount</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loaner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Accommodations</fullName>
+        <active>false</active>
+        <label>Accommodations</label>
+        <picklistValues>
+            <picklist>Accommodation_Reason__c</picklist>
+            <values>
+                <fullName>Balance Transfer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Carrier Caused - HDL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Carrier Caused - UPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Damaged%2FDefective Product</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - Backorder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - DC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - Vendor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delight Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - Canadian Adjustment%2FRefund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - Flat Rate Delivery Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - US Adjustment%2FRefund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Box Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Return</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mailed in Gift Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manual Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out Of Policy Return</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Personalization Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-Bill Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refund for GC%2FSC%2FReward MOP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tax Refund</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Accommodation_Sub_Reason__c</picklist>
+            <values>
+                <fullName>Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Discount</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loaner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Exchange_Product</fullName>
+        <active>true</active>
+        <description>Replaced with the same or similar item due to damage or defect</description>
+        <label>Exchange Product</label>
+        <picklistValues>
+            <picklist>Accommodation_Reason__c</picklist>
+            <values>
+                <fullName>Balance Transfer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Carrier Caused - HDL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Carrier Caused - UPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Damaged%2FDefective Product</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - Backorder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - DC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - Vendor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delight Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - Canadian Adjustment%2FRefund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - Flat Rate Delivery Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - US Adjustment%2FRefund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Box Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Return</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mailed in Gift Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manual Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out Of Policy Return</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Personalization Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-Bill Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refund for GC%2FSC%2FReward MOP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tax Refund</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Accommodation_Sub_Reason__c</picklist>
+            <values>
+                <fullName>Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Discount</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loaner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Loaner_Product</fullName>
+        <active>true</active>
+        <description>Product loaned to the customer at no cost due to product delays</description>
+        <label>Loaner Product</label>
+        <picklistValues>
+            <picklist>Accommodation_Reason__c</picklist>
+            <values>
+                <fullName>Balance Transfer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Carrier Caused - HDL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Carrier Caused - UPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Damaged%2FDefective Product</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - Backorder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - DC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - Vendor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delight Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - Canadian Adjustment%2FRefund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - Flat Rate Delivery Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - US Adjustment%2FRefund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Box Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Return</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mailed in Gift Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manual Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out Of Policy Return</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Personalization Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-Bill Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refund for GC%2FSC%2FReward MOP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tax Refund</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Accommodation_Sub_Reason__c</picklist>
+            <values>
+                <fullName>Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Discount</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loaner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Product_Discount</fullName>
+        <active>true</active>
+        <description>Match previously quoted procing or memebr pricing</description>
+        <label>Product Discount</label>
+        <picklistValues>
+            <picklist>Accommodation_Reason__c</picklist>
+            <values>
+                <fullName>Balance Transfer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Carrier Caused - HDL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Carrier Caused - UPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Damaged%2FDefective Product</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - Backorder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - DC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - Vendor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delight Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - Canadian Adjustment%2FRefund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - Flat Rate Delivery Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - US Adjustment%2FRefund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Box Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Return</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mailed in Gift Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manual Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out Of Policy Return</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Personalization Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-Bill Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refund for GC%2FSC%2FReward MOP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tax Refund</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Accommodation_Sub_Reason__c</picklist>
+            <values>
+                <fullName>Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Discount</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loaner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Provide_Billing_Statement</fullName>
+        <active>true</active>
+        <description>Detailed breakdown of credit card charges/credits on the CW order</description>
+        <label>Provide Billing Statement</label>
+        <picklistValues>
+            <picklist>Accommodation_Reason__c</picklist>
+            <values>
+                <fullName>Balance Transfer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Carrier Caused - HDL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Carrier Caused - UPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Damaged%2FDefective Product</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - Backorder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - DC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - Vendor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delight Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - Canadian Adjustment%2FRefund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - Flat Rate Delivery Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - US Adjustment%2FRefund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Box Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Return</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mailed in Gift Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manual Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out Of Policy Return</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Personalization Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-Bill Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refund for GC%2FSC%2FReward MOP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tax Refund</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Accommodation_Sub_Reason__c</picklist>
+            <values>
+                <fullName>Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Discount</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loaner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Reauthorize_credit_card</fullName>
+        <active>true</active>
+        <description>Release the order from CW hold to re run the credit card authorization</description>
+        <label>Reauthorize credit card</label>
+        <picklistValues>
+            <picklist>Accommodation_Reason__c</picklist>
+            <values>
+                <fullName>Balance Transfer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Carrier Caused - HDL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Carrier Caused - UPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Damaged%2FDefective Product</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - Backorder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - DC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - Vendor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delight Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - Canadian Adjustment%2FRefund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - Flat Rate Delivery Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - US Adjustment%2FRefund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Box Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Return</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mailed in Gift Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manual Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out Of Policy Return</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Personalization Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-Bill Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refund for GC%2FSC%2FReward MOP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tax Refund</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Accommodation_Sub_Reason__c</picklist>
+            <values>
+                <fullName>Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Discount</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loaner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Recollect_payment</fullName>
+        <active>true</active>
+        <description>Resolve outstanding payment</description>
+        <label>Recollect payment</label>
+        <picklistValues>
+            <picklist>Accommodation_Reason__c</picklist>
+            <values>
+                <fullName>Balance Transfer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Carrier Caused - HDL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Carrier Caused - UPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Damaged%2FDefective Product</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - Backorder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - DC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - Vendor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delight Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - Canadian Adjustment%2FRefund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - Flat Rate Delivery Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - US Adjustment%2FRefund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Box Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Return</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mailed in Gift Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manual Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out Of Policy Return</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Personalization Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-Bill Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refund for GC%2FSC%2FReward MOP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tax Refund</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Accommodation_Sub_Reason__c</picklist>
+            <values>
+                <fullName>Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Discount</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loaner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Refund</fullName>
+        <active>true</active>
+        <description>Refund back to the original from of payment</description>
+        <label>Refund</label>
+        <picklistValues>
+            <picklist>Accommodation_Reason__c</picklist>
+            <values>
+                <fullName>Balance Transfer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Carrier Caused - HDL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Carrier Caused - UPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Damaged%2FDefective Product</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - Backorder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - DC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - Vendor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delight Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - Canadian Adjustment%2FRefund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - Flat Rate Delivery Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - US Adjustment%2FRefund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Box Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Return</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mailed in Gift Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manual Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out Of Policy Return</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Personalization Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-Bill Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refund for GC%2FSC%2FReward MOP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tax Refund</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Accommodation_Sub_Reason__c</picklist>
+            <values>
+                <fullName>Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Discount</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loaner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Repair_Customer_Property</fullName>
+        <active>true</active>
+        <description>Reimbursement for repair to propety damage inflicted by RH Delivery</description>
+        <label>Repair Customer Property</label>
+        <picklistValues>
+            <picklist>Accommodation_Reason__c</picklist>
+            <values>
+                <fullName>Balance Transfer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Carrier Caused - HDL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Carrier Caused - UPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Damaged%2FDefective Product</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - Backorder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - DC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - Vendor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delight Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - Canadian Adjustment%2FRefund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - Flat Rate Delivery Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - US Adjustment%2FRefund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Box Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Return</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mailed in Gift Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manual Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out Of Policy Return</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Personalization Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-Bill Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refund for GC%2FSC%2FReward MOP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tax Refund</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Accommodation_Sub_Reason__c</picklist>
+            <values>
+                <fullName>Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Discount</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loaner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Repair_Product_Furniture_Medic</fullName>
+        <active>true</active>
+        <description>Reimbursment for on site furniture repairs by third party Furniture Medic</description>
+        <label>Repair Product/Furniture Medic</label>
+        <picklistValues>
+            <picklist>Accommodation_Reason__c</picklist>
+            <values>
+                <fullName>Balance Transfer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Carrier Caused - HDL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Carrier Caused - UPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Damaged%2FDefective Product</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - Backorder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - DC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - Vendor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delight Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - Canadian Adjustment%2FRefund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - Flat Rate Delivery Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - US Adjustment%2FRefund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Box Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Return</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mailed in Gift Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manual Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out Of Policy Return</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Personalization Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-Bill Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refund for GC%2FSC%2FReward MOP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tax Refund</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Accommodation_Sub_Reason__c</picklist>
+            <values>
+                <fullName>Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Discount</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loaner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Replacement_Parts</fullName>
+        <active>true</active>
+        <description>Replacement for missing/lost part for previously purchased product</description>
+        <label>Replacement Parts</label>
+        <picklistValues>
+            <picklist>Accommodation_Reason__c</picklist>
+            <values>
+                <fullName>Balance Transfer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Carrier Caused - HDL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Carrier Caused - UPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Damaged%2FDefective Product</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - Backorder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - DC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - Vendor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delight Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - Canadian Adjustment%2FRefund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - Flat Rate Delivery Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - US Adjustment%2FRefund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Box Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Return</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mailed in Gift Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manual Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out Of Policy Return</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Personalization Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-Bill Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refund for GC%2FSC%2FReward MOP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tax Refund</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Accommodation_Sub_Reason__c</picklist>
+            <values>
+                <fullName>Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Discount</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loaner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Return_Product</fullName>
+        <active>true</active>
+        <description>Refund to the origionsl form of paument for product that is damage or defective. Must be approved by Claire.</description>
+        <label>Return Product</label>
+        <picklistValues>
+            <picklist>Accommodation_Reason__c</picklist>
+            <values>
+                <fullName>Balance Transfer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Carrier Caused - HDL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Carrier Caused - UPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Damaged%2FDefective Product</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - Backorder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - DC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - Vendor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delight Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - Canadian Adjustment%2FRefund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - Flat Rate Delivery Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - US Adjustment%2FRefund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Box Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Return</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mailed in Gift Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manual Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out Of Policy Return</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Personalization Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-Bill Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refund for GC%2FSC%2FReward MOP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tax Refund</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Accommodation_Sub_Reason__c</picklist>
+            <values>
+                <fullName>Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Discount</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loaner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Third_Party_Reimbursement</fullName>
+        <active>true</active>
+        <description>Reimbursement for services provided as a result of an RH Failure</description>
+        <label>Third Party Reimbursement</label>
+        <picklistValues>
+            <picklist>Accommodation_Reason__c</picklist>
+            <values>
+                <fullName>Balance Transfer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Carrier Caused - HDL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Carrier Caused - UPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Damaged%2FDefective Product</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - Backorder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - DC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delay - Vendor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delight Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - Canadian Adjustment%2FRefund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - Flat Rate Delivery Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight - US Adjustment%2FRefund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Box Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Return</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mailed in Gift Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manual Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out Of Policy Return</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Personalization Fee Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-Bill Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Price Match - Sale%2FPromo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refund for GC%2FSC%2FReward MOP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reissue System Refund - Incorrect%2FCancelled%2FDid Not Generate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tax Refund</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Accommodation_Sub_Reason__c</picklist>
+            <values>
+                <fullName>Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Discount</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loaner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Issue__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Amount__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Notes__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Case__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Order__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CREATEDBY_USER.ALIAS</customTabListAdditionalFields>
+        <customTabListAdditionalFields>LAST_UPDATE</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>New_CaseLine_Investment</fullName>
+        <availability>online</availability>
+        <description>Custom list button to be used on the Investment related list of a Case Line Item detail page.</description>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New CaseLine Investment</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/setup/ui/recordtypeselect.jsp?ent=01I50000000CKZO&amp;retURL=%2F{!Case_Line_Items__c.Id}&amp;save_new_url=%2Fa1M%2Fe%3FCF00N2C000000PQeJ%3D{!Case_Line_Items__c.Name}%26CF00N2C000000PQeJ_lkid%3D{!Case_Line_Items__c.Id}%26retURL%3D%252F{!Case_Line_Items__c.Id}%26CF00N50000003j1ug%3D{!Case_Line_Items__c.Case_Number__c}%26CF00N2C000000PQeK%3D{!Case_Line_Items__c.Order__c}%26CF00N2C000000PQeI%3D{!Case_Line_Items__c.CW_SKU_ID__c}%26CF00N2C000000PQeI_lkid%3D{!Case_Line_Items__c.CW_SKU_IDId__c}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_CaseLine_Resolution</fullName>
+        <availability>online</availability>
+        <description>Custom list button to be used on the Resolution related list of a Case Line Item detail page.</description>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New CaseLine Resolution</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/setup/ui/recordtypeselect.jsp?ent=01I50000000CKZO&amp;retURL=%2F{!Case_Line_Items__c.Id}&amp;save_new_url=%2Fa1M%2Fe%3FCF00N2C000000PQeJ%3D{!Case_Line_Items__c.Name}%26CF00N2C000000PQeJ_lkid%3D{!Case_Line_Items__c.Id}%26retURL%3D%252F{!Case_Line_Items__c.Id}%26CF00N50000003j1ug%3D{!Case_Line_Items__c.Case_Number__c}%26CF00N2C000000PQeK%3D{!Case_Line_Items__c.Order__c}%26CF00N2C000000PQeI%3D{!Case_Line_Items__c.CW_SKU_ID__c}%26CF00N2C000000PQeI_lkid%3D{!Case_Line_Items__c.CW_SKU_IDId__c}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Case_Investment</fullName>
+        <availability>online</availability>
+        <description>Custom list button to be used on the Investment related list of a Case detail page.</description>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Case Investment</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/setup/ui/recordtypeselect.jsp?ent=01I50000000CKZO&amp;retURL=%2F{!Case.Id}&amp;save_new_url=%2Fa1M%2Fe%3FCF00N50000003j1ug%3D{!Case.CaseNumber}%26CF00N50000003j1ug_lkid%3D{!Case.Id}%26retURL%3D%252F{!Case.Id}%26CF00N2C000000PQeK%3D{!Case.RH_Order_Number__c}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Case_Resolution</fullName>
+        <availability>online</availability>
+        <description>Custom list button to be used on the Resolution related list of a Case detail page.</description>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Case Resolution</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/setup/ui/recordtypeselect.jsp?ent=01I50000000CKZO&amp;retURL=%2F{!Case.Id}&amp;save_new_url=%2Fa1M%2Fe%3FCF00N50000003j1ug%3D{!Case.CaseNumber}%26CF00N50000003j1ug_lkid%3D{!Case.Id}%26retURL%3D%252F{!Case.Id}%26CF00N2C000000PQeK%3D{!Case.RH_Order_Number__c}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Investment</fullName>
+        <availability>online</availability>
+        <description>Custom list button to be used on Investment related list of an Issue detail page.</description>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Investment</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>../apex/IssueInvestment_new?issueId={!Issue__c.Id}&amp;retURL=/{!Issue__c.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Issue_Investment</fullName>
+        <availability>online</availability>
+        <description>Custom list button to be used on Investment related list of an Issue detail page.</description>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Issue Investment</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>../apex/IssueInvestment_new?issueId={!Issue__c.Id}&amp;retURL=/{!Issue__c.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Issue_Resolution</fullName>
+        <availability>online</availability>
+        <description>List button to be used on the Resolutions related list of an Issue object page layout.</description>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Issue Resolution</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>/setup/ui/recordtypeselect.jsp?ent=01I50000000CKZO&amp;retURL=%2F{!Issue__c.Id}&amp;save_new_url=%2Fa1M%2Fe%3FCF00N5000000A48r0%3D{!Issue__c.Name}%26CF 00N5000000A48r0_lkid%3D{!Issue__c.Id}%26CF00N50000003j1ug%3D{!Issue__c.Case__c}%26CF00N50000003j1ug_lkid%3D{!Issue__c.CaseId__c}%26CF00N5000000A48r1%3D{!Issue__c.Order__c}%26CF00N5000000A48r1_lkid%3D{!Issue__c.OrderId__c}%26CF00N5000000A48qw%3D{!Issue__c.CW_SKU_ID__c}%26CF00N5000000A48qw_lkid%3D{!Issue__c.CW_SKU_IDId__c}%26CF00N5000000A48qx%3D{!Issue__c.Case_Line_Item__c}%26CF00N5000000A48qx_lkid%3D{!Issue__c.Case_Line_ItemId__c}%26CF00N5000000A48r4%3D{!Issue__c.Ship_To_1__c}%26CF00N5000000A48r4_lkid%3D{!Issue__c.Ship_To_1Id__c}%26retURL%3D%252F{!Issue__c.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Resolution</fullName>
+        <availability>online</availability>
+        <description>Custom list button to be used on Resolution related list of an Issue detail page.</description>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Resolution</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>../apex/IssueInvestment_new?issueId={!Issue__c.Id}&amp;retURL=/{!Issue__c.Id}</url>
+    </webLinks>
+</CustomObject>

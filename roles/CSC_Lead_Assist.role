@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Read</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>CSC Lead/Assist</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>CSC Lead/Assist</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>CSC_Tier_2_Supervisor</parentRole>
+</Role>

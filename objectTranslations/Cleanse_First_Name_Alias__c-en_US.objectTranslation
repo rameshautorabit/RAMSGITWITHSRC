@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Cleanse First Name Alias</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Cleanse First Name Aliases</value>
+    </caseValues>
+    <fields>
+        <label><!-- First Name Corrected --></label>
+        <name>First_Name_Corrected__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Name --></label>
+        <name>First_Name__c</name>
+    </fields>
+    <layouts>
+        <layout>Cleanse First Name Alias Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

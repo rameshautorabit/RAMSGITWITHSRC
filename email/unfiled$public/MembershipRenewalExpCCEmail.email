@@ -1,0 +1,5 @@
+<messaging:emailTemplate subject="Membership Renewal Program" recipientType="User" relatedToType="Membership__c">
+<messaging:htmlEmailBody >
+ <c:MembershipRenewalExpiringCC RHMembershipId="{!relatedTo.Id}"/>
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Case Comments</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Case Comments</value>
+    </caseValues>
+    <fields>
+        <help><!-- Check this box if an action is required on this case. If the case is open, a flag will notify the case owner that an action is required. If the case is closed, it will re-open and be sent back to the original queue to be worked. --></help>
+        <label><!-- Action Required/Re-open --></label>
+        <name>Action_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call Outcome --></label>
+        <name>Call_Outcome__c</name>
+        <picklistValues>
+            <masterLabel>Could Not Reach</masterLabel>
+            <translation><!-- Could Not Reach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Future Dating</masterLabel>
+            <translation><!-- Future Dating --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Left Voicemail</masterLabel>
+            <translation><!-- Left Voicemail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Action Taken</masterLabel>
+            <translation><!-- No Action Taken --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent Email</masterLabel>
+            <translation><!-- Sent Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Talked to Advocate</masterLabel>
+            <translation><!-- Talked to Advocate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Talked to Client</masterLabel>
+            <translation><!-- Talked to Client --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Case Comments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Comment --></label>
+        <name>Comment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <picklistValues>
+            <masterLabel>Call</masterLabel>
+            <translation><!-- Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Order --></label>
+        <name>Order__c</name>
+        <relationshipLabel><!-- Comments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Response Received --></label>
+        <name>Response_Received__c</name>
+        <picklistValues>
+            <masterLabel>Accommodation</masterLabel>
+            <translation><!-- Accommodation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancel Order</masterLabel>
+            <translation><!-- Cancel Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Already Informed</masterLabel>
+            <translation><!-- Client Already Informed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Early Backorder Date</masterLabel>
+            <translation><!-- Early Backorder Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Early Delivery Date</masterLabel>
+            <translation><!-- Early Delivery Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gift Card</masterLabel>
+            <translation><!-- Gift Card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Accommodation</masterLabel>
+            <translation><!-- No Accommodation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Additional Action</masterLabel>
+            <translation><!-- No Additional Action --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Case Status --></label>
+        <name>Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor Response --></label>
+        <name>Vendor_Response__c</name>
+    </fields>
+    <layouts>
+        <layout>BO Date Validation</layout>
+        <sections>
+            <label><!-- Comment Details --></label>
+            <section>Comment Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Case Comments Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>DRS Case Comments</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Delay Notifications</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Order Comments Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Re-open Comments Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- BO Date Validation --></label>
+        <name>BO_Date_Validation</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Delivery &amp; Return Support --></label>
+        <name>DRS_Case_Comments</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Delay Notifications --></label>
+        <name>Delay_Notifications</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Order --></label>
+        <name>Order</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Reorders --></label>
+        <name>Reorders</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Replacement Parts --></label>
+        <name>Replacement_Parts</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Standard --></label>
+        <name>Standard</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please contact a lead or supervisor if you wish to re-open this case. --></errorMessage>
+        <name>Only_Leads_Re_Open_Cases</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Close_Case --></label>
+        <name>Close_Case</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Close_Case_List_Button --></label>
+        <name>Close_Case_List_Button</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Comment --></label>
+        <name>New_Comment</name>
+    </webLinks>
+</CustomObjectTranslation>

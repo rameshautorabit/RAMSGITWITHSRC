@@ -1,0 +1,4835 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Close</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <content>DeleteTaskAlertPage</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>DeleteSeries</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewTask</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>ActivityDate</fullName>
+    </fields>
+    <fields>
+        <fullName>CallDisposition</fullName>
+    </fields>
+    <fields>
+        <fullName>CallDurationInSeconds</fullName>
+    </fields>
+    <fields>
+        <fullName>CallObject</fullName>
+    </fields>
+    <fields>
+        <fullName>CallType</fullName>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+    </fields>
+    <fields>
+        <fullName>Email</fullName>
+    </fields>
+    <fields>
+        <fullName>IsRecurrence</fullName>
+    </fields>
+    <fields>
+        <fullName>IsVisibleInSelfService</fullName>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+    </fields>
+    <fields>
+        <fullName>Priority</fullName>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>RecurrenceInterval</fullName>
+    </fields>
+    <fields>
+        <fullName>RecurrenceRegeneratedType</fullName>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Subject</fullName>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>TaskSubtype</fullName>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>WhatId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>WhoId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <recordTypes>
+        <fullName>BO_Date_Validation</fullName>
+        <active>true</active>
+        <label>BO Date Validation</label>
+        <picklistValues>
+            <picklist>Assignment_Detail__c</picklist>
+            <values>
+                <fullName>Flatworld</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Home Office</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shanghai</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contact_Type__c</picklist>
+            <values>
+                <fullName>Other Contact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send To</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ship To 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sold To</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Current_Assignment__c</picklist>
+            <values>
+                <fullName>Agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Merchant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vendor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Department_Assigned__c</picklist>
+            <values>
+                <fullName>CSC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DDC 96</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Domestic Transportation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Foreign Transportation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HDL - Insource</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HDL - Network</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LADC 97</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Logistics Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MDC 98</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ODC 89</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Production</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Replacements Parts%2FPI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SFDC 95</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SPO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shanghai</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Follow_Up_Method__c</picklist>
+            <values>
+                <fullName>Call Primary</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Call Secondary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>InMoment_Reason__c</picklist>
+            <values>
+                <fullName>Backorder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Catalogue Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate Contact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Status</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing Order Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flat Rate Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flat Rate Shipping Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gallery Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Cards %2F Gift Certificates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HDL Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Line Testing %2F WFM %2F Telecom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Not Placed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Placed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Processing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Update</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Place Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Availability</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Promo %2F Price Match</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quote Revision</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quotes%2FOrder Received</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Registry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shipping Fee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Special Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Membership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Pricing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transfers %2F No Caller</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WISMO</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Interim_Update__c</picklist>
+            <values>
+                <fullName>Left 1st voice message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Left 2nd voice message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent 1st email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent 2nd email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Next Follow Up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting on Another Dept%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting on Merchant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting on Vendor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Re_assign_Reason__c</picklist>
+            <values>
+                <fullName>Other - Specify</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out of Office</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vacation</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Re_assign_To__c</picklist>
+            <values>
+                <fullName>Advocate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Supervisor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Re_assign__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Complete - Successful</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete - Unsuccessful</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Started</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Waiting on someone else</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>BO Date Validation</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samples Sent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>CSC_InMoment_Survey</fullName>
+        <active>true</active>
+        <label>CSC InMoment Survey</label>
+        <picklistValues>
+            <picklist>Assignment_Detail__c</picklist>
+            <values>
+                <fullName>Flatworld</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Home Office</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shanghai</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contact_Type__c</picklist>
+            <values>
+                <fullName>Other Contact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send To</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ship To 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sold To</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Current_Assignment__c</picklist>
+            <values>
+                <fullName>Agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Merchant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vendor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Department_Assigned__c</picklist>
+            <values>
+                <fullName>CSC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DDC 96</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Domestic Transportation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Foreign Transportation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HDL - Insource</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HDL - Network</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LADC 97</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Logistics Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MDC 98</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ODC 89</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Production</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Replacements Parts%2FPI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SFDC 95</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SPO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shanghai</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Follow_Up_Method__c</picklist>
+            <values>
+                <fullName>Call Primary</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Call Secondary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>InMoment_Interaction_Type__c</picklist>
+            <values>
+                <fullName>Email Reply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inbound Call</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Outbound Call</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>InMoment_Reason__c</picklist>
+            <values>
+                <fullName>Accommodations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Backorder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bi-coastal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Catalogue Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate Contact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Status</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing Order Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flat Rate Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flat Rate Shipping Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Furniture Medic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gallery Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Cards %2F Gift Certificates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HDL Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>International</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Line Testing %2F WFM %2F Telecom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loaner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Not Placed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Placed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Processing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Update</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Place Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Availability</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Promo %2F Price Match</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quote Revision</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quotes%2FOrder Received</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RH Membership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Registry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Replacement%2FRepair</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Return%2FExchange</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Scheduling</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shipping Fee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Special Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Membership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Pricing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transfers %2F No Caller</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WISMO</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>InMoment_Survey_Status__c</picklist>
+            <values>
+                <fullName>Failed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>InMoment_Who__c</picklist>
+            <values>
+                <fullName>Assistant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer%E2%80%99s Spouse</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delivery Agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Designer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Leader</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight Forwarder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gallery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Recipient</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transfer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vendor%2FMerchant</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Interim_Update__c</picklist>
+            <values>
+                <fullName>Left 1st voice message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Left 2nd voice message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent 1st email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent 2nd email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Next Follow Up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting on Another Dept%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting on Merchant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting on Vendor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Re_assign_Reason__c</picklist>
+            <values>
+                <fullName>Other - Specify</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out of Office</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vacation</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Re_assign_To__c</picklist>
+            <values>
+                <fullName>Advocate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Supervisor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Re_assign__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Complete - Successful</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete - Unsuccessful</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Started</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Waiting on someone else</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>Client Call Back</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Client Follow-up</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Client Requires Response by EOD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Escalated Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Another Department</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Authorization</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Credit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Documentation %28fax for Tax Exemption%2C contract%2C etc%2E%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Item to Return</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Item to Ship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Vendor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samples Sent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Contracts_Tasks</fullName>
+        <active>true</active>
+        <label>Contract Tasks</label>
+        <picklistValues>
+            <picklist>Follow_Up_Method__c</picklist>
+            <values>
+                <fullName>Call Primary</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Call Secondary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>InMoment_Reason__c</picklist>
+            <values>
+                <fullName>Backorder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Catalogue Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate Contact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Status</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing Order Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flat Rate Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flat Rate Shipping Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gallery Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Cards %2F Gift Certificates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HDL Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Line Testing %2F WFM %2F Telecom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Not Placed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Placed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Processing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Update</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Place Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Availability</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Promo %2F Price Match</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quote Revision</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quotes%2FOrder Received</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Registry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shipping Fee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Special Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Membership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Pricing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transfers %2F No Caller</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WISMO</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Interim_Update__c</picklist>
+            <values>
+                <fullName>Left 1st voice message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Left 2nd voice message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent 1st email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent 2nd email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting on Another Dept%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting on Merchant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting on Vendor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Re_assign_Reason__c</picklist>
+            <values>
+                <fullName>Other - Specify</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out of Office</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vacation</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Re_assign_To__c</picklist>
+            <values>
+                <fullName>Advocate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Supervisor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Re_assign__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Complete - Successful</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete - Unsuccessful</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deferred</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Started</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Waiting on someone else</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samples Sent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>DRS_Task</fullName>
+        <active>true</active>
+        <label>DRS</label>
+        <picklistValues>
+            <picklist>Assignment_Detail__c</picklist>
+            <values>
+                <fullName>Flatworld</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Home Office</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shanghai</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contact_Type__c</picklist>
+            <values>
+                <fullName>Other Contact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send To</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ship To 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sold To</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Current_Assignment__c</picklist>
+            <values>
+                <fullName>Agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Merchant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vendor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Department_Assigned__c</picklist>
+            <values>
+                <fullName>CSC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DDC 96</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Domestic Transportation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Foreign Transportation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HDL - Insource</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HDL - Network</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LADC 97</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Logistics Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MDC 98</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ODC 89</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Production</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Replacements Parts%2FPI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SFDC 95</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SPO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shanghai</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Follow_Up_Method__c</picklist>
+            <values>
+                <fullName>Call Primary</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Call Secondary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>InMoment_Reason__c</picklist>
+            <values>
+                <fullName>Backorder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Catalogue Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate Contact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Status</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing Order Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flat Rate Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flat Rate Shipping Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gallery Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Cards %2F Gift Certificates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HDL Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Line Testing %2F WFM %2F Telecom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Not Placed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Placed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Processing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Update</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Place Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Availability</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Promo %2F Price Match</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quote Revision</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quotes%2FOrder Received</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Registry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shipping Fee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Special Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Membership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Pricing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transfers %2F No Caller</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WISMO</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Interim_Update__c</picklist>
+            <values>
+                <fullName>Left 1st voice message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Left 2nd voice message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent 1st email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent 2nd email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Next Follow Up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting on Another Dept%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting on Merchant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting on Vendor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Re_assign_Reason__c</picklist>
+            <values>
+                <fullName>Other - Specify</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out of Office</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vacation</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Re_assign_To__c</picklist>
+            <values>
+                <fullName>Advocate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Supervisor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Re_assign__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Complete - Successful</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete - Unsuccessful</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deferred</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Started</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Waiting on someone else</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>B%2FO Notification %28Tracy%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Client Call Back</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Client Follow-up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Client Requires Response by EOD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Escalated Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Process Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quote Follow Up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RH - SF Admin Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RH - SF Tech Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Request Sample</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Request Verifying Documentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Application</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Catalog</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Quote</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Set Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WISMO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Another Department</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Authorization</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Credit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Documentation %28fax for Tax Exemption%2C contract%2C etc%2E%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Item to Return</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Item to Ship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Vendor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Attach POD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing Review%2FAudit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DC Cancellation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dock Search</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manually Close Checklist%2FCDN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provide Additional Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RM Review%2FApproval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samples Sent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Delight_HQ</fullName>
+        <active>true</active>
+        <label>Delight HQ</label>
+        <picklistValues>
+            <picklist>Contact_Type__c</picklist>
+            <values>
+                <fullName>Other Contact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send To</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ship To 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sold To</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Department_Assigned__c</picklist>
+            <values>
+                <fullName>CSC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DDC 96</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Domestic Transportation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Foreign Transportation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HDL - Insource</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HDL - Network</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LADC 97</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Logistics Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MDC 98</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ODC 89</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Production</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Replacements Parts%2FPI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SFDC 95</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SPO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shanghai</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Follow_Up_Method__c</picklist>
+            <values>
+                <fullName>Call Primary</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Call Secondary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>InMoment_Reason__c</picklist>
+            <values>
+                <fullName>Backorder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Catalogue Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate Contact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Status</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing Order Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flat Rate Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flat Rate Shipping Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gallery Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Cards %2F Gift Certificates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HDL Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Line Testing %2F WFM %2F Telecom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Not Placed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Placed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Processing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Update</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Place Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Availability</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Promo %2F Price Match</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quote Revision</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quotes%2FOrder Received</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Registry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shipping Fee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Special Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Membership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Pricing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transfers %2F No Caller</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WISMO</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Interim_Update__c</picklist>
+            <values>
+                <fullName>Left 1st voice message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Left 2nd voice message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent 1st email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent 2nd email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Next Follow Up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting on Another Dept%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting on Merchant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting on Vendor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Re_assign_Reason__c</picklist>
+            <values>
+                <fullName>Other - Specify</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out of Office</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vacation</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Re_assign_To__c</picklist>
+            <values>
+                <fullName>Advocate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Supervisor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Re_assign__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Complete - Successful</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete - Unsuccessful</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deferred</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Started</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Waiting on someone else</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>B%2FO Notification %28Tracy%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Client Call Back</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Client Follow-up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Client Requires Response by EOD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Escalated Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Process Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Request Verifying Documentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WISMO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Another Department</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Authorization</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Credit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Item to Return</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Item to Ship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Vendor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Follow_Up</fullName>
+        <active>true</active>
+        <description>CSC Follow Up Task</description>
+        <label>Standard</label>
+        <picklistValues>
+            <picklist>Contact_Type__c</picklist>
+            <values>
+                <fullName>Other Contact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send To</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ship To 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sold To</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Follow_Up_Method__c</picklist>
+            <values>
+                <fullName>Call Primary</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Call Secondary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>InMoment_Reason__c</picklist>
+            <values>
+                <fullName>Backorder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Catalogue Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate Contact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Status</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing Order Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flat Rate Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flat Rate Shipping Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gallery Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Cards %2F Gift Certificates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HDL Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Line Testing %2F WFM %2F Telecom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Not Placed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Placed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Processing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Update</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Place Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Availability</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Promo %2F Price Match</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quote Revision</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quotes%2FOrder Received</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Registry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shipping Fee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Special Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Membership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Pricing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transfers %2F No Caller</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WISMO</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Interim_Update__c</picklist>
+            <values>
+                <fullName>Left 1st voice message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Left 2nd voice message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent 1st email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent 2nd email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Next Follow Up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting on Another Dept%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting on Merchant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting on Vendor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Re_assign_Reason__c</picklist>
+            <values>
+                <fullName>Other - Specify</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out of Office</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vacation</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Re_assign_To__c</picklist>
+            <values>
+                <fullName>Advocate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Supervisor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Re_assign__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Complete - Successful</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete - Unsuccessful</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Started</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Waiting on someone else</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>Client Call Back</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Client Follow-up</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Client Requires Response by EOD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Escalated Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Another Department</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Authorization</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Credit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Documentation %28fax for Tax Exemption%2C contract%2C etc%2E%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Item to Return</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Item to Ship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Vendor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samples Sent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Product_Issue</fullName>
+        <active>true</active>
+        <label>Product Issue</label>
+        <picklistValues>
+            <picklist>Assignment_Detail__c</picklist>
+            <values>
+                <fullName>Flatworld</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Home Office</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shanghai</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contact_Type__c</picklist>
+            <values>
+                <fullName>Other Contact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send To</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ship To 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sold To</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Current_Assignment__c</picklist>
+            <values>
+                <fullName>Agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Merchant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vendor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Department_Assigned__c</picklist>
+            <values>
+                <fullName>CSC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DDC 96</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Domestic Transportation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Foreign Transportation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HDL - Insource</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HDL - Network</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LADC 97</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Logistics Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MDC 98</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ODC 89</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Production</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Replacements Parts%2FPI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SFDC 95</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SPO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shanghai</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Follow_Up_Method__c</picklist>
+            <values>
+                <fullName>Call Primary</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Call Secondary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>InMoment_Reason__c</picklist>
+            <values>
+                <fullName>Backorder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Catalogue Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate Contact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Status</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing Order Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flat Rate Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flat Rate Shipping Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gallery Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Cards %2F Gift Certificates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HDL Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Line Testing %2F WFM %2F Telecom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Not Placed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Placed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Processing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Update</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Place Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Availability</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Promo %2F Price Match</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quote Revision</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quotes%2FOrder Received</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Registry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shipping Fee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Special Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Membership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Pricing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transfers %2F No Caller</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WISMO</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Interim_Update__c</picklist>
+            <values>
+                <fullName>Left 1st voice message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Left 2nd voice message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent 1st email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent 2nd email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Next Follow Up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting on Another Dept%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting on Merchant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting on Vendor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Re_assign_Reason__c</picklist>
+            <values>
+                <fullName>Other - Specify</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out of Office</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vacation</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Re_assign_To__c</picklist>
+            <values>
+                <fullName>Advocate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Supervisor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Re_assign__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Complete - Unsuccessful</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deferred</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Started</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Waiting on someone else</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>Request Verifying Documentation</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samples Sent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Reorders</fullName>
+        <active>true</active>
+        <description>For HDL Delivery Management</description>
+        <label>Reorders</label>
+        <picklistValues>
+            <picklist>Assignment_Detail__c</picklist>
+            <values>
+                <fullName>Flatworld</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Home Office</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shanghai</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contact_Type__c</picklist>
+            <values>
+                <fullName>Other Contact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send To</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ship To 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sold To</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Current_Assignment__c</picklist>
+            <values>
+                <fullName>Agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Merchant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vendor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Department_Assigned__c</picklist>
+            <values>
+                <fullName>CSC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DDC 96</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Domestic Transportation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Foreign Transportation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HDL - Insource</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HDL - Network</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LADC 97</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Logistics Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MDC 98</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ODC 89</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Production</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Replacements Parts%2FPI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SFDC 95</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SPO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shanghai</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Follow_Up_Method__c</picklist>
+            <values>
+                <fullName>Call Primary</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Call Secondary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>InMoment_Reason__c</picklist>
+            <values>
+                <fullName>Backorder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Catalogue Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate Contact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Status</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing Order Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flat Rate Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flat Rate Shipping Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gallery Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Cards %2F Gift Certificates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HDL Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Line Testing %2F WFM %2F Telecom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Not Placed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Placed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Processing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Update</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Place Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Availability</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Promo %2F Price Match</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quote Revision</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quotes%2FOrder Received</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Registry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shipping Fee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Special Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Membership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Pricing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transfers %2F No Caller</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WISMO</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Interim_Update__c</picklist>
+            <values>
+                <fullName>Left 1st voice message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Left 2nd voice message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent 1st email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent 2nd email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Next Follow Up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting on Another Dept%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting on Merchant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting on Vendor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Re_assign_Reason__c</picklist>
+            <values>
+                <fullName>Other - Specify</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out of Office</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vacation</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Re_assign_To__c</picklist>
+            <values>
+                <fullName>Advocate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Supervisor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Re_assign__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Complete - Successful</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete - Unsuccessful</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deferred</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Started</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Waiting on someone else</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>B%2FO Notification %28Tracy%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Client Call Back</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Client Follow-up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Client Requires Response by EOD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Escalated Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Process Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Request Verifying Documentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WISMO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Another Department</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Authorization</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Credit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Item to Return</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Item to Ship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Vendor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Replacement_Parts_Task</fullName>
+        <active>true</active>
+        <description>Use this Task record type to track Replacement Parts Tasks</description>
+        <label>Replacement Parts</label>
+        <picklistValues>
+            <picklist>Contact_Type__c</picklist>
+            <values>
+                <fullName>Other Contact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send To</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ship To 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sold To</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Department_Assigned__c</picklist>
+            <values>
+                <fullName>CSC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DDC 96</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Domestic Transportation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Foreign Transportation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HDL - Insource</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HDL - Network</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LADC 97</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Logistics Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MDC 98</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ODC 89</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Production</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Replacements Parts%2FPI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SFDC 95</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SPO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shanghai</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Follow_Up_Method__c</picklist>
+            <values>
+                <fullName>Call Primary</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Call Secondary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>InMoment_Reason__c</picklist>
+            <values>
+                <fullName>Backorder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Catalogue Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate Contact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Status</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing Order Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flat Rate Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flat Rate Shipping Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gallery Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Cards %2F Gift Certificates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HDL Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Line Testing %2F WFM %2F Telecom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Not Placed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Placed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Processing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Update</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Place Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Availability</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Promo %2F Price Match</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quote Revision</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quotes%2FOrder Received</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Registry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shipping Fee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Special Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Membership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Pricing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transfers %2F No Caller</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WISMO</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Interim_Update__c</picklist>
+            <values>
+                <fullName>Left 1st voice message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Left 2nd voice message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent 1st email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent 2nd email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Next Follow Up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting on Another Dept%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting on Merchant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting on Vendor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Re_assign_Reason__c</picklist>
+            <values>
+                <fullName>Other - Specify</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out of Office</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vacation</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Re_assign_To__c</picklist>
+            <values>
+                <fullName>Advocate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Supervisor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Re_assign__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Complete - Successful</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete - Unsuccessful</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deferred</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Started</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Waiting on someone else</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>B%2FO Notification %28Tracy%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Client Call Back</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Client Follow-up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Client Requires Response by EOD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Escalated Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Process Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Request Verifying Documentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WISMO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Another Department</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Authorization</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Credit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Item to Return</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Item to Ship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Vendor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>SPO_Date_Validation</fullName>
+        <active>true</active>
+        <label>SPO Date Validation</label>
+        <picklistValues>
+            <picklist>Assignment_Detail__c</picklist>
+            <values>
+                <fullName>Flatworld</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Home Office</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shanghai</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contact_Type__c</picklist>
+            <values>
+                <fullName>Other Contact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send To</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ship To 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sold To</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Current_Assignment__c</picklist>
+            <values>
+                <fullName>Agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Merchant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vendor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Department_Assigned__c</picklist>
+            <values>
+                <fullName>CSC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DDC 96</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Domestic Transportation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Foreign Transportation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HDL - Insource</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HDL - Network</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LADC 97</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Logistics Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MDC 98</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ODC 89</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Production</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Replacements Parts%2FPI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SFDC 95</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SPO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shanghai</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Follow_Up_Method__c</picklist>
+            <values>
+                <fullName>Call Primary</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Call Secondary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>InMoment_Reason__c</picklist>
+            <values>
+                <fullName>Backorder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Catalogue Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate Contact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Status</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing Order Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flat Rate Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flat Rate Shipping Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gallery Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gift Cards %2F Gift Certificates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HDL Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Line Testing %2F WFM %2F Telecom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Not Placed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Placed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Processing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Update</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Place Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Availability</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Promo %2F Price Match</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quote Revision</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quotes%2FOrder Received</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Registry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shipping Fee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Special Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Membership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Pricing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transfers %2F No Caller</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WISMO</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Interim_Update__c</picklist>
+            <values>
+                <fullName>Left 1st voice message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Left 2nd voice message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent 1st email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent 2nd email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Next Follow Up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting on Another Dept%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting on Merchant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting on Vendor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Re_assign_Reason__c</picklist>
+            <values>
+                <fullName>Other - Specify</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out of Office</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vacation</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Re_assign_To__c</picklist>
+            <values>
+                <fullName>Advocate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Supervisor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Re_assign__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Complete - Successful</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete - Unsuccessful</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Started</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Waiting on someone else</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>BO Date Validation</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samples Sent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>CSC_Subject</fullName>
+        <active>false</active>
+        <description>Limit the Subjects allowed for CSC</description>
+        <errorConditionFormula>AND(
+   RecordType.Name  = &quot;Follow Up&quot;
+)</errorConditionFormula>
+        <errorDisplayField>Subject</errorDisplayField>
+        <errorMessage>This subject is not valid. Please edit your selection to include one of the options listed below RH-SF Admin Request.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ContactCannotBeBlankforCSCSurvey</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+$Profile.Name != &quot;System Administrator&quot;,
+$Profile.Name != &quot;API Only&quot;,
+RecordType.DeveloperName = &quot;CSC_InMoment_Survey&quot;,
+ISBLANK( WhoId )
+)</errorConditionFormula>
+        <errorMessage>You must choose a Contact when coding calls.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>DueDateNoMoreThan30Days</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(ActivityDate &gt; TODAY() + 30, RecordType.Name = &quot;CSC Follow Up&quot;)</errorConditionFormula>
+        <errorDisplayField>ActivityDate</errorDisplayField>
+        <errorMessage>The Due Date cannot be more than 30 days from today&apos;s date.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Due_date_cannot_be_before_today</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  ActivityDate &lt; TODAY(), 
+  RecordType.Name = &quot;CSC Follow Up&quot;,
+  NOT(ISPICKVAL(Status, &quot;Complete - Successful&quot;)),
+  NOT(ISPICKVAL(Status, &quot;Complete - Unsuccessful&quot;))
+)</errorConditionFormula>
+        <errorDisplayField>ActivityDate</errorDisplayField>
+        <errorMessage>The Due Date must be in the future.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Other_Contact_Specify</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+ISPICKVAL( Contact_Type__c ,&quot;Other Contact&quot;),
+ISBLANK(Other_Contact_Specify__c)
+)</errorConditionFormula>
+        <errorDisplayField>Other_Contact_Specify__c</errorDisplayField>
+        <errorMessage>Please fill in &apos;Other Contact - Specify&apos; when &apos;Other&apos; is selected for &apos;Contact Type&apos;</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Reason_Other_explanation</fullName>
+        <active>true</active>
+        <description>If Reason is &quot;Other&quot; please specify.</description>
+        <errorConditionFormula>AND(
+RecordType.Name = &quot;CSC Follow Up&quot;,
+ISPICKVAL( Re_assign_Reason__c ,&quot;Other - Specify&quot;),
+ISBLANK( Other_Specify__c )
+)</errorConditionFormula>
+        <errorDisplayField>Other_Specify__c</errorDisplayField>
+        <errorMessage>Please specify the reason for the task.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Code_a_Business_Contact_Call</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Code a Business Contact Call</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/28.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/support/console/28.0/integration.js&quot;)}
+
+var url = &apos;/00T/e?title=Call&amp;who_id={!Contact.Id}&amp;what_id={!Account.Id}&amp;tsk5=Call&amp;retURL=/{!RH_Order__c.Id}&amp;RecordType=01250000000RpKn&amp;ent=Task&apos;;
+
+if (sforce.console.isInConsole()) {
+srcUp(url+&apos;&amp;isdtp=vw&apos;);
+} else {
+window.open(url);
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Code_a_Contact_Call</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Code a Contact Call</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/28.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/support/console/28.0/integration.js&quot;)}
+
+var url = &apos;/00T/e?title=Call&amp;who_id={!Account.Id}&amp;what_id={!Account.Id}&amp;tsk5=Call&amp;retURL=/{!RH_Order__c.Id}&amp;RecordType=01250000000RpKn&amp;ent=Task&apos;;
+
+if (sforce.console.isInConsole()) {
+srcUp(url+&apos;&amp;isdtp=vw&apos;);
+} else {
+window.open(url);
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Code_an_Order_Call</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Code an Order Call</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/28.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/support/console/28.0/integration.js&quot;)}
+
+var url = &apos;/00T/e?title=Call&amp;who_id={!RH_Order__c.Contact_Sold_ToId__c}&amp;what_id={!RH_Order__c.Id}&amp;tsk5=Call&amp;retURL=/{!RH_Order__c.Id}&amp;RecordType=01250000000RpKn&amp;ent=Task&apos;;
+
+if (sforce.console.isInConsole()) {
+srcUp(url+&apos;&amp;isdtp=vw&apos;);
+} else {
+window.open(url);
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Case_Task</fullName>
+        <availability>online</availability>
+        <description>Custom button to automatically select Task record type based upon parent Case record type. To be used on Open Activities related list on Case detail page.</description>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Task</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>../apex/CaseTask_new?caseId={!Case.Id}&amp;retURL=/{!Case.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Task_Case_BO_Date_Validation</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New BO Task</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>/00T/e?what_id={!Case.Id}&amp;retURL=/{!Case.Id}&amp;RecordType=&quot;01250000000E8pj&quot;&amp;ent=Task</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Task_Case_DRS</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New DRS Task</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>/00T/e?what_id={!Case.Id}&amp;retURL=/{!Case.Id}&amp;RecordType=012500000005fBm&amp;ent=Task</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Task_Case_Delight_HQ</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Delight HQ Task</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>/00T/e?what_id={!Case.Id}&amp;retURL=/{!Case.Id}&amp;RecordType=01250000000E8bG&amp;ent=Task</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Task_Case_Product_Issue</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Product Issue Task</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>/00T/e?what_id={!Case.Id}&amp;retURL=/{!Case.Id}&amp;RecordType=01250000000E8ek&amp;ent=Task</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Task_Case_Reorders</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Reorders Task</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>/00T/e?what_id={!Case.Id}&amp;retURL=/{!Case.Id}&amp;RecordType=012500000005fBo&amp;ent=Task</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Task_Case_Replacement_Parts</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Replacement Parts Task</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>/00T/e?what_id={!Case.Id}&amp;retURL=/{!Case.Id}&amp;RecordType=01250000000E8cl&amp;ent=Task</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Task_Case_SPO_Date_Validation</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New SPO Task</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>/00T/e?what_id={!Case.Id}&amp;retURL=/{!Case.Id}&amp;RecordType=012Q00000009CkT&amp;ent=Task</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Task_Order_Standard</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Standard Order Task</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>/00T/e?what_id={!RH_Order__c.Id}&amp;retURL=/{!RH_Order__c.Id}&amp;RecordType=012500000009tfF&amp;ent=Task</url>
+    </webLinks>
+</CustomObject>

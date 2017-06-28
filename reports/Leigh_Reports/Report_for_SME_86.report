@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>RH_Order__c.Membership_Auto_Renewal_Order__c</field>
+    </columns>
+    <columns>
+        <field>RH_Order__c.Status__c</field>
+    </columns>
+    <columns>
+        <field>RH_Order__c.System_Hold_Description__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>RH_Order__c.Membership_Auto_Renewal_Order__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RH_Order__c.Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Held</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Report for SME-86</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$RH_Order__c@RH_Order__c.Membership_ID_Lookup__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>RH_Order__c.CW_Upload_DateTime__c</dateColumn>
+        <interval>INTERVAL_LASTWEEK</interval>
+    </timeFrameFilter>
+</Report>

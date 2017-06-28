@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email Template use to send Email Alert to Account&apos;s Project Manager and the Account Owner - whenever the criteria Available Credit &lt;= 0 is met</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Credit Limit Exceeded</name>
+    <style>none</style>
+    <subject>Account Credit Limit Exceeded</subject>
+    <type>text</type>
+</EmailTemplate>

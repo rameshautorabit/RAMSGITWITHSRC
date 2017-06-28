@@ -1,0 +1,126 @@
+<apex:component access="global" controller="MembershipWelcomeEmailTemplateController" allowDML="true">
+
+<!--<apex:attribute name="membershipRecord" type="Membership__c" description="RH Membership Record"/>  -->
+<apex:attribute name="RHMembershipId" type="String" description="RH Membership Record Id" assignTo="{!membershipId}"/> 
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+    <title>The Members Program Reminder</title>
+</head>
+            
+<style type="text/css">
+a:link {text-decoration: none; color:inherit;}
+a:visited {text-decoration: none; color:inherit;}
+a:hover {text-decoration: none; color:inherit;}
+a:active {text-decoration: none; color:inherit;}
+</style>
+
+<apex:repeat value="{!MembershipDetails}" var="m">
+            
+<body>
+    <div style="display:none; font-size:1px; color:#333333; line-height:1px; max-height:0px; max-width:0px; opacity:0; overflow:hidden"> Enjoy 25% Savings on Everything RH. Every Day.
+    </div>
+    <table cellpadding="0" cellspacing="0" style="margin: 0 auto;">
+        <tbody>
+            <tr>
+                <td>
+                    <img src="http://media.restorationhardware.com/is/image/rhis/membership_email_welcome_20161213?wid=784&fmt=jpeg&qlt=80,0&op_sharpen=0&resMode=sharp&op_usm=0.3,1.0,5,0&iccEmbed=1" style="margin: 0; border: 0; padding: 0; display: block; width: 784px;"/>
+                </td>
+            </tr>
+        </tbody>
+        <!-- Preview text -->
+
+    </table>
+    <table alink="#999" link="#999" vlink="#999" cellpadding="0" cellspacing="0" style="font-family: 'Times New Roman',Times,serif; color: #fff; margin: 0 auto; width: 784px; padding: 0 200px 35px 60px; background-color: #0b0b0c;">
+        <tbody>
+            <tr>
+                <td style="line-height: 19px; font-family: 'Times New Roman',Times,serif; font-weight: normal">
+                    <!-- List of Membership Program Benefits. -->
+
+                    <p style="color: #fff; font-size: 14px; padding-top: 10px">Your RH Members Program benefits include 25% savings on RH, RH Modern, RH Baby &amp; Child, RH TEEN and RH Contemporary Art, 20% savings on all Sale, complimentary interior design services, concierge service to manage your orders, eligibility for preferred financing<span style="font-size: 10px; vertical-align: top; padding-left: 2px;">&dagger;</span> plans on RH Credit Card and early access to clearance events.</p>
+
+                    <p style="color: #fff; font-size: 14px; padding-top: 10px">For dedicated order support, contact the RH Members Program Concierge at <a style="color: #fff; text-decoration: underline" href="mailto:RHMembers@RH.com">RHMembers@RH.com</a> or call us at 888.889.4739.</p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" align="left" style="color:#fff; letter-spacing: 1px; font-family: sans-serif; text-align: left; padding: 60px 0 30px 0; font-size: 10px; width: 700px; margin: 0 auto">
+                    <table style="color: #fff; font-size: 12px">
+                        <tbody>
+                            <tr>
+                                <td colspan="2" style="color: #fff; font-size: 13px; font-family: 'Times New Roman',Times,serif; font-weight: normal; padding-bottom: 10px">MEMBERSHIP INFORMATION</td>
+                            </tr>
+                            <tr>
+                                <td style="color: #fff; width: 180px; font-family: 'proxima-nova', 'open-sans', Arial, Helvetica, sans-serif; text-transform: uppercase">MEMBERSHIP NUMBER</td>
+                                <td style="color: #fff; font-family: 'proxima-nova', 'open-sans', Arial, Helvetica, sans-serif">{!m.membership.Name}</td>
+                            </tr>
+                            <tr>
+                                <td style="color: #fff; font-family: 'proxima-nova', 'open-sans', Arial, Helvetica, sans-serif; text-transform: uppercase">ENROLLMENT</td>
+                                <td style="color: #fff; font-family: 'proxima-nova', 'open-sans', Arial, Helvetica, sans-serif">{!m.EnrollmentDate}</td>
+                            </tr>
+                            <tr>
+                                <td style="color: #fff; font-family: 'proxima-nova', 'open-sans', Arial, Helvetica, sans-serif; text-transform: uppercase">EXPIRATION</td>
+                                <td style="color: #fff; font-family: 'proxima-nova', 'open-sans', Arial, Helvetica, sans-serif">{!m.ExpirationDate}</td>
+                            </tr>
+                            <tr>
+                                <td style="color: #fff; font-family: 'proxima-nova', 'open-sans', Arial, Helvetica, sans-serif; text-transform: uppercase">EMAIL</td>
+                                <td style="color: #fff; font-family: 'proxima-nova', 'open-sans', Arial, Helvetica, sans-serif">{!m.membership.Member_Email__c}</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="color: #fff; font-size: 10px; font-family: 'proxima-nova', 'open-sans', Arial, Helvetica, sans-serif; padding-top: 10px">Visit <a href="https://www.restorationhardware.com/my-account/index.jsp" style="color: #fff; text-decoration: underline" target="_blank">My Account</a> for details.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p style="color: #fff; font-size: 13px; padding: 50px 0 25px 0; text-transform: uppercase"><a style="color:#fff; text-decoration: none;" href="https://www.restorationhardware.com/" target="_blank">EXPLORE THE WORLD OF RH &#9656;</a></p>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" style="margin: 0 auto; width: 700px;">
+        <tbody>
+            <tr>
+                <td style="color: #999; padding:20px 0 20px 13px;">
+                    <!-- Footnotes - T&Cs. -->
+
+                    <p style="color: #999; font-size: 11px; font-family: 'proxima-nova', 'open-sans', Arial, Helvetica, sans-serif; text-align:left;">*Limited exclusions apply. See <a style="color: #999; text-decoration: underline;" href="{!if(isQuebec,'http://images.restorationhardware.com/content/customer-service/rhmembers-terms-Quebec.pdf','https://www.restorationhardware.com/content/page.jsp?id=rhmembers-terms')}" target="_blank">RH Members Program Terms &#38; Conditions</a> for more details.</p>
+
+                    <p style="color: #999; font-size: 11px; font-family: 'proxima-nova', 'open-sans', Arial, Helvetica, sans-serif; text-align:left;">&dagger; Promotional financing available with RH credit card accounts offered by Comenity Bank, which determines qualifications for credit and promotion eligibility. Minimum purchase and minimum monthly payments are required. Subject to credit approval and availability. Account must be in good standing at time of transaction.</p>
+                </td>
+            </tr>
+
+            <tr>
+                <!-- RH logo. -->
+
+                <td style="text-align: center; padding: 20px 0 30px 0;">
+                    <a style="color:#999" href="https://www.restorationhardware.com/" target="_blank"><img style=" opacity: 0.4; filter: alpha(opacity=40);" src="http://media.restorationhardware.com/is/image/rhis/rh_logo_transemail_2x_20160511?wid=126&fmt=png-alpha&qlt=85,1&op_sharpen=0&resMode=sharp2&op_usm=1,1,6,0&iccEmbed=1" width="62" height="41"/></a>
+                </td>
+            </tr>
+
+            <tr>
+                <!-- Footer links. -->
+
+                <td style="background-color: #fff; color: #999; text-align: center; font-size: 11px; font-family: 'proxima-nova', 'open-sans', Arial, Helvetica, sans-serif; line-height: 18px; padding: 20px 0 20px 0;letter-spacing: 1px;">
+                    <a href="https://www.restorationhardware.com/membership.jsp" target="_blank" style="color: #999; text-decoration: none;text-transform: uppercase;">Join The Members Program</a> | <a href="https://www.restorationhardware.com/customer-service/catalog-request.jsp" target="_blank" style="color: #999; text-decoration: none;text-transform: uppercase;">Request A Source Book</a> | <a href="https://www.restorationhardware.com/content/page.jsp?id=sourcebookapp" target="_blank" style="color: #999; text-decoration: none;text-transform: uppercase;">Source Book App</a> | <a href="https://www.restorationhardware.com/gift-registry/index.jsp" target="_blank" style="color: #999; text-decoration: none;text-transform: uppercase;">Registry</a> | <a href="https://www.restorationhardware.com/customer-service/privacy-policy.jsp" target="_blank" style="color: #999; text-decoration: none;text-transform: uppercase;">Privacy</a>
+                    <p>
+                        <!-- Brand links. -->
+
+                    </p>
+                    <p><a href="https://www.restorationhardware.com/" target="_blank" style="color: #999; text-decoration: none;text-transform: uppercase;">RH</a> | <a href="https://www.rhmodern.com/" target="_blank" style="color: #999; text-decoration:none;text-transform: uppercase;">RH Modern</a> | <a href="https://www.rhteen.com/" target="_blank" style="color: #999; text-decoration: none;text-transform: uppercase;">RH Teen</a> | <a href="https://www.rhbabyandchild.com/" target="_blank" style="color: #999; text-decoration: none;text-transform: uppercase;">RH Baby &#38; Child</a>
+                        <!-- Copyright & address. -->
+                    </p>
+
+                    <p style="text-decoration: none;"><br/>&copy; 2017 RH&nbsp;15 Koch Road, Corte Madera, CA 94925</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+</body>
+
+</apex:repeat>
+ 
+</apex:component>

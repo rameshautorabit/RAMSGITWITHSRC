@@ -1,0 +1,9 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<div><font face="arial"><span style="font-size: 16px;">Dear {!Lead.FirstName},</span></font></div><div><font face="arial"><span style="font-size: 16px;"><br></span></font></div><div>Thank you for your interest in setting up an RH Business account. We're 
+processing your application for an account, and wanted to confirm the 
+predominant focus of your business so that we can make sure that the 
+right team supports you.</div><div><font face="arial"><span style="font-size: 16px;"><br></span></font></div><div align="left"><font face="arial"><span style="font-size: 16px;">How would the majority of the projects you worked on over the last 18 months be classified (select one)?</span></font><font face="arial"><span style="font-size: 16px;"><br></span></font><blockquote><font face="arial"><span style="font-size: 16px;">*Hospitality projects (hotels, restaurants, bars, spas)</span></font><div align="left"><font face="arial"><span style="font-size: 16px;">*Commercial projects (offices, retail spaces, educational institutions)</span></font></div><div align="left"><font face="arial"><span style="font-size: 16px;">*Residential projects working with single- or multi-family residential builders/developers</span></font></div><div align="left"><font face="arial"><span style="font-size: 16px;">*Residential interior design projects working directly with homeowners<br></span></font></div></blockquote></div><div><font face="arial"><span style="font-size: 16px;">Sincerely,</span></font></div><div><font face="arial"><span style="font-size: 16px;">RH Contract Membership</span></font></div>]]></td>
+</tr>
+</table>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Product2.Product_Image_Thumbnail__c</field>
+    </columns>
+    <columns>
+        <field>Product2.CW_Item_Description__c</field>
+    </columns>
+    <columns>
+        <field>Product2.Color__c</field>
+    </columns>
+    <columns>
+        <field>Product2.Member_Price__c</field>
+    </columns>
+    <columns>
+        <field>NAME</field>
+    </columns>
+    <columns>
+        <field>Product2.STSSku__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Belgian Linen Classic Slope</description>
+    <filter>
+        <criteriaItems>
+            <column>Product2.STSSku__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>15070521,56220624,60710393,61590406,61590477,61590487,95560253,62050123,62050379,62210160,68270075,68600066,68910062,68910066,68290748,40200890,40200885,16210177,16050865,16100006,16050879,16100007,40500716,31020226,31010219,40410376,41450038</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>F204</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ProductList</reportType>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

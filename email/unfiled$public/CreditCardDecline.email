@@ -1,0 +1,9 @@
+<messaging:emailTemplate subject="{!relatedTo.CCD_Email_Subject__c}" recipientType="Contact" relatedToType="Case">
+
+	<messaging:htmlEmailBody >
+		
+		<c:CreditCardDecline cId="{!relatedTo.Id}" />
+		
+	</messaging:htmlEmailBody>
+	
+</messaging:emailTemplate>

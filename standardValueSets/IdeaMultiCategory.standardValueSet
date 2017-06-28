@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Billing</fullName>
+        <default>false</default>
+        <label>Billing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Case Management</fullName>
+        <default>false</default>
+        <label>Case Management</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Clienteling</fullName>
+        <default>false</default>
+        <label>Clienteling</label>
+    </standardValue>
+    <standardValue>
+        <fullName>General/ Other</fullName>
+        <default>false</default>
+        <label>General/ Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Client Delight</fullName>
+        <default>false</default>
+        <label>Client Delight</label>
+    </standardValue>
+    <standardValue>
+        <fullName>List Views</fullName>
+        <default>false</default>
+        <label>List Views</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Order Managmeent</fullName>
+        <default>false</default>
+        <label>Order Managmeent</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Reports &amp; Dashboards</fullName>
+        <default>false</default>
+        <label>Reports &amp; Dashboards</label>
+    </standardValue>
+</StandardValueSet>

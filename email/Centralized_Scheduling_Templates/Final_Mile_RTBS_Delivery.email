@@ -1,0 +1,8 @@
+Thank you for shopping with RH, the premier source for luxury home furnishings. Items from order number {!Case.Order_Number__c} are ready to be scheduled for delivery to the following:
+ 
+{!Case.ShipTo1_Name__c}
+{!Case.ShipTo1_Address__c}
+ 
+So that we may assist you in scheduling a delivery time that is convenient for you, please call RH Home Delivery Service at 844.552.4500. When calling, please refer to delivery reference number (insert CDN #).
+ 
+We look forward to further assisting you.

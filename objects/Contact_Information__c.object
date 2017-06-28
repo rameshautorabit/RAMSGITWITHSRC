@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>This table contains one record per contact point. A contact point is defined as a method for contacting the customer (examples include: Email, Phone, Social Handles).</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Contact_Info_Relationship_Match_Key__c</fullName>
+        <description>This field is used for the building of &quot;same person&quot; relationships. It builds a map of Last Name + First Name + Medium + (Email or Phone)</description>
+        <externalId>true</externalId>
+        <label>Contact Info Relationship Match Key</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Information_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Contact Information Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Information_Match_Key_Hash__c</fullName>
+        <description>This is a hashed version of the Contact Information Match Key (Contact ID + Contact Info Medium + (Email or Phone)</description>
+        <externalId>true</externalId>
+        <label>Contact Information Match Key Hash</label>
+        <length>44</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Information_Match_Key__c</fullName>
+        <externalId>false</externalId>
+        <label>Contact Information Match Key</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Information_Medium_Text__c</fullName>
+        <externalId>false</externalId>
+        <formula>RecordType.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Contact Information Medium</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Information_Medium__c</fullName>
+        <externalId>false</externalId>
+        <label>Contact Information Medium</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Email</fullName>
+                    <default>false</default>
+                    <label>Email</label>
+                </value>
+                <value>
+                    <fullName>Phone</fullName>
+                    <default>false</default>
+                    <label>Phone</label>
+                </value>
+                <value>
+                    <fullName>Fax</fullName>
+                    <default>false</default>
+                    <label>Fax</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Contact_Information_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Contact Information Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Home Phone</fullName>
+                    <default>false</default>
+                    <label>Home Phone</label>
+                </value>
+                <value>
+                    <fullName>Business Phone</fullName>
+                    <default>false</default>
+                    <label>Business Phone</label>
+                </value>
+                <value>
+                    <fullName>Mobile</fullName>
+                    <default>false</default>
+                    <label>Mobile</label>
+                </value>
+                <value>
+                    <fullName>Personal Email</fullName>
+                    <default>false</default>
+                    <label>Personal Email</label>
+                </value>
+                <value>
+                    <fullName>Work Email</fullName>
+                    <default>false</default>
+                    <label>Work Email</label>
+                </value>
+                <value>
+                    <fullName>Fax</fullName>
+                    <default>false</default>
+                    <label>Fax</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Contact__c</fullName>
+        <externalId>false</externalId>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Contact Information</relationshipLabel>
+        <relationshipName>Contact_Information</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Customer_Address_Details__c</fullName>
+        <externalId>false</externalId>
+        <formula>Customer_Address__r.Address_Lines__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Customer Address Details</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Customer_Address__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Customer Address</label>
+        <referenceTo>Customer_Address__c</referenceTo>
+        <relationshipName>Contact_Points</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Full_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact__r.FirstName &amp; &quot; &quot; &amp; Contact__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Full Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Is_Inactive__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Defines whether or not this Contact Information record is Active</description>
+        <externalId>false</externalId>
+        <label>Is Inactive</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_Primary__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Primary</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Other_Contact_Information__c</fullName>
+        <externalId>false</externalId>
+        <label>Other Contact Information</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Phone_Extension__c</fullName>
+        <externalId>false</externalId>
+        <label>Phone Extension</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Phone__c</fullName>
+        <externalId>false</externalId>
+        <label>Phone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <label>Contact Information</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Email__c</columns>
+        <columns>Phone__c</columns>
+        <columns>Is_Primary__c</columns>
+        <columns>Contact_Information_Type__c</columns>
+        <columns>Contact_Information_Medium__c</columns>
+        <columns>Contact_Information_Description__c</columns>
+        <columns>Customer_Address__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Contact Information</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Contact Information</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Email</fullName>
+        <active>true</active>
+        <description>For email contact information</description>
+        <label>Email</label>
+        <picklistValues>
+            <picklist>Contact_Information_Medium__c</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contact_Information_Type__c</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Personal Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Work Email</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Fax</fullName>
+        <active>true</active>
+        <description>For fax contact information</description>
+        <label>Fax</label>
+        <picklistValues>
+            <picklist>Contact_Information_Medium__c</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fax</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contact_Information_Type__c</picklist>
+            <values>
+                <fullName>Business Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fax</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Home Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mobile</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Personal Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Work Email</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Other</fullName>
+        <active>true</active>
+        <description>For other contact information</description>
+        <label>Other</label>
+        <picklistValues>
+            <picklist>Contact_Information_Medium__c</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fax</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contact_Information_Type__c</picklist>
+            <values>
+                <fullName>Business Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Home Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mobile</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Personal Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Work Email</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Phone</fullName>
+        <active>true</active>
+        <description>For phone contact information</description>
+        <label>Phone</label>
+        <picklistValues>
+            <picklist>Contact_Information_Medium__c</picklist>
+            <values>
+                <fullName>Fax</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contact_Information_Type__c</picklist>
+            <values>
+                <fullName>Business Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fax</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Home Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mobile</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>Email__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Phone__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Is_Primary__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Contact_Information_Medium__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Contact_Information_Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Contact_Information_Description__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Customer_Address__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Customer_Address__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Contact_Information_Type__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Email__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Phone__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Is_Primary__c</lookupDialogsAdditionalFields>
+        <searchResultsAdditionalFields>Customer_Address__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Contact_Information_Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Email__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Phone__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Is_Primary__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Active_Contact_Information_is_Primary</fullName>
+        <active>true</active>
+        <description>Prevents users from making non active contact information primary</description>
+        <errorConditionFormula>AND(
+OR($Profile.Name = &quot;CSC Advocate&quot; , $Profile.Name = &quot;Gallery&quot;),
+
+AND( Is_Inactive__c = TRUE, Is_Primary__c = TRUE)
+)</errorConditionFormula>
+        <errorMessage>You cannot mark a primary phone or email address as inactive. Choose or create a different primary phone or email address before marking this one as inactive.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>New_Email</fullName>
+        <availability>online</availability>
+        <description>New Email Information fills in the name of the field</description>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Email</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>/{!$Setup.Contact_Information_Buttons_ID_Mappings__c.Object_URL_Id__c}/e?{!$Setup.Contact_Information_Buttons_ID_Mappings__c.Contact_Lookup_Name__c}={!Contact.FirstName}+{!Contact.LastName}&amp;{!$Setup.Contact_Information_Buttons_ID_Mappings__c.Contact_Lookup_Name__c}_lkid={!Contact.Id}&amp;Name=Automated&amp;retURL=%2F{!Contact.Id}&amp;RecordType={!$Setup.Contact_Information_Buttons_ID_Mappings__c.Record_Type_Value_New_Email__c}&amp;saveURL=%2F{!Contact.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Fax</fullName>
+        <availability>online</availability>
+        <description>New Fax Information	 fills in the name of the field</description>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Fax</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>/{!$Setup.Contact_Information_Buttons_ID_Mappings__c.Object_URL_Id__c}/e?{!$Setup.Contact_Information_Buttons_ID_Mappings__c.Contact_Lookup_Name__c}={!Contact.FirstName}+{!Contact.LastName}&amp;{!$Setup.Contact_Information_Buttons_ID_Mappings__c.Contact_Lookup_Name__c}_lkid={!Contact.Id}&amp;Name=Automated&amp;retURL=%2F{!Contact.Id}&amp;RecordType={!$Setup.Contact_Information_Buttons_ID_Mappings__c.Record_Type_Value_New_Fax__c}&amp;saveURL=%2F{!Contact.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Other_Contact_Information</fullName>
+        <availability>online</availability>
+        <description>New Other Contact Information fills in the name of the field</description>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Other Contact Information</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>/{!$Setup.Contact_Information_Buttons_ID_Mappings__c.Object_URL_Id__c}/e?{!$Setup.Contact_Information_Buttons_ID_Mappings__c.Contact_Lookup_Name__c}={!Contact.FirstName}+{!Contact.LastName}&amp;{!$Setup.Contact_Information_Buttons_ID_Mappings__c.Contact_Lookup_Name__c}_lkid={!Contact.Id}&amp;Name=&quot;Automated&quot;&amp;retURL=%2F{!Contact.Id}&amp;RecordType={!$Setup.Contact_Information_Buttons_ID_Mappings__c.Record_Type_Value_New_Other_Contact_Info__c}&amp;saveURL=%2F{!Contact.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Phone</fullName>
+        <availability>online</availability>
+        <description>New Phone Information fills in the name of the field</description>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Phone</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>/{!$Setup.Contact_Information_Buttons_ID_Mappings__c.Object_URL_Id__c}/e?{!$Setup.Contact_Information_Buttons_ID_Mappings__c.Contact_Lookup_Name__c}={!Contact.FirstName}+{!Contact.LastName}&amp;{!$Setup.Contact_Information_Buttons_ID_Mappings__c.Contact_Lookup_Name__c}_lkid={!Contact.Id}&amp;Name=Automated&amp;retURL=%2F{!Contact.Id}&amp;RecordType={!$Setup.Contact_Information_Buttons_ID_Mappings__c.Record_Type_Value_New_Phone__c}&amp;saveURL=%2F{!Contact.Id}</url>
+    </webLinks>
+</CustomObject>

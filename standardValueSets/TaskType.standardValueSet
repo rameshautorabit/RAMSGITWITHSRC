@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Call</fullName>
+        <default>false</default>
+        <label>Call</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email</fullName>
+        <default>false</default>
+        <label>Email</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Meeting</fullName>
+        <default>false</default>
+        <label>Meeting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Samples Sent</fullName>
+        <default>false</default>
+        <label>Samples Sent</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Dock Search</fullName>
+        <default>false</default>
+        <label>Dock Search</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Attach POD</fullName>
+        <default>false</default>
+        <label>Attach POD</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Contact Customer</fullName>
+        <default>false</default>
+        <label>Contact Customer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Provide Additional Information</fullName>
+        <default>false</default>
+        <label>Provide Additional Information</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Manually Close Checklist/CDN</fullName>
+        <default>false</default>
+        <label>Manually Close Checklist/CDN</label>
+    </standardValue>
+    <standardValue>
+        <fullName>RM Review/Approval</fullName>
+        <default>false</default>
+        <label>RM Review/Approval</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Billing Review/Audit</fullName>
+        <default>false</default>
+        <label>Billing Review/Audit</label>
+    </standardValue>
+    <standardValue>
+        <fullName>DC Cancellation</fullName>
+        <default>false</default>
+        <label>DC Cancellation</label>
+    </standardValue>
+</StandardValueSet>

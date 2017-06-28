@@ -1,0 +1,17 @@
+Dear {!Case.Contact},
+ 
+Thank you for shopping with Restoration Hardware. This email is in regard to your order # {!Case.Order_Number__c}. 
+ 
+An exchange has been created on your order on [date] for the [item name]. We would like to confirm if you would still like to proceed with this exchange, as our records indicate that the UPS Call Tag sent to you was unable to retrieve the package.
+  
+If you have possession of the prepaid label left by UPS on [date] after they were unable to retrieve the package, you may adhere this to your package and take to any UPS drop off location.
+Once the item has been received by our facility, we will be able to finalize your exchange and ship your replacement item.
+ 
+Please contact us at your earliest convenience to confirm the status of your return. If we are unable to confirm the transit of your item or receive a response from you by (insert cancellation date), the exchange will be cancelled from your order.
+ 
+RH Customer Care can be reached via email at webcs@restorationhardware.com or by calling 877-777-7059. Any associate will be able to assist you with this matter.
+ 
+Thank you again for shopping with RH.
+
+Regards, 
+RH Customer Care

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_21760397</developerName>
+        <masterLabel>Merchant Department</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Case.Department_Formula__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>1200 - WINDOW HW &amp; COVERINGS</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>1600 - PILLOWS THROWS &amp; SEASONAL</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>1400 - BEDROOM TEXTILES</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>1700 - BATH TEXTILES</sourceValue>
+            </sourceValues>
+            <value>Textiles</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>4000 - HOME DECOR</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>4300 - HOLIDAYS</sourceValue>
+            </sourceValues>
+            <value>Decor</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>6800 - LIGHTING</sourceValue>
+            </sourceValues>
+            <value>Lighting</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>2300 - BATH FURNITURE</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>2301 - HARDWARE</sourceValue>
+            </sourceValues>
+            <value>Bath</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>6101 - CASE GOODS</sourceValue>
+            </sourceValues>
+            <value>Casegoods</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>6300 - BEDROOM FURNITURE</sourceValue>
+            </sourceValues>
+            <value>Bed</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>6200 - DINING TABLES</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>6201 - DINING SEATING</sourceValue>
+            </sourceValues>
+            <value>Dining</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>5700 - FABRIC UPHOLSTERY</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5900 - LEATHER UPHOLSTERY</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>6699 - PARTS &amp; SWATCHES DIV 01</sourceValue>
+            </sourceValues>
+            <value>Upholstery</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>4200 - GARDEN &amp; ACCESSORIES</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>6400 - OUTDOOR FURNITURE</sourceValue>
+            </sourceValues>
+            <value>Outdoor</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>8000 - BCT FURNITURE</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>8100 - BCT LIGHTING</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>8200 - BCT DECOR</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>8400 - BCT WINDOWS</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>2102 - RH TEEN WALL DECOR</sourceValue>
+            </sourceValues>
+            <value>B&amp;C + RH Teen</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#BBBBBB</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>Donut</chartType>
+        <enableHoverLabels>true</enableHoverLabels>
+        <expandOthers>false</expandOthers>
+        <groupingColumn>BucketField_21760397</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>true</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Case.Milestone_Indicator__c</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>Case.RH_Order_Number__c</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>Case.To__c</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATE_BY</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>Case.Future_Processing_Date__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>All open PI requests in Vendor status by Merchant Department</description>
+    <filter>
+        <criteriaItems>
+            <column>CLOSED</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Action__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>CW Data Entry Needed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.Product_Information</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Merchants/RH Ops</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Callout,Re-open</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>RECORDTYPE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>STATUS</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_21760397</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>All PI with Vendors</name>
+    <params>
+        <name>units</name>
+        <value>d</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

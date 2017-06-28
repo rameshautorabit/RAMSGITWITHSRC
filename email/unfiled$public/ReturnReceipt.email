@@ -1,0 +1,7 @@
+<messaging:emailTemplate subject="{!relatedTo.Email_Subject_Brand__c} Return Receipt" recipientType="Contact" relatedToType="Case">
+	<messaging:htmlEmailBody >
+		
+		<c:ReturnReceipt cId="{!relatedTo.Id}" />
+		
+	</messaging:htmlEmailBody>
+</messaging:emailTemplate>

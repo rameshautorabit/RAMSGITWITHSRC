@@ -1,0 +1,13 @@
+<apex:page standardController="Case" extensions="Case_TakeOwnershipCtlExt" tabStyle="Case" action="{!takeOwnership}">
+	
+	<apex:form >
+
+		<apex:sectionHeader title="Case: Take Ownership" subtitle="{!Case.CaseNumber}" />
+		<apex:pageMessages />
+		
+		<br/>
+		Click&nbsp;<apex:outputLink value="/{!Case.Id}">here</apex:outputLink>&nbsp;to return to the previous page.
+ 		
+ 	</apex:form>
+ 	
+ </apex:page>

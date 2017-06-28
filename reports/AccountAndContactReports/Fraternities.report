@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>USERS.NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_ID</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>INDUSTRY</field>
+    </columns>
+    <columns>
+        <field>Account.Segment__c</field>
+    </columns>
+    <columns>
+        <field>RATING</field>
+    </columns>
+    <columns>
+        <field>DUE_DATE</field>
+    </columns>
+    <columns>
+        <field>ADDRESS1_STATE</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>(1 or 2) AND 3</booleanFilter>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Acacia,Alpha Chi Rho,Alpha Delta Gamma,Alpha Delta Phi,Alpha Epsilon Pi,Alpha Kappa Lambda,Alpha Phi Alpha,Alpha Phi Delta,Alpha Sigma Phi,Alpha Tau Omega,Beta Chi Theta,Beta Sigma Psi,Beta Theta Pi,Chi Phi,Chi Psi,Delta Chi,Delta Epsilon Psi,Delta Kappa Epsilon,Delta Lambda Phi,Delta Phi,Delta Psi,Delta Sigma Phi,Delta Tau Delta,Delta Upsilon,FarmHouse,Iota Nu Delta,Iota Phi Theta,Kappa Alpha Order,Kappa Alpha Psi,Kappa Delta Phi,Kappa Delta Rho,Lambda Chi Alpha,Lambda Phi Epsilon,Lambda Sigma Upsilon,Lambda Theta Phi,Nu Alpha Kappa,Omega Delta Phi,Phi Beta Sigma,Phi Gamma Delta,Phi Iota Alpha,Phi Kappa Pi,Phi Kappa Sigma,Phi Kappa Tau,Phi Kappa Theta,Phi Lambda Chi,Phi Mu Delta,Phi Sigma Kappa,Phi Sigma Phi,Pi Kappa Alpha,Pi Lambda Phi,Psi Upsilon,Sigma Alpha Epsilon,Sigma Alpha Mu,Sigma Beta Rho,Sigma Chi,Sigma Lambda Beta,Sigma Nu,Sigma Phi Delta,Sigma Phi Epsilon,Sigma Phi Society,Sigma Pi,Sigma Tau Gamma,Tau Delta Phi</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Tau Epsilon Phi,Tau Kappa Epsilon,Theta Chi,Theta Delta Chi,Theta Xi,Triangle,Zeta Beta Tau,Zeta Psi</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Account.Contract</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Fraternities</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

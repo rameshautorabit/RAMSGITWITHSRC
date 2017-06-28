@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email sent to Contacts (Portal Users) when their Quote is ready for payment</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Contract_Letterhead</letterhead>
+    <name>Quote Ready for Payment</name>
+    <style>freeForm</style>
+    <subject>Your RH Order Is Now Ready For Payment - {!Opportunity.Oppty_Number__c} - {!Quote.Quote__c}</subject>
+    <textOnly>Hi {!Quote_Clone__c.Owner_First_Name__c},
+
+We appreciate you thinking of Restoration Hardware Contract for this project! Your quote, &quot;{!Quote_Clone__c.Opportunity_Name__c}&quot; totaling {!Quote_Clone__c.Contract_Total__c} is now ready for payment.
+
+Please click this link to log in to the secure RH Customer Portal and provide payment information: {!Quote_Clone__c.Portal_Link__c}
+
+If you are new to the RH Customer Portal, you will be receiving a separate automated email at this time with your login information.  If you have previously completed another order with RH, please use your previous username for that order along with the permanent password you set upon your first login.
+
+Please note: Payments made will apply only to the specific order listed in the payment page.  To make a payment on a different order, please contact us to request a unique payment link for that order.
+
+Once your order has been placed, your will receive your order confirmation via email. Let us know if you have any questions.
+
+Thank you,
+
+{!Quote_Clone__c.Prepared_By_First_Name__c}</textOnly>
+    <type>html</type>
+</EmailTemplate>

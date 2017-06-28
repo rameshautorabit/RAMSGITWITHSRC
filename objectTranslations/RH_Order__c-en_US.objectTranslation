@@ -1,0 +1,1309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Order</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Orders</value>
+    </caseValues>
+    <fields>
+        <label><!-- My Account ID (ATG) --></label>
+        <name>ATG_Account_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accommodation Amount --></label>
+        <name>Accommodation_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Sold To --></label>
+        <name>Account_Sold_To__c</name>
+        <relationshipLabel><!-- Orders Sold To this Account --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Orders (Account) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Charge Credited --></label>
+        <name>Additional_Charge_Credited__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Charge --></label>
+        <name>Additional_Charge__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Freight --></label>
+        <name>Additional_Freight__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter additional email addresses to send the email to.  Each email address must be separated by a comma. --></help>
+        <label><!-- Additional To Email Addresses --></label>
+        <name>Additional_To_Email_Addresses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Bill To --></label>
+        <name>Address_Bill_To__c</name>
+        <relationshipLabel><!-- Orders (Address Bill To) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Address Sold To --></label>
+        <name>Address_Sold_To__c</name>
+        <relationshipLabel><!-- Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- In CW, this is equal to the ATG Order Number or the Contract Order Number --></help>
+        <label><!-- Alternate Order Number --></label>
+        <name>Alternate_Order_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter any  associated order number here for your reference. --></help>
+        <label><!-- Associated Orders --></label>
+        <name>Associated_Orders__c</name>
+    </fields>
+    <fields>
+        <label><!-- AuditLog --></label>
+        <name>AuditLog__c</name>
+    </fields>
+    <fields>
+        <label><!-- AutorabitExtId__c --></label>
+        <name>AutorabitExtId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Set &apos;R&apos; from Mule when request is received from ATG. SF will update it to &apos;S&apos; --></help>
+        <label><!-- Billing Request Flag --></label>
+        <name>BIlling_Request_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To Address 1 --></label>
+        <name>Bill_To_Address_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To Address 2 --></label>
+        <name>Bill_To_Address_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To Address 3 --></label>
+        <name>Bill_To_Address_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To Address 4 --></label>
+        <name>Bill_To_Address_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To Address --></label>
+        <name>Bill_To_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To City --></label>
+        <name>Bill_To_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To Company --></label>
+        <name>Bill_To_Company__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To Contact Address --></label>
+        <name>Bill_To_Contact_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To Country --></label>
+        <name>Bill_To_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To Day Phone --></label>
+        <name>Bill_To_Day_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To Email --></label>
+        <name>Bill_To_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To First Name --></label>
+        <name>Bill_To_First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To Last Name --></label>
+        <name>Bill_To_Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To Name --></label>
+        <name>Bill_To_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To Night Phone --></label>
+        <name>Bill_To_Night_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To State --></label>
+        <name>Bill_To_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To Zip --></label>
+        <name>Bill_To_Zip__c</name>
+    </fields>
+    <fields>
+        <label><!-- CW Upload Date/Time --></label>
+        <name>CW_Upload_DateTime__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of times the customer has been contacted by phone via a case. --></help>
+        <label><!-- Callout Contacts --></label>
+        <name>Callout_Contacts__c</name>
+    </fields>
+    <fields>
+        <label><!-- CaseOwner Email --></label>
+        <name>CaseOwner_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Owner --></label>
+        <name>Case_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Client Type --></label>
+        <name>Client_Type__c</name>
+        <picklistValues>
+            <masterLabel>Contract</masterLabel>
+            <translation><!-- Contract --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate</masterLabel>
+            <translation><!-- Corporate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platinum</masterLabel>
+            <translation><!-- Platinum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation><!-- Standard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trade</masterLabel>
+            <translation><!-- Trade --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contact Sold To --></label>
+        <name>Contact_Sold_To__c</name>
+        <relationshipLabel><!-- Orders Sold To this Contact --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Create Time Hour --></label>
+        <name>Create_Time_Hour__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Address Sold To --></label>
+        <name>Customer_Address_Sold_To__c</name>
+        <relationshipLabel><!-- Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Request Notes --></label>
+        <name>Customer_Request_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- DA Order Update --></label>
+        <name>DA_Order_Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Market --></label>
+        <name>Delivery_Market__c</name>
+        <picklistValues>
+            <masterLabel>01 - BALTIMORE, MD</masterLabel>
+            <translation><!-- 01 - BALTIMORE, MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>02 - BAY AREA, CA</masterLabel>
+            <translation><!-- 02 - BAY AREA, CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>03 - BOSTON, MA</masterLabel>
+            <translation><!-- 03 - BOSTON, MA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>05 - AUSTIN, TX</masterLabel>
+            <translation><!-- 05 - AUSTIN, TX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>06 - SEATTLE, WA</masterLabel>
+            <translation><!-- 06 - SEATTLE, WA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>07 - NY/NJ (AVENAL)</masterLabel>
+            <translation><!-- 07 - NY/NJ (AVENAL) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>08 - LA/SAN DIEGO</masterLabel>
+            <translation><!-- 08 - LA/SAN DIEGO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>09 - GEORGIA</masterLabel>
+            <translation><!-- 09 - GEORGIA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 - LAKELAND, FL</masterLabel>
+            <translation><!-- 10 - LAKELAND, FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11 - WESTON, FL</masterLabel>
+            <translation><!-- 11 - WESTON, FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12 - SALT LAKE CITY, UT</masterLabel>
+            <translation><!-- 12 - SALT LAKE CITY, UT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>13 - PORTLAND, OR</masterLabel>
+            <translation><!-- 13 - PORTLAND, OR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14 - LAS VEGAS, NV</masterLabel>
+            <translation><!-- 14 - LAS VEGAS, NV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15 - DENVER, CO</masterLabel>
+            <translation><!-- 15 - DENVER, CO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>16 - CHICAGO, IL</masterLabel>
+            <translation><!-- 16 - CHICAGO, IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>17 - EDINA/ST. PAUL, MN</masterLabel>
+            <translation><!-- 17 - EDINA/ST. PAUL, MN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18 - PITTSBURGH, PA</masterLabel>
+            <translation><!-- 18 - PITTSBURGH, PA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>19 - PHOENIX, AZ</masterLabel>
+            <translation><!-- 19 - PHOENIX, AZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>21 - METAIRIE, LA</masterLabel>
+            <translation><!-- 21 - METAIRIE, LA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>22 - SAN ANTONIO, TX</masterLabel>
+            <translation><!-- 22 - SAN ANTONIO, TX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>23 - BIRMINGHAM, AL</masterLabel>
+            <translation><!-- 23 - BIRMINGHAM, AL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24 - WEST JEFFERSON, OH</masterLabel>
+            <translation><!-- 24 - WEST JEFFERSON, OH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>25 - INDIANAPOLIS, IN</masterLabel>
+            <translation><!-- 25 - INDIANAPOLIS, IN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>26 - LEAWOOD, MO</masterLabel>
+            <translation><!-- 26 - LEAWOOD, MO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>27 - NASHVILLE, TN</masterLabel>
+            <translation><!-- 27 - NASHVILLE, TN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>28 - ST. LOUIS, MO</masterLabel>
+            <translation><!-- 28 - ST. LOUIS, MO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>29 - TROY, MI</masterLabel>
+            <translation><!-- 29 - TROY, MI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30 - TULSA, OK</masterLabel>
+            <translation><!-- 30 - TULSA, OK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>32 - EDMONTON, AB</masterLabel>
+            <translation><!-- 32 - EDMONTON, AB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>33 - MONTREAL, QB</masterLabel>
+            <translation><!-- 33 - MONTREAL, QB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>34 - VANCOUVER, BC</masterLabel>
+            <translation><!-- 34 - VANCOUVER, BC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35 - TORONTO, ON</masterLabel>
+            <translation><!-- 35 - TORONTO, ON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>38 - SOLON, OH</masterLabel>
+            <translation><!-- 38 - SOLON, OH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>40 - HIGH POINT, NC</masterLabel>
+            <translation><!-- 40 - HIGH POINT, NC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>41 - RICHMOND, VA</masterLabel>
+            <translation><!-- 41 - RICHMOND, VA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>42 - GRAND RAPIDS, MI</masterLabel>
+            <translation><!-- 42 - GRAND RAPIDS, MI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>45 - HOUSTON, TX</masterLabel>
+            <translation><!-- 45 - HOUSTON, TX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>46 - DALLAS, TX</masterLabel>
+            <translation><!-- 46 - DALLAS, TX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>47 - MILWAUKEE, WI</masterLabel>
+            <translation><!-- 47 - MILWAUKEE, WI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50 - RENO, NV</masterLabel>
+            <translation><!-- 50 - RENO, NV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>51 - LOUISVILLE, KY</masterLabel>
+            <translation><!-- 51 - LOUISVILLE, KY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>52 - CINCINNATTI, OH</masterLabel>
+            <translation><!-- 52 - CINCINNATTI, OH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>53 - VIRGINIA BEACH, VA</masterLabel>
+            <translation><!-- 53 - VIRGINIA BEACH, VA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>54 - JACKSONVILLE FL</masterLabel>
+            <translation><!-- 54 - JACKSONVILLE FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>55 - MEMPHIS, TN</masterLabel>
+            <translation><!-- 55 - MEMPHIS, TN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>56 - LITTLE ROCK, AR</masterLabel>
+            <translation><!-- 56 - LITTLE ROCK, AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>57 - CARMEL, NY</masterLabel>
+            <translation><!-- 57 - CARMEL, NY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>58 - CHATTANOOGA, GA</masterLabel>
+            <translation><!-- 58 - CHATTANOOGA, GA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>59 - MISSOULA, MT</masterLabel>
+            <translation><!-- 59 - MISSOULA, MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 - IDAHO FALLS, ID</masterLabel>
+            <translation><!-- 60 - IDAHO FALLS, ID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>61 - SHREVEPORT, LA</masterLabel>
+            <translation><!-- 61 - SHREVEPORT, LA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>62 - TYLER, TX</masterLabel>
+            <translation><!-- 62 - TYLER, TX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>63 - SAN ANGELO, TX</masterLabel>
+            <translation><!-- 63 - SAN ANGELO, TX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>64 - LUBBOCK, TX</masterLabel>
+            <translation><!-- 64 - LUBBOCK, TX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>65 - EL PASO, TX</masterLabel>
+            <translation><!-- 65 - EL PASO, TX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>66 - LOMPOC, CA</masterLabel>
+            <translation><!-- 66 - LOMPOC, CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>67 - NEW HAMPSHIRE</masterLabel>
+            <translation><!-- 67 - NEW HAMPSHIRE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>68 - NORCAL, CA</masterLabel>
+            <translation><!-- 68 - NORCAL, CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>69 - Pensacola</masterLabel>
+            <translation><!-- 69 - Pensacola --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>70 - ASPEN, CO</masterLabel>
+            <translation><!-- 70 - ASPEN, CO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>71 - DENVER, CO</masterLabel>
+            <translation><!-- 71 - DENVER, CO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>72 - Tallahassee</masterLabel>
+            <translation><!-- 72 - Tallahassee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>73 - BOISE, ID</masterLabel>
+            <translation><!-- 73 - BOISE, ID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>74 - BILLINGS, MT</masterLabel>
+            <translation><!-- 74 - BILLINGS, MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>75 - DES MOINES, IA</masterLabel>
+            <translation><!-- 75 - DES MOINES, IA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>76 - OMAHA, NE</masterLabel>
+            <translation><!-- 76 - OMAHA, NE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>77 - SPRINGFIELD, MO</masterLabel>
+            <translation><!-- 77 - SPRINGFIELD, MO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>78 - WICHITA, KS</masterLabel>
+            <translation><!-- 78 - WICHITA, KS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>79 - CHARLESTON, SC</masterLabel>
+            <translation><!-- 79 - CHARLESTON, SC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Order Classification --></label>
+        <name>Designer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Division --></label>
+        <name>Division__c</name>
+    </fields>
+    <fields>
+        <label><!-- EXT Order Number --></label>
+        <name>EXT_Order_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of times the customer has been contacted by email via a case. --></help>
+        <label><!-- Email Contacts --></label>
+        <name>Email_Contacts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Entered by Associate --></label>
+        <name>Entered_by_Associate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fraud Warning --></label>
+        <name>Fraud_Warning_Icon__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fraud Warning --></label>
+        <name>Fraud_Warning__c</name>
+    </fields>
+    <fields>
+        <label><!-- Freight --></label>
+        <name>Freight__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gallery Number --></label>
+        <name>Gallery_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gallery Point of Control --></label>
+        <name>Gallery_Point_of_Control__c</name>
+        <relationshipLabel><!-- Orders (Gallery Point of Control) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Gallery --></label>
+        <name>Gallery__c</name>
+        <relationshipLabel><!-- Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Member Card Opt In? --></label>
+        <name>Grey_Card_Opt_in__c</name>
+    </fields>
+    <fields>
+        <label><!-- RH Member --></label>
+        <name>Grey_Card__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gross Payment Amount --></label>
+        <name>Gross_Payment_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- HDL Order Line --></label>
+        <name>HDL_Order_Line__c</name>
+    </fields>
+    <fields>
+        <label><!-- Handling Charges --></label>
+        <name>Handling_Charges__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has Open Case --></label>
+        <name>Has_Open_Case__c</name>
+    </fields>
+    <fields>
+        <label><!-- High Value Order Update Status --></label>
+        <name>High_Value_Order_Update_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Impact On Account Lifetime Value --></label>
+        <name>Last_Impact_On_Account_Lifetime_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Impact On Contact Lifetime Value --></label>
+        <name>Last_Impact_On_Contact_Lifetime_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Membership Auto Renew --></label>
+        <name>Membership_Auto_Renew__c</name>
+    </fields>
+    <fields>
+        <help><!-- Will be checked if all order lines on this order are one of the Membership Auto Renewal SKUs. --></help>
+        <label><!-- Membership Auto Renewal Order --></label>
+        <name>Membership_Auto_Renewal_Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Membership Enrollment Date --></label>
+        <name>Membership_Enrollment_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Membership Expiration Date --></label>
+        <name>Membership_Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Membership ID --></label>
+        <name>Membership_ID_Lookup__c</name>
+        <relationshipLabel><!-- Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Membership ID --></label>
+        <name>Membership_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Membership Renewal Term --></label>
+        <name>Membership_Renewal_Term__c</name>
+    </fields>
+    <fields>
+        <label><!-- Member Card Ship Date --></label>
+        <name>Membership_Shipped_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Membership Type --></label>
+        <name>Membership_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Membership Welcome Email Sent --></label>
+        <name>Membership_Welcome_Email_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merchandise Subtotal --></label>
+        <name>Merchandise_Subtotal__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Sold To Day Phone --></label>
+        <name>New_Sold_to_Day_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Sold To Email --></label>
+        <name>New_Sold_to_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Sold To Night Phone --></label>
+        <name>New_Sold_to_Night_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of MembershipAutoRenewalSKUs --></label>
+        <name>Number_of_MembershipAutoRenewalSKUs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Order Lines --></label>
+        <name>Number_of_Order_Lines__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Ship Tos --></label>
+        <name>Number_of_Ship_Tos__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Record Type --></label>
+        <name>Opportunity_Record_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Order Closed --></label>
+        <name>Order_Closed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Date --></label>
+        <name>Order_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter an RH email address to be copied on various customer Order notifications (like Delay Notifications, etc.). --></help>
+        <label><!-- Order Notification Visibility --></label>
+        <name>Order_Notification_Visibility__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Number and Amount --></label>
+        <name>Order_Number_and_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Open --></label>
+        <name>Order_Open__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Status Other --></label>
+        <name>Order_Status_Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Total --></label>
+        <name>Order_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Type Category --></label>
+        <name>Order_Type_Category__c</name>
+        <picklistValues>
+            <masterLabel>Contract</masterLabel>
+            <translation><!-- Contract --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Office</masterLabel>
+            <translation><!-- Home Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Specialty Group</masterLabel>
+            <translation><!-- Specialty Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation><!-- Standard --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Order Type Code --></label>
+        <name>Order_Type_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Type --></label>
+        <name>Order_Type_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>Priority__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Projected Completion Date --></label>
+        <name>Projected_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quote Id --></label>
+        <name>Quote_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- RRD Membership Status --></label>
+        <name>RRD_Membership_Status__c</name>
+        <picklistValues>
+            <masterLabel>MC</masterLabel>
+            <translation><!-- MC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MR</masterLabel>
+            <translation><!-- MR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS</masterLabel>
+            <translation><!-- MS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MU</masterLabel>
+            <translation><!-- MU --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reorder Count --></label>
+        <name>Reorder_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Same Day Order Number --></label>
+        <name>Same_Day_Order_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Search Test --></label>
+        <name>Search_Test__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date/time of most recent request to SendGrid to send an email for this Order. Note - this will not be the same as the date/time the email is actually sent (but it should be close). --></help>
+        <label><!-- SendGrid Request Date --></label>
+        <name>SendGrid_Request_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- SendGrid Result --></label>
+        <name>SendGrid_Result__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To 1 Address --></label>
+        <name>ShipTo1_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To 1 Day Phone --></label>
+        <name>ShipTo1_Day_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To 1 Email --></label>
+        <name>ShipTo1_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To 1 Name --></label>
+        <name>ShipTo1_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To 1 Night Phone --></label>
+        <name>ShipTo1_Night_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To 1 Order Description --></label>
+        <name>Ship_To_1_Order_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Address --></label>
+        <name>Ship_To_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show HDL --></label>
+        <name>Show_HDL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold To Address 1 --></label>
+        <name>Sold_To_Address_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold To Address 3 --></label>
+        <name>Sold_To_Address_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold To Address 4 --></label>
+        <name>Sold_To_Address_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold To Apartment --></label>
+        <name>Sold_To_Apartment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold To Contact Address --></label>
+        <name>Sold_To_Contact_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zip Plus 4 --></label>
+        <name>Sold_To_Zip_Plus_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold To Address 2 --></label>
+        <name>Sold_to_Address_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold To Address --></label>
+        <name>Sold_to_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold To City --></label>
+        <name>Sold_to_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold To Company --></label>
+        <name>Sold_to_Company__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold To Country Code --></label>
+        <name>Sold_to_Country_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold To Country --></label>
+        <name>Sold_to_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold To Customer Number --></label>
+        <name>Sold_to_Customer_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold To Day Phone --></label>
+        <name>Sold_to_Day_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold To Email --></label>
+        <name>Sold_to_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold To First Name --></label>
+        <name>Sold_to_First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold To Last Name --></label>
+        <name>Sold_to_Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold To Name --></label>
+        <name>Sold_to_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold To Night Phone --></label>
+        <name>Sold_to_Night_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold To State --></label>
+        <name>Sold_to_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold To Zip --></label>
+        <name>Sold_to_Zip__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Code --></label>
+        <name>Source_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source System View Sold To --></label>
+        <name>Source_System_View_Sold_To__c</name>
+        <relationshipLabel><!-- Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status Update User --></label>
+        <name>Status_Update_User__c</name>
+        <relationshipLabel><!-- Orders (Status Update User) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Open- Order lines are open to be fulfilled
+Closed- All items have either shipped or cancelled
+Cancelled - No items have shipped - all cancelled
+Held- Order placed on hold. Will not ship.
+Suspended/Error - Issues preventing CW processing and accepting --></help>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation><!-- Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Held</masterLabel>
+            <translation><!-- Held --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Process</masterLabel>
+            <translation><!-- In Process --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suspended</masterLabel>
+            <translation><!-- Suspended --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- System Hold Code --></label>
+        <name>System_Hold_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- System Hold --></label>
+        <name>System_Hold_Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Customer Tax Exempt Code --></help>
+        <label><!-- Tax Exempt --></label>
+        <name>Tax_Exempt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax --></label>
+        <name>Tax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tier --></label>
+        <name>Tier__c</name>
+    </fields>
+    <fields>
+        <help><!-- The email will be sent to this email address. --></help>
+        <label><!-- To Email Address --></label>
+        <name>To_Email_Address__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sum Total of Attribution % from associated Sales Attribution records. --></help>
+        <label><!-- Total Attribution % --></label>
+        <name>Total_Attribution__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total number of times the customer has been contacted via a case. --></help>
+        <label><!-- Total Contacts --></label>
+        <name>Total_Contacts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Order Amount --></label>
+        <name>Total_Order_Amount_Timeline__c</name>
+    </fields>
+    <fields>
+        <help><!-- Order total sums all ship tos. --></help>
+        <label><!-- Total Order Amount --></label>
+        <name>Total_Order_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trade ID --></label>
+        <name>Trade_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Hold Code --></label>
+        <name>User_Hold_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Hold --></label>
+        <name>User_Hold_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Web Order Number --></label>
+        <name>Web_Order_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- With Opportunity --></label>
+        <name>With_Opportunity__c</name>
+    </fields>
+    <layouts>
+        <layout>Order Layout</layout>
+        <sections>
+            <label><!-- CW Address --></label>
+            <section>CW Address</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Contact Information --></label>
+            <section>Customer Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- High Value Order Management --></label>
+            <section>High Value Order Management</section>
+        </sections>
+        <sections>
+            <label><!-- Links to Customer --></label>
+            <section>Links to Customer</section>
+        </sections>
+        <sections>
+            <label><!-- Membership --></label>
+            <section>Membership</section>
+        </sections>
+        <sections>
+            <label><!-- Order Details --></label>
+            <section>Order Details</section>
+        </sections>
+        <sections>
+            <label><!-- Order Header --></label>
+            <section>Order Header</section>
+        </sections>
+        <sections>
+            <label><!-- Order Total --></label>
+            <section>Order Total</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Order Layout - Contract</layout>
+        <sections>
+            <label><!-- CW Address --></label>
+            <section>CW Address</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Contact Information --></label>
+            <section>Customer Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Links to Customer --></label>
+            <section>Links to Customer</section>
+        </sections>
+        <sections>
+            <label><!-- Membership --></label>
+            <section>Membership</section>
+        </sections>
+        <sections>
+            <label><!-- Order Details --></label>
+            <section>Order Details</section>
+        </sections>
+        <sections>
+            <label><!-- Order Header --></label>
+            <section>Order Header</section>
+        </sections>
+        <sections>
+            <label><!-- Order Total --></label>
+            <section>Order Total</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Order Layout - External</layout>
+        <sections>
+            <label><!-- CW Address --></label>
+            <section>CW Address</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Contact Information --></label>
+            <section>Customer Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- High Value Order Management --></label>
+            <section>High Value Order Management</section>
+        </sections>
+        <sections>
+            <label><!-- Links to Customer --></label>
+            <section>Links to Customer</section>
+        </sections>
+        <sections>
+            <label><!-- Membership --></label>
+            <section>Membership</section>
+        </sections>
+        <sections>
+            <label><!-- Order Details --></label>
+            <section>Order Details</section>
+        </sections>
+        <sections>
+            <label><!-- Order Header --></label>
+            <section>Order Header</section>
+        </sections>
+        <sections>
+            <label><!-- Order Total --></label>
+            <section>Order Total</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Order Layout - Gallery</layout>
+        <sections>
+            <label><!-- CW Address --></label>
+            <section>CW Address</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Contact Information --></label>
+            <section>Customer Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- High Value Order Management --></label>
+            <section>High Value Order Management</section>
+        </sections>
+        <sections>
+            <label><!-- Links to Customer --></label>
+            <section>Links to Customer</section>
+        </sections>
+        <sections>
+            <label><!-- Membership --></label>
+            <section>Membership</section>
+        </sections>
+        <sections>
+            <label><!-- Order Details --></label>
+            <section>Order Details</section>
+        </sections>
+        <sections>
+            <label><!-- Order Header --></label>
+            <section>Order Header</section>
+        </sections>
+        <sections>
+            <label><!-- Order Total --></label>
+            <section>Order Total</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Attributions --></label>
+            <section>Sales Attributions</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Order Layout - Trade</layout>
+        <sections>
+            <label><!-- CW Address --></label>
+            <section>CW Address</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Contact Information --></label>
+            <section>Customer Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- High Value Order Management --></label>
+            <section>High Value Order Management</section>
+        </sections>
+        <sections>
+            <label><!-- Links to Customer --></label>
+            <section>Links to Customer</section>
+        </sections>
+        <sections>
+            <label><!-- Membership --></label>
+            <section>Membership</section>
+        </sections>
+        <sections>
+            <label><!-- Order Details --></label>
+            <section>Order Details</section>
+        </sections>
+        <sections>
+            <label><!-- Order Header --></label>
+            <section>Order Header</section>
+        </sections>
+        <sections>
+            <label><!-- Order Total --></label>
+            <section>Order Total</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Order Layout for CSC Advocate</layout>
+        <sections>
+            <label><!-- CW Address --></label>
+            <section>CW Address</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Contact Information --></label>
+            <section>Customer Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- High Value Order Management --></label>
+            <section>High Value Order Management</section>
+        </sections>
+        <sections>
+            <label><!-- Links to Customer --></label>
+            <section>Links to Customer</section>
+        </sections>
+        <sections>
+            <label><!-- Membership --></label>
+            <section>Membership</section>
+        </sections>
+        <sections>
+            <label><!-- Order Details --></label>
+            <section>Order Details</section>
+        </sections>
+        <sections>
+            <label><!-- Order Header --></label>
+            <section>Order Header</section>
+        </sections>
+        <sections>
+            <label><!-- Order Total --></label>
+            <section>Order Total</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Partner Community</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Order Details --></label>
+            <section>Order Details</section>
+        </sections>
+        <sections>
+            <label><!-- Order Header --></label>
+            <section>Order Header</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Master --></label>
+        <name>Master</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Order Shell --></label>
+        <name>Order_Shell</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Email address must be in the rh.com or restorationhardware.com domain. --></errorMessage>
+        <name>Order_Notification_Internal_Email_Only</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot change the order number. --></errorMessage>
+        <name>Update_Order_Number_on_Shell_ONLY</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Billing_Summary_Email --></label>
+        <name>Billing_Summary_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Stewardship_Review_Request --></label>
+        <name>New_Stewardship_Review_Request</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_Billing_Information --></label>
+        <name>View_Billing_Information</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_Billing_Information_Partners --></label>
+        <name>View_Billing_Information_Partners</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_Order_Notes --></label>
+        <name>View_Order_Notes</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_Order_Notes_Partner --></label>
+        <name>View_Order_Notes_Partner</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_RHOM_Notes --></label>
+        <name>View_RHOM_Notes</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_RHOM_Notes_Partner --></label>
+        <name>View_RHOM_Notes_Partner</name>
+    </webLinks>
+</CustomObjectTranslation>

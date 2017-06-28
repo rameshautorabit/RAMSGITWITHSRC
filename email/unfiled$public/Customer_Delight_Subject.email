@@ -1,0 +1,7 @@
+Thank you for submitting your Salesforce Client Delight Request Case {!Case.CaseNumber}.  
+
+Your case will be reviewed and responded to within 4-6 hours. The update will include details regarding how we can execute your request. Final resolution may vary depending on the issue.
+
+If you need immediate assistance, please contact 1-800-DELAY with your Salesforce case number.
+
+{!Case.Thread_Id}

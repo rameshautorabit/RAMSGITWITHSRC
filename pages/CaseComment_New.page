@@ -1,0 +1,62 @@
+<apex:page standardController="Case_Comments__c" recordSetVar="selectedComments" extensions="CaseComment_NewCtlExt" tabStyle="Case_Comments__c" action="{!newCaseComment}">
+	
+	<apex:includeScript value="/support/console/36.0/integration.js"/>
+	  
+	<apex:form >
+		<apex:pageBlock rendered="{!isError}">
+			<apex:pageMessages />
+			<br/>
+			Click <apex:commandLink value="here" action="{!cancel}" immediate="true"/> to return to the previous page.
+		</apex:pageBlock>
+	</apex:form>
+	
+	<script type="text/javascript">
+		function goToPage() {
+			//alert("In the goToPage function");
+			
+			if ({!isError} == false) {
+				//alert('We do not have an error, pageURL = ' + "{!pageURL}");
+				
+				if ({!isPartnerUser} == false) {
+					//alert('Not partner user, pageURL = ' + "{!pageURL}");
+					
+					if (typeof(srcUp) == 'function') {
+						//alert('Open sub tab, pageURL = ' + "{!pageURL}");
+						//srcUp("{!pageURL}");
+						
+						var focusedSubTab = function(focusedResult) {
+							
+							var openSubtab = function(result) { 
+								//alert('primary tab Id = ' + result.id + ' focused sub tab Id = ' + focusedResult.id);
+								sforce.console.openSubtab(result.id,'{!pageURL}', true, '{!tabName}', focusedResult.id); 
+							}; 
+							sforce.console.getEnclosingPrimaryTabId(openSubtab);
+						}
+						sforce.console.getFocusedSubtabId(focusedSubTab);
+						
+						/*
+						var openSubtab = function(result) { 
+							sforce.console.openSubtab(result.id,'{!pageURL}', true, 'Subtab Name', null); 
+						}; 
+						sforce.console.getEnclosingPrimaryTabId(openSubtab);
+						*/
+					} else {
+						//alert('Not partner user, not in Console, pageURL = ' + "{!pageURL}");
+						window.location = "{!pageURL}";
+					}
+					
+				} else {
+					//alert('Is partner user, pageURL = ' + "{!pageURL}");
+					window.location = "{!pageURL}";
+				}
+				
+			} else {
+				//alert('We have an error, pageURL = ' + "{!pageURL}");
+			}
+		}
+		
+		//alert("about to call goToPage");
+		goToPage();
+		
+	</script>
+</apex:page>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Issue__c$Name</field>
+    </columns>
+    <columns>
+        <field>Issue__c.Investments__r$Name</field>
+    </columns>
+    <columns>
+        <field>Issue__c.Investments__r$Amount__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Issue__c$RecordType</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Issue__c.Billing_Issue_Contract,Issue__c.Delay_Issue_Contract,Issue__c.Delivery_Issue_Contract,Issue__c.Product_Issue_Contract,Issue__c.Service_Issue_Contract</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>CON Issues w or wo Resolutions</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Issues_with_or_without_Resolutions__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Issue__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,390 @@
+<apex:page id="pageId" standardController="Quote_Clone__c" extensions="QuoteCreditCardEntryPageController" showheader="false" standardStylesheets="false">
+    <apex:includeScript value="{!URLFOR($Resource.amorgan__jQuery)}"  />
+	<apex:messages />
+    <apex:form id="formId">
+    <c:SWWCSS />
+    <apex:pageBlock mode="detail">
+    	<apex:image url="/servlet/servlet.FileDownload?file=015W00000009bhH" width="194" height="147"/>
+    	<br/>
+    	<apex:pageBlockSection id="ppperrors" title="Error(s) have been found..." rendered="{!(hasErrors == true)}" collapsible="false" columns="1" >
+    	    <apex:pageBlockSectionItem id="pperrors">
+    	        <apex:outputLabel value="Error Description:" for="errors"/>
+    	        <apex:outputPanel id="perrors">
+    	        	<apex:outputText value="{!errorMessage}" id="errors" style="color: red; width:100%;" escape="false"/>
+    	        </apex:outputPanel>
+    	    </apex:pageBlockSectionItem>
+    	</apex:pageBlockSection>
+    	<br/>
+		<apex:pageBlockSection rendered="{!Quote_Clone__c.Submitted__c == TRUE}">
+			<apex:pageBlockSectionItem >
+    	    	<apex:outputLabel value="You successfully submitted this information on"/>
+    	        <apex:outputText styleclass="data2Col" value="{!Quote_Clone__c.Submitted_Date_Time__c}"/>
+    	    </apex:pageBlockSectionItem>
+  	        <br/>
+    	</apex:pageBlockSection>
+    	<apex:pageBlockButtons location="bottom" id="pageBlockButtons2" style="padding-left:510px">
+		    <apex:commandButton action="{!ok}" value="OK" id="theButton3" rendered="{!IF(Quote_Clone__c.Submitted__c==TRUE, TRUE, FALSE)}" style="margin-left:110px;"/>
+    	</apex:pageBlockButtons>
+	</apex:pageBlock>
+   	<br/>
+    <apex:pageBlock mode="maindetail" id="pageBlockId">
+    <apex:outputText style="font-size:14pt; font-family:Times New Roman; margin-left: 190px;" value="Please contact your RH rep to complete payment if you are making a partial payment today."/>
+    <br/><br/>
+    <apex:outputText styleclass="cci" value="CREDIT CARD INFORMATION" style="margin-left: 190px;"/>
+    <br/><br/>
+    <apex:outputText style="font-size:14pt; font-family:Times New Roman; margin-left: 190px;" value="I hereby authorize Restoration Hardware Contract to use the following credit card for:"/>
+    <br/><br/>
+
+
+            <apex:pageBlockSection columns="1" id="pbsId">
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Purchase Order No./Project Name:" />
+                    <apex:outputField value="{!Quote_Clone__c.Opportunity_Name__c}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Invoice Number:"/>
+                    <apex:outputField value="{!Quote_Clone__c.Quote_Number__c}"/>
+                </apex:pageBlockSectionItem>
+                <br/>
+                <br/>
+                Primary Credit Card Information
+                <apex:pageBlockSectionItem >
+                	<div style="height: 2px; background: #999999; overflow: hidden;"/>
+                </apex:pageBlockSectionItem>
+                <br/>
+
+                <apex:pageBlockSectionItem rendered="{!Quote_Clone__c.Submitted__c != TRUE}">
+                    <apex:outputLabel value="Card Holder (Name as it appears on card):"/>
+                    <apex:inputText value="{!Quote_Clone__c.Card_Holder_Name__c}" size="40"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem rendered="{!Quote_Clone__c.Submitted__c == TRUE}">
+                    <apex:outputLabel value="Card Holder (Name as it appears on card):"/>
+                    <apex:outputField value="{!Quote_Clone__c.Card_Holder_Name__c}"/>
+                </apex:pageBlockSectionItem>
+
+                <br/>
+
+                <apex:pageBlockSectionItem rendered="{!Quote_Clone__c.Submitted__c != TRUE}">
+                    <apex:outputLabel value="Card Billing Street:"/>
+                    <apex:inputText value="{!Quote_Clone__c.Card_Billing_Street__c}" size="40"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem rendered="{!Quote_Clone__c.Submitted__c == TRUE}">
+                    <apex:outputLabel value="Card Billing Street:"/>
+                    <apex:outputField value="{!Quote_Clone__c.Card_Billing_Street__c}"/>
+                </apex:pageBlockSectionItem>
+
+                <apex:pageBlockSectionItem rendered="{!Quote_Clone__c.Submitted__c != TRUE}">
+                    <apex:outputLabel value="Card Billing City:"/>
+                    <apex:inputText value="{!Quote_Clone__c.Card_Billing_City__c}" size="40"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem rendered="{!Quote_Clone__c.Submitted__c == TRUE}">
+                    <apex:outputLabel value="Card Billing City:"/>
+                    <apex:outputField value="{!Quote_Clone__c.Card_Billing_City__c}"/>
+                </apex:pageBlockSectionItem>
+
+                <apex:pageBlockSectionItem rendered="{!Quote_Clone__c.Submitted__c != TRUE}">
+                    <apex:outputLabel value="Card Billing State:"/>
+                    <apex:inputText value="{!Quote_Clone__c.Card_Billing_State__c}" size="40"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem rendered="{!Quote_Clone__c.Submitted__c == TRUE}">
+                    <apex:outputLabel value="Card Billing State:"/>
+                    <apex:outputField value="{!Quote_Clone__c.Card_Billing_State__c}"/>
+                </apex:pageBlockSectionItem>
+
+                <apex:pageBlockSectionItem rendered="{!Quote_Clone__c.Submitted__c != TRUE}">
+                    <apex:outputLabel value="Card Billing Zip/Postal Code:"/>
+                    <apex:inputText value="{!Quote_Clone__c.Card_Billing_Postal_Code__c}" size="40"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem rendered="{!Quote_Clone__c.Submitted__c == TRUE}">
+                    <apex:outputLabel value="Card Billing Zip/Postal Code:"/>
+                    <apex:outputField value="{!Quote_Clone__c.Card_Billing_Postal_Code__c}"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem rendered="{!Quote_Clone__c.Submitted__c != TRUE}">
+                    <apex:outputLabel value="Card Billing Country:"/>
+                    <apex:inputText value="{!Quote_Clone__c.Card_Billing_Country__c}" size="40"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem rendered="{!Quote_Clone__c.Submitted__c == TRUE}">
+                    <apex:outputLabel value="Card Billing Country:"/>
+                    <apex:outputField value="{!Quote_Clone__c.Card_Billing_Country__c}"/>
+                </apex:pageBlockSectionItem>
+
+                <br/>
+                
+                <apex:pageBlockSectionItem rendered="{!Quote_Clone__c.Submitted__c != TRUE}">
+                    <apex:outputLabel value="M/C, Visa, AMEX # (no spaces or hyphens):"/>
+                    <apex:inputText value="{!Quote_Clone__c.Card_Number__c}" size="40"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem rendered="{!Quote_Clone__c.Submitted__c == TRUE}">
+                    <apex:outputLabel value="M/C, Visa, AMEX # (no spaces or hyphens):"/>
+                    <apex:outputField value="{!Quote_Clone__c.Card_Number__c}"/>
+                </apex:pageBlockSectionItem>
+                
+                <br/>
+                
+                <apex:pageBlockSectionItem id="pbsiId1Id" rendered="{!Quote_Clone__c.Submitted__c != TRUE}">
+                    <apex:outputLabel value="Expiration Date:"/>
+                    <apex:pageBlockSectionItem id="pbsiId1">
+                        <apex:pageBlockSectionItem >
+                            <apex:outputLabel value="MM"/>
+                            <apex:inputText value="{!Quote_Clone__c.Card_Expiration_Month__c}" size="5"/>
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem id="pbsiinputTID">
+                            <apex:outputLabel value="YYYY"/>
+                            <apex:inputText value="{!Quote_Clone__c.Card_Expiration_Year__c}" size="5"/>
+                        </apex:pageBlockSectionItem>
+                    </apex:pageBlockSectionItem>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem rendered="{!Quote_Clone__c.Submitted__c == TRUE}">
+                    <apex:outputLabel value="Expiration Date:"/>
+                    <apex:pageBlockSectionItem id="pbsiId1">
+                        <apex:pageBlockSectionItem >
+                            <apex:outputLabel value="MM"/>
+                            <apex:outputText value="{!Quote_Clone__c.Card_Expiration_Month__c}"/>
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem id="pbsiinputTID">
+                            <apex:outputLabel value="YYYY"/>
+                            <apex:outputText value="{!Quote_Clone__c.Card_Expiration_Year__c}"/>
+                        </apex:pageBlockSectionItem>
+                    </apex:pageBlockSectionItem>
+                </apex:pageBlockSectionItem>
+                
+                <br/>
+                
+                <apex:pageBlockSectionItem id="pbsiId2" dataStyleClass="dataStyleClassCss" rendered="{!Quote_Clone__c.Submitted__c != TRUE}">
+                    <apex:outputLabel value="Amount to be applied:"/>
+                    <apex:inputText value="{!firstAmountToBeApplied}" id="inputFID" size="40">
+						<apex:actionSupport event="onchange" onbeforedomupdate="getFocus()" action="{!recalculateTotalAmount}" reRender="totalAmount,maindetail" oncomplete="setFocus()"/>
+					</apex:inputText>
+                </apex:pageBlockSectionItem>
+				<apex:pageBlockSectionItem dataStyleClass="dataStyleClassCss" rendered="{!Quote_Clone__c.Submitted__c == TRUE}">
+                	<apex:outputLabel value="Amount to be applied:"/>
+                    <apex:outputField value="{!Quote_Clone__c.Amount_To_Be_Applied__c}"/>
+                </apex:pageBlockSectionItem>
+				
+				<br/>
+                <br/>
+                Secondary Credit Card Information
+                <apex:pageBlockSectionItem >
+                	<div style="height: 2px; background: #999999; overflow: hidden;"/>
+                </apex:pageBlockSectionItem>
+                <br/>
+                
+                <apex:pageBlockSectionItem rendered="{!Quote_Clone__c.Submitted__c != TRUE}">
+                    <apex:outputLabel value="Card Holder (Name as it appears on card):"/>
+                    <apex:inputText value="{!Quote_Clone__c.Second_Card_Holder_Name__c}" size="40"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem rendered="{!Quote_Clone__c.Submitted__c == TRUE}">
+                    <apex:outputLabel value="Card Holder (Name as it appears on card):"/>
+                    <apex:outputField value="{!Quote_Clone__c.Second_Card_Holder_Name__c}"/>
+                </apex:pageBlockSectionItem>
+                
+                <br/>
+                
+                <apex:pageBlockSectionItem rendered="{!Quote_Clone__c.Submitted__c != TRUE}">
+                    <apex:outputLabel value="Card Billing Street:"/>
+                    <apex:inputText value="{!Quote_Clone__c.Second_Bill_To_Street__c}" size="40"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem rendered="{!Quote_Clone__c.Submitted__c == TRUE}">
+                    <apex:outputLabel value="Card Billing Street:"/>
+                    <apex:outputField value="{!Quote_Clone__c.Second_Bill_To_Street__c}"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem rendered="{!Quote_Clone__c.Submitted__c != TRUE}">
+                    <apex:outputLabel value="Card Billing City:"/>
+                    <apex:inputText value="{!Quote_Clone__c.Second_Bill_To_City__c}" size="40"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem rendered="{!Quote_Clone__c.Submitted__c == TRUE}">
+                    <apex:outputLabel value="Card Billing City:"/>
+                    <apex:outputField value="{!Quote_Clone__c.Second_Bill_To_City__c}"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem rendered="{!Quote_Clone__c.Submitted__c != TRUE}">
+                    <apex:outputLabel value="Card Billing State:"/>
+                    <apex:inputText value="{!Quote_Clone__c.Second_Bill_To_State__c}" size="40"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem rendered="{!Quote_Clone__c.Submitted__c == TRUE}">
+                    <apex:outputLabel value="Card Billing State:"/>
+                    <apex:outputField value="{!Quote_Clone__c.Second_Bill_To_State__c}"/>
+                </apex:pageBlockSectionItem>
+
+                <apex:pageBlockSectionItem rendered="{!Quote_Clone__c.Submitted__c != TRUE}">
+                    <apex:outputLabel value="Card Billing Zip/Postal Code:"/>
+                    <apex:inputText value="{!Quote_Clone__c.Second_Bill_To_Postal_Code__c}" size="40"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem rendered="{!Quote_Clone__c.Submitted__c == TRUE}">
+                    <apex:outputLabel value="Card Billing Zip/Postal Code:"/>
+                    <apex:outputField value="{!Quote_Clone__c.Second_Bill_To_Postal_Code__c}"/>
+                </apex:pageBlockSectionItem>
+
+                <apex:pageBlockSectionItem rendered="{!Quote_Clone__c.Submitted__c != TRUE}">
+                    <apex:outputLabel value="Card Billing Country:"/>
+                    <apex:inputText value="{!Quote_Clone__c.Second_Bill_To_Country__c}" size="40"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem rendered="{!Quote_Clone__c.Submitted__c == TRUE}">
+                    <apex:outputLabel value="Card Billing Country:"/>
+                    <apex:outputField value="{!Quote_Clone__c.Second_Bill_To_Country__c}"/>
+                </apex:pageBlockSectionItem>
+
+                <br/>
+                
+                <apex:pageBlockSectionItem rendered="{!Quote_Clone__c.Submitted__c != TRUE}">
+                    <apex:outputLabel value="M/C, Visa, AMEX # (no spaces or hyphens):"/>
+                    <apex:inputText value="{!Quote_Clone__c.Second_Card_Number__c}" size="40"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem rendered="{!Quote_Clone__c.Submitted__c == TRUE}">
+                    <apex:outputLabel value="M/C, Visa, AMEX # (no spaces or hyphens):"/>
+                    <apex:outputField value="{!Quote_Clone__c.Second_Card_Number__c}"/>
+                </apex:pageBlockSectionItem>
+                
+                <br/>
+                
+                <apex:pageBlockSectionItem id="pbsiId1Id2" rendered="{!Quote_Clone__c.Submitted__c != TRUE}">
+                    <apex:outputLabel value="Expiration Date:"/>
+                    <apex:pageBlockSectionItem id="pbsiId12">
+                        <apex:pageBlockSectionItem >
+                            <apex:outputLabel value="MM"/>
+                            <apex:inputText value="{!Quote_Clone__c.Second_Card_Expiration_Month__c}" size="5"/>
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem id="pbsiinputTID2">
+                            <apex:outputLabel value="YYYY"/>
+                            <apex:inputText value="{!Quote_Clone__c.Second_Card_Expiration_Year__c}" size="5"/>
+                        </apex:pageBlockSectionItem>
+                    </apex:pageBlockSectionItem>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem rendered="{!Quote_Clone__c.Submitted__c == TRUE}">
+                    <apex:outputLabel value="Expiration Date:"/>
+                    <apex:pageBlockSectionItem id="pbsiId12">
+                        <apex:pageBlockSectionItem >
+                            <apex:outputLabel value="MM"/>
+                            <apex:outputText value="{!Quote_Clone__c.Second_Card_Expiration_Month__c}"/>
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem id="pbsiinputTID2">
+                            <apex:outputLabel value="YYYY"/>
+                            <apex:outputText value="{!Quote_Clone__c.Second_Card_Expiration_Year__c}"/>
+                        </apex:pageBlockSectionItem>
+                    </apex:pageBlockSectionItem>
+                </apex:pageBlockSectionItem>
+
+                <br/>
+
+                 
+                <apex:pageBlockSectionItem dataStyleClass="dataStyleClassCss" rendered="{!Quote_Clone__c.Submitted__c != TRUE}">
+                    <apex:outputLabel value="Amount to be applied:"/>
+                    <apex:inputText value="{!secondAmountToBeApplied}" id="inputFID2" size="40">
+                    	<apex:actionSupport event="onchange" onbeforedomupdate="getFocus()" action="{!recalculateTotalAmount}" reRender="totalAmount,maindetail" oncomplete="setFocus()"/>
+                    </apex:inputText>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem dataStyleClass="dataStyleClassCss" rendered="{!Quote_Clone__c.Submitted__c == TRUE}">
+                	<apex:outputLabel value="Amount to be applied:"/>
+                    <apex:outputField value="{!Quote_Clone__c.Second_Amount_To_Be_Applied__c}"/>
+                </apex:pageBlockSectionItem>
+
+                <br/>
+                <br/>
+                <div style="height: 2px; background: #999999; overflow: hidden;"/>
+                <br/>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Contract Total:"/>
+                    <apex:pageBlockSectionItem >
+                    	<apex:outputText value="{!Quote_Clone__c.CurrencyIsoCode}">
+                    	</apex:outputText>
+	                    <apex:outputText value="{0, number, ###,##0.00}">
+                    		<apex:param value="{!Quote_Clone__c.Contract_Total__c}"/>
+                    	</apex:outputText>
+                    </apex:pageBlockSectionItem>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Total amount to be applied:"/>
+                	<apex:outputPanel id="totalAmount">
+                		<apex:pageBlockSectionItem >
+                			<apex:outputText value="{!Quote_Clone__c.CurrencyIsoCode}">
+                		   	</apex:outputText>
+	            		    <apex:outputText value="{0, number, ###,##0.00}">
+                		   		<apex:param value="{!totalAmountToBeApplied}"/>
+                		   	</apex:outputText>
+                		</apex:pageBlockSectionItem>
+                	</apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem rendered="{!Quote_Clone__c.Submitted__c == TRUE}">
+                    <apex:outputLabel value="You successfully submitted this information on"/>
+                    <apex:outputText value="{!Quote_Clone__c.Submitted_Date_Time__c}"/>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            <br/>
+
+
+                <apex:pageBlockButtons location="bottom" id="pageBlockButtons" style="padding-left:400px">
+
+                    <apex:commandButton value="Save" action="{!save}" id="theButton" rendered="{!IF(Quote_Clone__c.Submitted__c==TRUE, FALSE, TRUE)}"/>
+                        <!-- <apex:param value="true" assignTo="{!Quote_Clone__c.Submitted__c}"/>
+                        <apex:param value="{!NOW()}" assignTo="{!Quote_Clone__c.Submitted_Date_Time__c}"/> -->
+                    <apex:commandButton value="Cancel" action="{!cancel}" id="theButton2" rendered="{!IF(Quote_Clone__c.Submitted__c==TRUE, FALSE, TRUE)}"/>
+                    <apex:commandButton action="{!ok}" value="OK" id="theButton3" rendered="{!IF(Quote_Clone__c.Submitted__c==TRUE, TRUE, FALSE)}" style="margin-left:110px;"/>
+                </apex:pageBlockButtons>
+    
+    <script type='text/javascript'>
+
+		// Script to set focus on the proper element when a recalculation occurs
+		var elementFocused = null;
+		function getFocus()
+		{
+			elementFocused = document.activeElement;
+		}
+		
+		function setFocus()
+		{
+			if(elementFocused!=null)
+			{
+				document.getElementById(elementFocused.id).focus();
+			}
+		}
+		
+	</script>
+	
+    <script>
+        if($.browser.mozilla || $.browser.safari || $.browser.opera)
+        {
+            jQuery('td input').attr("style","margin-right:74px; color: black;");
+        }
+        if($.browser.msie)
+        {
+            if(jQuery.browser.version.substring(0, 2) == "8.")
+            {
+                jQuery('td input').attr("style","margin-right:68px; color: black;");
+            }
+            if(jQuery.browser.version.substring(0, 2) != "8." && jQuery.browser.version.substring(0, 2) != "7." && $.browser.version != 10)
+            {
+                jQuery('td input').attr("style","margin-right:45px; color: black;");
+            }
+        }
+        if($.browser.msie && $.browser.version == 10)
+        {
+            jQuery('td input').attr("style","margin-right:58px; color: black;");
+        }
+        if($.browser.msie && $.browser.version == 9)
+        {
+            jQuery('td input').attr("style","margin-right:55px; color: black;");
+        }
+        if($.browser.msie && $.browser.version == 7)
+        {
+            jQuery('td input').attr("style","margin-right:69px; color: black;");
+        }
+        if(/chrome/.test(navigator.userAgent.toLowerCase()))
+        {
+            jQuery('td input').attr("style","margin-right:69px; color: black;");
+        }
+        jQuery('td label').attr("style","margin-right:5px; color: black;");
+
+        //document.getElementById("pageId:formId:pageBlockId:pbsId:pbsiId2:inputFID").disabled = true;
+        //jQuery(document.getElementById("pageId:formId:pageBlockId:pbsId:pbsiId2:inputFID")).attr("size","40");
+        //document.getElementById("pageId:formId:pageBlockId:pbsId2:pbsiId22:inputFID2").disabled = true;
+        //jQuery(document.getElementById("pageId:formId:pageBlockId:pbsId2:pbsiId22:inputFID2")).attr("size","40");
+        //document.getElementById("pageId:formId:pageBlockId:ppperrors:pperrors:perrors:errors").style = "font-size:20px;font-weight:normal;";
+        //document.getElementById("pageId:formId:pageBlockId:pbsId:pbsiId1Id:pbsiId1:pbsiinputTID:inputTID").style = "padding-left:180px;";
+    </script>
+        </apex:pageBlock>
+
+    </apex:form>
+
+</apex:page>

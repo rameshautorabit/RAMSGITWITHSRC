@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Groups</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Groups</value>
+    </caseValues>
+    <fields>
+        <label><!-- GroupId --></label>
+        <name>GroupId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Queue Name --></label>
+        <name>Queue_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Queue Type --></label>
+        <name>Queue_Type__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

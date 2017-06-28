@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Design Atelier Quote</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Design Atelier Quotes</value>
+    </caseValues>
+    <fields>
+        <label><!-- Converted --></label>
+        <name>Converted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Count --></label>
+        <name>Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- DA Opportunity Number --></label>
+        <name>DA_Opportunity_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- DA Opportunity --></label>
+        <name>DA_Opportunity__c</name>
+        <relationshipLabel><!-- Design Atelier Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- EXT Oppty Quote Number --></label>
+        <name>EXT_Oppty_Quote_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Forecast --></label>
+        <name>Forecast__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Subtotal --></label>
+        <name>Order_Subtotal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quote Forecast Amount --></label>
+        <name>Quote_Forecast_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quote Id --></label>
+        <name>Quote_Id__c</name>
+    </fields>
+    <layouts>
+        <layout>Design Atelier Quote Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

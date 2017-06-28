@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Contract_Letterhead</letterhead>
+    <name>Client Appreciation</name>
+    <style>freeForm</style>
+    <subject>Client Appreciation Gift - Action Required</subject>
+    <textOnly>Hello,
+
+You&apos;ve placed an Order over $50K for the following Opportunity:
+{!Opportunity.Link}
+
+Opportunity Number: {!Opportunity.Oppty_Number__c}
+Opportunity (Project) Name: {!Opportunity.Name}
+Account Name: {!Opportunity.Account}
+
+Please select your Client Appreciation Gift and Sent To Contact on the Oppty.
+
+Thanks.</textOnly>
+    <type>html</type>
+</EmailTemplate>

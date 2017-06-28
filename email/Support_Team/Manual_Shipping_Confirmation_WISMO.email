@@ -1,0 +1,12 @@
+Dear {!Case.Contact},
+ 
+Thank you for contacting Restoration Hardware regarding your order number {!Case.Order_Number__c}. I can certainly provide an update on your [item(s)].
+ 
+I am delighted to let you know that [this item/these items] [was/were] shipped from our facility on [date], via UPS. The tracking number associated with the shipment is [tracking #]. It will be delivered to the address on the order within [3-7 business days/1-2 weeks], and you may track the progress of your package by visiting www.ups.com and entering the tracking number above. [if the item has just entered the shipping process, please include: Please allow up to 24 hours for tracking information to be available on the UPS website.]
+ 
+If we can be of any further assistance, please contact our Client Care Center by emailing webcs@restorationhardware.com or by calling 877-777-7059.
+ 
+Thank you for shopping with Restoration Hardware.
+
+Regards, 
+RH Customer Care

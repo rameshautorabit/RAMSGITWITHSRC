@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Contract_Letterhead</letterhead>
+    <name>Warning of CC Info Needing Removal - 24 Hrs</name>
+    <style>freeForm</style>
+    <subject>URGENT: PCI Action Required – Credit Card Info Requires Your Attention</subject>
+    <textOnly>Hello,
+
+You&apos;ve received credit card payment information for the following Opportunity:
+
+Opportunity (Project) Name: {!Opportunity.Name}
+Account Name: {!Opportunity.Account}
+
+Please enter the credit card information in CW.  Then edit the Opportunity and fill out the &quot;Order Number&quot; field to have the credit card data removed from Salesforce.
+
+Thanks.</textOnly>
+    <type>html</type>
+</EmailTemplate>

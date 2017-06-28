@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Contract_Letterhead</letterhead>
+    <name>Pipeline Follow Up</name>
+    <style>freeForm</style>
+    <subject>Project Quoted #{!Opportunity.Final_Opportunity_Number__c}</subject>
+    <textOnly>Hi {!Contact.FirstName},
+
+As of our last contact, you requested a quote for your project: {!Opportunity.Name}.
+
+The quote is about to expire and I wanted to offer assistance in placing the order or possibly extending the quote.  If this project is still moving forward, I’d be happy to do a quick review to answer any pending questions and review product availability and pricing.
+
+I&apos;m excited to announce our new Restaurant Brochure, featuring mix and match table tops and bases, and large assortment of seating. For your reference, here is also the link to our current RH Contract Source Book. Our offering has expanded and I would love to hear about your projects for 2017.
+
+Happy New Year!
+
+
+Best,</textOnly>
+    <type>html</type>
+</EmailTemplate>

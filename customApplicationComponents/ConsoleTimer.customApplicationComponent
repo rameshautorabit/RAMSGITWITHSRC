@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplicationComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buttonText>Timer</buttonText>
+    <height>380</height>
+    <isHeightFixed>false</isHeightFixed>
+    <isHidden>true</isHidden>
+    <isWidthFixed>true</isWidthFixed>
+    <visualforcePage>Timer</visualforcePage>
+    <width>380</width>
+</CustomApplicationComponent>

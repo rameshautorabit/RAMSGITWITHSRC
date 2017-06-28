@@ -1,0 +1,15 @@
+A Margin Request for {!Operations_Request__c.Opportunity__c} is pending your Approval. 
+
+Please reply with the words "Approved" or "Rejected" in the first line of your response to Approve or Reject this request. 
+
+On the second line of your reply please indicate the MMU% approved. 
+
+Request Details: 
+
+Account Name: {!Operations_Request__c.Account_Name__c}
+Segmentation: {!Operations_Request__c.Contract_Customer_Segmentation__c}
+Project Description: {!Operations_Request__c.Opportunity__c}
+Value of Project: {!Operations_Request__c.Amount__c}
+Target Budget: {!Operations_Request__c.Target_Budget__c}
+Applied To: {!Operations_Request__c.Applies_to__c}
+Additional Info: {!Operations_Request__c.Additional_Info__c}

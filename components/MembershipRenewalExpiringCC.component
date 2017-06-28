@@ -1,0 +1,19 @@
+<apex:component access="global" controller="MembershipRenewalEmailTemplateController" allowDML="true">
+<apex:attribute name="RHMembershipId" type="String" description="RH Membership Record Id" assignTo="{!membershipId}"/> 
+   
+   <apex:repeat value="{!MembershipDetails}" var="m">
+    <c:MembershipGenericHeader RHMembershipEmailContent="{!Content}" />                                   
+  </apex:repeat>   
+   
+  <!-- a lot has changed - review tickets. 11282016
+  
+  PUT CANADA AND QUEBECOIS LOGIC INTO TEMPLATE:
+  livesInCanada
+  isQuebec
+  -->
+ 
+  <!-- PUT IL/CT/HI/NC logic when In_Target_Group__c is TRUE-->
+  
+  <!--  Special_Enrollee__c logic here for the March people -->
+  
+</apex:component>

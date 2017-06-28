@@ -1,0 +1,7 @@
+<messaging:emailTemplate subject="{!relatedTo.Email_Subject_Brand__c} Order Update - Order # {!relatedTo.RH_Order_Number__r.Name}" recipientType="Contact" relatedToType="Case">
+	<messaging:htmlEmailBody >
+		
+		<c:DelayNotification cId="{!relatedTo.Id}" />
+		
+	</messaging:htmlEmailBody>
+</messaging:emailTemplate>

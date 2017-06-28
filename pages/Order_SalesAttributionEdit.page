@@ -1,0 +1,32 @@
+<apex:page standardController="RH_Order__c" extensions="Order_SalesAttributionIntCtrlExt" id="slsAttrib" >
+	<apex:includeScript value="{!$Resource.UtilJS}" />
+	<apex:form >
+		<apex:pageBlock >
+			<apex:pageMessages />
+			<apex:pageBlockTable value="{!salesAttributions}" var="sa" id="table">
+				<apex:column headerValue="Sales Attribution ID">
+					<apex:inputField value="{!sa.name}"/>
+				</apex:column>
+				<apex:column headerValue="Associate User ID">
+					<apex:inputField value="{!sa.Attribution_ID__c}"/>
+				</apex:column>
+				<apex:column headerValue="Associate Name">
+					<apex:inputField value="{!sa.Associate_Name__c}"/>
+				</apex:column>
+				<apex:column headerValue="Primary Contact">
+					<apex:inputField value="{!sa.Primary_Associate__c}"/>
+				</apex:column>
+				<apex:column headerValue="Attribution Percent">
+					<apex:inputField value="{!sa.Attribution_Percent__c}"/>
+				</apex:column>
+				<apex:column headerValue="Associate's Gallery Number">
+					<apex:inputField value="{!sa.Associate_s_Gallery_Number__c}"/>
+				</apex:column>
+			</apex:pageBlockTable>
+			<div align="center" draggable="false" >
+				<apex:commandButton value="Save" action="{!save}"/>
+				<apex:commandButton value="Cancel" onclick="window.location.reload()" />
+			</div>
+		</apex:pageBlock>
+	</apex:form>
+</apex:page>

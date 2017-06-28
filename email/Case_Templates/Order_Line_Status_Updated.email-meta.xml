@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Order line status updated notification to order owner</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Order Line Status Updated</name>
+    <style>none</style>
+    <subject>The status of order line {!Order_Line_Items__c.Name} on order {!RH_Order__c.Name} has changed</subject>
+    <type>text</type>
+</EmailTemplate>

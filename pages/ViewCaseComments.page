@@ -1,0 +1,152 @@
+<apex:page standardController="Case" extensions="ViewCaseCommentsController" sidebar="false" showheader="false">
+ <apex:includeScript value="{!URLFOR($Resource.jQuery)}"/>
+ <apex:includeScript value="/soap/ajax/31.0/connection.js"/>
+ <apex:includeScript value="/support/console/31.0/integration.js"/>
+ 
+
+    <apex:form id="form1">
+        <apex:sectionHeader rendered="false" title="Case Comments for:" subtitle="{!ca.CaseNumber}"/>
+        <apex:pageBlock id="pb1" title="Case Comments">
+            <apex:pageBlockButtons location="top">
+                <!-- Case -->
+                <!--<input type="button" class="btn" value="New" onclick="window.top.location.href = '/a0j/e?CF00NR0000001T5V1={!ca.CaseNumber}&CF00NR0000001T5V1_lkid={!ca.Id}&retURL=%2F{!ca.Id}';"/>
+                -->
+                 <!--<input type="button" class="btn" value="New" onclick="window.top.location.href = '/{!$ObjectType.Case_Comments__c}/e?CF00NR0000001T5V1={!ca.CaseNumber}&CF00NR0000001T5V1_lkid={!ca.Id}&retURL=%2F{!ca.Id}';"/>
+                 -->
+                 <input type="button" class="btn" value="New" onclick="setNewURL()"/>
+                 <input type="button" class="btn" value="CloseCase" onclick="setCloseCaseURL()"/>
+            </apex:pageBlockButtons>
+                <apex:pageBlockTable value="{!CaseRecords}" var="cc" width="100%" border="4px;" cellpadding="10px" id="pbt1">
+                     <apex:column rendered="false" headerValue="Action" width="10%" >
+                        <apex:outputLink rendered="true" value="{!URLFOR($Action.Case_Comments__c.Edit, cc.id, [retURL='/'&ca.Id])}" target="_parent" >Edit</apex:outputLink> |
+                        <apex:outputLink rendered="true" value="{!URLFOR($Action.Case_Comments__c.Delete, cc.id,[retURL='/apex/ViewCaseComments?id='&caseId])}" onClick=" return confirmDelete()">Del</apex:outputLink>
+                    </apex:column>
+                    <apex:column headerValue="Comment" width="90%" >
+                        <span style="font-weight:bold;" >
+                            Created By: <a href="/{!cc.CreatedBy.Id}" target="_parent" style="text-decoration: underline;">{!cc.CreatedBy.Name}</a>
+                            <!-- Custom Component that displays time in user's local time zone -->
+                            <c:FormatDateTimeLocale date_Timevalue="{!cc.CreatedDate}" date_TimeFormat="(MM/dd/yyyy hh:mm:ss a)"/>
+                        </span>
+                        <br/> {!cc.Comment__c}
+                    </apex:column>
+                    <apex:column headerValue="Action Required" value="{!cc.Action_Required__c}"></apex:column>
+                </apex:pageBlockTable>
+            <apex:commandLink value="Previous Page" action="{!Previous}" rendered="{!hideNextPre}" style="margin-right:5px;"/>
+            <apex:commandLink value="Next Page" rendered="{!hideNextPre}" action="{!Next}" />
+        </apex:pageBlock>
+
+    </apex:form>
+    
+<script type="text/javascript">
+   
+   console.log('In Console: ' + sforce.console.isInConsole());
+
+
+    //set a default for the ID incase of failure. A bug in the tooling API causes failures for userswithout view all data
+    var urlFieldId = '';//'00NR0000001T5V1MAK';
+	
+    //set the field name of the case field on the case comment object used for dynamic lookup of field Id
+    var fieldName = 'Case';
+    var sObjectName ='Case_Comments';
+    var sObjId; 
+    var fieldId;
+	
+
+    Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.ViewCaseCommentsController.getButtonFieldValue}',sObjectName, fieldName,
+      function(result, event)
+      {
+        if(event.status)
+        {
+          console.log(result);
+          urlFieldId = result;
+        }
+        else { console.log('Remoting callout failure: ' + event.message);}
+      }, 
+            {escape: true} 
+      );
+	
+/*
+// bug in tooling api casuses this to not return a value when called from a user without viewalldata
+    jQuery(document).ready(function($) 
+    {
+
+     $.ajax('/services/data/v31.0/tooling/query?q=Select+Id,+DeveloperName+From+CustomObject+WHERE+DeveloperName+=+\''+sObjectName+'\'+LIMIT+1',
+        {
+          beforeSend: function(xhr) {
+            // Set the OAuth header from the session ID
+            xhr.setRequestHeader('Authorization', 'Bearer {!$Api.Session_ID}');
+          },
+          success: function(response) {
+            sObjId = response.records[0].Id;
+            getSpecificField(fieldName,sObjId);
+            console.log(sObjectName + ' Id is: ' + sObjId);
+          },
+          error: function(jqXHR, textStatus, errorThrown) {
+            console.log(jqXHR.status + ': ' + errorThrown);
+          }
+        }
+       );
+
+    }); 
+   
+    function getSpecificField(fieldName,sObjId){
+      $.ajax('/services/data/v31.0/tooling/query?q=Select+Id,+DeveloperName+From+CustomField+WHERE+DeveloperName+=+\''+fieldName+'\'+AND+TableEnumOrId+=+\''+sObjId+'\'+LIMIT+1',
+        {
+          beforeSend: function(xhr) {
+            // Set the OAuth header from the session ID
+            xhr.setRequestHeader('Authorization', 'Bearer {!$Api.Session_ID}');
+          },
+          success: function(response) {
+           fieldId = response.records[0].Id;
+           //reformat to 15 characters and prefix CF the indicator for "Custom field"
+           urlFieldId = fieldId.substring(0, fieldId.length - 3);
+           console.log(fieldName + ' Id is: ' + fieldId);
+          },
+          error: function(jqXHR, textStatus, errorThrown) {
+            console.log(jqXHR.status + ': ' + errorThrown);
+          }
+        }
+      );
+    }
+*/
+    function setCloseCaseURL()
+    {
+      var closeCaseURL = '/apex/CloseCaseFromCaseComments?caseid={!ca.id}';
+       if  (sforce.console.isInConsole())
+        {
+         sforce.console.openPrimaryTab(null, closeCaseURL, true,'Close Case' , null, 'Close Case');
+        }
+        else
+        {
+          window.top.location.href = closeCaseURL;
+        }
+    }
+
+    function setNewURL()
+    { 
+        if (urlFieldId.length == 18) {urlFieldId = urlFieldId.substring(0, urlFieldId.length - 3);}
+        urlFieldId = 'CF' + urlFieldId;
+		      
+        var newURL = '/{!$ObjectType.Case_Comments__c}/e?'+urlFieldId+'={!ca.CaseNumber}&'+urlFieldId+'_lkid={!ca.Id}&retURL=%2F{!ca.Id}';
+        console.log('NewURL: ' + newURL);
+
+
+        if  (sforce.console.isInConsole())
+        {
+            sforce.console.openPrimaryTab(null, newURL, true,'New Case Comments', null, 'New Case Comments');
+        }
+        else
+        {
+            window.top.location.href = newURL;
+        }
+
+    }
+
+    function confirmDelete()
+    {
+         var ret=confirm("Are you sure you want to delete the case comment?");
+         return ret;
+    }
+   
+</script>
+</apex:page>

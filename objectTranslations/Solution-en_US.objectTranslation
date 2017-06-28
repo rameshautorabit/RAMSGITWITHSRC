@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Solution Knowledge Base</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Solutions Knowledge Base</value>
+    </caseValues>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Helpful Solution Knowledge Base Report</value>
+        </caseValues>
+        <name>helpful_solution_report</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution Knowledge Base Attachments</value>
+        </caseValues>
+        <name>solution_attachments</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution Knowledge Base Category</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Solution Knowledge Base Categories</value>
+        </caseValues>
+        <name>solution_category</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution Knowledge Base Category Information</value>
+        </caseValues>
+        <name>solution_category_information</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution Knowledge Base Category Node ID</value>
+        </caseValues>
+        <name>solution_category_node_id</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution Knowledge Base Category Report</value>
+        </caseValues>
+        <name>solution_category_report</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution Knowledge Base Custom Field</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Solution Knowledge Base Custom Fields</value>
+        </caseValues>
+        <name>solution_custom_field</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution Knowledge Base Description</value>
+        </caseValues>
+        <name>solution_description</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution Knowledge Base Detail</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Solution Knowledge Base Details</value>
+        </caseValues>
+        <name>solution_detail</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution Knowledge Base Division</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Solution Knowledge Base Division</value>
+        </caseValues>
+        <name>solution_division</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution Knowledge Base Field</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Solution Knowledge Base Fields</value>
+        </caseValues>
+        <name>solution_field</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution Knowledge Base History</value>
+        </caseValues>
+        <name>solution_history</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution Knowledge Base History Report</value>
+        </caseValues>
+        <name>solution_history_report</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution Knowledge Base ID</value>
+        </caseValues>
+        <name>solution_id</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution Knowledge Base Information</value>
+        </caseValues>
+        <name>solution_information</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution Knowledge Base List</value>
+        </caseValues>
+        <name>solution_list</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution Knowledge Base List Report</value>
+        </caseValues>
+        <name>solution_list_report</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution Knowledge Base Manager</value>
+        </caseValues>
+        <name>solution_manager</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution Knowledge Base Name</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Solution Knowledge Base Names</value>
+        </caseValues>
+        <name>solution_name</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution Knowledge Base Number</value>
+        </caseValues>
+        <name>solution_number</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution Knowledge Base Owner</value>
+        </caseValues>
+        <name>solution_owner</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution Knowledge Base Owner Alias</value>
+        </caseValues>
+        <name>solution_owner_alias</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution Knowledge Base Record Type</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Solution Knowledge Base Record Types</value>
+        </caseValues>
+        <name>solution_record_type</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution Knowledge Base Record Type ID</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Solution Knowledge Base Record Type ID</value>
+        </caseValues>
+        <name>solution_record_type_id</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution Knowledge Base Report</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Solutions Knowledge Base Report</value>
+        </caseValues>
+        <name>solution_report</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution Knowledge Base Status</value>
+        </caseValues>
+        <name>solution_status</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution Knowledge Base Subject</value>
+        </caseValues>
+        <name>solution_subject</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution Knowledge Base Subject and Description</value>
+        </caseValues>
+        <name>solution_subject_and_description</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution Knowledge Base Title</value>
+        </caseValues>
+        <name>solution_title</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution Knowledge Base View</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Solution Knowledge Base Views</value>
+        </caseValues>
+        <name>solution_view</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Conga_Composer_OAuth --></label>
+        <name>APXTConga4__Conga_Composer_OAuth</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Mail_Merge --></label>
+        <name>APXTConga4__Conga_Mail_Merge</name>
+    </webLinks>
+</CustomObjectTranslation>

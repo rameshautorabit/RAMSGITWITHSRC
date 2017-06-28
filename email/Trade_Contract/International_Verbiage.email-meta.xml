@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Contract_Letterhead</letterhead>
+    <name>International Verbiage</name>
+    <style>freeForm</style>
+    <subject>Quote: {!Quote.Name} - RH Contract</subject>
+    <textOnly>Hi {!Opportunity.Price_Bid_Contact__c},
+
+Please find the attached quote for {!Opportunity.Name}, per your request.
+
+We appreciate you thinking of RH Contract for this project!
+
+So that we can best serve you, please return the signed quote including ship to address, contact name &amp; phone number with payment per the terms noted on your quote. Defer to the last page of your quote for payment details and your preferred method of payment.
+
+Please note the following shipping terms and conditions:
+
+1. We do not directly export from the USA.   But we ship your order to your
+designated USA freight forwarder.   Then your USA freight forwarder exports your order to
+your ship to destination.  We provide your USA freight forwarder a shipping invoice with item#, description, quantity, pricing, country of origin, harmonized code and estimated dims and weights of each item.
+
+2. The USA sales tax is based on the ship to City and State.
+
+3. For Sales tax refund, please provide bill of lading or AWB (once available) showing that this order was exported out of the USA.
+
+4. When contacting your potential Freight Forwarder, please ensure that they will be the EXPORTER of RECORD for your movement of product from the US to it&apos;s final destination.
+
+RH doesn&apos;t fill out the Shipper&apos;s Letter of Instruction (SLI) as we are not the party that is exporting. You (the customer) has been provide with our shipping invoice for filling out this form.
+
+In terms of documentation, RH as the USPPI (U.S. Principal Party in Interest) will provide “Basic Commodity Information” (our name, our EIN number, U.S. Harmonized Tariff Codes, product description, product quantity, product value, product weight, product carton dimensions) in a Routed Export Transaction within 5 business days of a finalized, signed quote. RH will also provide, upon request, a “Consent to Screen” and a copy of the RH’s standard commercial invoice. You (the customer) shall be responsible for complying with all U.S. and foreign export and import laws and regulations and will obtain all required U.S. and foreign authorizations, permits or licenses with respect to the products.
+
+Furthermore, you (the customer) shall be fully responsible for the preparation and filing of all shipping and other documentation necessary for export and import clearance.
+
+Please do not hesitate to contact us should you have any questions.
+
+Thank you,
+
+{!Opportunity.Price_Bid_Contact__c}</textOnly>
+    <type>html</type>
+</EmailTemplate>

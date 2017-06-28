@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Manual Reservation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Manual Reservations</value>
+    </caseValues>
+    <fields>
+        <label><!-- Auto MIRV Response --></label>
+        <name>Auto_MIRV_Response__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company --></label>
+        <name>Company__c</name>
+    </fields>
+    <fields>
+        <label><!-- Early Delivery Date --></label>
+        <name>Early_Delivery_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Subject Brand --></label>
+        <name>Email_Subject_Brand__c</name>
+        <picklistValues>
+            <masterLabel>RH</masterLabel>
+            <translation><!-- RH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RH Baby &amp; Child</masterLabel>
+            <translation><!-- RH Baby &amp; Child --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RH Contract</masterLabel>
+            <translation><!-- RH Contract --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RH Teen</masterLabel>
+            <translation><!-- RH Teen --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Email To Address --></label>
+        <name>Email_To_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Late Delivery Date --></label>
+        <name>Late_Delivery_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Lines --></label>
+        <name>Order_Lines__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Number --></label>
+        <name>Order_Number__c</name>
+        <relationshipLabel><!-- Manual Reservations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Send Email --></label>
+        <name>Send_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To --></label>
+        <name>Ship_To__c</name>
+        <relationshipLabel><!-- Manual Reservations --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Manual Reservation Layout</layout>
+        <sections>
+            <label><!-- Auto MIRV Message --></label>
+            <section>Auto MIRV Message</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Notification --></label>
+        <name>Notification</name>
+    </webLinks>
+</CustomObjectTranslation>
