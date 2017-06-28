@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Product2.Product_Image_Thumbnail__c</field>
+    </columns>
+    <columns>
+        <field>Product2.CW_Item_Description__c</field>
+    </columns>
+    <columns>
+        <field>Product2.Color__c</field>
+    </columns>
+    <columns>
+        <field>Product2.Member_Price__c</field>
+    </columns>
+    <columns>
+        <field>Product2.STSSku__c</field>
+    </columns>
+    <columns>
+        <field>NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Provence</description>
+    <filter>
+        <criteriaItems>
+            <column>Product2.STSSku__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>90100285,64350016,49720478,66730589,64350003,66730579,90100031,64280628,64520978,15040162,40200790,42400198,31010224,42850168,&quot;68080399, 68050222, 	 68050223,&quot;,16310463,16100015</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>G301</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ProductList</reportType>
+    <showDetails>true</showDetails>
+    <sortColumn>Product2.CW_Item_Description__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

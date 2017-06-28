@@ -1,0 +1,75 @@
+<apex:page standardController="RH_Order__c" extensions="Order_RHMembershipCtlExt" tabStyle="RH_Order__c">
+	
+	<apex:includeScript value="/support/console/31.0/integration.js"/>
+	
+	<script type="text/javascript">
+		window.onload = function() {
+			sforce.console.setTabTitle('RH Membership');
+		};
+		
+		window.onpagehide = function() {
+			sforce.console.setTabTitle('{!RH_Order__c.Name}');
+		}
+		
+		function sendemailconfirm(sent) {
+			var alreadySent = sent;
+			var r;
+			
+			if (alreadySent == 'true') {
+				r = confirm('RH Membership Welcome email already sent. Send again?');
+			} else {
+				r = confirm('Are you sure?');
+			}
+			
+			if (r == true) {
+				sendEmail();
+			}
+		}
+		
+		function greycardoptinconfirm(gcoptin) {
+			var optIn = gcoptin;
+			var r;
+			
+			if (optIn == 'false') {
+				r = confirm('RH Member is not Opt In. Request new card anyway?');
+			} else {
+				r = true;
+			}
+			
+			if (r == true) {
+				requestCard();
+			}
+		}
+	</script>
+	
+	<apex:form >
+		
+		<apex:actionfunction name="sendEmail" action="{!sendMembershipWelcomeEmail}" />
+		<apex:actionfunction name="requestCard" action="{!requestNewMembershipCard}" />
+		
+		<apex:sectionHeader title="Order: RH Membership" subtitle="{!rhOrder.Name}" />
+		<apex:pageMessages />
+		
+		<apex:pageBlock title="RH Membership">
+			
+			<apex:pageBlockButtons location="bottom">
+				<apex:commandButton value="Request New RH Membership Card" disabled="{!orderDataError}" onclick="greycardoptinconfirm('{!rhOrder.Grey_Card_Opt_in__c}');return false;" rendered="{!!newCardRequested}"/>
+				<apex:commandButton value="Send RH Membership Welcome Email" disabled="{!orderDataError}" onclick="sendemailconfirm('{!rhOrder.Membership_Welcome_Email_Sent__c}');return false;" rendered="{!!newCardRequested}"/>
+				<apex:commandButton value="Cancel" action="{!cancel}" immediate="true" rendered="{!!newCardRequested}"/>
+				<apex:commandButton value="Continue" action="{!cancel}" immediate="true" rendered="{!newCardRequested}"/>
+ 			</apex:pageBlockButtons>
+ 			
+ 			<apex:pageBlockSection columns="2">
+ 				<apex:outputField value="{!rhOrder.Membership_ID__c}"/>
+ 				<apex:outputField value="{!rhOrder.Membership_Enrollment_Date__c}"/>
+ 				<apex:outputField value="{!rhOrder.Grey_Card__c}"/>
+ 				<apex:outputField value="{!rhOrder.Membership_Expiration_Date__c}"/>
+ 				<apex:outputField value="{!rhOrder.Grey_Card_Opt_in__c}"/>
+ 				<apex:inputField value="{!rhOrder.To_Email_Address__c}" required="true"/>
+ 			</apex:pageBlockSection>
+ 			
+ 		</apex:pageBlock>
+		
+	</apex:form>
+	
+</apex:page>

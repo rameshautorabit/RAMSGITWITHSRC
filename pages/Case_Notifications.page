@@ -1,0 +1,37 @@
+<apex:page standardController="Case" extensions="Case_NotificationsCtlExt" tabStyle="Case" action="{!previewOne}">
+	
+	<script type="text/javascript">
+		window.onload = function() {
+			sforce.console.setTabTitle('Credit Card Declines');
+		};
+		
+		window.onpagehide = function() {
+			sforce.console.setTabTitle('{!rhCase.CaseNumber}');
+		}
+	</script>
+	
+	<apex:form >
+		<apex:sectionHeader title="Case: Notifications" subtitle="{!rhCase.CaseNumber}"/>
+		
+		<apex:pageBlock mode="detail" title="Case Notifications">
+			<apex:pageMessages />
+			
+			<apex:pageBlockButtons location="bottom">
+				<apex:commandButton value="Preview" action="{!notificationPreview}" disabled="{!isError}"/>
+				<apex:commandButton value="Cancel" action="{!cancel}" immediate="true"/>
+			</apex:pageBlockButtons>
+			
+			<apex:pageBlockSection title="Select Notification Type" columns="1">
+				<apex:pageBlockSectionItem >
+					<apex:outputLabel value="Notification Type"/>
+					<apex:selectList value="{!notificationSelected}" size="1">
+						<apex:selectOptions value="{!notificationTypes}"/>
+					</apex:selectList>
+				</apex:pageBlockSectionItem>
+				
+			</apex:pageBlockSection>
+			
+		</apex:pageBlock>
+		
+	</apex:form>
+</apex:page>

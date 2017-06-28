@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Project On Hold</fullName>
+        <color>#660000</color>
+        <default>false</default>
+        <label>Project On Hold</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>10</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Project Inquiry</fullName>
+        <color>#990000</color>
+        <default>false</default>
+        <label>Project Inquiry</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>10</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Project Quoted</fullName>
+        <color>#FFFF66</color>
+        <default>false</default>
+        <label>Project Quoted</label>
+        <closed>false</closed>
+        <forecastCategory>BestCase</forecastCategory>
+        <probability>50</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Project DB Lead</fullName>
+        <color>#CC0000</color>
+        <default>false</default>
+        <label>Project DB Lead</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>10</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Project Pricing</fullName>
+        <color>#FF0000</color>
+        <default>false</default>
+        <label>Project Pricing</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>20</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Quote &gt;3 Comp</fullName>
+        <color>#FFFF66</color>
+        <default>false</default>
+        <label>Quote &gt;3 Comp</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>30</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Quote 1-2 Comp</fullName>
+        <color>#FFFF66</color>
+        <default>false</default>
+        <label>Quote 1-2 Comp</label>
+        <closed>false</closed>
+        <forecastCategory>BestCase</forecastCategory>
+        <probability>50</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Quote 0 Comp</fullName>
+        <color>#F3D904</color>
+        <default>false</default>
+        <label>Quote 0 Comp</label>
+        <closed>false</closed>
+        <forecastCategory>BestCase</forecastCategory>
+        <probability>70</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Verbal Confirm</fullName>
+        <color>#006600</color>
+        <default>false</default>
+        <label>Verbal Confirm</label>
+        <closed>false</closed>
+        <forecastCategory>Forecast</forecastCategory>
+        <probability>80</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Payment Request</fullName>
+        <color>#009900</color>
+        <default>false</default>
+        <label>Payment Request</label>
+        <closed>false</closed>
+        <forecastCategory>Forecast</forecastCategory>
+        <probability>90</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Quote finalized - Payment Link Sent</fullName>
+        <color>#33CC00</color>
+        <default>false</default>
+        <label>Quote finalized - Payment Link Sent</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>90</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Engage &amp; Discover</fullName>
+        <default>false</default>
+        <label>Engage &amp; Discover</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>10</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Identify Opportunity</fullName>
+        <default>false</default>
+        <label>Identify Opportunity</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>20</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Initial Design Consultation</fullName>
+        <default>false</default>
+        <label>Initial Design Consultation</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>30</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Design Development</fullName>
+        <default>false</default>
+        <label>Design Development</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>40</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Design Presentation</fullName>
+        <default>false</default>
+        <label>Design Presentation</label>
+        <closed>false</closed>
+        <forecastCategory>Forecast</forecastCategory>
+        <probability>60</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Purchasing Appointment</fullName>
+        <default>false</default>
+        <label>Purchasing Appointment</label>
+        <closed>false</closed>
+        <forecastCategory>Forecast</forecastCategory>
+        <probability>80</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Project Coordination</fullName>
+        <default>false</default>
+        <label>Project Coordination</label>
+        <closed>true</closed>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>100</probability>
+        <won>true</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Delivery &amp; Installation</fullName>
+        <default>false</default>
+        <label>Delivery &amp; Installation</label>
+        <closed>true</closed>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>100</probability>
+        <won>true</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Follow Up</fullName>
+        <default>false</default>
+        <label>Follow Up</label>
+        <closed>true</closed>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>100</probability>
+        <won>true</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed Won/TO Hold</fullName>
+        <color>#333333</color>
+        <default>false</default>
+        <label>Closed Won/TO Hold</label>
+        <closed>true</closed>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>100</probability>
+        <won>true</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed Won</fullName>
+        <color>#33CCFF</color>
+        <default>false</default>
+        <label>Closed Won</label>
+        <closed>true</closed>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>100</probability>
+        <won>true</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed/Lost</fullName>
+        <color>#000000</color>
+        <default>false</default>
+        <label>Closed/Lost</label>
+        <closed>true</closed>
+        <forecastCategory>Omitted</forecastCategory>
+        <probability>0</probability>
+        <won>false</won>
+    </standardValue>
+</StandardValueSet>

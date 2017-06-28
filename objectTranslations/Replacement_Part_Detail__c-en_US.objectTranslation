@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Replacement Part Detail</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Replacement Part Details</value>
+    </caseValues>
+    <fields>
+        <label><!-- Case Line Item --></label>
+        <name>Case_Line_Item__c</name>
+        <relationshipLabel><!-- Replacement Part Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Replacement Part Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Damaged Detail --></label>
+        <name>Damaged_Detail__c</name>
+        <picklistValues>
+            <masterLabel>Customer Damaged</masterLabel>
+            <translation><!-- Customer Damaged --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RH Damaged</masterLabel>
+            <translation><!-- RH Damaged --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ETA Date --></label>
+        <name>ETA_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Missing Detail --></label>
+        <name>Missing_Detail__c</name>
+        <picklistValues>
+            <masterLabel>FMSO or Outlet</masterLabel>
+            <translation><!-- FMSO or Outlet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RH Caused</masterLabel>
+            <translation><!-- RH Caused --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Requesting Extra</masterLabel>
+            <translation><!-- Requesting Extra --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Part Identification --></label>
+        <name>Part_Identification__c</name>
+        <picklistValues>
+            <masterLabel>Assembly Instructions</masterLabel>
+            <translation><!-- Assembly Instructions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CW Item Number</masterLabel>
+            <translation><!-- CW Item Number --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Name/ Description</masterLabel>
+            <translation><!-- Name/ Description --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Photo</masterLabel>
+            <translation><!-- Photo --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Part SKU Notes --></label>
+        <name>Part_SKU_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Part SKU Number --></label>
+        <name>Part_SKU_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Part Type Description --></label>
+        <name>Part_Type_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Part Type --></label>
+        <name>Part_Type__c</name>
+        <picklistValues>
+            <masterLabel>Accent Pillow Casing</masterLabel>
+            <translation><!-- Accent Pillow Casing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accent Pillow Core</masterLabel>
+            <translation><!-- Accent Pillow Core --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Back Casing</masterLabel>
+            <translation><!-- Back Casing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Back Core</masterLabel>
+            <translation><!-- Back Core --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bulbs</masterLabel>
+            <translation><!-- Bulbs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Crystals</masterLabel>
+            <translation><!-- Crystals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Feet/Foot Glide</masterLabel>
+            <translation><!-- Feet/Foot Glide --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hardware Pack/Assembly Hardware</masterLabel>
+            <translation><!-- Hardware Pack/Assembly Hardware --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mounting Hardware</masterLabel>
+            <translation><!-- Mounting Hardware --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nail Head/ Button</masterLabel>
+            <translation><!-- Nail Head/ Button --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seat Casing</masterLabel>
+            <translation><!-- Seat Casing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seat Core</masterLabel>
+            <translation><!-- Seat Core --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shelf/ Bracket</masterLabel>
+            <translation><!-- Shelf/ Bracket --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slipcover</masterLabel>
+            <translation><!-- Slipcover --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tip Kit</masterLabel>
+            <translation><!-- Tip Kit --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Payment Source --></label>
+        <name>Payment_Source__c</name>
+        <picklistValues>
+            <masterLabel>Customer Paying</masterLabel>
+            <translation><!-- Customer Paying --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RH Paying</masterLabel>
+            <translation><!-- RH Paying --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Quantity Needed --></label>
+        <name>Quantity_Needed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason --></label>
+        <name>Reason__c</name>
+        <picklistValues>
+            <masterLabel>Damaged</masterLabel>
+            <translation><!-- Damaged --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Defective</masterLabel>
+            <translation><!-- Defective --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing Part</masterLabel>
+            <translation><!-- Missing Part --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Tracking to Client --></label>
+        <name>Tracking_to_Client__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tracking to Corporate --></label>
+        <name>Tracking_to_Corporate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tracking to DC --></label>
+        <name>Tracking_to_DC__c</name>
+    </fields>
+    <layouts>
+        <layout>Replacement Part Detail Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Replacement Part Details --></label>
+            <section>Replacement Part Details</section>
+        </sections>
+        <sections>
+            <label><!-- Tracking Numbers --></label>
+            <section>Tracking Numbers</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

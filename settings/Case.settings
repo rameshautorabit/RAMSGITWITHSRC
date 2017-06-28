@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CaseSettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseFeedItemSettings>
+        <characterLimit>5000</characterLimit>
+        <collapseThread>false</collapseThread>
+        <displayFormat>Default</displayFormat>
+        <feedItemType>EmailMessageEvent</feedItemType>
+    </caseFeedItemSettings>
+    <closeCaseThroughStatusChange>false</closeCaseThroughStatusChange>
+    <defaultCaseOwner>resto@restorationhardware.com</defaultCaseOwner>
+    <defaultCaseOwnerType>User</defaultCaseOwnerType>
+    <defaultCaseUser>resto@restorationhardware.com</defaultCaseUser>
+    <emailActionDefaultsHandlerClass>SmartTemplateLoader</emailActionDefaultsHandlerClass>
+    <emailToCase>
+        <enableEmailToCase>true</enableEmailToCase>
+        <enableHtmlEmail>true</enableHtmlEmail>
+        <enableOnDemandEmailToCase>true</enableOnDemandEmailToCase>
+        <enableThreadIDInBody>true</enableThreadIDInBody>
+        <enableThreadIDInSubject>false</enableThreadIDInSubject>
+        <notifyOwnerOnNewCaseEmail>false</notifyOwnerOnNewCaseEmail>
+        <overEmailLimitAction>Bounce</overEmailLimitAction>
+        <preQuoteSignature>false</preQuoteSignature>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email: Field Leader Solutions</caseOrigin>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>flissues@restorationhardware.com</emailAddress>
+            <emailServicesAddress>flissues@v29uuz0w9ah9rfseqaohv3ysoitqdfjv1x060j40zq7fql7py.5-7mjveau.na3.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>Field Leader Issues</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email: Gallery Solutions</caseOrigin>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>gallerysolutions@restorationhardware.com</emailAddress>
+            <emailServicesAddress>gallerysolutions@1eaqtm2y7kk8o0f297z5041nc0nphcpn3wsj8x9y9deivuva.5-7mjveau.na3.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>Gallery Solutions</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email: Gallery Solutions</caseOrigin>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>bcgallerysolutions@restorationhardware.com</emailAddress>
+            <emailServicesAddress>bcgallerysolutions@j-16ce8rwhjw9rhqio53a0og84q1rkssnghozsvqf01v86cqiozf.5-7mjveau.na3.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>Gallery Solutions</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email: Gallery Solutions</caseOrigin>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>storefreightassist@restorationhardware.com</emailAddress>
+            <emailServicesAddress>storefreightassist@2irynr6hw6c135825un11ocotv1davdptvpr9oj7ni0r9l1exx.5-7mjveau.na3.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>Gallery Solutions</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email</caseOrigin>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>orderprocessing@rh.com</emailAddress>
+            <emailServicesAddress>orderprocessing@2gbk0hxy7mmgzj0066qbcfviqgwoqjutfv6qwgi75cnbs5ge8w.5-7mjveau.na3.case.salesforce.com</emailServicesAddress>
+            <isVerified>false</isVerified>
+            <routingName>Order Processing</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email: WebCS</caseOrigin>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>bcsite@restorationhardware.com</emailAddress>
+            <emailServicesAddress>bcsite@1-cvnhqcudp15p27a9bigl3d3h5slt07i38fkblke09ps0kqa2s.5-7mjveau.na3.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>RH Baby &amp; Child</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email: WebCS</caseOrigin>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>bcregistry@restorationhardware.com</emailAddress>
+            <emailServicesAddress>bcregistry@7-8rt72ayftq9a8y5s702f27rdp5iqsaokxmlqku03cp3s6d2xl.5-7mjveau.na3.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>RH Baby &amp; Child</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email: WebCS</caseOrigin>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>bcservices@restorationhardware.com</emailAddress>
+            <emailServicesAddress>bcservices@2bhis2dkz0ep1zp0ql5m3g1m6qgiwh63290dlg35lm0bmeqytu.5-7mjveau.na3.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>RH Baby &amp; Child</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email: WebCS</caseOrigin>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>bcproducts@restorationhardware.com</emailAddress>
+            <emailServicesAddress>bcproducts@34zu3nmu1kxn2zssrw5r99ljla3ulzcm8gg5piynlg14lcsgs7.5-7mjveau.na3.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>RH Baby &amp; Child</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email: Centralized Scheduling</caseOrigin>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>rhdeliveryservices@rh.com</emailAddress>
+            <emailServicesAddress>rhdeliveryservices@n-tkporeoqvcp1h48tgja3hhh9admk12x2jabyntemys4siu3eu.5-7mjveau.na3.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>RH Client Care</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email: High Value</caseOrigin>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>rhgreysupport@restorationhardware.com</emailAddress>
+            <emailServicesAddress>rhgreysupport@5-fqof8ctjkof56wfxhtfn45dun6gg13xttfxo4uykxbnqp08mu.5-7mjveau.na3.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>RH Client Care</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email: Platinum</caseOrigin>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>platinumcs@restorationhardware.com</emailAddress>
+            <emailServicesAddress>platinumcs@v73v0lj68rmwse5idy8b8rmixj3xw3en0mxq0swhyu17pf7up.5-7mjveau.na3.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>RH Client Care</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email: RH Claims</caseOrigin>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>rhclaims@restorationhardware.com</emailAddress>
+            <emailServicesAddress>rhclaims@10sohyw86m5rq817ovqumvlbp6w4d8jbrdrpz815ex2g05gaef.5-7mjveau.na3.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>RH Corporate Client Service</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email: CSC PR</caseOrigin>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>cscpr@restorationhardware.com</emailAddress>
+            <emailServicesAddress>cscpr@595q0z5ukjhhqjbdci8xci31sucirqphydurkxm37dnu5cdt2.5-7mjveau.na3.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>RH Corporate Client Service</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email: ECR</caseOrigin>
+            <casePriority>High</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>cei@restorationhardware.com</emailAddress>
+            <emailServicesAddress>cei@24lj89d01dm9g9fwbyms6p0qx7diiqhxc7lihprddn5xiy7ql0.5-7mjveau.na3.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>RH Corporate Client Service</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email: Custom Shades</caseOrigin>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>customshades@restorationhardware.com</emailAddress>
+            <emailServicesAddress>customshades@2feoi848o0ua0gh6vr5npsg0018lij7a7wnn2q0bodgoqdqhia.5-7mjveau.na3.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>RH Custom Products</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email: Specialty Services</caseOrigin>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>specialtyservices@restorationhardware.com</emailAddress>
+            <emailServicesAddress>specialtyservices@m-2kh6iesrkdye0ju897cywhav6dn6ayxpctfbg4mi0d08v673c5.5-7mjveau.na3.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>RH Custom Products</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email: Custom Windows</caseOrigin>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>customwindows@restorationhardware.com</emailAddress>
+            <emailServicesAddress>customwindows@7-bhuwkt3xbjsypnpq8ws0olvntk815ial7msill1kyhmp7fzv1.5-7mjveau.na3.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>RH Custom Products</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email: Designer Services</caseOrigin>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>designercs@restorationhardware.com</emailAddress>
+            <emailServicesAddress>designercs@k-2gtdg2ohnld5u12l15s4u1h8cmp1rhzpg9iyrw4tgwe4cehwod.5-7mjveau.na3.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>RH Designer Services</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email: Store Product Information</caseOrigin>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>storeproductinquiry@restorationhardware.com</emailAddress>
+            <emailServicesAddress>storeproductinquiry@1febg3oz61oihqrm1ll9axn5z3zegq0a4njt45vni56kuwaio3.5-7mjveau.na3.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>RH Product Expert</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email: Replacement Parts</caseOrigin>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>replaceparts@restorationhardware.com</emailAddress>
+            <emailServicesAddress>replaceparts@2-safatjdlorh3fgsdkc0evlz23hp1j70a212s9eb9ny8zbv87g.5-7mjveau.na3.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>RH Product Expert</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email: Product Information</caseOrigin>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>productinforequest@restorationhardware.com</emailAddress>
+            <emailServicesAddress>productinforequest@2wlkw4z5bo7g3cl8ua69l8q92nhhyoi035ovmrziadfo6lqjww.5-7mjveau.na3.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>RH Product Expert</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email: Furniture Repair</caseOrigin>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>furniturerepair@restorationhardware.com</emailAddress>
+            <emailServicesAddress>furniturerepair@5-23cp5lpkq7hcy4kljy9vxmfmebkxwxblohbbc9078hnrm9jpb2.5-7mjveau.na3.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>RH Product Expert</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email: Store Trade</caseOrigin>
+            <casePriority>High</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>storetrade@rh.com</emailAddress>
+            <emailServicesAddress>storetrade@2ez1wtl21d7f0rmfvwebwrb5hstxxgw4jse282y07555hpbxtn.5-7mjveau.na3.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>RH Trade</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email: Trade</caseOrigin>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>trade@rh.com</emailAddress>
+            <emailServicesAddress>trade@k-18zscp0omlefs7622zes8lr2of8wxouoqoioekgajuzlyjuqkg.5-7mjveau.na3.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>RH Trade</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email: Tax Exempt</caseOrigin>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>taxexempt@rh.com</emailAddress>
+            <emailServicesAddress>taxexempt@m-2vad8zjgwluz97lpolrimi78fxrrna8dm43rbqqce3a3va7r7i.5-7mjveau.na3.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>RH Trade</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email: WebCS</caseOrigin>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>webcs@restorationhardware.com</emailAddress>
+            <emailServicesAddress>webcs@1-1eja6azfx3f53nkvg51refrhxypo9piuejojz93o5npcg3ugaf.5-7mjveau.na3.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>Restoration Hardware</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email: WebCS</caseOrigin>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>info@restorationhardware.com</emailAddress>
+            <emailServicesAddress>info@h-6qgszmi01z9t2na1m1egutyrm8qh0tk6x80brjecgw4uqgsu6.5-7mjveau.na3.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>Restoration Hardware</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email: WebCS</caseOrigin>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>definethehome@restorationhardware.com</emailAddress>
+            <emailServicesAddress>definethehome@2-292ch1gxtul0oaey5s118h2c132zo0i2ht3jd7n5sx77tlvf9m.5-7mjveau.na3.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>Restoration Hardware</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email: WebCS</caseOrigin>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>registryservices@restorationhardware.com</emailAddress>
+            <emailServicesAddress>registryservices@m-2irppe26sodbqsu8evsp2uob2gz0monqyxsf6mj527afpfzdja.5-7mjveau.na3.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>Restoration Hardware</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email: WebCS</caseOrigin>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>catalogcs@restorationhardware.com</emailAddress>
+            <emailServicesAddress>catalogcs@h-ge8zuwm31wgitpil9gjv4mbfidy0d5n0nesf7mrumas7x9jyy.5-7mjveau.na3.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>Restoration Hardware</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email: WebCS</caseOrigin>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>rhteen@restorationhardware.com</emailAddress>
+            <emailServicesAddress>rhteen@1cepfb24oesni05iy0bxs12d0ztvktwdk2gzpohzg4gly3cs0m.5-7mjveau.na3.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>Restoration Hardware</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email: WebCS</caseOrigin>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>babyandchild@restorationhardware.com</emailAddress>
+            <emailServicesAddress>babyandchild@6-2ldgqd4tmvwulvvd1ywlo8rbtkbpp8n4v5awlh4ukgae3phq1k.5-7mjveau.na3.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>Restoration Hardware</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email: WebCS</caseOrigin>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>rhmembers@restorationhardware.com</emailAddress>
+            <emailServicesAddress>rhmembers@29x6rmjo0ypwodf1rc1hptp3dkqts9p3opoe0x53o4m0ih4chq.5-7mjveau.na3.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>Restoration Hardware</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email: WebCS</caseOrigin>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>rhmodern@restorationhardware.com</emailAddress>
+            <emailServicesAddress>rhmodern@9-12l0m4mntjhd3a67kzsl6xcp6ahdhnaxm4umdbkdhjjgeqjhv9.5-7mjveau.na3.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>Restoration Hardware</routingName>
+            <saveEmailHeaders>true</saveEmailHeaders>
+        </routingAddresses>
+        <unauthorizedSenderAction>Discard</unauthorizedSenderAction>
+    </emailToCase>
+    <enableCaseFeed>true</enableCaseFeed>
+    <enableDraftEmails>true</enableDraftEmails>
+    <enableEarlyEscalationRuleTriggers>true</enableEarlyEscalationRuleTriggers>
+    <enableEmailActionDefaultsHandler>true</enableEmailActionDefaultsHandler>
+    <enableSuggestedArticlesApplication>false</enableSuggestedArticlesApplication>
+    <enableSuggestedArticlesCustomerPortal>false</enableSuggestedArticlesCustomerPortal>
+    <enableSuggestedArticlesPartnerPortal>false</enableSuggestedArticlesPartnerPortal>
+    <enableSuggestedSolutions>false</enableSuggestedSolutions>
+    <keepRecordTypeOnAssignmentRule>true</keepRecordTypeOnAssignmentRule>
+    <notifyContactOnCaseComment>false</notifyContactOnCaseComment>
+    <notifyDefaultCaseOwner>false</notifyDefaultCaseOwner>
+    <notifyOwnerOnCaseComment>false</notifyOwnerOnCaseComment>
+    <notifyOwnerOnCaseOwnerChange>false</notifyOwnerOnCaseOwnerChange>
+    <systemUserEmail>automatedcase@00d500000007mjveau.ext</systemUserEmail>
+    <useSystemEmailAddress>false</useSystemEmailAddress>
+    <useSystemUserAsDefaultCaseUser>false</useSystemUserAsDefaultCaseUser>
+    <webToCase>
+        <enableWebToCase>false</enableWebToCase>
+    </webToCase>
+</CaseSettings>

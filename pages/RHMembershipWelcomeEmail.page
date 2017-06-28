@@ -1,0 +1,3 @@
+<apex:page standardController="Membership__c" sidebar="false">
+<c:RHMembershipWelcomeEmail RHMembershipId="{!Membership__c.Id}"/>
+</apex:page>

@@ -1,0 +1,166 @@
+<apex:component >
+<apex:attribute name="htmlmap" type="map" description="RH Order HTML Map" />
+<html>
+<head>
+    <title>RH Billing Summary</title>
+</head>
+<body link="#666" vlink="#666" alink="#666">
+    <table width="800" style="margin: 0 auto; width:700px; font-family:'Times New Roman',Times,serif; font-size:12px; line-height:18px" cellpadding="0" cellspacing="0">
+        <tbody>
+            <tr>
+                <td style="text-align: center; padding: 20px 0 30px 0;"><apex:outputText value="{!htmlmap['%rhBrandLogo%']}" escape="false"/></td>
+            </tr>
+
+            <tr>
+                <td style="padding:10px 0 0 0;border-top:1px solid #ccc">&nbsp;</td>
+            </tr>
+
+            <tr>
+                <td style="color:#333;background-color:transparent;letter-spacing:1px;font-family:'minion-pro',Times,'Times New Roman';padding:0;margin:5px 0 30px 0px;font-weight:normal;text-align:center;padding:0;font-size:22px;letter-spacing: 1px;text-transform:uppercase">Billing Summary</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p style="color: #666; margin:25px 10px 15px 10px;font-family:'minion-pro',Times,'Times New Roman';font-size:14px;text-align:center;font-weight:normal;text-transform:uppercase">Your Order # <a href="http://www.restorationhardware.com/my-account/order-history.jsp" style="color:#000000" target="_blank"><apex:outputText value="{!htmlmap['%orderNumber%']}" escape="true"/><br/></a></p>
+
+                    <p style="color: #666; font-size:12px;margin:10px 10px 0 10px;text-align:center;letter-spacing:1px;font-family:'minion-pro',sans-serif">Thank you for contacting RH regarding your order.<br/>
+                    As requested, you will find the detailed billing invoices for your order below. Transactions are listed<br/>
+                    in chronological order to match your credit card statement.</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="vertical-align: top">
+                    <table style="font-family:'minion-pro','Times New Roman',Times,serif; font-size: 12px; vertical-align: top; vertical-align: top; margin: 15px auto 10px auto; width: 650px; height: auto;">
+                        <thead style="text-align: left">
+                            <tr>
+                                <th style="color:#333; width: 500px; vertical-align: top; padding: 10px 0 20px 0; text-transform: uppercase; font-size: 13px">Customer</th>
+                                <th><span style="color:#333; float: right; text-align: right; text-transform: uppercase;font-weight:bold;font-size: 13px;">{!if(LEN(htmlmap['%orderDesc%']) > 0,'Order Description','Order Placed On')}</span></th>
+                            </tr>
+                        </thead>
+
+                        <tr>
+                            <td style="width: 500px; vertical-align: top; padding: 0 0 10px 0;">
+                                <table style="color: #666; line-height: 20px; font-family:'minion-pro',sans-serif; font-size: 12px; vertical-align: top;" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td><apex:outputText value="{!htmlmap['%oSoldToName%']}" escape="true"/></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><apex:outputText value="{!htmlmap['%oSoldToAddr1%']}" escape="true"/></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><apex:outputText value="{!htmlmap['%oSoldToAddr2%']}" escape="true"/></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><apex:outputText value="{!htmlmap['%oSoldToCity%']}, {!htmlmap['%oSoldToState%']} {!htmlmap['%oSoldToZip%']}" escape="true"/></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><apex:outputText value="{!htmlmap['%oSoldToPhone%']}" escape="true"/></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><apex:outputText value="{!htmlmap['%oSoldToEmail%']}" escape="true"/></td>
+                                    </tr>
+                                </table>
+                            </td>
+
+                            <td style="padding: 0 0 10px 0; float: right">
+                                <table style="color: #666;width:140px; line-height: 20px; font-family:'minion-pro',sans-serif; font-size: 12px; vertical-align: top;" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td>
+                                        <span style="float: right"><apex:outputText value="{!if(LEN(htmlmap['%orderDesc%']) > 0,htmlmap['%orderDesc%'],htmlmap['%orderDate%'])}" escape="true"/></span></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><span style="color:#333; float: right; text-transform: uppercase;font-weight:bold;font-size: 13px;font-family:'minion-pro','Times New Roman',Times,serif;">{!if(LEN(htmlmap['%orderDesc%']) > 0,'Order Placed On','')}</span><br/><br/>
+                                        <span style="float: right"><apex:outputText value="{!if(LEN(htmlmap['%orderDesc%']) > 0,htmlmap['%orderDate%'],'')}" escape="true"/></span></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    
+                    <table style="font-family:'minion-pro','Times New Roman',Times,serif;font-size:13px;vertical-align:top;vertical-align:top;margin:0px auto 10px auto;width:800px;height:auto">
+                     <thead style="text-align:left">
+                      <tr>
+                       <td style="border-top:1px solid #333;">&nbsp;</td>
+                      </tr>
+                     </thead>
+                    </table>  
+
+<!--                    <table style="font-family:'minion-pro','Times New Roman',Times,serif; font-size: 13px; vertical-align: top; border-top: 1px solid #000; vertical-align: top; margin: 20px auto 10px auto; width: 800px; height: auto;">-->
+                    <table style="font-family:'minion-pro','Times New Roman',Times,serif;font-size:13px;vertical-align:top;vertical-align:top;margin:0px auto 10px auto;width:650px;height:auto">
+                        <thead style="text-align: left">
+                            <tr>
+                               <!-- <th style="color:#333;width: 570px; vertical-align: top; padding: 10px 0 20px 0; text-transform: uppercase">Billing Activity</th>-->
+                                    <th>
+                                        <h3 style="font-family:'minion-pro','Times New Roman',Times,serif;line-height:31px;margin:0 0 5px 0px;font-weight:normal;font-size:14px;color:#000;letter-spacing:1px;text-transform:uppercase">Billing Activity</h3>
+                                    </th>                               
+
+                                <th style="color:#333;width: auto; vertical-align: top; padding: 10px 0 0 0; text-transform: uppercase">&nbsp;</th>
+                            </tr>
+                        </thead>
+
+                        <tr>
+                           <apex:outputText value="{!htmlmap['%billingActivity%']}" escape="false"/> 
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <apex:outputText value="{!htmlmap['%invoiceDetail%']}" escape="false"/> 
+            <apex:outputText value="{!htmlmap['%invoiceGift%']}" escape="false"/>
+  </tbody>
+ </table>
+</body>   
+ 
+ <table width="800" style="margin: 0 auto; width:700px; font-family:'Times New Roman',Times,serif; font-size:12px; line-height:18px" cellpadding="0" cellspacing="0">
+  <tbody>
+   <tr>
+    <td style="border-top:1px solid #333">&nbsp;</td>
+   </tr>
+   
+   <tr>
+    <td style="padding: 0 0 20px 0">
+     <div>
+      <p style="font-family:'minion-pro',sans-serif; text-align: center; margin: 15px 0 0 10px">Thank you for shopping with RH.</p>
+     </div>                
+    </td>
+   </tr>
+   
+   <tr>
+    <td style="background-color: #f1f1f1; color: #000000;text-align: center;font-size: 12px;font-family: 'minion-pro', Times, 'Times New Roman';line-height: 18px;width: 700px;width: 700px;padding: 20px 0 20px 0;letter-spacing: 1px;" colspan="3">
+     <p style="text-transform: none;">For additional order details, please <a href="https://www.restorationhardware.com/my-account/sign-in.jsp" target="_blank" style="color: #000000;">click here</a> to go to your account. For questions<br/>
+     or comments, call us toll-free at {!htmlmap['%phone3%']} or email <a href="mailto:{!htmlmap['%email2%']}" style="color: #000000;">{!htmlmap['%email2%']}.</a><br/>
+     <br/>
+     <a href="https://www.restorationhardware.com/membership.jsp" target="_blank" style="color: #000000; text-decoration: none;text-transform: uppercase;">Join RH Grey</a> | <a href="https://www.restorationhardware.com/customer-service/privacy-policy.jsp" target="_blank" style="color: #000000; text-decoration: none;text-transform: uppercase;">Privacy Policy</a> | <a href="https://www.restorationhardware.com/customer-service/frequently-asked-questions.jsp" target="_blank" style="color: #000000; text-decoration: none;text-transform: uppercase;">FAQs</a> | <a href="https://www.restorationhardware.com/customer-service/contact-us.jsp" target="_blank" style="color: #000000; text-decoration: none;text-transform: uppercase;">Contact Us</a> | <a href="https://www.restorationhardware.com/customer-service/index.jsp" target="_blank" style="color: #000000; text-decoration: none;text-transform: uppercase;">Customer Service</a></p>
+
+     <p style="text-decoration: none;"><br/>
+     &copy; 2016 RH&nbsp;15 Koch Road, Corte Madera, CA 94925</p>
+    </td>   
+   </tr> 
+     
+ </tbody>
+</table>
+<br/>
+</html>
+</apex:component>

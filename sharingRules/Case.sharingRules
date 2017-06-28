@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>All_Cases</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>All Cases</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>IsClosed</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>IsClosed</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>All_Internals_to_All_HDL_Partners</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>All Internals to All HDL Partners</label>
+        <sharedTo>
+            <group>All_HDL_Partners</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Delivery &amp; Return Support</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>DRS_Internal</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>DRS Internal</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Delivery &amp; Return Support</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>Read_Access_CSC_Gallery_Returns</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Read Access - CSC Gallery Returns</label>
+        <sharedTo>
+            <group>CSC_Gallery_Returns</group>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Read_Access_Gallery_All</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Read Access - Gallery All</label>
+        <sharedTo>
+            <group>Gallery_All</group>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Read_Access_Internal_Audit</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Read Access - Internal Audit</label>
+        <sharedTo>
+            <group>Internal_Audit</group>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Read_Access_Inventory_Management</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Read Access - Inventory Management</label>
+        <sharedTo>
+            <group>Inventory_Management</group>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Read_Write_Access_CSC_All</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Read/Write Access - CSC All</label>
+        <sharedTo>
+            <group>All_CSC_Associates</group>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Read_Write_Access_DC_All</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Read/Write Access - DC All</label>
+        <sharedTo>
+            <group>DC_All</group>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Read_Write_Access_Merch_Ops_Merchant</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Read/Write Access - Merch Ops/ Merchant</label>
+        <sharedTo>
+            <group>Merch_Ops_Merchant</group>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Read_Write_Access_Quality</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Read/Write Access - Quality</label>
+        <sharedTo>
+            <group>Quality</group>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Read_Write_Access_RHD_Returns</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Read/Write Access - RHD Returns</label>
+        <sharedTo>
+            <group>RHD_Returns</group>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

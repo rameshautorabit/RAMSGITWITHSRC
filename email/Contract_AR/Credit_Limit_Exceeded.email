@@ -1,0 +1,1 @@
+{!Account.Project_Manager__c}  -  {!Account.Name} has exceeded their credit term limit by {!Account.Available_Credit__c}.  Please reach out to customer to reconcile balance due.

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_75995415</developerName>
+        <masterLabel>Territory</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>CUST_CREATED_NAME</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Angela King</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Stephanie Roberson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jodi Trout</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jeffrey Lanuza</sourceValue>
+            </sourceValues>
+            <value>South West</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Andrea Turner</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chrissy Burrows</sourceValue>
+            </sourceValues>
+            <value>Mountain</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Tom Freeman</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Eric Henschel</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ali Layton</sourceValue>
+            </sourceValues>
+            <value>Canada</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Todd Hilt</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Valia Poursartip</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Roxanne McElroy</sourceValue>
+            </sourceValues>
+            <value>Mid West</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Jill Panzer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Katherine Baritell</sourceValue>
+            </sourceValues>
+            <value>South Central</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Josie Driscoll</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ryan Haggett</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Alicia Rietzel</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Selina Gaitan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Carlee Scanlon</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Minh Bui</sourceValue>
+            </sourceValues>
+            <value>North East</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Renee Valega</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Allison Falone</sourceValue>
+            </sourceValues>
+            <value>Mid Atlantic</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Deborah King</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Debbie King</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Linda Thao</sourceValue>
+            </sourceValues>
+            <value>FL &amp; Caribbean</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Laura Sievers</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jennifer Anderson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Haley Taylor</sourceValue>
+            </sourceValues>
+            <value>North West</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Tara Hebert</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Gerri Raatz</sourceValue>
+            </sourceValues>
+            <value>South East</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Amanda Simpson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ryan Barry</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Launa Waldrop</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nathalie Taylor</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Rashelle Seeger</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Adam Rauenzahn</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tre Graff</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Rachel Vialpando</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Carolyn Burgueno</sourceValue>
+            </sourceValues>
+            <value>Residential</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Franca Burgan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Michael Suarez</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Maria Sarria</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ann Kupillas</sourceValue>
+            </sourceValues>
+            <value>International</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Operations_Request__c.Approval_Status__c</field>
+    </columns>
+    <columns>
+        <field>Operations_Request__c.Probability__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Operations_Request__c.Contract_Customer_Segmentation__c</field>
+    </columns>
+    <columns>
+        <field>Operations_Request__c.Urgency_Factor_Value__c</field>
+    </columns>
+    <columns>
+        <field>Operations_Request__c.Status__c</field>
+    </columns>
+    <columns>
+        <field>Operations_Request__c.Urgency_Factor__c</field>
+    </columns>
+    <columns>
+        <field>CUST_RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>Operations_Request__c.Oppty_Number__c</field>
+    </columns>
+    <columns>
+        <field>Operations_Request__c.Opportunity__c</field>
+    </columns>
+    <columns>
+        <field>Operations_Request__c.Type__c</field>
+    </columns>
+    <columns>
+        <field>Operations_Request__c.Order__c</field>
+    </columns>
+    <columns>
+        <field>CUST_OWNER_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_NAME</field>
+    </columns>
+    <columns>
+        <field>Operations_Request__c.Aging_Days__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Operations_Request__c.Amount__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>((1 OR 2) AND 3)</booleanFilter>
+        <criteriaItems>
+            <column>Operations_Request__c.Order__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Operations_Request__c.Approval_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Customer Declined</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Operations_Request__c.Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Closed</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Quarter</dateGranularity>
+        <field>CUST_CREATED_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_75995415</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Ops Request by Territory weekly</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Operations_Request__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

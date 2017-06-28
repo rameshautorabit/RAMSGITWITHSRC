@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Include_Order_Number__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If checked - include order number at the end of the email subject.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked - include order number at the end of the email subject.</inlineHelpText>
+        <label>Include Order Number</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Preview_Text__c</fullName>
+        <externalId>false</externalId>
+        <label>Preview Text</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Subject__c</fullName>
+        <externalId>false</externalId>
+        <label>Subject</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>CreditCardDeclineEmail</label>
+    <visibility>Public</visibility>
+</CustomObject>

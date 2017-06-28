@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Customer Address</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Customer Addresses</value>
+    </caseValues>
+    <fields>
+        <label><!-- Address Inactive Date --></label>
+        <name>Address_Inactive_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Lines --></label>
+        <name>Address_Lines__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Relationship Match Key --></label>
+        <name>Address_Relationship_Match_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Type --></label>
+        <name>Address_Type__c</name>
+        <picklistValues>
+            <masterLabel>Business</masterLabel>
+            <translation><!-- Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Residence</masterLabel>
+            <translation><!-- Residence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vacation Home</masterLabel>
+            <translation><!-- Vacation Home --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Address --></label>
+        <name>Address__c</name>
+        <relationshipLabel><!-- Customer Addresses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Customer Addresses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Full Name --></label>
+        <name>Full_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Inactive --></label>
+        <name>Is_Inactive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Primary --></label>
+        <name>Is_Principal_Address__c</name>
+    </fields>
+    <layouts>
+        <layout>Customer Address Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You cannot mark a primary address as inactive. Choose or create a different primary address before marking this address as inactive. --></errorMessage>
+        <name>Active_Customer_Address_Is_Primary</name>
+    </validationRules>
+</CustomObjectTranslation>

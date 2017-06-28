@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Operations Request Line Item</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Operations Request Line Items</value>
+    </caseValues>
+    <fields>
+        <label><!-- Actual Product Name --></label>
+        <name>Actual_Product_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Information --></label>
+        <name>Additional_Information__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Measurements --></label>
+        <name>Additional_Measurements__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved Pricing ($) --></label>
+        <name>Approved_Pricing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved Pricing ($) --></label>
+        <name>Approved_Pricing_formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Arrival Date --></label>
+        <name>Arrival_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Color Code or Description --></help>
+        <label><!-- Attribute/Color/Finish --></label>
+        <name>Attribute_Color_Finish__c</name>
+    </fields>
+    <fields>
+        <label><!-- Confirmed Lead Time --></label>
+        <name>Confirmed_Lead_Time__c</name>
+    </fields>
+    <fields>
+        <help><!-- Info about what needs to be customized --></help>
+        <label><!-- Custom Specification Info --></label>
+        <name>Custom_Specification_Info__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Location --></label>
+        <name>Customer_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Spec # --></label>
+        <name>Customer_Spec__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Tracking # --></label>
+        <name>Customer_Tracking__c</name>
+    </fields>
+    <fields>
+        <label><!-- DC Location --></label>
+        <name>DC_Location__c</name>
+        <picklistValues>
+            <masterLabel>89 - ODC</masterLabel>
+            <translation><!-- 89 - ODC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>95 - SFDC</masterLabel>
+            <translation><!-- 95 - SFDC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>96 - DDC</masterLabel>
+            <translation><!-- 96 - DDC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>97 - LADC</masterLabel>
+            <translation><!-- 97 - LADC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>98 - MDC</masterLabel>
+            <translation><!-- 98 - MDC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct to Customer</masterLabel>
+            <translation><!-- Direct to Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Direct First Cost --></label>
+        <name>Direct_First_Cost__c</name>
+    </fields>
+    <fields>
+        <help><!-- What discount are you offering product to the client? --></help>
+        <label><!-- Discount % --></label>
+        <name>Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do you need a CAD? --></label>
+        <name>Do_you_need_a_CAD__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Domestic - Request to move good outside of HDL Network.
+International - Request to move good outside of the existing US or Canada structure. --></help>
+        <label><!-- Dom/Int --></label>
+        <name>Dom_Int__c</name>
+        <picklistValues>
+            <masterLabel>Domestic</masterLabel>
+            <translation><!-- Domestic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>International</masterLabel>
+            <translation><!-- International --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ELC ($) --></label>
+        <name>ELC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Foam Fill --></label>
+        <name>Foam_Fill__c</name>
+        <picklistValues>
+            <masterLabel>HR</masterLabel>
+            <translation><!-- HR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reticulated</masterLabel>
+            <translation><!-- Reticulated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation><!-- Standard --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Freight Cost Per Unit --></label>
+        <name>Freight_Cost_Per_Unit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fulfillment Type --></label>
+        <name>Fulfillment_Type__c</name>
+        <picklistValues>
+            <masterLabel>Dropship</masterLabel>
+            <translation><!-- Dropship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inventory</masterLabel>
+            <translation><!-- Inventory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPO</masterLabel>
+            <translation><!-- SPO --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Indoor/Outdoor --></label>
+        <name>Indoor_Outdoor__c</name>
+        <picklistValues>
+            <masterLabel>Indoor</masterLabel>
+            <translation><!-- Indoor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outdoor</masterLabel>
+            <translation><!-- Outdoor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Is this a Custom Item? --></label>
+        <name>Is_this_a_Custom_Item__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- MMU% Approved --></label>
+        <name>MMU_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- MOQ --></label>
+        <name>MOQ__c</name>
+    </fields>
+    <fields>
+        <label><!-- Margin % --></label>
+        <name>Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- New SKU Description --></label>
+        <name>New_SKU_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- New SKU --></label>
+        <name>New_SKU__c</name>
+        <relationshipLabel><!-- Operations Request Line Items (New SKU) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operations Request --></label>
+        <name>Operations_Request__c</name>
+        <relationshipLabel><!-- Operations Request Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Product Id --></label>
+        <name>Opportunity_Product_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Product --></label>
+        <name>Opportunity_Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ops Notes --></label>
+        <name>Ops_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- PO DC Location --></label>
+        <name>PO_DC_Location__c</name>
+        <picklistValues>
+            <masterLabel>89 - ODC</masterLabel>
+            <translation><!-- 89 - ODC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>95 - SFDC</masterLabel>
+            <translation><!-- 95 - SFDC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>96 - DDC</masterLabel>
+            <translation><!-- 96 - DDC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>97 - LADC</masterLabel>
+            <translation><!-- 97 - LADC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>98 - MDC</masterLabel>
+            <translation><!-- 98 - MDC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PO In DC Date --></label>
+        <name>PO_In_DC_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- PO Placed Date --></label>
+        <name>PO_Placed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- PO # --></label>
+        <name>PO__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the date that the client takes possession of goods - needed to determine lead time. --></help>
+        <label><!-- Product Handover Date --></label>
+        <name>Product_Handover_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Information --></label>
+        <name>Product_Information__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Name --></label>
+        <name>Product_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Quantity On Hand --></label>
+        <name>Product_Quantity_On_Hand__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Vendor Name --></label>
+        <name>Product_Vendor_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+        <relationshipLabel><!-- Operations Request Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quantity --></label>
+        <name>Quantity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Product Information Questions --></help>
+        <label><!-- Question --></label>
+        <name>Question__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ready To Place Dropship? --></label>
+        <name>Ready_To_Place_Dropship__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- 1 Sq Ft leather converts to .1 Yards of fabric --></help>
+        <label><!-- Square Feet --></label>
+        <name>Square_Feet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Budget</masterLabel>
+            <translation><!-- Budget --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COI</masterLabel>
+            <translation><!-- COI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COL</masterLabel>
+            <translation><!-- COL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COM</masterLabel>
+            <translation><!-- COM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Confirmed Quote</masterLabel>
+            <translation><!-- Confirmed Quote --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Core Inventory</masterLabel>
+            <translation><!-- Core Inventory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Core Margin</masterLabel>
+            <translation><!-- Core Margin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cost</masterLabel>
+            <translation><!-- Cost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation><!-- Custom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC Pickup</masterLabel>
+            <translation><!-- DC Pickup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discount</masterLabel>
+            <translation><!-- Discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expedite Domestic</masterLabel>
+            <translation><!-- Expedite Domestic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expedite International</masterLabel>
+            <translation><!-- Expedite International --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Freight Request</masterLabel>
+            <translation><!-- Freight Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Large Qty SPO</masterLabel>
+            <translation><!-- Large Qty SPO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead Time</masterLabel>
+            <translation><!-- Lead Time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Model Room Sample</masterLabel>
+            <translation><!-- Model Room Sample --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>POD</masterLabel>
+            <translation><!-- POD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Permission to Exceed Guidelines</masterLabel>
+            <translation><!-- Permission to Exceed Guidelines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SM</masterLabel>
+            <translation><!-- SM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendor Air Freight</masterLabel>
+            <translation><!-- Vendor Air Freight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yardage</masterLabel>
+            <translation><!-- Yardage --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Upholstery Fee --></label>
+        <name>Upholstery_Fee__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date Ops sent request to vendor --></help>
+        <label><!-- Vendor Request Date --></label>
+        <name>Vendor_Request_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor Tracking # --></label>
+        <name>Vendor_Tracking__c</name>
+    </fields>
+    <fields>
+        <label><!-- Yardage Square Complete --></label>
+        <name>Yardage_Square_Complete__c</name>
+    </fields>
+    <fields>
+        <help><!-- 1 Yard of Fabric converts to 18 Sq Ft of leather --></help>
+        <label><!-- Yardage --></label>
+        <name>Yardage__c</name>
+    </fields>
+    <layouts>
+        <layout>COM/COL</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Custom Product</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Freight Request</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Inventory Request</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Margin Request</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Operations Request Line Item Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Product Information</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SKU Setup</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- SKU Setup --></label>
+            <section>SKU Setup</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SPO Quote</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Side Mark</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Spec Sheet</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Swatches, Fabrics &amp; Finishes</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- COM/COL --></label>
+        <name>COM_COL</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Custom Product --></label>
+        <name>Custom_Product</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DC Pickup --></label>
+        <name>DC_Pickup</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Freight Request --></label>
+        <name>Freight_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Inventory Request --></label>
+        <name>Inventory_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Margin Request --></label>
+        <name>Margin_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- POD --></label>
+        <name>POD</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Product Information --></label>
+        <name>Product_Information</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SKU Setup --></label>
+        <name>SKU_Setup</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SPO Quote --></label>
+        <name>SPO_Quote</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Side Mark --></label>
+        <name>Side_Mark</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Spec Sheet --></label>
+        <name>Spec_Sheet</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Swatches, Fabrics &amp; Finishes --></label>
+        <name>Swatches_Fabrics_Finishes</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Vendor Air Freight --></label>
+        <name>Vendor_Air_Freight</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Quantity must be less than 5 when Operations Request record type is Swatches, Fabrics &amp; Finishes. --></errorMessage>
+        <name>Limit_Quantity</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- BOM Header SKUs are not allowed. Please add one or more of the BOM Component SKUs instead. --></errorMessage>
+        <name>SKU_Setup_No_BOM_SKU</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Yardage cannot have a value if Square Feet is populated. One field auto-calculates off of the other so one of these fields must be blank upon save. --></errorMessage>
+        <name>Yardage_is_blank_if_Square_Feet_no_blank</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Edit_All --></label>
+        <name>Edit_All</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Operations_Request_Line_Item --></label>
+        <name>New_Operations_Request_Line_Item</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,122 @@
+<apex:page id="loadTimer" showHeader="false" sidebar="false">
+<apex:includeScript value="/support/console/31.0/integration.js"/>
+<script>
+    function getAllUrlParametersHash()
+    {
+        var hash = {};
+        for(var i = 0; i < location.search.replace('?','').split('&').length; i++) {
+            hash[location.search.replace('?','').split('&')[i].split('=')[0]] = location.search.replace('?','').split('&')[i].split('=')[1];
+        }
+        return hash;
+    }
+
+  // Popup the timer in a new, centered window.
+	function PopupCenter(url, title, w, h) 
+	 {
+		// Fixes dual-screen position Most browsers Firefox
+		var dualScreenLeft = window.screenLeft != undefined ? window.screenLeft : screen.left;
+		var dualScreenTop = window.screenTop != undefined ? window.screenTop : screen.top;
+
+		width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
+		height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
+
+		var left = ((width / 2) - (w / 2)) + dualScreenLeft;
+		var top = ((height / 2) - (h / 2)) + dualScreenTop;
+		var newWindow = window.open(url, title, 'status=no, toolbar=no, menubar=no, location=no, addressbar=no,width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);
+
+		// Puts focus on the newWindow
+		if (window.focus)
+		 {
+			newWindow.focus();
+		 }
+	 }
+
+//get URL parameters as passed in 
+var urlParam = getAllUrlParametersHash();
+var autoStart = 0;
+var source = '';
+var caseId = '';
+var returnURL = '';
+var primaryTabId = '';
+if(typeof(urlParam['autoStart']) !="undefined" && urlParam['autoStart'] == 1)
+{
+    autoStart = urlParam['autoStart'];
+}
+if(typeof(urlParam['source']) !="undefined")
+{
+    source = urlParam['source'];
+}
+if(typeof(urlParam['caseId']) !="undefined")
+{
+    caseId = urlParam['caseId'];
+}
+
+if(typeof(urlParam['returnURL']) !="undefined")
+{
+    returnURL = urlParam['returnURL'];
+}
+
+if(typeof(urlParam['primaryTabId']) !="undefined")
+{
+    returnURL = urlParam['primaryTabId'];
+}
+
+////////START TIMER CODE ////////////////////////
+var url = '/apex/Timer?caseId='+caseId+'&autoStart='+autoStart+'&source='+source;
+console.log('Timer URL parameters: ' + url);
+returnURL =  decodeURIComponent(returnURL);
+console.log('Timer redirect URL: ' + returnURL);
+
+if (sforce.console.isInConsole())
+{
+	console.log('In Console');
+	sforce.console.fireEvent('StartTimer', url, null);
+
+	//get the primary tab and open new link	
+	var openInPrimaryTab = function openInPrimaryTab(result)
+	{
+		console.log('PrimaryTabId: ' + result.id);
+		if(result.id != "undefined" && result.id != 'null')
+		{
+			sforce.console.openPrimaryTab(result.id, returnURL, true, '');
+		}
+		else
+		{
+			sforce.console.openPrimaryTab(undefined, returnURL, true, '');
+		}
+	}	
+    
+    var iframeId = null;
+    try {
+    	 	iframeId = document.getElementById('ext-comp-1006');
+			console.log('iframeId: ' + iframeId);
+		}
+    catch(err) 
+    { 
+    	console.log('Could not find Iframe Id. ' + err);
+    }
+
+    if (iframeId != "undefined" && iframeId != null)
+    {
+    	iframeId.src=returnURL+'&isdp=nv';
+    }
+    else
+    {
+		sforce.console.getEnclosingPrimaryTabId(openInPrimaryTab);
+	}
+
+}
+else
+{
+
+	PopupCenter(url,"Timer", 380,280);
+	if(returnURL.length != -1)
+	{
+		window.location = returnURL;
+	}
+}
+////////END TIMER CODE //////////////////////// 
+
+</script>
+
+</apex:page>

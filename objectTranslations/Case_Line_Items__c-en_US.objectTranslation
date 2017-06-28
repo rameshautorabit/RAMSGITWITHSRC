@@ -1,0 +1,1917 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Case Line Item</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Case Line Items</value>
+    </caseValues>
+    <fields>
+        <label><!-- AccommodationGreaterThanTotal --></label>
+        <name>AccommodationGreaterThanTotal__c</name>
+    </fields>
+    <fields>
+        <help><!-- Your Accommodation Amount is over your Line Total. Please check the box to indicate that this is accurate. --></help>
+        <label><!-- Accommodation Is Greater Than Total --></label>
+        <name>Accommodation_Is_Greater_Than_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accommodation Line Total Amount --></label>
+        <name>Accommodation_Line_Total_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the quantity of the item being accommodated. If there is a quantity of 8 and you are accommodating for 3, please enter 3. --></help>
+        <label><!-- Accommodation Quantity --></label>
+        <name>Accommodation_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accommodation Reason --></label>
+        <name>Accommodation_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Balance Transfer</masterLabel>
+            <translation><!-- Balance Transfer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Carrier Caused - HDL</masterLabel>
+            <translation><!-- Carrier Caused - HDL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Carrier Caused - UPS</masterLabel>
+            <translation><!-- Carrier Caused - UPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Damaged/Defective Product</masterLabel>
+            <translation><!-- Damaged/Defective Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delay - Backorder</masterLabel>
+            <translation><!-- Delay - Backorder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delay - DC</masterLabel>
+            <translation><!-- Delay - DC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delay - Vendor</masterLabel>
+            <translation><!-- Delay - Vendor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Freight - Canadian Adjustment/Refund</masterLabel>
+            <translation><!-- Freight - Canadian Adjustment/Refund --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Freight - Flat Rate Delivery Fee Refund</masterLabel>
+            <translation><!-- Freight - Flat Rate Delivery Fee Refund --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Freight - US Adjustment/Refund</masterLabel>
+            <translation><!-- Freight - US Adjustment/Refund --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Freight Refund</masterLabel>
+            <translation><!-- Freight Refund --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gift Box Fee Refund</masterLabel>
+            <translation><!-- Gift Box Fee Refund --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gift Return</masterLabel>
+            <translation><!-- Gift Return --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mailed in Gift Card</masterLabel>
+            <translation><!-- Mailed in Gift Card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manual Charge</masterLabel>
+            <translation><!-- Manual Charge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out Of Policy Return</masterLabel>
+            <translation><!-- Out Of Policy Return --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personalization Fee Refund</masterLabel>
+            <translation><!-- Personalization Fee Refund --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-Bill Refund</masterLabel>
+            <translation><!-- Pre-Bill Refund --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price Match – Sale/Promo</masterLabel>
+            <translation><!-- Price Match – Sale/Promo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refund for GC/SC/Reward MOP</masterLabel>
+            <translation><!-- Refund for GC/SC/Reward MOP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reissue System Refund – Incorrect/Cancelled/Did Not Generate</masterLabel>
+            <translation><!-- Reissue System Refund – Incorrect/Cancelled/Did Not Generate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tax Refund</masterLabel>
+            <translation><!-- Tax Refund --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Accommodation Sub-Reason --></label>
+        <name>Accommodation_Sub_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Business</masterLabel>
+            <translation><!-- Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer</masterLabel>
+            <translation><!-- Customer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- New Price --></label>
+        <name>Adjusted_Unit_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Air PO Number --></label>
+        <name>Air_PO_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Air PO --></label>
+        <name>Air_PO__c</name>
+    </fields>
+    <fields>
+        <label><!-- B&amp;C Monogram Border --></label>
+        <name>B_C_Monogram_Border__c</name>
+        <picklistValues>
+            <masterLabel>Clipped Corner</masterLabel>
+            <translation><!-- Clipped Corner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Crown</masterLabel>
+            <translation><!-- Crown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dotted</masterLabel>
+            <translation><!-- Dotted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Double Circle</masterLabel>
+            <translation><!-- Double Circle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Side Brackets</masterLabel>
+            <translation><!-- Side Brackets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Side Dots</masterLabel>
+            <translation><!-- Side Dots --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single Line</masterLabel>
+            <translation><!-- Single Line --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stamp Circle</masterLabel>
+            <translation><!-- Stamp Circle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Star</masterLabel>
+            <translation><!-- Star --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- B&amp;C Monogram Script --></label>
+        <name>B_C_Monogram_Script__c</name>
+        <picklistValues>
+            <masterLabel>Lowercase Text</masterLabel>
+            <translation><!-- Lowercase Text --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mixed Case Text</masterLabel>
+            <translation><!-- Mixed Case Text --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single Initial</masterLabel>
+            <translation><!-- Single Initial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Triple Initials</masterLabel>
+            <translation><!-- Triple Initials --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Triple Monogram</masterLabel>
+            <translation><!-- Triple Monogram --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upper Case Text</masterLabel>
+            <translation><!-- Upper Case Text --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Baby &amp; Child Category --></label>
+        <name>Baby_Child_Category__c</name>
+        <picklistValues>
+            <masterLabel>Decorative Accessories</masterLabel>
+            <translation><!-- Decorative Accessories --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Furniture</masterLabel>
+            <translation><!-- Furniture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lighting</masterLabel>
+            <translation><!-- Lighting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Textiles</masterLabel>
+            <translation><!-- Textiles --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Backorder Quantity --></label>
+        <name>Backorder_Quantity__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the item is not in stock but has a future P.O. date, please check the box and add the Backorder date to the case comments. --></help>
+        <label><!-- Backorder? --></label>
+        <name>Backorder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Box Type --></label>
+        <name>Box_Type__c</name>
+        <picklistValues>
+            <masterLabel>Baby &amp; Child</masterLabel>
+            <translation><!-- Baby &amp; Child --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RH</masterLabel>
+            <translation><!-- RH --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CW Return Code --></label>
+        <name>CW_Return_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- CW SKU ID --></label>
+        <name>CW_SKU_ID__c</name>
+        <relationshipLabel><!-- Case Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Cancellation Delivered --></label>
+        <name>Cancellation_Delivered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancellation --></label>
+        <name>Cancellation__c</name>
+        <picklistValues>
+            <masterLabel>Shipped</masterLabel>
+            <translation><!-- Shipped --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Case Number --></label>
+        <name>Case_Number__c</name>
+        <relationshipLabel><!-- Case Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Case Status --></label>
+        <name>Case_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Clarifying Notes --></label>
+        <name>Clarifying_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Class --></label>
+        <name>Class__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collection --></label>
+        <name>Collection__c</name>
+    </fields>
+    <fields>
+        <label><!-- Color --></label>
+        <name>Color__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, return refund should be issued in the form of a complimentary credit. --></help>
+        <label><!-- Complimentary Credit --></label>
+        <name>Complimentary_Credit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Coordinate Group --></label>
+        <name>Coordinate_Group__c</name>
+    </fields>
+    <fields>
+        <help><!-- Current availability date at the time the case line was created. --></help>
+        <label><!-- Contact Date --></label>
+        <name>Current_Available_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Item --></label>
+        <name>Custom_Item__c</name>
+    </fields>
+    <fields>
+        <label><!-- DC Approval --></label>
+        <name>DC_Approval__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invalid</masterLabel>
+            <translation><!-- Invalid --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- DC/HDL Approval --></label>
+        <name>DC_HDL_Approval__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invalid</masterLabel>
+            <translation><!-- Invalid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier 2</masterLabel>
+            <translation><!-- Tier 2 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The availability date change notice number associated with this Case Line Item/Case - see the associated Order Line Item. --></help>
+        <label><!-- Delay Notice Number --></label>
+        <name>Delay_Notice_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delay Notification Reason --></label>
+        <name>Delay_Notification_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Days Moved In</masterLabel>
+            <translation><!-- Days Moved In --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Days Moved Out</masterLabel>
+            <translation><!-- Days Moved Out --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee</masterLabel>
+            <translation><!-- Employee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lines Moved Total</masterLabel>
+            <translation><!-- Lines Moved Total --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order Total</masterLabel>
+            <translation><!-- Order Total --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Special Attention</masterLabel>
+            <translation><!-- Special Attention --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Delay Notification Type --></label>
+        <name>Delay_Notification_Type__c</name>
+        <picklistValues>
+            <masterLabel>Automatic Email</masterLabel>
+            <translation><!-- Automatic Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Callout</masterLabel>
+            <translation><!-- Callout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Days Moved In</masterLabel>
+            <translation><!-- Days Moved In --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invalid</masterLabel>
+            <translation><!-- Invalid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manual Email</masterLabel>
+            <translation><!-- Manual Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Special Attention</masterLabel>
+            <translation><!-- Special Attention --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stale Date</masterLabel>
+            <translation><!-- Stale Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swatch</masterLabel>
+            <translation><!-- Swatch --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Department --></label>
+        <name>Department__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dept and Vendor Detail --></label>
+        <name>Dept_and_Vendor_Detail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Direct Current Price --></label>
+        <name>Direct_Current_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Direct Landed Cost --></label>
+        <name>Direct_Landed_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Direct Original Price --></label>
+        <name>Direct_Original_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Distribution Center --></label>
+        <name>Distribution_Center__c</name>
+        <picklistValues>
+            <masterLabel>Baltimore - 98</masterLabel>
+            <translation><!-- Baltimore - 98 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dallas - 96</masterLabel>
+            <translation><!-- Dallas - 96 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mira Loma - 97</masterLabel>
+            <translation><!-- Mira Loma - 97 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ohio - 89</masterLabel>
+            <translation><!-- Ohio - 89 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>San Francisco - 95</masterLabel>
+            <translation><!-- San Francisco - 95 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Distro Date --></label>
+        <name>Distro_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Distro Number --></label>
+        <name>Distro_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Division --></label>
+        <name>Division__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enter Code for Ship Via Change --></label>
+        <name>Enter_Code_for_Ship_Via_Change__c</name>
+        <picklistValues>
+            <masterLabel>1 - Parcel Ground</masterLabel>
+            <translation><!-- 1 - Parcel Ground --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 - Curbside</masterLabel>
+            <translation><!-- 10 - Curbside --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 - 2nd Day</masterLabel>
+            <translation><!-- 2 - 2nd Day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 - Next Day</masterLabel>
+            <translation><!-- 3 - Next Day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 - Truck</masterLabel>
+            <translation><!-- 4 - Truck --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 - HDL Mid-Tier Delivery</masterLabel>
+            <translation><!-- 5 - HDL Mid-Tier Delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6 - HDL White Glove Delivery</masterLabel>
+            <translation><!-- 6 - HDL White Glove Delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7 - GC 2nd Day Air</masterLabel>
+            <translation><!-- 7 - GC 2nd Day Air --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8 - GC Next Day Air</masterLabel>
+            <translation><!-- 8 - GC Next Day Air --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9 - Priority Mail</masterLabel>
+            <translation><!-- 9 - Priority Mail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>99 - Express Bill</masterLabel>
+            <translation><!-- 99 - Express Bill --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter specific details on the issue here --></help>
+        <label><!-- Exception Details --></label>
+        <name>Exception_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exch Amount --></label>
+        <name>Exch_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exch Cost --></label>
+        <name>Exch_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exch Order Line Number --></label>
+        <lookupFilter>
+            <errorMessage><!-- The order line number selected must be from the order on the case. --></errorMessage>
+        </lookupFilter>
+        <name>Exch_Order_Line_Number__c</name>
+        <relationshipLabel><!-- Case Line Items (Exch Order Line Number) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Exch Price --></label>
+        <name>Exch_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exch Product --></label>
+        <name>Exch_Product__c</name>
+        <relationshipLabel><!-- Case Line Items (Exch Product) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Exch Quantity --></label>
+        <name>Exch_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exch Unit Price --></label>
+        <name>Exch_Unit_Price__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sum of the price of the exchange items. --></help>
+        <label><!-- Exchange Amount --></label>
+        <name>Exchange_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Cost of the exchange items to the customer. --></help>
+        <label><!-- Exchange Cost --></label>
+        <name>Exchange_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange --></label>
+        <name>Exchange__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Support --></label>
+        <name>External_Support__c</name>
+        <picklistValues>
+            <masterLabel>CSC Vendor</masterLabel>
+            <translation><!-- CSC Vendor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Flatworld</masterLabel>
+            <translation><!-- Flatworld --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shanghai</masterLabel>
+            <translation><!-- Shanghai --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Final Line Requested Percentage --></label>
+        <name>Final_Line_Requested_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requested Flat Rate Amount --></label>
+        <name>Flat_Rate_Line_Accommodation_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- INDC Date --></label>
+        <name>INDC_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- In Warehouse Date --></label>
+        <name>In_Warehouse_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Index Price --></label>
+        <name>Index_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inspection Details --></label>
+        <name>Inspection_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interim Update --></label>
+        <name>Interim_Update__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact Date Communicated</masterLabel>
+            <translation><!-- Contact Date Communicated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invalid</masterLabel>
+            <translation><!-- Invalid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready for Callout</masterLabel>
+            <translation><!-- Ready for Callout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resolved</masterLabel>
+            <translation><!-- Resolved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unapproved</masterLabel>
+            <translation><!-- Unapproved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unresolved</masterLabel>
+            <translation><!-- Unresolved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Planning</masterLabel>
+            <translation><!-- Waiting for Planning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Invalid Reason --></label>
+        <name>Invalid_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Already Shipped</masterLabel>
+            <translation><!-- Already Shipped --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cannot Monogram</masterLabel>
+            <translation><!-- Cannot Monogram --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invalid Ship Via</masterLabel>
+            <translation><!-- Invalid Ship Via --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Set automatically. If true, this Case Line Item record was created because the associated Order Line Item had a stale (a date in the past) In Warehouse Date field at the time the Case Line Item record was created. --></help>
+        <label><!-- IsStaleDate --></label>
+        <name>IsStaleDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Locked --></label>
+        <name>Is_Locked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Issue Quantity --></label>
+        <name>Issue_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Item_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item Number --></label>
+        <name>Item_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Line Item Accommodation Amount --></label>
+        <name>Line_Item_Accommodation_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Typical accommodation amount is 10% of the line item, not the order total. --></help>
+        <label><!-- Do not use --></label>
+        <name>Line_Item_Accommodation_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Line Number --></label>
+        <lookupFilter>
+            <errorMessage><!-- The line number selected must be from the order on the case. --></errorMessage>
+        </lookupFilter>
+        <name>Line_Number__c</name>
+        <relationshipLabel><!-- Case Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Line Order Date --></label>
+        <name>Line_Order_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Line Status Description --></label>
+        <name>Line_Status_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Line Total --></label>
+        <name>Line_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Modify Order Type --></label>
+        <name>Modify_Order_Type__c</name>
+        <picklistValues>
+            <masterLabel>DC</masterLabel>
+            <translation><!-- DC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendor</masterLabel>
+            <translation><!-- Vendor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Monogram Color --></label>
+        <name>Monogram_Color__c</name>
+        <picklistValues>
+            <masterLabel>Black</masterLabel>
+            <translation><!-- Black --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Charcoal</masterLabel>
+            <translation><!-- Charcoal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chocolate</masterLabel>
+            <translation><!-- Chocolate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cloud</masterLabel>
+            <translation><!-- Cloud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dove</masterLabel>
+            <translation><!-- Dove --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dusty Lilac</masterLabel>
+            <translation><!-- Dusty Lilac --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dusty Rose</masterLabel>
+            <translation><!-- Dusty Rose --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fog</masterLabel>
+            <translation><!-- Fog --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>French Blue</masterLabel>
+            <translation><!-- French Blue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grey</masterLabel>
+            <translation><!-- Grey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ivory</masterLabel>
+            <translation><!-- Ivory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lilac</masterLabel>
+            <translation><!-- Lilac --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mist</masterLabel>
+            <translation><!-- Mist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mocha</masterLabel>
+            <translation><!-- Mocha --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moss</masterLabel>
+            <translation><!-- Moss --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Navy</masterLabel>
+            <translation><!-- Navy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ocean</masterLabel>
+            <translation><!-- Ocean --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Petal</masterLabel>
+            <translation><!-- Petal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Silver Mist</masterLabel>
+            <translation><!-- Silver Mist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Taupe</masterLabel>
+            <translation><!-- Taupe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tone-on-Tone</masterLabel>
+            <translation><!-- Tone-on-Tone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>White</masterLabel>
+            <translation><!-- White --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Monogram Font Style --></label>
+        <name>Monogram_Font_Style__c</name>
+        <picklistValues>
+            <masterLabel>Block 1</masterLabel>
+            <translation><!-- Block 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Block 2</masterLabel>
+            <translation><!-- Block 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Circle</masterLabel>
+            <translation><!-- Circle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Classic Block</masterLabel>
+            <translation><!-- Classic Block --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Classic Script</masterLabel>
+            <translation><!-- Classic Script --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deco</masterLabel>
+            <translation><!-- Deco --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Industrial</masterLabel>
+            <translation><!-- Industrial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Modern</masterLabel>
+            <translation><!-- Modern --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Modern Script</masterLabel>
+            <translation><!-- Modern Script --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Script 1</masterLabel>
+            <translation><!-- Script 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Script 2</masterLabel>
+            <translation><!-- Script 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single Block</masterLabel>
+            <translation><!-- Single Block --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single Script</masterLabel>
+            <translation><!-- Single Script --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Typewriter</masterLabel>
+            <translation><!-- Typewriter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Varsity</masterLabel>
+            <translation><!-- Varsity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vintage</masterLabel>
+            <translation><!-- Vintage --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Monogram Text --></label>
+        <name>Monogram_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monogram Type --></label>
+        <name>Monogram_Type__c</name>
+        <picklistValues>
+            <masterLabel>Baby &amp; Child</masterLabel>
+            <translation><!-- Baby &amp; Child --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RH</masterLabel>
+            <translation><!-- RH --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Monogram-able --></label>
+        <name>Monogram_able__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Company --></label>
+        <name>New_Company__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Ship to Address 1 --></label>
+        <name>New_Ship_to_Address_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Ship to Address 2 --></label>
+        <name>New_Ship_to_Address_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Ship to Address --></label>
+        <name>New_Ship_to_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Ship to City --></label>
+        <name>New_Ship_to_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Ship to Country --></label>
+        <name>New_Ship_to_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Ship to Day Phone --></label>
+        <name>New_Ship_to_Day_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Ship to Email --></label>
+        <name>New_Ship_to_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Ship to First Name --></label>
+        <name>New_Ship_to_First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Ship to Last Name --></label>
+        <name>New_Ship_to_Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Ship to Name --></label>
+        <name>New_Ship_to_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Ship to Night Phone --></label>
+        <name>New_Ship_to_Night_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Ship to State --></label>
+        <name>New_Ship_to_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Ship to Zip --></label>
+        <name>New_Ship_to_Zip__c</name>
+    </fields>
+    <fields>
+        <label><!-- No Charge Replacement --></label>
+        <name>No_Charge_Replacement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number Days Since Previous Notification --></label>
+        <name>Number_Days_Since_Previous_Notification__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Delivery Failures --></label>
+        <name>Number_of_Delivery_Failures__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Total Days Delayed --></label>
+        <name>Number_of_Total_Days_Delayed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Issue --></label>
+        <name>Order_Issue__c</name>
+        <picklistValues>
+            <masterLabel>Address Change</masterLabel>
+            <translation><!-- Address Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancellation</masterLabel>
+            <translation><!-- Cancellation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Confirmation</masterLabel>
+            <translation><!-- Confirmation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ship Via Change</masterLabel>
+            <translation><!-- Ship Via Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shipping</masterLabel>
+            <translation><!-- Shipping --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tracking</masterLabel>
+            <translation><!-- Tracking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WISMO</masterLabel>
+            <translation><!-- WISMO --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Order Quantity --></label>
+        <name>Order_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Reserve Date --></label>
+        <name>Order_Reserve_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Number --></label>
+        <name>Order__c</name>
+        <relationshipLabel><!-- Case Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Original Available Date --></label>
+        <name>Original_Available_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the percentage that you are giving for the accommodation --></help>
+        <label><!-- Requested Percentage --></label>
+        <name>Original_Line_Requested_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Notes --></label>
+        <name>Other_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, the return item ship date exceeds the RH Return Policy. --></help>
+        <label><!-- Out of Policy Return --></label>
+        <name>Out_of_Policy_Return__c</name>
+    </fields>
+    <fields>
+        <label><!-- PO Line Status --></label>
+        <name>PO_Line_Status__c</name>
+        <picklistValues>
+            <masterLabel>In-Transit</masterLabel>
+            <translation><!-- In-Transit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not In-Transit</masterLabel>
+            <translation><!-- Not In-Transit --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Partner Needed --></label>
+        <name>Partner_Needed__c</name>
+        <picklistValues>
+            <masterLabel>DC - Baltimore 98</masterLabel>
+            <translation><!-- DC - Baltimore 98 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC - Dallas 96</masterLabel>
+            <translation><!-- DC - Dallas 96 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC - Mira Loma 97</masterLabel>
+            <translation><!-- DC - Mira Loma 97 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC - Ohio 89</masterLabel>
+            <translation><!-- DC - Ohio 89 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Office</masterLabel>
+            <translation><!-- Home Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SP&amp;I</masterLabel>
+            <translation><!-- SP&amp;I --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Most recent availability date communicated to the customer at the time the case line was created. --></help>
+        <label><!-- Previous Available Date --></label>
+        <name>Previous_Available_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Price Override Amount --></label>
+        <name>Price_Override_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Price Override Reason --></label>
+        <name>Price_Override_Reason__c</name>
+        <picklistValues>
+            <masterLabel>G - Price Adjustment</masterLabel>
+            <translation><!-- G - Price Adjustment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Z - Accommodation</masterLabel>
+            <translation><!-- Z - Accommodation --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Price Override Type --></label>
+        <name>Price_Override_Type__c</name>
+        <picklistValues>
+            <masterLabel>% off</masterLabel>
+            <translation><!-- % off --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amt off</masterLabel>
+            <translation><!-- Amt off --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Price</masterLabel>
+            <translation><!-- New Price --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Primary Request --></label>
+        <name>Primary_Request__c</name>
+        <picklistValues>
+            <masterLabel>Address Change</masterLabel>
+            <translation><!-- Address Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancellation</masterLabel>
+            <translation><!-- Cancellation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gift Box</masterLabel>
+            <translation><!-- Gift Box --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monogramming</masterLabel>
+            <translation><!-- Monogramming --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ship Via Change</masterLabel>
+            <translation><!-- Ship Via Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Where is My Order</masterLabel>
+            <translation><!-- Where is My Order --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Quantity Returned --></label>
+        <name>Quantity_Returned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quantity --></label>
+        <name>Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quantity Being Reordered --></label>
+        <name>Quantity_being_Reordered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order --></label>
+        <name>RH_Order_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason Not Released --></label>
+        <name>Reason_Not_Released__c</name>
+        <picklistValues>
+            <masterLabel>CW Notes State Line Not To Be Released</masterLabel>
+            <translation><!-- CW Notes State Line Not To Be Released --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Not Successfully Processed</masterLabel>
+            <translation><!-- Credit Not Successfully Processed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Special Circumstance</masterLabel>
+            <translation><!-- Other Special Circumstance --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reason Notes --></label>
+        <name>Reason_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason --></label>
+        <name>Reason__c</name>
+        <picklistValues>
+            <masterLabel>Assembly Instructions</masterLabel>
+            <translation><!-- Assembly Instructions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Care Instructions</masterLabel>
+            <translation><!-- Care Instructions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dimensions</masterLabel>
+            <translation><!-- Dimensions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electrical</masterLabel>
+            <translation><!-- Electrical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Errors</masterLabel>
+            <translation><!-- Errors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Item Number</masterLabel>
+            <translation><!-- Item Number --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Materials</masterLabel>
+            <translation><!-- Materials --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Photos</masterLabel>
+            <translation><!-- Photos --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Safety/MSDS</masterLabel>
+            <translation><!-- Safety/MSDS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weight</masterLabel>
+            <translation><!-- Weight --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Refund Deposit --></label>
+        <name>Refund_Deposit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reorder Count --></label>
+        <name>Reorder_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reorder Reason --></label>
+        <name>Reorder_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Bugs</masterLabel>
+            <translation><!-- Bugs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Preference</masterLabel>
+            <translation><!-- Customer Preference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Damage</masterLabel>
+            <translation><!-- Damage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Defective</masterLabel>
+            <translation><!-- Defective --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Item Number/Labeling Issue</masterLabel>
+            <translation><!-- Item Number/Labeling Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mold</masterLabel>
+            <translation><!-- Mold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Replacement Part Detail Count --></label>
+        <name>Replacement_Part_Detail_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Reason --></label>
+        <name>Request_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Customer Changed Mind</masterLabel>
+            <translation><!-- Customer Changed Mind --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pull from Print Ship Via Change</masterLabel>
+            <translation><!-- Pull from Print Ship Via Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pull from Print for Future Processing</masterLabel>
+            <translation><!-- Pull from Print for Future Processing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pull from Print to Inspect</masterLabel>
+            <translation><!-- Pull from Print to Inspect --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Requested By Gallery --></label>
+        <name>Requested_By_Gallery__c</name>
+        <relationshipLabel><!-- Case Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Reserve DC --></label>
+        <name>Reserve_DC__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total dollar amount being returned on this Case Line Item. --></help>
+        <label><!-- Return Amount --></label>
+        <name>Return_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Return Checklist Number --></label>
+        <name>Return_Checklist_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Return DC --></label>
+        <name>Return_DC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Return Reason Description --></label>
+        <name>Return_Reason_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Return Reason --></label>
+        <name>Return_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Arrived Too Late</masterLabel>
+            <translation><!-- Arrived Too Late --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Pref - No Qlty Issue</masterLabel>
+            <translation><!-- Client Pref - No Qlty Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coordinating Items Not Avail</masterLabel>
+            <translation><!-- Coordinating Items Not Avail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Damaged</masterLabel>
+            <translation><!-- Damaged --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Damaged - MOS</masterLabel>
+            <translation><!-- Damaged - MOS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Defective</masterLabel>
+            <translation><!-- Defective --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Defective - MOS</masterLabel>
+            <translation><!-- Defective - MOS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gift</masterLabel>
+            <translation><!-- Gift --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not As Shown</masterLabel>
+            <translation><!-- Not As Shown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parts/Assembly Issue</masterLabel>
+            <translation><!-- Parts/Assembly Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personalization Qlty Issue</masterLabel>
+            <translation><!-- Personalization Qlty Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qlty Not As Expected</masterLabel>
+            <translation><!-- Qlty Not As Expected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swatch Return</masterLabel>
+            <translation><!-- Swatch Return --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrong Item/Qty Ordered</masterLabel>
+            <translation><!-- Wrong Item/Qty Ordered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrong Item/Qty Rec&apos;d</masterLabel>
+            <translation><!-- Wrong Item/Qty Rec&apos;d --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Return Type --></label>
+        <name>Return_Type__c</name>
+        <picklistValues>
+            <masterLabel>MIS-SHIP</masterLabel>
+            <translation><!-- MIS-SHIP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order Line</masterLabel>
+            <translation><!-- Order Line --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Risk Level --></label>
+        <name>Risk_Level__c</name>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yellow</masterLabel>
+            <translation><!-- Yellow --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Risk Level --></label>
+        <name>Risk_Level_icon__c</name>
+    </fields>
+    <fields>
+        <label><!-- SPO --></label>
+        <name>SPO__c</name>
+    </fields>
+    <fields>
+        <label><!-- ST_Address --></label>
+        <name>ST_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- ST Day Phone --></label>
+        <name>ST_Day_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- ST Email --></label>
+        <name>ST_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- ST Name --></label>
+        <name>ST_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- ST Night Phone --></label>
+        <name>ST_Night_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship Date --></label>
+        <name>Ship_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship to Address 2 --></label>
+        <name>Ship_To_Address_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To --></label>
+        <name>Ship_To__c</name>
+        <relationshipLabel><!-- Case Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Ship to Address 1 --></label>
+        <name>Ship_to_Address_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship to Address --></label>
+        <name>Ship_to_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship to City --></label>
+        <name>Ship_to_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship to Company --></label>
+        <name>Ship_to_Company__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship to Country --></label>
+        <name>Ship_to_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship to Day Phone --></label>
+        <name>Ship_to_Day_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship to Email --></label>
+        <name>Ship_to_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship to First Name --></label>
+        <name>Ship_to_First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship to Last Name --></label>
+        <name>Ship_to_Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship to Name --></label>
+        <name>Ship_to_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship to Night Phone --></label>
+        <name>Ship_to_Night_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship to Number --></label>
+        <name>Ship_to_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship to State --></label>
+        <name>Ship_to_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship to Zip --></label>
+        <name>Ship_to_Zip__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipped DC --></label>
+        <name>Shipped_DC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Size --></label>
+        <name>Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sub Department --></label>
+        <name>Sub_Department__c</name>
+    </fields>
+    <fields>
+        <help><!-- If this accommodation is a price adjustment, or if it is for eligible freight/handling charges, check this box. 
+
+If this accommodation is for a customer experience, leave this box unchecked. --></help>
+        <label><!-- Tax Included --></label>
+        <name>Tax_Included__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unapproved Reason --></label>
+        <name>Unapproved_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Already Shipped</masterLabel>
+            <translation><!-- Already Shipped --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cannot Monogram</masterLabel>
+            <translation><!-- Cannot Monogram --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Preference</masterLabel>
+            <translation><!-- Customer Preference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invalid Ship Via</masterLabel>
+            <translation><!-- Invalid Ship Via --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inventory Unavailable</masterLabel>
+            <translation><!-- Inventory Unavailable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Item is Not First Quality</masterLabel>
+            <translation><!-- Item is Not First Quality --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Unit Price --></label>
+        <name>Unit_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Updated Ship To Flag --></label>
+        <name>Updated_Ship_To_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Line Quantity --></label>
+        <name>Use_Line_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor Name --></label>
+        <name>Vendor_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor Number --></label>
+        <name>Vendor_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor Style Number --></label>
+        <name>Vendor_Style_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- WRTA Received/Credited Date --></label>
+        <name>WRTA_Received_Credited_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Web Item Description --></label>
+        <name>Web_Item_Description__c</name>
+    </fields>
+    <layouts>
+        <layout>Accommodations</layout>
+        <sections>
+            <label><!-- Accommodation Detail --></label>
+            <section>Accommodation Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>BO Date Validation</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Product Information --></label>
+            <section>Product Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contract</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Delay Notifications</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Delayed Order Line Information --></label>
+            <section>Delayed Order Line Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Delight HQ</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Item Information --></label>
+            <section>Item Information</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Delivery &amp; Return Support</layout>
+        <sections>
+            <label><!-- Case Line Item Details --></label>
+            <section>Case Line Item Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Product Information</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Product Information --></label>
+            <section>Product Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Reorders</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Reorder Detail --></label>
+            <section>Reorder Detail</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Returns</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Item Information --></label>
+            <section>Item Information</section>
+        </sections>
+        <sections>
+            <label><!-- Return Information --></label>
+            <section>Return Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SPO Date Validation</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Order Details --></label>
+            <section>Order Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Standard</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Accommodations --></label>
+        <name>Accommodations</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- BO Date Validation --></label>
+        <name>BO_Date_Validation</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Contract --></label>
+        <name>Contract</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Delay Notifications --></label>
+        <name>Delay_Notifications</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Delight HQ --></label>
+        <name>Delight_HQ</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Delivering on Delight --></label>
+        <name>Delivering_on_Delight</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Delivery &amp; Return Support --></label>
+        <name>Delivery_Return_Support</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Product Information --></label>
+        <name>Product_Information</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Product Issue --></label>
+        <name>Product_Issue</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Reorders --></label>
+        <name>Reorders</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Replacement Parts --></label>
+        <name>Replacement_Parts</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Returns --></label>
+        <name>Returns</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SPO Date Validation --></label>
+        <name>SPO_Date_Validation</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Standard --></label>
+        <name>Standard</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- The accommodation quantity must be less than the order quantity. --></errorMessage>
+        <name>AccommodationQtyLessThanOrderQty</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must input an Accommodation Quantity unless you have a Flat Rate. --></errorMessage>
+        <name>AccommodationQtyRequiredUnlessFlat</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If your Accommodation Amount is greater than the Line Total, you must check the Accommodation Is Greater Than Total checkbox to confirm. --></errorMessage>
+        <name>AccomomodationAmountGreaterThanTotal</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- With a Primary Request &quot;Monogramming&quot; and a Baby &amp; Child Monogram Type, you must have a &quot;B&amp;C Monogram Script&quot; and &quot;B&amp;C Monogram Border.&quot; --></errorMessage>
+        <name>BC_Monogramming_Script_and_Border</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- BO Date Validation cases cannot be submitted for SPO lines --></errorMessage>
+        <name>BODateCaseCannotincludeSPO</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- BO Date Validation Cases can only be created with lines currently on backorder. --></errorMessage>
+        <name>Cant_submit_case_for_lines_not_backorder</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Do not change order number --></errorMessage>
+        <name>DRSChangeOrderNumber</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You can either have a Flat Rate Line Accommodation Amount or a New Price/Accommodation Quantity. --></errorMessage>
+        <name>FlatRateORAdjustedPriceQty</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must have an Accommodation Reason. --></errorMessage>
+        <name>If_Line_Item_Acc_Must_Have_Acc_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select an Interim Update before transferring the case --></errorMessage>
+        <name>Interim_Update_Must_Be_Filled_In</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Record cannot be &quot;Edited &quot; as the Case is Locked --></errorMessage>
+        <name>Lock_Case_Line_Items</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must have &quot;Other Notes&quot; with a selection of Other. --></errorMessage>
+        <name>Make_Other_Notes_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The New Price must be less than the Unit Price. --></errorMessage>
+        <name>NewPriceLessThanUnitPrice</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot change the CW SKU ID if it is associated with a line number. --></errorMessage>
+        <name>NoCWSKUIDChange</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- No Charge Replacement can only be checked if Exchange is checked. --></errorMessage>
+        <name>No_Charge_Replacement</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please add any notes to the case comments once you have saved the case --></errorMessage>
+        <name>Other_Notes_when_Other_Specify</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot have an Original Line Requested Percentage and a New Price concurrently. --></errorMessage>
+        <name>PercentORAdjustedUnitPrice</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Quantity Returned must be greater than zero and cannot be greater than Shipped Quantity - Previously Returned. --></errorMessage>
+        <name>Quantity_Returned</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must enter Inspection Details before sending the case to the DC. --></errorMessage>
+        <name>ROBEInspection_Details</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must select an Unapproved Reason when your Interim Update is Unapproved. --></errorMessage>
+        <name>RODCUnapprovedReason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot have an Unapproved Reason unless your Interim Update is Unapproved. --></errorMessage>
+        <name>ROUnapprovedReason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill in either Original Line Requested Percentage or Flat Rate Line Accommodation Amount, but not both. --></errorMessage>
+        <name>Require_Accommodations_Field</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please describe the reason for the return and any damage to the item. --></errorMessage>
+        <name>Return_Reason_Description</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- SPO Date Validation Case&apos;s can only include SPO Line items --></errorMessage>
+        <name>SPOCaseLineRequired</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- SPO Date Validation cases can only be submitted for SPO lines --></errorMessage>
+        <name>SPOCaseLineValidation</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Edit_CaseLineItem --></label>
+        <name>Edit_CaseLineItem</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Case_Line_Item --></label>
+        <name>New_Case_Line_Item</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,24 @@
+A new Vendor Air Freight Approval Request for {!Operations_Request__c.Opportunity__c} is pending your Approval. 
+
+{!Operations_Request__c.Link}
+
+Please reply with the words "Approved" or "Rejected" in the first line of your response to Approve or Reject this request. 
+
+Words on the second line of your reply will be added to the Approval History on the Operations Request Record in Salesforce. 
+
+Request Details: 
+
+Account Name: {!Operations_Request__c.Account_Name__c}
+Segmentation: {!Operations_Request__c.Contract_Customer_Segmentation__c}
+Project Name: {!Operations_Request__c.Opportunity__c}
+Project Background: {!Operations_Request__c.Project_Background__c}
+Customer or RH Expense?: {!Operations_Request__c.Customer_or_RH_Expense__c}
+Value of Project: {!Operations_Request__c.Amount__c}
+Customer spend YTD: {!Operations_Request__c.Customer_Spend_YTD__c}
+Customer Lifetime Spend: {!Operations_Request__c.Customer_Lifetime_Spend__c}
+Air Freight Cost Estimate: {!Operations_Request__c.Freight_Cost_of_Project__c}
+
+Air Freight Reason see notes below:
+
+PM Notes: {!Operations_Request__c.Additional_Info__c}
+Ops Notes: {!Operations_Request__c.Ops_Notes__c}

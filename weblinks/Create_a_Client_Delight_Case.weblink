@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPageWebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <availability>online</availability>
+    <description>Use this Link to create a Client Delight Case</description>
+    <displayType>link</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Create a Client Delight Case</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>https://restorationhardware.my.salesforce.com/500/e?retURL=%2F500%2Fo&amp;RecordType=01250000000E8Vu&amp;ent=Case</url>
+</CustomPageWebLink>

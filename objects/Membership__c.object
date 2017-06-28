@@ -1,0 +1,1720 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <content>NewMembership</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>Additional_Email1__c</fullName>
+        <description>Although NOT ideal, this is needed since we MUST use WF and WFEA for sending the Membership Email and we need to be able to flag additional emails.  WF dictates this is an email field NOT a mere string.  Apex Emails would get around this, however, the daily email limit prohibits us from using that solution.</description>
+        <externalId>false</externalId>
+        <label>Additional Email1</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Additional_Email2__c</fullName>
+        <description>Although NOT ideal, this is needed since we MUST use WF and WFEA for sending the Membership Email and we need to be able to flag additional emails.  WF dictates this is an email field NOT a mere string.  Apex Emails would get around this, however, the daily email limit prohibits us from using that solution.</description>
+        <externalId>false</externalId>
+        <label>Additional Email2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Additional_Email3__c</fullName>
+        <description>Although NOT ideal, this is needed since we MUST use WF and WFEA for sending the Membership Email and we need to be able to flag additional emails.  WF dictates this is an email field NOT a mere string.  Apex Emails would get around this, however, the daily email limit prohibits us from using that solution.</description>
+        <externalId>false</externalId>
+        <label>Additional Email3</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Additional_Email4__c</fullName>
+        <description>Although NOT ideal, this is needed since we MUST use WF and WFEA for sending the Membership Email and we need to be able to flag additional emails.  WF dictates this is an email field NOT a mere string.  Apex Emails would get around this, however, the daily email limit prohibits us from using that solution.</description>
+        <externalId>false</externalId>
+        <label>Additional Email4</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Additional_Email5__c</fullName>
+        <description>Although NOT ideal, this is needed since we MUST use WF and WFEA for sending the Membership Email and we need to be able to flag additional emails.  WF dictates this is an email field NOT a mere string.  Apex Emails would get around this, however, the daily email limit prohibits us from using that solution.</description>
+        <externalId>false</externalId>
+        <label>Additional Email5</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Agreed_T_C__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Agreed T&amp;C</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>AutoRenew_CCD_Order_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>AutoRenew CCD Order Number</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Auto_Renew_Order_Failed_Date_Time__c</fullName>
+        <description>Date and Time of when ATG failed to create the Auto Renew Order</description>
+        <externalId>false</externalId>
+        <label>Auto Renew Order Failed Date Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Auto_Renew_Order_Failed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Will get updated when ATG fails to create an Auto Renew Order</description>
+        <externalId>false</externalId>
+        <label>Auto Renew Order Failed</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>BC_Renewal_CC_Entity_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>BC Renewal CC Entity Code</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BC_Renewal_CC_Expiration_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>BC Renewal CC Expiration Date</label>
+        <length>25</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BC_Renewal_CC_Final_4_Digits__c</fullName>
+        <externalId>false</externalId>
+        <label>BC Renewal CC Final 4 Digits</label>
+        <length>25</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BC_Renewal_CC_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>BC Renewal CC Type</label>
+        <length>25</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BC_Renewal_CC_Type_display__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(  BC_Renewal_CC_Type__c  , 
+&quot;visa&quot;, &quot;Visa&quot;, 
+&quot;masterCard&quot;, &quot;MasterCard&quot;, 
+&quot;americanExpress&quot;, &quot;American Express&quot;, 
+&quot;discover&quot;, &quot;Discover&quot;, 
+&quot;RH Card&quot;, &quot;RH Card&quot;, 
+null)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>BC Renewal CC Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BC_Renewal_CC_Updated_DateTime__c</fullName>
+        <externalId>false</externalId>
+        <label>BC Renewal CC Updated DateTime</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Cancellation_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Cancellation Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Cancellation_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Cancellation Reason</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Cancellation_Type__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Fraud</fullName>
+                    <default>false</default>
+                    <label>Fraud</label>
+                </value>
+                <value>
+                    <fullName>Credit card decline</fullName>
+                    <default>false</default>
+                    <label>Credit card decline</label>
+                </value>
+                <value>
+                    <fullName>Created in error</fullName>
+                    <default>false</default>
+                    <label>Created in error</label>
+                </value>
+                <value>
+                    <fullName>Does not use it</fullName>
+                    <default>false</default>
+                    <label>Does not use it</label>
+                </value>
+                <value>
+                    <fullName>Duplicate membership</fullName>
+                    <default>false</default>
+                    <label>Duplicate membership</label>
+                </value>
+                <value>
+                    <fullName>Unhappy with membership</fullName>
+                    <default>false</default>
+                    <label>Unhappy with membership</label>
+                </value>
+                <value>
+                    <fullName>None given by customer</fullName>
+                    <default>false</default>
+                    <label>None given by customer</label>
+                </value>
+                <value>
+                    <fullName>Customer does not want it</fullName>
+                    <default>false</default>
+                    <label>Customer does not want it</label>
+                </value>
+                <value>
+                    <fullName>Renewal failed</fullName>
+                    <default>false</default>
+                    <label>Renewal failed</label>
+                </value>
+                <value>
+                    <fullName>Quebec</fullName>
+                    <default>false</default>
+                    <label>Quebec</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>RH Terminated</controllingFieldValue>
+                <valueName>Fraud</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RH Terminated</controllingFieldValue>
+                <controllingFieldValue>Pending</controllingFieldValue>
+                <valueName>Credit card decline</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RH Terminated</controllingFieldValue>
+                <valueName>Created in error</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RH Terminated</controllingFieldValue>
+                <valueName>Duplicate membership</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Member Terminated</controllingFieldValue>
+                <controllingFieldValue>Member Cancelled</controllingFieldValue>
+                <valueName>Does not use it</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Member Terminated</controllingFieldValue>
+                <controllingFieldValue>Member Cancelled</controllingFieldValue>
+                <valueName>Unhappy with membership</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Member Terminated</controllingFieldValue>
+                <controllingFieldValue>Member Cancelled</controllingFieldValue>
+                <valueName>None given by customer</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Member Terminated</controllingFieldValue>
+                <controllingFieldValue>Member Cancelled</controllingFieldValue>
+                <valueName>Customer does not want it</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Member Cancelled</controllingFieldValue>
+                <valueName>Renewal failed</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Member Cancelled</controllingFieldValue>
+                <valueName>Quebec</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Cancellation_Type__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>RH Terminated = RH determined that the membership needs to be terminated.
+Member Terminated = Member requested and was granted a refund for membership.
+Member Cancelled = Member cancelled the membership in My Account.</inlineHelpText>
+        <label>Cancellation Type</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>RH Terminated</fullName>
+                    <default>false</default>
+                    <label>RH Terminated</label>
+                </value>
+                <value>
+                    <fullName>Member Terminated</fullName>
+                    <default>false</default>
+                    <label>Member Terminated</label>
+                </value>
+                <value>
+                    <fullName>Member Cancelled</fullName>
+                    <default>false</default>
+                    <label>Member Cancelled</label>
+                </value>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>false</default>
+                    <label>Pending</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Memberships</relationshipLabel>
+        <relationshipName>Memberships</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Create_Renewal_Order__c</fullName>
+        <externalId>false</externalId>
+        <formula>AND(
+ Is_Auto_Renew__c = TRUE,
+ ISPICKVAL(Membership_Type__c , &quot;Paid&quot;),
+ Expiration_Date__c = TODAY())</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Create Renewal Order</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Create_Time_Hour__c</fullName>
+        <description>Used for reporting</description>
+        <externalId>false</externalId>
+        <formula>VALUE(MID (TEXT ( CreatedDate - (0.0417 * 7 )), 12, 2))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Create Time Hour</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Created_by_Alternate_Order_ID__c</fullName>
+        <description>ATG order number</description>
+        <externalId>false</externalId>
+        <label>Created by Alternate Order ID</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Created_by_Application__c</fullName>
+        <externalId>false</externalId>
+        <label>Created by Application</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Salesforce.com</fullName>
+                    <default>false</default>
+                    <label>Salesforce.com</label>
+                </value>
+                <value>
+                    <fullName>RH - Concierge</fullName>
+                    <default>false</default>
+                    <label>RH - Concierge</label>
+                </value>
+                <value>
+                    <fullName>RH - Web</fullName>
+                    <default>false</default>
+                    <label>RH - Web</label>
+                </value>
+                <value>
+                    <fullName>RHBC - Concierge</fullName>
+                    <default>false</default>
+                    <label>RHBC - Concierge</label>
+                </value>
+                <value>
+                    <fullName>RHBC - Web</fullName>
+                    <default>false</default>
+                    <label>RHBC - Web</label>
+                </value>
+                <value>
+                    <fullName>RHTN - Concierge</fullName>
+                    <default>false</default>
+                    <label>RHTN - Concierge</label>
+                </value>
+                <value>
+                    <fullName>RHTN - Web</fullName>
+                    <default>false</default>
+                    <label>RHTN - Web</label>
+                </value>
+                <value>
+                    <fullName>RHMO - Concierge</fullName>
+                    <default>false</default>
+                    <label>RHMO - Concierge</label>
+                </value>
+                <value>
+                    <fullName>RHMO - Web</fullName>
+                    <default>false</default>
+                    <label>RHMO - Web</label>
+                </value>
+                <value>
+                    <fullName>MAUI</fullName>
+                    <default>false</default>
+                    <label>MAUI</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Created_by_Order_ID__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Created by Order ID</label>
+        <referenceTo>RH_Order__c</referenceTo>
+        <relationshipLabel>Memberships</relationshipLabel>
+        <relationshipName>Memberships</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Created_by_Order_Line_Number__c</fullName>
+        <description>Used specifically for the Mule process to pick up member card requests for RRD.</description>
+        <externalId>false</externalId>
+        <label>Created by Order Line Number</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Created_by_Ship_To_Number__c</fullName>
+        <description>Used specifically for the Mule process to pick up member card requests for RRD.</description>
+        <externalId>false</externalId>
+        <label>Created by Ship To Number</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Did_Not_Enroll_Today__c</fullName>
+        <description>Needed for reporting purposes so that we can filter out members who enrolled on a given day</description>
+        <externalId>false</externalId>
+        <formula>Enrollment_Date__c != TODAY()</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Did Not Enroll Today</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Eligible_for_Member_Benefits__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(
+OR(ISNULL(Enrollment_Date__c),
+   Enrollment_Date__c &gt; TODAY(),
+   Expiration_Date__c &lt; TODAY(), 
+   ISPICKVAL(Cancellation_Type__c, &quot;RH Terminated&quot;),
+   ISPICKVAL(Cancellation_Type__c, &quot;Member Terminated&quot;)
+), false, true)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Eligible for Member Benefits</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Enrollment_Date_Time__c</fullName>
+        <externalId>false</externalId>
+        <label>Enrollment Date Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Enrollment_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>DATEVALUE( Enrollment_Date_Time__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Enrollment Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Expiration_Date_Time__c</fullName>
+        <externalId>false</externalId>
+        <label>Expiration Date Time</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Expiration_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>DATEVALUE( Expiration_Date_Time__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Expiration Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Expires_One_Year_From_Today__c</fullName>
+        <description>Needed for reporting purposes so that we can filter on members who expire a year from a particular date</description>
+        <externalId>false</externalId>
+        <formula>Expiration_Date__c = TODAY() + 365</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Expires One Year From Today</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>GetsChangedTandCs__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(Enrollment_Date__c &gt;= DATE(2016,10,16),TRUE, FALSE)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>GetsChangedTandCs</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Has_Valid_CC__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Has Valid CC</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Historic_Audit_Trail__c</fullName>
+        <externalId>false</externalId>
+        <label>Historic Audit Trail</label>
+        <length>100000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>In_Target_Group__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+OR(
+Member_State__c = &apos;IL&apos;,
+Member_State__c = &apos;CT&apos;,
+Member_State__c = &apos;HI&apos;,
+Member_State__c = &apos;NC&apos;),true,false)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>In Target Group?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_Auto_Renew__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Auto Renew</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Latest_CC_Expiration_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Latest CC Expiration Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>MAUI_Membership_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>MAUI Membership ID</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Member_Address__c</fullName>
+        <externalId>false</externalId>
+        <label>Member Address</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Member_Card_Address__c</fullName>
+        <externalId>false</externalId>
+        <label>Member Card Address</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Member_Card_City__c</fullName>
+        <description>For sending a physical card</description>
+        <externalId>false</externalId>
+        <label>Member Card City</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Member_Card_Company_Name__c</fullName>
+        <description>For sending a physical card</description>
+        <externalId>false</externalId>
+        <label>Member Card Company Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Member_Card_Country__c</fullName>
+        <description>For sending a physical card</description>
+        <externalId>false</externalId>
+        <label>Member Card Country</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Member_Card_Postal_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Member Card Postal Code</label>
+        <length>25</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Member_Card_Request_Sent_Date__c</fullName>
+        <description>Date that the request for a card was sent to RRD</description>
+        <externalId>false</externalId>
+        <label>Member Card Request Sent Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Member_Card_Scheduled_Request_Date__c</fullName>
+        <description>The date that the Member Card request will be sent to RRD</description>
+        <externalId>false</externalId>
+        <label>Member Card Scheduled Request Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Member_Card_State__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Use State abbreviations for US and Canada</inlineHelpText>
+        <label>Member Card State</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Member_Card_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Member Card Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Not Scheduled</fullName>
+                    <default>true</default>
+                    <label>Not Scheduled</label>
+                </value>
+                <value>
+                    <fullName>Scheduled</fullName>
+                    <default>false</default>
+                    <label>Scheduled</label>
+                </value>
+                <value>
+                    <fullName>Request Sent</fullName>
+                    <default>false</default>
+                    <label>Request Sent</label>
+                </value>
+                <value>
+                    <fullName>Card Sent</fullName>
+                    <default>false</default>
+                    <label>Card Sent</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Member_Card_Street_1__c</fullName>
+        <description>For sending a physical card</description>
+        <externalId>false</externalId>
+        <label>Member Card Street 1</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Member_Card_Street_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Member Card Street 2</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Member_City__c</fullName>
+        <externalId>false</externalId>
+        <label>Member City</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Member_Company_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Member Company Name</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Member_Contact_Not_Order_Contact__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(Contact__r.Id !=  Created_by_Order_ID__r.Contact_Sold_To__r.Id , TRUE, FALSE)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Member Contact Not Order Contact</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Member_Country__c</fullName>
+        <externalId>false</externalId>
+        <label>Member Country</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Member_Country_for_Reports__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( Member_Country__c , &quot;CA&quot;, &quot;Canada&quot;, &quot;US&quot;, &quot;United States&quot;,&quot;Other Countries&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Member Country</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Member_Email__c</fullName>
+        <externalId>true</externalId>
+        <label>Member Email</label>
+        <required>true</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Member_First_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>zzzzMember First Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Member_ID__c</fullName>
+        <description>9 digit auto-number, but must not re-use numbers of existing memberships. No leading zeroes.  Will need to know what number to start at for this sequence?  Is sequential ok, or need it be random so not &quot;predictable&quot;?</description>
+        <externalId>false</externalId>
+        <label>Member ID</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>Member_Last_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>zzzzMember Last Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Member_Postal_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Member Postal Code</label>
+        <length>25</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Member_State__c</fullName>
+        <externalId>false</externalId>
+        <label>Member State</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Member_Street_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Member Street 1</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Member_Street_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Member Street 2</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MembershipExternalID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>MembershipExternalID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Membership_Card_Opt_in__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Member Card Opt In?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Membership_Card_Ship_Date__c</fullName>
+        <description>The date on which the Membership Card will be sent.</description>
+        <externalId>false</externalId>
+        <label>Member Card Ship Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Membership_Creation_Notes__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter notes to remind yourself for whom this membership was created for reference should there be an issue with Order creation.</inlineHelpText>
+        <label>Membership Creation Notes</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Membership_Restore_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Membership Restore Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Membership_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Membership Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Complimentary - PR</fullName>
+                    <default>false</default>
+                    <label>Complimentary - PR</label>
+                </value>
+                <value>
+                    <fullName>Complimentary - VIP</fullName>
+                    <default>false</default>
+                    <label>Complimentary - VIP</label>
+                </value>
+                <value>
+                    <fullName>Paid</fullName>
+                    <default>false</default>
+                    <label>Paid</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Once_was_Quebecois__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Once was Quebecois</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Phone_Order__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Phone Order</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>RH_Renewal_CC_Entity_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>RH Renewal CC Entity Code</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RH_Renewal_CC_Expiration_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>RH Renewal CC Expiration Date</label>
+        <length>25</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RH_Renewal_CC_Final_4_Digits__c</fullName>
+        <externalId>false</externalId>
+        <label>RH Renewal CC Final 4 Digits</label>
+        <length>25</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RH_Renewal_CC_Updated_DateTime__c</fullName>
+        <externalId>false</externalId>
+        <label>RH Renewal CC Updated DateTime</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>RH_Renewal_CC_type__c</fullName>
+        <externalId>false</externalId>
+        <label>RH Renewal CC type</label>
+        <length>25</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RH_Renewal_CC_type_display__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( RH_Renewal_CC_type__c , 
+&quot;visa&quot;, &quot;Visa&quot;,
+&quot;masterCard&quot;, &quot;MasterCard&quot;,
+&quot;americanExpress&quot;, &quot;American Express&quot;,
+&quot;discover&quot;, &quot;Discover&quot;,
+&quot;RH Card&quot;, &quot;RH Card&quot;,
+null)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>RH Renewal CC type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RRD_Membership_Status__c</fullName>
+        <description>MC = Membership Created, MU = Membership Updated, MS = Membership Card Shipped, MR = Membership Card Request sent to RRD</description>
+        <externalId>false</externalId>
+        <label>RRD Membership Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>MC</fullName>
+                    <default>false</default>
+                    <label>MC</label>
+                </value>
+                <value>
+                    <fullName>MU</fullName>
+                    <default>false</default>
+                    <label>MU</label>
+                </value>
+                <value>
+                    <fullName>MS</fullName>
+                    <default>false</default>
+                    <label>MS</label>
+                </value>
+                <value>
+                    <fullName>MR</fullName>
+                    <default>false</default>
+                    <label>MR</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Renew_Email_Alert__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+OR(
+Member_State__c = &quot;IL&quot;,
+Member_State__c = &quot;CT&quot;,
+Member_State__c = &quot;HI&quot;,
+Member_State__c = &quot;NC&quot;,
+Member_State__c = &quot;Illinois&quot;,
+Member_State__c = &quot;Connecticut&quot;,
+Member_State__c = &quot;Hawaii&quot;,
+Member_State__c = &quot;North Carolina&quot;),
+&quot;This membership is in a state that requires renewal email notifications. You may uncheck the box for Renew Email Opt In. However, this member will continue to receive email renewal notifications due to legal requirements.&quot;,
+null)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Renew Email Alert</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Renew_Email_Opt_In__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Renew Email Opt In</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>RenewalEmailSubjectLine__c</fullName>
+        <description>Needed to dynamically set email subject in membership reminder template. set in batch monitor membership email.</description>
+        <externalId>false</externalId>
+        <label>RenewalEmailSubjectLine</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Renewal_CC_Expiration_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Renewal CC Expiration Date</label>
+        <length>25</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Renewal_CC_Final_4_Digits__c</fullName>
+        <externalId>false</externalId>
+        <label>Renewal CC Final 4 Digits</label>
+        <length>25</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Renewal_CC_type__c</fullName>
+        <externalId>false</externalId>
+        <label>Renewal CC type</label>
+        <length>25</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Renewal_CC_type_display__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( Renewal_CC_type__c , 
+&quot;visa&quot;, &quot;Visa&quot;,
+&quot;masterCard&quot;, &quot;MasterCard&quot;,
+&quot;americanExpress&quot;, &quot;American Express&quot;,
+&quot;discover&quot;, &quot;Discover&quot;,
+&quot;RH Card&quot;, &quot;RH Card&quot;,
+null)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Renewal CC type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Renewal_Email_Notification__c</fullName>
+        <externalId>false</externalId>
+        <label>Renewal Email Notification</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>60-Day Notice</fullName>
+                    <default>false</default>
+                    <label>60-Day Notice</label>
+                </value>
+                <value>
+                    <fullName>30-Day Notice</fullName>
+                    <default>false</default>
+                    <label>30-Day Notice</label>
+                </value>
+                <value>
+                    <fullName>5-Day Notice</fullName>
+                    <default>false</default>
+                    <label>5-Day Notice</label>
+                </value>
+                <value>
+                    <fullName>3-Day Notice</fullName>
+                    <default>false</default>
+                    <label>3-Day Notice</label>
+                </value>
+                <value>
+                    <fullName>1-Day Notice</fullName>
+                    <default>false</default>
+                    <label>1-Day Notice</label>
+                </value>
+                <value>
+                    <fullName>1-Day Post Expiration</fullName>
+                    <default>false</default>
+                    <label>1-Day Post Expiration</label>
+                </value>
+                <value>
+                    <fullName>1-Day Post Termination</fullName>
+                    <default>false</default>
+                    <label>1-Day Post Termination</label>
+                </value>
+                <value>
+                    <fullName>5-Day Post Expiration</fullName>
+                    <default>false</default>
+                    <label>5-Day Post Expiration</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Renewal_Order_Entity_Code__c</fullName>
+        <description>Entity code that should be passed in CreateRenewal XML message. Will be updated in Salesforce code based on certain conditions.</description>
+        <externalId>false</externalId>
+        <label>Renewal Order Entity Code</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Renewal_Reminder_Email_Sent_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Renewal Reminder Email Sent Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Renewal_Term__c</fullName>
+        <externalId>false</externalId>
+        <label>Renewal Term</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Annual</fullName>
+                    <default>false</default>
+                    <label>Annual</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ReprocessBatch__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>ReprocessBatch</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Send_To_Email__c</fullName>
+        <description>Although NOT ideal, this is needed since we MUST use WF and WFEA for sending the Membership Email and we need to be able to flag additional emails.  WF dictates this is an email field NOT a mere string.  Apex Emails would get around this, however, the daily email limit prohibits us from using that solution.</description>
+        <externalId>false</externalId>
+        <label>Send To Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Special_Enrollee__c</fullName>
+        <description>// SMR-164
+// Members who enrolled between 3/12 and 3/16
+// According to our T&amp;Cs during this 4 day period (3/12/16-3/16/16), we told 
+// customers we would email them at 30 days by default.
+// Any Member meeting all of the following conditions: Enrollment Date &lt;= 3/16/16</description>
+        <externalId>false</externalId>
+        <formula>IF(
+AND(Enrollment_Date__c &gt;=  DATE(2016,3,12),Enrollment_Date__c &lt;=  DATE(2016,3,16)),
+TRUE, FALSE)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Special Enrollee</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Welcome_Email_Requested_Datetime__c</fullName>
+        <externalId>false</externalId>
+        <label>Welcome Email Sent Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <label>Membership</label>
+    <nameField>
+        <label>Member ID</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Memberships</pluralLabel>
+    <searchLayouts>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <searchResultsAdditionalFields>Created_by_Order_ID__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Contact__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Member_Address__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Enrollment_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Expiration_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Eligible_for_Member_Benefits__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Membership_Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Cancellation_Type__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>AddressFieldsNotBlankifScheduledDate</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(
+
+ $Profile.Name &lt;&gt; &quot;System Administrator&quot;, 
+ $Profile.Name &lt;&gt; &quot;API Only&quot;,
+
+NOT(ISBLANK( Member_Card_Scheduled_Request_Date__c )),
+
+
+OR( 
+ISBLANK ( Member_Card_Street_1__c ), 
+ISBLANK ( Member_Card_City__c ), 
+ISBLANK ( Member_Card_State__c ), 
+ISBLANK ( Member_Card_Postal_Code__c ), 
+ISBLANK ( Member_Card_Country__c ) 
+) 
+)</errorConditionFormula>
+        <errorMessage>You cannot schedule a card to be sent without also setting an address to which the card will be sent.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CancelReasonReqdwithCancelType</fullName>
+        <active>false</active>
+        <description>Cancellation Reason is required if a Cancellation Type is selected.</description>
+        <errorConditionFormula>AND(
+$Profile.Name &lt;&gt; &quot;System Administrator&quot;, 
+$Profile.Name &lt;&gt; &quot;API Only&quot;, 
+NOT(ISBLANK( TEXT(Cancellation_Type__c ))),
+ISBLANK( TEXT( Cancellation_Reason__c ))
+)</errorConditionFormula>
+        <errorMessage>You must choose a Cancellation Reason when you choose a Cancellation Type.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CannotCreateCompMemberships</fullName>
+        <active>false</active>
+        <description>Only Jamie Kasselman, Marcello Smith, and Ashima Seghal can create Comp memberships.</description>
+        <errorConditionFormula>AND(
+$Profile.Name &lt;&gt; &quot;System Administrator&quot;, 
+$Profile.Name &lt;&gt; &quot;API Only&quot;, 
+
+NOT(CONTAINS($Setup.MembershipVRExcludedUser__c.UserId__c, $User.Username)),
+
+OR(
+ISCHANGED(Membership_Type__c),
+
+AND(
+ISNEW(),
+OR(
+ISPICKVAL (Membership_Type__c, &quot;Complimentary - PR&quot;),
+ISPICKVAL (Membership_Type__c, &quot;Complimentary - VIP&quot;)))
+)
+)</errorConditionFormula>
+        <errorMessage>You cannot create a Complimentary membership or edit a Paid membership and make it Complimentary.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CannotEditMuleUserCreatedMemberships</fullName>
+        <active>false</active>
+        <description>Users cannot edit Agreed to T&amp;C and Membership Type on Mule created Memberships</description>
+        <errorConditionFormula>AND(
+$Profile.Name &lt;&gt; &quot;System Administrator&quot;, 
+$Profile.Name &lt;&gt; &quot;API Only&quot;, 
+OR(
+ CreatedBy.Username = &quot;mule@restorationhardware.com&quot;,
+CreatedBy.Username = &quot;sfdcadmin1@restorationhardware.com&quot;),
+OR(
+ISCHANGED(Membership_Type__c ),
+ ISCHANGED(Agreed_T_C__c ))
+)</errorConditionFormula>
+        <errorMessage>You cannot modify the Membership Type or the Agreed to T&amp;C.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CannotModifySomeCancelTypeReasons</fullName>
+        <active>false</active>
+        <description>Prevents users from updating the Cancellation Type and Cancellation Reason from system generated values.</description>
+        <errorConditionFormula>AND(
+$Profile.Name &lt;&gt; &quot;System Administrator&quot;, 
+$Profile.Name &lt;&gt; &quot;API Only&quot;,
+$UserRole.Name  &lt;&gt; &quot;Administration&quot;,
+
+
+OR(
+
+AND(
+ISCHANGED (Cancellation_Reason__c),
+ISPICKVAL (Cancellation_Reason__c , &quot;Renewal failed&quot;)
+),
+
+AND(
+ISCHANGED (Cancellation_Reason__c),
+ISPICKVAL (Cancellation_Reason__c , &quot;Quebec&quot;)
+),
+
+
+AND(
+ISCHANGED (Cancellation_Type__c),
+ISPICKVAL (Cancellation_Type__c , &quot;Pending&quot;)
+)
+)
+)</errorConditionFormula>
+        <errorMessage>You cannot choose the Cancellation Reasons &quot;Renewal failed&quot; or &quot;Quebec,&quot; and you cannot choose or change the Cancellation Type &quot;Pending.&quot; If you have made one of these selections, please update the Cancellation Type and/or Cancellation Reason.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CannotSaveWOAgreedTC</fullName>
+        <active>false</active>
+        <description>Users cannot create paid memberships without checking the Agreed to T&amp;C box.</description>
+        <errorConditionFormula>AND(
+$Profile.Name &lt;&gt; &quot;System Administrator&quot;, 
+$Profile.Name &lt;&gt; &quot;API Only&quot;, 
+ISNEW(),
+ISPICKVAL(Membership_Type__c, &quot;Paid&quot;),
+Agreed_T_C__c = FALSE)</errorConditionFormula>
+        <errorMessage>You cannot save Paid memberships without checking the box for Agreed to T&amp;Cs.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CantEditMemberID</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(
+$Profile.Name &lt;&gt; &quot;System Administrator&quot;, 
+$Profile.Name &lt;&gt; &quot;API Only&quot;,  
+PRIORVALUE(Name) != &apos;Automated&apos;,
+ISCHANGED(Name))</errorConditionFormula>
+        <errorMessage>You cannot edit the Member ID.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ContactNotBlankforCompMemberships</fullName>
+        <active>false</active>
+        <description>The Contact cannot be blank for complimentary memberships.</description>
+        <errorConditionFormula>AND(
+$Profile.Name &lt;&gt; &quot;System Administrator&quot;, 
+$Profile.Name &lt;&gt; &quot;API Only&quot;, 
+ISBLANK ( Contact__c ),
+
+OR(
+ISPICKVAL( Membership_Type__c , &quot;Complimentary - PR&quot;),
+ISPICKVAL( Membership_Type__c , &quot;Complimentary - VIP&quot;)
+)
+)</errorConditionFormula>
+        <errorMessage>Please update the Contact for this Complimentary Membership. It cannot be left blank.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ExpiredMembersNeedCancellationTypeReason</fullName>
+        <active>true</active>
+        <description>SME-85. Expired memberships are required to have a Cancellation Type and Reason.</description>
+        <errorConditionFormula>AND(
+$Profile.Name &lt;&gt; &quot;System Administrator&quot;, 
+$Profile.Name &lt;&gt; &quot;API Only&quot;,
+$UserRole.Name &lt;&gt; &quot;Administration&quot;,
+ Expiration_Date__c &lt; TODAY(),
+NOT(ISPICKVAL(Cancellation_Type__c, &quot;Pending&quot;)),
+NOT(ISPICKVAL(Cancellation_Reason__c, &quot;Credit card decline&quot;)),
+
+OR(
+ISCHANGED( Cancellation_Type__c),
+ISCHANGED( Cancellation_Reason__c)
+)
+)</errorConditionFormula>
+        <errorMessage>Cancellation Type and Cancellation Reason cannot be changed for expired memberships.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>MemberAddressFieldsCannotbeBlank</fullName>
+        <active>false</active>
+        <description>All paid memberships must have an address.</description>
+        <errorConditionFormula>AND(
+$Profile.Name &lt;&gt; &quot;System Administrator&quot;, 
+$Profile.Name &lt;&gt; &quot;API Only&quot;, 
+
+ISPICKVAL (Membership_Type__c, &quot;Paid&quot;),
+
+
+OR(
+ISBLANK ( Member_Street_1__c ),
+ISBLANK ( Member_City__c ),
+ISBLANK ( Member_State__c ),
+ISBLANK ( Member_Postal_Code__c ),
+ISBLANK ( Member_Country__c )
+)
+)</errorConditionFormula>
+        <errorMessage>All Paid memberships must have an address.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>MemberCardCountry2Chars</fullName>
+        <active>false</active>
+        <description>Member Card Country can be no more than 2 characters</description>
+        <errorConditionFormula>AND(
+$Profile.Name &lt;&gt; &quot;System Administrator&quot;, 
+$Profile.Name &lt;&gt; &quot;API Only&quot;, 
+(LEN( Member_Card_Country__c )  &gt; 2)
+)</errorConditionFormula>
+        <errorMessage>Member Card Country must be entered as a country code. For United States, enter US. For Canada, enter CA. For all other countries, consult this list: http://www.nationsonline.org/oneworld/country_code_list.htm</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>PhoneOrderCheckedforSomeApplications</fullName>
+        <active>false</active>
+        <description>Phone Order will be check only for some options in Created by Application.</description>
+        <errorConditionFormula>AND(
+$Profile.Name &lt;&gt; &quot;System Administrator&quot;, 
+$Profile.Name &lt;&gt; &quot;API Only&quot;,
+
+Phone_Order__c = TRUE,
+
+OR( 
+ISPICKVAL (Created_by_Application__c , &quot;RH - Web&quot;),
+ISPICKVAL (Created_by_Application__c , &quot;RHBC - Web&quot;),
+ISPICKVAL (Created_by_Application__c , &quot;RHTN - Web&quot;),
+ISPICKVAL (Created_by_Application__c , &quot;RHMO - Web&quot;),
+ISPICKVAL (Created_by_Application__c , &quot;MAUI&quot;)
+)
+)</errorConditionFormula>
+        <errorMessage>Phone Order cannot be checked for the application chosen in Created by Application. Please choose Salesforce.com or one of the Concierge options.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ScheduledDateCannotbeTodayorPast</fullName>
+        <active>false</active>
+        <description>Member card scheduled request date cannot be updated to today or less than today</description>
+        <errorConditionFormula>AND( 
+$Profile.Name &lt;&gt; &quot;System Administrator&quot;, 
+$Profile.Name &lt;&gt; &quot;API Only&quot;,
+ISCHANGED( Member_Card_Scheduled_Request_Date__c ) ,
+Member_Card_Scheduled_Request_Date__c  &lt;= TODAY()
+
+)</errorConditionFormula>
+        <errorMessage>Card shipment requests may not be edited to be in the past and cannot be scheduled for the same day. Update the Member Card Scheduled Request Date to tomorrow or another future date.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ScheduledDateNotBlankforInFlightCards</fullName>
+        <active>false</active>
+        <description>Member card scheduled request date cannot be blank if member card status = request sent or card sent</description>
+        <errorConditionFormula>AND( 
+$Profile.Name &lt;&gt; &quot;System Administrator&quot;, 
+$Profile.Name &lt;&gt; &quot;API Only&quot;,
+ 
+ISBLANK( Member_Card_Scheduled_Request_Date__c ),
+
+OR(
+ ISPICKVAL(Member_Card_Status__c, &quot;Request Sent&quot;),
+ ISPICKVAL(Member_Card_Status__c, &quot;Card Sent&quot;))
+
+)</errorConditionFormula>
+        <errorMessage>Either the request to send member card or the card itself has already been sent and may not be canceled by removing the Member Card Scheduled Request Date.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>UpdateScheduledDateforAddressChanges</fullName>
+        <active>false</active>
+        <description>If the Card shipment address is updated, the Member Card Request Scheduled Date cannot be today or in the past, or less than the ship date.</description>
+        <errorConditionFormula>AND(
+$Profile.Name &lt;&gt; &quot;System Administrator&quot;, 
+$Profile.Name &lt;&gt; &quot;API Only&quot;, 
+
+OR(
+ISCHANGED( Member_Card_Street_1__c ),
+ISCHANGED( Member_Card_Street_2__c ),
+ISCHANGED( Member_Card_City__c ),
+ISCHANGED( Member_Card_State__c ),
+ISCHANGED( Member_Card_Postal_Code__c ),
+ISCHANGED( Member_Card_Country__c )),
+
+OR(
+ Member_Card_Scheduled_Request_Date__c &lt;  Membership_Card_Ship_Date__c ,
+Member_Card_Scheduled_Request_Date__c &lt;= TODAY())
+
+)</errorConditionFormula>
+        <errorMessage>A card shipment may be in process. Updating the Member Card Address fields will not redirect an in process request. If you would like to send a new Member Card, please update the Member Card Scheduled Request Date to tomorrow or another future date.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>Welcome_Email</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Welcome Email</masterLabel>
+        <openType>sidebar</openType>
+        <page>Membership_WelcomeEmail</page>
+        <protected>false</protected>
+    </webLinks>
+</CustomObject>

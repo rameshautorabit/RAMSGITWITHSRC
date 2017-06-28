@@ -1,0 +1,9 @@
+Hello {!Stewardship_Request__c.CreatedBy},
+
+The Data Steward team is happy to let you know that your Stewardship request for {!Stewardship_Request__c.Source_Account__c}{!Stewardship_Request__c.Source_Contact__c} has been resolved and closed successfully. 
+
+To view your request, click here:
+{!Stewardship_Request__c.Link}
+
+Have a great day!
+The Data Steward Team

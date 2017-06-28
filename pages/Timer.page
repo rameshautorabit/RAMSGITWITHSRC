@@ -1,0 +1,6 @@
+<apex:page id="timerPage" controller="TimerController" showHeader="false" sidebar="false" standardStylesheets="false">   
+   <apex:includeScript value="/support/console/31.0/integration.js"/>
+   
+ 
+
+</apex:page>

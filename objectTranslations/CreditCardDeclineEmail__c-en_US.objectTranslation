@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>CreditCardDeclineEmail</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>CreditCardDeclineEmail</value>
+    </caseValues>
+    <fields>
+        <help><!-- If checked - include order number at the end of the email subject. --></help>
+        <label><!-- Include Order Number --></label>
+        <name>Include_Order_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preview Text --></label>
+        <name>Preview_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subject --></label>
+        <name>Subject__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

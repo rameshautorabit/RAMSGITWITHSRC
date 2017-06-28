@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Feature Flags</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Feature Flags</value>
+    </caseValues>
+    <fields>
+        <label><!-- MDM Address Feature --></label>
+        <name>MDM_Address_Feature__c</name>
+    </fields>
+    <fields>
+        <label><!-- MDM Merge feature --></label>
+        <name>MDM_Merge_feature__c</name>
+    </fields>
+    <fields>
+        <label><!-- Single Pane Address Cleansing Feature --></label>
+        <name>Single_Pane_Address_Cleansing_Feature__c</name>
+    </fields>
+    <fields>
+        <label><!-- Single Pane Address Feature --></label>
+        <name>Single_Pane_Address_Feature__c</name>
+    </fields>
+    <fields>
+        <label><!-- Single Pane CCLU Feature --></label>
+        <name>Single_Pane_CCLU_Feature__c</name>
+    </fields>
+    <fields>
+        <label><!-- Single Pane Merge Feature --></label>
+        <name>Single_Pane_Merge_Feature__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

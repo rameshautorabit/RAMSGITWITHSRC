@@ -1,0 +1,12 @@
+Dear {!Case.Contact},
+ 
+Thank you for shopping with Restoration Hardware. Regrettably, we were unable to reach you by phone to discuss a recent return received in our facility for your order # {!Case.Order_Number__c}.
+ 
+The package recently received contained ___, which is not sourced from Restoration Hardware. We are contacting you to advise the as we are unable to process a return of the merchandise received, and it is in the process of being shipped back to you.
+ 
+If you have any questions, please call our Customer Care Center at 877-777-7059 or contact us via email at webcs@restorationhardware.com, and any associate will be able to assist you.
+ 
+Again, thank you for shopping with Restoration Hardware.
+
+Regards, 
+RH Customer Care

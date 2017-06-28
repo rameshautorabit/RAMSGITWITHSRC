@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Identifying type of bulb and naming convention</description>
+    <internalUseOnly>false</internalUseOnly>
+    <name>Light Bulb Shapes</name>
+    <public>true</public>
+</Document>

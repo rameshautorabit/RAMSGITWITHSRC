@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Stewardship Request Buttons ID Mappings</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Stewardship Request Buttons ID Mappings</value>
+    </caseValues>
+    <fields>
+        <label><!-- Address Lookup Name --></label>
+        <name>Address_Lookup_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Contact Lookup Name --></label>
+        <name>Business_Contact_Lookup_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Lookup Name --></label>
+        <name>Business_Lookup_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Entity Id Value --></label>
+        <name>Entity_Id_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object URL Id --></label>
+        <name>Object_URL_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Lookup Name --></label>
+        <name>Order_Lookup_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Type Value - Address --></label>
+        <name>Record_Type_Value_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Type Value - Business Contact --></label>
+        <name>Record_Type_Value_Business_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Type Value - Business --></label>
+        <name>Record_Type_Value_Business__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Type Value - Consumer --></label>
+        <name>Record_Type_Value_Consumer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Type Value - Order --></label>
+        <name>Record_Type_Value_Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Type Value - Ship To --></label>
+        <name>Record_Type_Value_Ship_To__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Type Value - Source System View --></label>
+        <name>Record_Type_Value_Source_System_View__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Type Picklist Id --></label>
+        <name>Request_Type_Picklist_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Lookup Name --></label>
+        <name>Ship_To_Lookup_Name__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

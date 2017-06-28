@@ -1,0 +1,26 @@
+<apex:page standardController="Membership__c" extensions="Membership_WelcomeEmailCtlExt" tabStyle="Membership__c" sidebar="false" id="mwePage" > 
+
+<apex:form id="welcomeEmailForm">
+
+<apex:sectionHeader title="Membership: Welcome Email Preview and Send" subtitle="{!rhMembership.Name}" />
+  <apex:pageBlock mode="main" title="Membership Welcome Email">
+  <apex:pageMessages id="msgs"/>  
+   <apex:pageBlockSection columns="1" >
+    <apex:inputField value="{!rhMembership.Send_To_Email__c}"/>
+    <apex:inputText label="Additional To Email Addresses" value="{!AdditionalEmails}" size="80" maxLength="255" title="Enter one or more additional email addresses to send email to. Email addresses must be valid and separated by a comma."/>
+   </apex:pageBlockSection>            
+  </apex:pageBlock>
+    
+ <div align="center" draggable="false" >
+   <apex:commandButton value="Send Email" action="{!sendWelcomeEmail}"/>
+   <apex:commandButton value="Cancel" action="{!cancelWelcomeEmail}"/>   
+  </div>
+ 
+ <div align="center" draggable="false" >
+  <apex:outputPanel id="welcomeEmailPanel" layout="block">
+   <c:RHMembershipWelcomeEmail RHMembershipId="{!rhMembership.Id}"/>
+  </apex:outputPanel>
+ </div>
+ 
+ </apex:form>
+</apex:page>

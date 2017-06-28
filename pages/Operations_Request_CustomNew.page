@@ -1,0 +1,8 @@
+<!-- 
+ * Description: Visual force page to redirect the control to Standard operation request edit page when user clicks on custom button in related list.
+ * Author: Eashan Parlewar
+ * Created Date : 21-04-2017 
+-->
+<apex:page standardcontroller="Product2" extensions="Operations_Request_CustomNewController" sidebar="false" showHeader="false" action="{!RedirectUrl}">
+
+</apex:page>

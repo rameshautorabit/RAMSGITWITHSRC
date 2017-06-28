@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Timer_Entry__c.Calculated_Duration__c:SUM/60</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Total Minutes</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Timer_Entry__c.Calculated_Duration__c:SUM/60/60</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Total Duration - Hours</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_90898377</developerName>
+        <masterLabel>Staffing Code</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Timer_Entry__c.Action_Type__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Credit Card Declines - All</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Credit Card Declines - Callout</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Accommodations - Cash Accommodation</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Accommodations - Gift Card</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Credit Card Declines - Automatic Email</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Delay Notifications - Callout</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Delay Notifications - Stale Date</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Product Information - All</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Replacement Parts - All</sourceValue>
+            </sourceValues>
+            <value>Work</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Idle</sourceValue>
+            </sourceValues>
+            <value>Idle</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Break</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Feedback</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Frontline</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Research</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lunch</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Training</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Special Project</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Walk-up</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Follow Up</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Meeting</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Other</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Personal</sourceValue>
+            </sourceValues>
+            <value>AUX</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>FORMULA2</column>
+        </chartSummaries>
+        <chartSummaries>
+            <axisBinding>y2</axisBinding>
+            <column>FORMULA1</column>
+        </chartSummaries>
+        <chartType>VerticalColumnGroupedLine</chartType>
+        <enableHoverLabels>true</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>Timer_Entry__c.User__c</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_TOP</location>
+        <secondaryGroupingColumn>BucketField_90898377</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Timer_Entry__c.Duration_Time__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Timer_Entry__c.User__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Julie Hernandez,Palmira Garcia,Linda Marshall,Beverly Rolle,Victor Hernandez,Clifton Barber,Irasema Solis,Camille Martin,Carlos Vacio,Cynthia Rojas,Jarrod Couch,Raquel Borrego</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Timer_Entry__c.Action_Type__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>Accommodations - Cash Accommodation</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Timer_Entry__c.Action__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>Work Session</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>CUST_CREATED_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Timer_Entry__c.Action_Type__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Timer_Entry__c.User__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_90898377</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Total Staffed Time</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Timer_Entry__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_TODAY</interval>
+    </timeFrameFilter>
+</Report>

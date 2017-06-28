@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Contact Information</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Contact Information</value>
+    </caseValues>
+    <fields>
+        <label><!-- Contact Info Relationship Match Key --></label>
+        <name>Contact_Info_Relationship_Match_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Information Description --></label>
+        <name>Contact_Information_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Information Match Key Hash --></label>
+        <name>Contact_Information_Match_Key_Hash__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Information Match Key --></label>
+        <name>Contact_Information_Match_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Information Medium --></label>
+        <name>Contact_Information_Medium_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Information Medium --></label>
+        <name>Contact_Information_Medium__c</name>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fax</masterLabel>
+            <translation><!-- Fax --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation><!-- Phone --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contact Information Type --></label>
+        <name>Contact_Information_Type__c</name>
+        <picklistValues>
+            <masterLabel>Business Phone</masterLabel>
+            <translation><!-- Business Phone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fax</masterLabel>
+            <translation><!-- Fax --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Phone</masterLabel>
+            <translation><!-- Home Phone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mobile</masterLabel>
+            <translation><!-- Mobile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal Email</masterLabel>
+            <translation><!-- Personal Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Work Email</masterLabel>
+            <translation><!-- Work Email --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Contact Information --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Customer Address Details --></label>
+        <name>Customer_Address_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Address --></label>
+        <name>Customer_Address__c</name>
+        <relationshipLabel><!-- Contact Information --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Full Name --></label>
+        <name>Full_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Inactive --></label>
+        <name>Is_Inactive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Primary --></label>
+        <name>Is_Primary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Contact Information --></label>
+        <name>Other_Contact_Information__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone Extension --></label>
+        <name>Phone_Extension__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>Phone__c</name>
+    </fields>
+    <layouts>
+        <layout>Contact Information - Email</layout>
+        <sections>
+            <label><!-- Contact Information Details --></label>
+            <section>Contact Information Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contact Information - Other</layout>
+        <sections>
+            <label><!-- Contact Information Details --></label>
+            <section>Contact Information Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contact Information - Phone</layout>
+        <sections>
+            <label><!-- Contact Information Details --></label>
+            <section>Contact Information Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contact Information Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Email --></label>
+        <name>Email</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Fax --></label>
+        <name>Fax</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Other --></label>
+        <name>Other</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Phone --></label>
+        <name>Phone</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You cannot mark a primary phone or email address as inactive. Choose or create a different primary phone or email address before marking this one as inactive. --></errorMessage>
+        <name>Active_Contact_Information_is_Primary</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- New_Email --></label>
+        <name>New_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Fax --></label>
+        <name>New_Fax</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Other_Contact_Information --></label>
+        <name>New_Other_Contact_Information</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Phone --></label>
+        <name>New_Phone</name>
+    </webLinks>
+</CustomObjectTranslation>

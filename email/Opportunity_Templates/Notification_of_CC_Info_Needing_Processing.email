@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<font face="arial" size="3">Hello,</font><br><br><font face="arial" size="3">You've received credit card payment information for the following Opportunity:</font><br><font face="arial">{!Opportunity.Link}</font><br><br><font face="arial" size="3">Opportunity Number: </font><font face="arial">{!Opportunity.Oppty_Number__c}</font><br><font face="arial" size="3">Opportunity (Project) Name: {!Opportunity.Name}</font><br><font face="arial" size="3">Account Name: {!Opportunity.Account}</font><br><br><font face="arial" size="3">Please enter the credit card information in CW. &nbsp;Then edit the Opportunity and fill out the "Order Number" field to have the credit card data removed from Salesforce.</font><br><br><font face="arial" size="3">Thanks.</font>]]></td>
+</tr>
+</table>

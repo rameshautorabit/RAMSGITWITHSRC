@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity$Order_Number__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Quotes$BillingName</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Quotes$BillingAddress</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Quotes$ShippingName</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Quotes$Ship_Street_1__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Quotes$Ship_Street_2__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Quotes$Ship_City__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Quotes$Ship_State__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Quotes$Ship_Zip__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Quotes$Shipping_Country__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity$Account</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Denton House</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Denton House</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunities_with_Quotes__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>EMAIL</field>
+    </columns>
+    <columns>
+        <field>CONTACT_ID</field>
+    </columns>
+    <currency>USD</currency>
+    <description>SE Contract, excluding Hosp &amp; Lighting</description>
+    <filter>
+        <booleanFilter>(1 AND 2 AND 3 AND 4 AND 6) OR 5</booleanFilter>
+        <criteriaItems>
+            <column>EMAIL_OPT_OUT</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>EMAIL</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>INDUSTRY</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Residential-Single,Hospitality</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>EMAIL</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>mgoldman@restorationhardware.com,kguerin@restorationhardware.com,cboone@restorationhardware.com,lalopez@restorationhardware.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Segment__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Lighting Supplier/Contractor</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>SE_nonHosp_nonlight</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

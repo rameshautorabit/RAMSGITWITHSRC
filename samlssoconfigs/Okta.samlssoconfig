@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SamlSsoConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <identityLocation>SubjectNameId</identityLocation>
+    <identityMapping>Username</identityMapping>
+    <issuer>kyjeiw7iQUWGXZITRXHL</issuer>
+    <loginUrl>https://rh.okta.com/app/salesforce/kyjeiw7iQUWGXZITRXHL/sso/saml</loginUrl>
+    <logoutUrl>https://rh.okta.com</logoutUrl>
+    <name>Okta</name>
+    <oauthTokenEndpoint>https://restorationhardware.my.salesforce.com/services/oauth2/token?so=00D500000007MjV</oauthTokenEndpoint>
+    <redirectBinding>false</redirectBinding>
+    <salesforceLoginUrl>https://restorationhardware.my.salesforce.com?so=00D500000007MjV</salesforceLoginUrl>
+    <samlEntityId>https://restorationhardware.my.salesforce.com</samlEntityId>
+    <samlVersion>SAML2_0</samlVersion>
+    <userProvisioning>false</userProvisioning>
+    <validationCert>MIICjzCCAfigAwIBAgIGAT/JrFdJMA0GCSqGSIb3DQEBBQUAMIGKMQswCQYDVQQGEwJVUzETMBEGA1UECAwKQ2FsaWZvcm5pYTEWMBQGA1UEBwwNU2FuIEZyYW5jaXNjbzENMAsGA1UECgwET2t0YTEUMBIGA1UECwwLU1NPUHJvdmlkZXIxCzAJBgNVBAMMAnJoMRwwGgYJKoZIhvcNAQkBFg1pbmZvQG9rdGEuY29tMB4XDTEzMDcxMDE3NDAyMloXDTQzMDcxMDE3NDEyMlowgYoxCzAJBgNVBAYTAlVTMRMwEQYDVQQIDApDYWxpZm9ybmlhMRYwFAYDVQQHDA1TYW4gRnJhbmNpc2NvMQ0wCwYDVQQKDARPa3RhMRQwEgYDVQQLDAtTU09Qcm92aWRlcjELMAkGA1UEAwwCcmgxHDAaBgkqhkiG9w0BCQEWDWluZm9Ab2t0YS5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAJTRvkgBqtS6driNYgVPn2jBne7TF8FVob7HMBp46+nNhpn3PpFVWUjZhKtatur48w00sxi0sQ+3Zt544JCtxuW7Vac2Tbv/i9mg7mPghjN3aFZej2ceY0KZiLpwwOj+ATnOOa+pz78ZsAhUFNXhK0fPZ8CRpRH1g9xcY4Fs+s7rAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAhIUcK+kyXeYhL+Bu/egEOwvmGCejpaJ1Pi2O/2/D5aB28kWmkomgPEcj4EzPKqP7uXFx0Wm9j6txnZYBRVD1B+qwwbPBeqFMlAHPTAiIEUrLYXbwt1c3+pCmiCxISvFmoD/7toGf3fmmQJbztygIyp+YqFSn7f1XHSvph8i2vsI=</validationCert>
+</SamlSsoConfig>

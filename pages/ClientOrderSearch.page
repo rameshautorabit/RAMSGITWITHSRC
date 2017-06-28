@@ -1,0 +1,92 @@
+<apex:page controller="ClientOrderSearchController" sidebar="false" readonly="true" >
+	
+	<script>
+  		function setFocusOnLoad(){}
+	</script>
+	 
+	<apex:form >
+  
+	<apex:pageBlock title="Order Lookup" mode="edit">
+  	<apex:pageMessages id="errors" />
+  	
+  	<table width="100%" border="0">
+  	<tr>  
+    	<td width="200" valign="top">
+  
+      		<apex:pageBlock title="Search" mode="edit" id="criteria">
+
+      		<script type="text/javascript">
+      			function doComboSearch() { 
+        			searchServer(
+        				document.getElementById("fullname").value,
+        				document.getElementById("cwskuid").value,
+        				document.getElementById("ecommdisplayname").value
+        			);
+      			}
+			</script>
+      	
+      		<apex:actionFunction name="searchServer" action="{!runSearch}" rerender="results,debug,errors">
+      			<apex:param name="fullname" value="" />
+          		<apex:param name="cwskuid" value="" />
+          		<apex:param name="ecommdisplayname" value="" />
+      		</apex:actionFunction> 
+      		
+			<table cellpadding="2" cellspacing="2">
+      		<tr>
+        		<td style="font-weight:bold;">Sold To Name (Last, First)<br/>
+        			<input type="text" id="fullname" onchange="doComboSearch();"/>
+        		</td>
+      		</tr>
+  			
+  			<tr>
+        		<td style="font-weight:bold;">CW SKU ID<br/>
+        			<input type="text" id="cwskuid" onkeyup="doComboSearch();"/>
+        		</td>
+      		</tr>
+      		
+      		<tr>
+        		<td style="font-weight:bold;">ECommerce Display Name<br/>
+        			<input type="text" id="ecommdisplayname" onkeyup="doComboSearch();"/>
+        		</td>
+      		</tr>
+			</table>
+			</apex:pageBlock>
+		</td>
+    	<td valign="top">
+
+    	<apex:pageBlock mode="edit" id="results">
+
+        	<apex:pageBlockTable value="{!olList}" var="ol">
+
+				<apex:column headervalue="Order Number">
+					<apex:outputLink value="/{!ol.RH_Order_Number__c}" target="_blank">{!ol.RH_Order_Number__r.Name}</apex:outputLink>	
+		      	</apex:column>
+		        
+		      	<apex:column headervalue="Line Number">
+		        	<apex:outputLink value="/{!ol.Id}" target="_blank">{!ol.Name}</apex:outputLink>	
+		        </apex:column>
+					
+				<apex:column headervalue="CW SKU ID">
+					<apex:outputLink value="/{!ol.CW_SKU_ID__c}" target="_blank">{!ol.CW_SKU_ID__r.Name}</apex:outputLink>	
+		       	</apex:column>
+		       		
+		      	<apex:column headervalue="ECommerce Display Name">
+		       		<apex:outputField value="{!ol.CW_SKU_ID__r.ECommerce_Display_Name__c}"/>
+		     	</apex:column>
+		     	
+		     	<apex:column headervalue="Opportunity Name">
+		       		<apex:outputLink value="/{!ol.RH_Order_Number__r.Opportunity__c}" target="_blank">{!ol.RH_Order_Number__r.Opportunity__r.Name}</apex:outputLink>
+		     	</apex:column>
+
+        	</apex:pageBlockTable>
+
+		</apex:pageBlock>
+		</td>
+		
+ 	</tr>
+	</table>
+
+  	</apex:pageBlock>
+
+	</apex:form>
+</apex:page>

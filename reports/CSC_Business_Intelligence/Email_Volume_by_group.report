@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>1</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>count</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_67756123</developerName>
+        <masterLabel>Groups</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>ORIGIN</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Email: Furniture Repair</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Email: Product Information</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Email: Replacement Parts</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Email: Store Product Information</sourceValue>
+            </sourceValues>
+            <value>Product Expert</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Email: Trade</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Email: Tax Exempt</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Email: Store Trade</sourceValue>
+            </sourceValues>
+            <value>Trade</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Email</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Web</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Web: RH</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Web: B&amp;C</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Web: RH Teen</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Web: RH Modern</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Email: WebCS</sourceValue>
+            </sourceValues>
+            <value>Email Team</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Email: ECR</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Email: CSC PR</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Email: RH Claims</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Executive Escalation</sourceValue>
+            </sourceValues>
+            <value>Corporate Escalations</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Email: Custom Windows</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Email: Custom Shades</sourceValue>
+            </sourceValues>
+            <value>Custom Shades and Windows</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Gallery Direct Escalation</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Email: Gallery Solutions</sourceValue>
+            </sourceValues>
+            <value>Gallery Team</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Email: Field Leader Solutions</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Field Leader Direct Escalation</sourceValue>
+            </sourceValues>
+            <value>Field Leader</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>VerticalColumn</chartType>
+        <enableHoverLabels>true</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_67756123</groupingColumn>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>EMAIL.TO_ADDRESS</field>
+    </columns>
+    <columns>
+        <field>EMAIL.CC_ADDRESS</field>
+    </columns>
+    <columns>
+        <field>EMAIL.BCC_ADDRESS</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>EMAIL.STATUS</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <description>7 Day Range - Restricted to Email Groups Excludes Delay and CC Declines Incoming</description>
+    <filter>
+        <criteriaItems>
+            <column>EMAIL.IS_INBOUND</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Case.Delivery_Return_Support,Case.Delay_Notifications,Case.Credit_Card_Declines,Case.Standard</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Sub_Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Duplicate,Spam</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>EMAIL.MESSAGE_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case.Email_Case_Category__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_67756123</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <name>Incoming emails - All Groups - 7 Day</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseEmail</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>EMAIL.MESSAGE_DATE</dateColumn>
+        <interval>INTERVAL_LAST7</interval>
+    </timeFrameFilter>
+</Report>

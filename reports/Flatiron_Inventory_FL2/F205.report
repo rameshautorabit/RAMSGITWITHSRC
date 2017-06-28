@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Product2.Product_Image_Thumbnail__c</field>
+    </columns>
+    <columns>
+        <field>Product2.CW_Item_Description__c</field>
+    </columns>
+    <columns>
+        <field>Product2.Color__c</field>
+    </columns>
+    <columns>
+        <field>Product2.Member_Price__c</field>
+    </columns>
+    <columns>
+        <field>NAME</field>
+    </columns>
+    <columns>
+        <field>Product2.STSSku__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Geo Bedroom</description>
+    <filter>
+        <criteriaItems>
+            <column>Product2.STSSku__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>15070518,95950150,14060276,14180729,14060288,14140198,14140202,14300032,14300026,14300030,14300397,55530490,67030803,95950138,95950142,22180991,22180891,23530060,68860023,68450029,68270225,68360150,40200436,40200388,41450142,41450140,41450139,41450141,68270208,68360153,17050044,17050043,40410098,40410099,23380784,23380788,40500861</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>F205</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ProductList</reportType>
+    <showDetails>true</showDetails>
+    <sortColumn>Product2.CW_Item_Description__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Product2.Product_Image_Thumbnail__c</field>
+    </columns>
+    <columns>
+        <field>Product2.CW_Item_Description__c</field>
+    </columns>
+    <columns>
+        <field>Product2.Color__c</field>
+    </columns>
+    <columns>
+        <field>Product2.Member_Price__c</field>
+    </columns>
+    <columns>
+        <field>Product2.STSSku__c</field>
+    </columns>
+    <columns>
+        <field>NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Russian Oak</description>
+    <filter>
+        <criteriaItems>
+            <column>Product2.STSSku__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>63420790,14380015,14390015,14380043,14200268,14140171,14140189,14220132,14300353,14300032,14300030,14300446,63420798,63420826,22200032,22150104,22100098,57460914,68270650,68600097,68450449,68270208,68360156,68060230,40200194,40200193,16120163,40410376,23380445,23380489,23380472,23380264,23380281,23380438,23380491,17050042,17050043,17050044,40500559,14220136,14300026</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>B305</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ProductList</reportType>
+    <showDetails>true</showDetails>
+    <sortColumn>Product2.CW_Item_Description__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

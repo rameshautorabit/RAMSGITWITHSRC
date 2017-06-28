@@ -1,0 +1,109 @@
+<apex:page standardcontroller="Case" recordSetVar="cases" tabStyle="Case"  sidebar="false" showHeader="false" extensions="CaseAssignmentClass" id="caseAssignmentPage">
+    <apex:form id="caseform" style="font-size: 90%">
+        <apex:includeScript value="/support/console/32.0/integration.js"/>
+        <apex:pageBlock id="caseBlock">
+            <!--<apex:image value="/img/icon/cases32.png" height="32" width="32"/>-->
+            <div style="font-size:120%">    
+                <apex:pagemessages id="caseAssignmentMsg"/>
+            </div>
+            <div style="background-color: #ECEEEE;"><!--  -->
+                <div style="padding: 6px 6px 3px; height:31px; margin: 0 auto;">
+                    <apex:selectList value="{!filterId}" size="1" style="font-weight:bold; margin:auto; font-size:110%" id="listViewSelect">
+                        <apex:actionSupport event="onchange" rerender="caseBlock, jsPanel" status="loadingStatus"/>
+                        <apex:selectOptions value="{!listviewoptions}"/>
+                    </apex:selectList>
+                    
+                    &nbsp;
+                    <!--<apex:outputLink style="color:#015ba7; font-size: ">Edit </apex:outputLink> | &nbsp;
+                    <apex:outputLink style="color:#015ba7">Delete </apex:outputLink> | &nbsp;
+                    <apex:outputLink style="color:#015ba7" onclick="testOpenPrimaryTab()">Create New View</apex:outputLink>
+                    <a href="/ui/list/FilterEditPage?ftype=t&amp;retURL=%2F500%3Ffcf%3D00BR0000001IWHK%26rolodexIndex%3D-1%26page%3D1%26isdtp%3Dnv&amp;isdtp=nv">Create New View</a>
+                    <a href="/ui/list/FilterEditPage?ftype=01IR0000000AANt" id="create-new-view">Create New View</a>-->
+                </div>
+             </div> 
+            <apex:commandButton value="Get a Case" action="{!findCase}" rendered="{!listViewExclusion}" reRender="caseAssignmentMsg"/> &nbsp;&nbsp;
+            <apex:commandButton value="No CW Order" onclick="createNewCase(); return false;"/> &nbsp;&nbsp;&nbsp;&nbsp;
+             <span style="font-weight:bold">Number of Items in Queue: {!listSize}</span>
+          
+            <apex:pageBlockTable value="{!cases}" var="c" id="caseTable" rendered="{!listViewExclusion = false}">
+                <apex:column headerValue="Case Number">
+                    <!--<apex:outputField value="{!c.CaseNumber}" style="color:#1468b6; cursor:pointer; text-decoration:underline"/> -->
+                   <A HREF="#" onClick="openTab('{!c.Id}', '{!c.CaseNumber}');return false" style="color:#1468b6; cursor:pointer; text-decoration:underline">{!c.CaseNumber}</A>
+                </apex:column>
+
+                <apex:column headerValue="Customer Name" value="{!c.Sold_to_Name__c}" />
+                <apex:column headerValue="Order Number" value="{!c.RH_Order_Number__c}"/>
+                <apex:column headerValue="Record Type" value="{!c.RecordTypeid}"/>
+                <apex:column headerValue="Request Category" value="{!c.Request_Category__c}"/>
+                <apex:column headerValue="Priority" value="{!c.Priority}"/>
+                <apex:column headerValue="Status" value="{!c.Status}"/>
+                <apex:column headerValue="Created Date" value="{!c.CreatedDate}"/>
+                <apex:column headerValue="Last Modified Date" value="{!c.LastModifiedDate}"/>
+                <apex:column headerValue="Age (Days)" value="{!c.Case_Age__c}"/>
+              <!--  <apex:column value="{!c.Queue_Type__c}" rendered="false"/>-->
+                 <!--<apex:columns headerValue="Case Number" value="{!c.}"/>-->
+             </apex:pageBlockTable>
+         </apex:pageBlock>
+         
+         <div class="paginator" id="pager">
+           <span class="prevNextLinks">    
+                <apex:commandLink action="{!first}" reRender="caseBlock" status="loadingStatus">
+                    <span class="prevNext">
+                        <img src="/s.gif" class="first" style="cursor:pointer" title="First"/>
+                    </span>
+                </apex:commandLink>
+                
+                <apex:commandLink action="{!previous}" reRender="caseBlock" status="loadingStatus">
+                    <span class="prevNext">
+                        <img src="/s.gif" class="prev" style="cursor:pointer"/>Previous
+                    </span>
+                </apex:commandLink>
+                
+                <apex:commandLink action="{!next}" reRender="caseBlock" status="loadingStatus">
+                    <span class="prevNext">
+                        Next<img src="/s.gif" class="next" style="cursor:pointer"/>
+                    </span>
+                </apex:commandLink>
+                
+                <apex:commandLink action="{!last}" reRender="caseBlock" status="loadingStatus">
+                    <span class="prevNext">
+                        <img src="/s.gif" class="last" style="cursor:pointer" title="Last"/>
+                    </span>
+                </apex:commandLink>
+                
+            </span>     
+         </div>
+
+         <apex:inputHidden id="listViewName" value="{!listViewName}"/>
+         <apex:commandButton value="List View" action="{!cherryPicking}" id="cherryPicking" reRender="caseBlock" style="display:none" status="loadingStatus"/>
+    </apex:form>
+    
+     <apex:actionstatus id="loadingStatus">
+        <apex:facet name="start">
+            <div class="waitingSearchDiv" id="el_loading" style="background-color: #fbfbfb; height: 100%;opacity:0.65;width:100%;"> 
+                <div class="waitingHolder" style="top: 74.2px; width: 91px;">
+                    <img class="waitingImage" src="/img/loading.gif" title="Please Wait..." />
+                    <span class="waitingDescription">Loading...</span>
+                </div>
+            </div>
+        </apex:facet>
+    </apex:actionstatus>
+    <apex:includeScript value="/support/console/32.0/integration.js"/>
+    <apex:outputPanel id="jsPanel">
+        <script>
+            var listView = document.getElementById("{!$Component.caseAssignmentPage.caseform.caseBlock.listViewSelect}");
+            var listViewName = document.getElementById("{!$Component.caseAssignmentPage.caseform.listViewName}");
+            listViewName.value = listView.options[listView.selectedIndex].innerHTML;
+            document.getElementById("{!$Component.caseAssignmentPage.caseform.cherryPicking}").click();
+
+            function openTab(caseId, caseNumber) {
+                sforce.console.openPrimaryTab(null, '/' + caseId, true, caseNumber);
+            }
+
+            function createNewCase(){
+                sforce.console.openPrimaryTab(null, '/apex/CreateNewCase', true, 'New Case');
+            }
+
+        </script>
+    </apex:outputPanel>
+</apex:page>

@@ -1,0 +1,15 @@
+<apex:page standardController="Case" extensions="CreateOrderFromCase" id="createOrder">
+	<apex:pageMessages />
+	<apex:sectionHeader title="Create Order" subtitle="{!cNum}"/>
+	<apex:form id="formid">
+		<apex:pageBlock id="pgblock">
+			<apex:pageBlockButtons >
+				<apex:commandButton action="{!createOrder}" value="Create Order"/>
+				<apex:commandButton action="{!cancel}" value="Cancel"/>
+			</apex:pageBlockButtons>
+			<apex:pageBlockSection >
+				<apex:inputField value="{!rho.Name}"/>
+			</apex:pageBlockSection>
+		</apex:pageBlock>
+	</apex:form>
+</apex:page>

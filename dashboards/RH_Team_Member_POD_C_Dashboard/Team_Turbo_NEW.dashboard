@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
+    <backgroundEndColor>#FFFFFF</backgroundEndColor>
+    <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
+    <backgroundStartColor>#FFFFFF</backgroundStartColor>
+    <dashboardFilters>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Amy Haeffner</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Franca Burgan</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Ali Layton</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Gerri Raatz</values>
+        </dashboardFilterOptions>
+        <name>PM</name>
+    </dashboardFilters>
+    <dashboardFilters>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Angela Eubanks</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Barry DeVilbiss</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Tom Freeman</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Eric Henschel</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Tara Hebert</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Cynthia Tucker</values>
+        </dashboardFilterOptions>
+        <name>TL</name>
+    </dashboardFilters>
+    <dashboardType>SpecifiedUser</dashboardType>
+    <isGridLayout>false</isGridLayout>
+    <leftSection>
+        <columnSize>Wide</columnSize>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <aggregate>Sum</aggregate>
+                <axisBinding>y</axisBinding>
+                <column>AMOUNT</column>
+            </chartSummary>
+            <componentType>ColumnStacked</componentType>
+            <dashboardFilterColumns>
+                <column>Opportunity.Ops_Contact__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Opportunity.TL__c</column>
+            </dashboardFilterColumns>
+            <displayUnits>Integer</displayUnits>
+            <drillEnabled>true</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>ACTION: #CHASINGGREATNESS2105: Double down on Green to win! Your pipeline should be equal to double the amount of your goal. Does your pipeline reflect the reality of what you are working on?</footer>
+            <groupingColumn>Opportunity.TL__c</groupingColumn>
+            <groupingColumn>STAGE_NAME</groupingColumn>
+            <header>Pipeline Metric</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>RH_Contract_Custom_Reports_for_Dashboard/Open_Opps_Cur_FY_TL_Stage_Pod_C</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Est. Value ALL Cur FY Opps by Stage (TL)</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <aggregate>Sum</aggregate>
+                <axisBinding>y</axisBinding>
+                <column>TOTAL_PRICE</column>
+            </chartSummary>
+            <componentType>ColumnStacked</componentType>
+            <dashboardFilterColumns>
+                <column>Opportunity.Ops_Contact__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Opportunity.TL__c</column>
+            </dashboardFilterColumns>
+            <displayUnits>Integer</displayUnits>
+            <drillEnabled>true</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>CHECK US OUT: Our business is moving to a Special Order Model.</footer>
+            <groupingColumn>Opportunity.TL__c</groupingColumn>
+            <groupingColumn>OpportunityLineItem.Fulfillment_Method__c</groupingColumn>
+            <header>Planning Metric</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>RH_Contract_Custom_Reports_for_Dashboard/Opps_Open_Cur_FY_by_Fulfillment_TL_Pod_C</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Est. Value Cur FY Opps by Method (TL)</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <axisBinding>y</axisBinding>
+                <column>RowCount</column>
+            </chartSummary>
+            <componentType>BarStacked</componentType>
+            <dashboardFilterColumns>
+                <column>USERS.NAME</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>USERS.NAME</column>
+            </dashboardFilterColumns>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>true</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <groupingColumn>USERS.NAME</groupingColumn>
+            <groupingColumn>Account.Contract_Customer_Segmentation__c</groupingColumn>
+            <header>Monthly Snapshot</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>RH_Contract_Custom_Reports_for_Dashboard/Accounts_Logged_Created_Pod_C</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Accounts Created Last 30 Days (TL)</title>
+            <useReportChart>false</useReportChart>
+        </components>
+    </leftSection>
+    <middleSection>
+        <columnSize>Wide</columnSize>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <aggregate>Sum</aggregate>
+                <axisBinding>y</axisBinding>
+                <column>AMOUNT</column>
+            </chartSummary>
+            <componentType>BarStacked</componentType>
+            <dashboardFilterColumns>
+                <column>Opportunity.Ops_Contact__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Opportunity.TL__c</column>
+            </dashboardFilterColumns>
+            <displayUnits>Integer</displayUnits>
+            <drillEnabled>true</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>ACTION: *SEGMENT ME-I want to be part of the club -Segment your un-segmented accounts  *DON’T LEAVE ME HANGING-Win me or move me -Win projects or move them out. *ASSESS ME –I need it-A,B,C+ Are you spending time with your best accounts?</footer>
+            <groupingColumn>Opportunity.TL__c</groupingColumn>
+            <groupingColumn>Account.Contract_Customer_Segmentation__c</groupingColumn>
+            <header>Current Fiscal Quarter Snapshot</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>RH_Contract_Custom_Reports_for_Dashboard/Open_Opps_Cur_FQ_TL_Segment_Pod_C</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Open Opps &gt;10K FQ by Segment (TL)</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <aggregate>Sum</aggregate>
+                <axisBinding>y</axisBinding>
+                <column>AMOUNT</column>
+            </chartSummary>
+            <componentType>BarStacked</componentType>
+            <dashboardFilterColumns>
+                <column>Opportunity.Ops_Contact__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Opportunity.TL__c</column>
+            </dashboardFilterColumns>
+            <displayUnits>Integer</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>ACTION: *RELEASE ME-Set me free- Take action on held orders as part of your weekly routine.  *DELIVER ME- I need to be installed- Action orders as part of your weekly routine. Does the close date need to be adjusted? Will they deliver on time?</footer>
+            <groupingColumn>Opportunity.Ops_Contact__c</groupingColumn>
+            <groupingColumn>STAGE_NAME</groupingColumn>
+            <header>Current Fiscal Year Snapshot</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>RH_Contract_Custom_Reports_for_Dashboard/Won_Opps_Ship_Cur_FQ_PM_Stage_Pod_C</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Opps &gt;10K Won- Ship/Install FY (PM)</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Bar</componentType>
+            <dashboardFilterColumns>
+                <column>Opportunity.Ops_Contact__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Opportunity.TL__c</column>
+            </dashboardFilterColumns>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>true</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Oppty Created after 6/1/14 with Install Ship Date after 8/1/14</footer>
+            <header>By Fiscal Quarter</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>RH_Contract_Custom_Reports_for_Dashboard/Balance_Due_Pod_C</report>
+            <showPercentage>false</showPercentage>
+            <showPicturesOnCharts>false</showPicturesOnCharts>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Balances Due by PM</title>
+            <useReportChart>true</useReportChart>
+        </components>
+    </middleSection>
+    <rightSection>
+        <columnSize>Wide</columnSize>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <aggregate>Sum</aggregate>
+                <axisBinding>y</axisBinding>
+                <column>AMOUNT</column>
+            </chartSummary>
+            <componentType>BarStacked</componentType>
+            <dashboardFilterColumns>
+                <column>Opportunity.Ops_Contact__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Opportunity.TL__c</column>
+            </dashboardFilterColumns>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>true</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>ACTION: *SEGMENT ME-I want to be part of the club -Segment your un-segmented accounts  *DON’T LEAVE ME HANGING-Win me or move me -Win projects or move them out. *ASSESS ME –I need it-A,B,C+ Are you spending time with our best accounts?</footer>
+            <groupingColumn>Opportunity.TL__c</groupingColumn>
+            <groupingColumn>Account.Contract_Customer_Segmentation__c</groupingColumn>
+            <header>Next Fiscal Quarter Snapshot</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>RH_Contract_Custom_Reports_for_Dashboard/Open_Opps_Next_FQ_TL_Segment_Pod_C</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Open Opps &gt;10K Next FQ by Segment (TL)</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <aggregate>Sum</aggregate>
+                <axisBinding>y</axisBinding>
+                <column>AMOUNT</column>
+            </chartSummary>
+            <componentType>BarStacked</componentType>
+            <dashboardFilterColumns>
+                <column>Opportunity.Ops_Contact__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Opportunity.TL__c</column>
+            </dashboardFilterColumns>
+            <displayUnits>Integer</displayUnits>
+            <drillEnabled>true</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>ACTION: *RELEASE ME-Set me free- Take action on held orders as part of your weekly routine.  *DELIVER ME- I need to be installed- Action orders as part of your weekly routine. Does the close date need to be adjusted? Will they deliver on time?</footer>
+            <groupingColumn>Opportunity.Ops_Contact__c</groupingColumn>
+            <groupingColumn>STAGE_NAME</groupingColumn>
+            <header>Next Fiscal Year Snapshot</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>RH_Contract_Custom_Reports_for_Dashboard/Won_Opps_Ship_Next_FQ_PM_Stage_Pod_C</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Opps &gt;10K Won-Ship/Install Next FY (PM)</title>
+            <useReportChart>false</useReportChart>
+        </components>
+    </rightSection>
+    <runningUser>llopez2@restorationhardware.com</runningUser>
+    <textColor>#000000</textColor>
+    <title>Team Turbo</title>
+    <titleColor>#000000</titleColor>
+    <titleSize>12</titleSize>
+</Dashboard>

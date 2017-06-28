@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>CW Invoice</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>CW Invoice</value>
+    </caseValues>
+    <fields>
+        <label><!-- Additional Charge Amount (IST) --></label>
+        <name>Additional_Charge_Amount_IST__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Freight Amount (IST) --></label>
+        <name>Additional_Freight_Amount_IST__c</name>
+    </fields>
+    <fields>
+        <label><!-- BOM Component Sequence --></label>
+        <name>BOM_Component_Sequence__c</name>
+    </fields>
+    <fields>
+        <label><!-- BOM Header Flag --></label>
+        <name>BOM_Header_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Color Code --></label>
+        <name>Color_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company --></label>
+        <name>Company__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Card Number --></label>
+        <name>Credit_Card_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Shipped --></label>
+        <name>Date_Shipped__c</name>
+    </fields>
+    <fields>
+        <label><!-- Freight Amount (IL) --></label>
+        <name>Freight_Amount_IL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Freight Amount (IST) --></label>
+        <name>Freight_Amount_IST__c</name>
+    </fields>
+    <fields>
+        <label><!-- GST Amount (IL) --></label>
+        <name>GST_Amount_IL__c</name>
+    </fields>
+    <fields>
+        <label><!-- GST Amount (IST) --></label>
+        <name>GST_Amount_IST__c</name>
+    </fields>
+    <fields>
+        <label><!-- Handling Amount (IL) --></label>
+        <name>Handling_Amount_IL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Handling Amount (IST) --></label>
+        <name>Handling_Amount_IST__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Date --></label>
+        <name>Invoice_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Line Number --></label>
+        <name>Invoice_Line_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Number --></label>
+        <name>Invoice_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Order Line Sequence Number --></label>
+        <name>Invoice_Order_Line_Sequence_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Type --></label>
+        <name>Invoice_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item Number --></label>
+        <name>Item_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merchandise Amount (IST) --></label>
+        <name>Merchandise_Amount_IST__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merchandise Unit Price (IL) --></label>
+        <name>Merchandise_Unit_Price_IL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Level Freight Tax --></label>
+        <name>Order_Level_Freight_Tax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Number --></label>
+        <name>Order_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Payment Sequence Number --></label>
+        <name>Order_Payment_Sequence_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- PST Amount (IL) --></label>
+        <name>PST_Amount_IL__c</name>
+    </fields>
+    <fields>
+        <label><!-- PST Amount (IST) --></label>
+        <name>PST_Amount_IST__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Additional Charge Amount --></label>
+        <name>Payment_Additional_Charge_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Additional Freight Amount --></label>
+        <name>Payment_Additional_Freight_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Category Description --></label>
+        <name>Payment_Category_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Category --></label>
+        <name>Payment_Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Freight Amount --></label>
+        <name>Payment_Freight_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment GST Amount --></label>
+        <name>Payment_GST_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Handling Amount --></label>
+        <name>Payment_Handling_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Merchandise Amount --></label>
+        <name>Payment_Merchandise_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment PST Amount --></label>
+        <name>Payment_PST_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Tax Amount --></label>
+        <name>Payment_Tax_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Type Description --></label>
+        <name>Payment_Type_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Type --></label>
+        <name>Payment_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pre Bill Color Code --></label>
+        <name>Pre_Bill_Color_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pre Bill Item Number --></label>
+        <name>Pre_Bill_Item_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pre Bill Size Code --></label>
+        <name>Pre_Bill_Size_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quantity Shipped --></label>
+        <name>Quantity_Shipped__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Number (IST) --></label>
+        <name>Ship_To_Number_IST__c</name>
+    </fields>
+    <fields>
+        <label><!-- Size Code --></label>
+        <name>Size_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax Amount (IL) --></label>
+        <name>Tax_Amount_IL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax Amount (IST) --></label>
+        <name>Tax_Amount_IST__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

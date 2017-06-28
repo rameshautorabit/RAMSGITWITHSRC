@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Order Line</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Order Lines</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Order Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Air PO Number --></label>
+        <name>Air_PO_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Air PO --></label>
+        <name>Air_PO__c</name>
+    </fields>
+    <fields>
+        <help><!-- Automatically checked if stale date and/or new backorder date processing will be performed asynchronously. --></help>
+        <label><!-- Async --></label>
+        <name>Async__c</name>
+    </fields>
+    <fields>
+        <label><!-- AutorabitExtId__c --></label>
+        <name>AutorabitExtId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Most recent date the Client was contacted with a changed promise date --></help>
+        <label><!-- Contact Date --></label>
+        <name>Available_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Backorder Quantity --></label>
+        <name>Backorder_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- CW N/C Flag --></label>
+        <name>CW_N_C_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- CW SKU ID --></label>
+        <name>CW_SKU_ID__c</name>
+        <relationshipLabel><!-- Order Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- CW SKU Name --></label>
+        <name>CW_SKU_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- CW Upload Date/Time --></label>
+        <name>CW_Upload_DateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancel Date --></label>
+        <name>Cancel_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancel Quantity --></label>
+        <name>Cancel_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Class --></label>
+        <name>Class__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collection --></label>
+        <name>Collection__c</name>
+    </fields>
+    <fields>
+        <label><!-- Color --></label>
+        <name>Color__c</name>
+    </fields>
+    <fields>
+        <label><!-- Coordinate Group --></label>
+        <name>Coordinate_Group__c</name>
+    </fields>
+    <fields>
+        <help><!-- Most recent available date that has been communicated to the Client --></help>
+        <label><!-- Current Available Date --></label>
+        <name>Current_Available_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Most recent delivery date calculated in CW. This may not have been communicated to the Client --></help>
+        <label><!-- Current Delay Date --></label>
+        <name>Current_Delay_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Item --></label>
+        <name>Custom_Item__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of days between Current Delay Date and Original Available Date. --></help>
+        <label><!-- Days Since Original Available Date --></label>
+        <name>Days_Since_Original_Available_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Automatically checked if this Order Line requires new backorder date processing. --></help>
+        <label><!-- DelayFeed --></label>
+        <name>DelayFeed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delay Feed History --></label>
+        <name>Delay_Feed_History__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delay Feed --></label>
+        <name>Delay_Feed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Department --></label>
+        <name>Department__c</name>
+    </fields>
+    <fields>
+        <label><!-- Division --></label>
+        <name>Division__c</name>
+    </fields>
+    <fields>
+        <label><!-- SPO --></label>
+        <name>Drop_Ship__c</name>
+    </fields>
+    <fields>
+        <label><!-- EXT OrderShipToLine Number --></label>
+        <name>EXT_OrderShipToLine_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange Code --></label>
+        <name>Exchange_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange Description --></label>
+        <name>Exchange_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Ship Date --></label>
+        <name>Expected_Ship_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used to hold shipping for customer --></help>
+        <label><!-- Future Ship Date --></label>
+        <name>Future_Ship_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- HDL Market --></label>
+        <name>HDL_Market__c</name>
+    </fields>
+    <fields>
+        <label><!-- HDL Number --></label>
+        <name>HDL_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- HDL --></label>
+        <name>HDL__c</name>
+        <relationshipLabel><!-- Order Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The date this Order Line is expected to arrive in the warehouse. --></help>
+        <label><!-- In Warehouse Date --></label>
+        <name>In_Warehouse_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Index Price --></label>
+        <name>Index_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Membership Renewal Sku --></label>
+        <name>Is_Membership_Renewal_Sku__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Item_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item Number --></label>
+        <name>Item_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Line Number --></label>
+        <name>Line_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Line Order Date --></label>
+        <name>Line_Order_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Line Status Description --></label>
+        <name>Line_Status_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Line Status --></label>
+        <name>Line_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Line Total --></label>
+        <name>Line_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Member ID --></label>
+        <name>Member_ID__c</name>
+        <relationshipLabel><!-- Order Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- If checked, order line references one of the RH membership auto-renewal SKUs. --></help>
+        <label><!-- MembershipAutoRenewalSKU --></label>
+        <name>MembershipAutoRenewalSKU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Miracle Range End Date --></label>
+        <name>Miracle_Range_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Miracle Range Start Date --></label>
+        <name>Miracle_Range_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monogram-able --></label>
+        <name>Monogram_able__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number Days Since Previous Notification --></label>
+        <name>Number_Days_Since_Previous_Notification__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Total Days Backordered --></label>
+        <name>Number_of_Total_Days_Backordered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Line Update User --></label>
+        <name>Order_Line_Update_User__c</name>
+        <relationshipLabel><!-- Order Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Order Quantity --></label>
+        <name>Order_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Reserve Date --></label>
+        <name>Order_Reserve_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Original date promised to the Client --></help>
+        <label><!-- Original Available Date --></label>
+        <name>Original_Available_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- PO Number 1 --></label>
+        <name>PONumber1__c</name>
+    </fields>
+    <fields>
+        <label><!-- PO Number 2 --></label>
+        <name>PONumber2__c</name>
+    </fields>
+    <fields>
+        <label><!-- PO Number 3 --></label>
+        <name>PONumber3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Personalized --></label>
+        <name>Personalized__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pick Print Date --></label>
+        <name>Pick_Print_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pick Print Quantity --></label>
+        <name>Pick_Print_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previous Available Date --></label>
+        <name>Previous_Available_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Price Override Code --></label>
+        <name>Price_Override_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Image Thumbnail --></label>
+        <name>Product_Image_Thumbnail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Number --></label>
+        <name>RH_Order_Number__c</name>
+        <relationshipLabel><!-- Order Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Refund Date --></label>
+        <name>Refund_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Refund Method --></label>
+        <name>Refund_Method__c</name>
+    </fields>
+    <fields>
+        <help><!-- please increment or decrements to the value number of Times This Order Line has been reordered by customer --></help>
+        <label><!-- Reorder Count --></label>
+        <name>Reorder_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reserve DC --></label>
+        <name>Reserve_DC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reserved Quantity --></label>
+        <name>Reserved_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Return Quantity --></label>
+        <name>Return_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Return Reason Code --></label>
+        <name>Return_Reason_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Return Reason Description --></label>
+        <name>Return_Reason_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship Date --></label>
+        <name>Ship_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Day Phone --></label>
+        <name>Ship_To_Day_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Email --></label>
+        <name>Ship_To_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Night Phone --></label>
+        <name>Ship_To_Night_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To --></label>
+        <name>Ship_To__c</name>
+        <relationshipLabel><!-- Order Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Ship Via --></label>
+        <name>Ship_Via_Formula__c</name>
+    </fields>
+    <fields>
+        <help><!-- Carrier --></help>
+        <label><!-- Ship Via --></label>
+        <name>Ship_Via__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Address --></label>
+        <name>Ship_to_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship to Customer Number --></label>
+        <name>Ship_to_Customer_Number1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship to Customer Number --></label>
+        <name>Ship_to_Customer_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Name --></label>
+        <name>Ship_to_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship to Number --></label>
+        <name>Ship_to_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipped DC --></label>
+        <name>Shipped_DC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipped Quantity --></label>
+        <name>Shipped_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Size --></label>
+        <name>Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold Out Quantity --></label>
+        <name>Sold_Out_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Code --></label>
+        <name>Source_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- Automatically checked if this Order Line requires stale date processing (expected date is or was in the past). --></help>
+        <label><!-- StaleDate --></label>
+        <name>StaleDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub-Department --></label>
+        <name>Sub_Department__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit Price --></label>
+        <name>Unit_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor Name --></label>
+        <name>Vendor_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor Number --></label>
+        <name>Vendor_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor Style Number --></label>
+        <name>Vendor_Style_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- WRTA Received/Credited Date --></label>
+        <name>WRTA_Received_Credited_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Web Item Description --></label>
+        <name>Web_Item_Description__c</name>
+    </fields>
+    <layouts>
+        <layout>DRS</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Delayed Order Line Item Information --></label>
+            <section>Delayed Order Line Item Information</section>
+        </sections>
+        <sections>
+            <label><!-- Item Information --></label>
+            <section>Item Information</section>
+        </sections>
+        <sections>
+            <label><!-- Order Detail --></label>
+            <section>Order Detail</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Order Line Item Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Delayed Order Line Feed Information --></label>
+            <section>Delayed Order Line Feed Information</section>
+        </sections>
+        <sections>
+            <label><!-- Delayed Order Line Item Information --></label>
+            <section>Delayed Order Line Item Information</section>
+        </sections>
+        <sections>
+            <label><!-- Item Information --></label>
+            <section>Item Information</section>
+        </sections>
+        <sections>
+            <label><!-- Order Codes --></label>
+            <section>Order Codes</section>
+        </sections>
+        <sections>
+            <label><!-- Order Detail --></label>
+            <section>Order Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Order Line Details --></label>
+            <section>Order Line Details</section>
+        </sections>
+        <sections>
+            <label><!-- PO Details --></label>
+            <section>PO Details</section>
+        </sections>
+        <sections>
+            <label><!-- Personalizations --></label>
+            <section>Personalizations</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Order Line Layout - External</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Delayed Order Line Feed Information --></label>
+            <section>Delayed Order Line Feed Information</section>
+        </sections>
+        <sections>
+            <label><!-- Delayed Order Line Item Information --></label>
+            <section>Delayed Order Line Item Information</section>
+        </sections>
+        <sections>
+            <label><!-- Item Information --></label>
+            <section>Item Information</section>
+        </sections>
+        <sections>
+            <label><!-- Order Codes --></label>
+            <section>Order Codes</section>
+        </sections>
+        <sections>
+            <label><!-- Order Detail --></label>
+            <section>Order Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Order Line Details --></label>
+            <section>Order Line Details</section>
+        </sections>
+        <sections>
+            <label><!-- PO Details --></label>
+            <section>PO Details</section>
+        </sections>
+        <sections>
+            <label><!-- Personalizations --></label>
+            <section>Personalizations</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- You cannot change the Order Line Number --></errorMessage>
+        <name>OrderLineNumberCannotBeChanged</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- View_History --></label>
+        <name>View_History</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_History_Partner --></label>
+        <name>View_History_Partner</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_Personalizations --></label>
+        <name>View_Personalizations</name>
+    </webLinks>
+</CustomObjectTranslation>

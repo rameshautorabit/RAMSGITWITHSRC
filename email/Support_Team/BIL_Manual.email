@@ -1,0 +1,12 @@
+Dear {!Case.Contact},
+ 
+Thank you for contacting RH regarding your order # {!Case.Order_Number__c}.
+ 
+As requested, you will find attached a copy of your billing invoice for your order. All transactions are listed in chronological order and should match your credit card statement. 
+ 
+If we can be of any further assistance, please contact our Customer Care Center by emailing webcs@restorationhardware.com or by calling 877-777-7059.
+ 
+Thank you for shopping with Restoration Hardware.
+
+Regards, 
+RH Customer Care

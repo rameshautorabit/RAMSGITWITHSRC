@@ -1,0 +1,75 @@
+<apex:page showHeader="true" sidebar="true" controller="CreateCoachingCaseClass" action="{!createCoachingCase}" id="apexPage">
+
+<script>
+function() { 
+
+//Check for existing timer entries, if there is one that exists for this case then don't start a new timer. 
+var timerExists = sforce.connection.query("SELECT id FROM Timer_Entry__c WHERE (Case__c = '{!parentCase.Id}' OR Action__c = 'Frontline') AND CreatedById = '{!$User.Id}' AND Calculated_Duration__c = null LIMIT 1"); 
+var records = timerExists.getArray("records"); 
+var recordExists = false; 
+for (var i=0; i<records.length; i++) 
+{ 
+var record = records[i]; 
+console.log('Found Timer Id: ' + record.Id); 
+recordExists = true; 
+} 
+console.log('TimerRecord Exists: ' + recordExists); 
+////////START TIMER CODE //////////////////////// 
+// if not in console Pop-up the timer in a new, centred window, else fire console event with URLUnencoded 
+
+//define the timer URL and attributes 
+var url = "/apex/Timer?caseId={!ccaseId}&source={!coachingCase.Status}&autoStart=1"; 
+
+function PopupCenter(url, title, w, h) 
+{ 
+// Fixes dual-screen position 
+var dualScreenLeft = window.screenLeft != undefined ? window.screenLeft : screen.left; 
+var dualScreenTop = window.screenTop != undefined ? window.screenTop : screen.top; 
+
+width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width; 
+height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height; 
+
+var left = ((width / 2) - (w / 2)) + dualScreenLeft; 
+var top = ((height / 2) - (h / 2)) + dualScreenTop; 
+var newWindow = window.open(url, title, 'status=no, toolbar=no, menubar=no, location=no, addressbar=no,width=' + w + ', height=' + h + ', top=' + top + ', left=' + left); 
+
+// Puts focus on the newWindow 
+if (window.focus) 
+{ 
+newWindow.focus(); 
+} 
+} 
+
+
+if (sforce.console.isInConsole()) 
+{ 
+if(!recordExists) 
+{ 
+sforce.console.fireEvent('StartTimer', url, null); 
+} 
+else { 
+/*alert('Timer Already Running');*/ 
+} 
+var redirectUrl = window.location.protocol + '//' + window.location.host + '/{!coachingCase.Id}}'; 
+} 
+else 
+{ 
+if(!recordExists) 
+{ 
+PopupCenter(url,"Timer", 380,280); 
+} 
+else { 
+/*alert('Timer Already Running');*/ 
+} 
+var redirectUrl = window.location.protocol + '//' + window.location.host + '/{!coachingCase.Id}'; 
+} 
+
+////////END TIMER CODE //////////////////////// 
+
+//redirect to the new case 
+window.location.href = redirectUrl; 
+}
+
+</script>
+
+</apex:page>

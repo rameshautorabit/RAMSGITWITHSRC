@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Product2.Cases__r$Id</field>
+    </columns>
+    <columns>
+        <field>Product2.Cases__r.Case_Line_Items__r.Replacement_Part_Details__r$Id</field>
+    </columns>
+    <columns>
+        <field>Product2.Cases__r$ETA_Date__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Report created for T-01017
+- Date range = All cases opened
+- Case ID
+- Replacement Part Detail ID
+- ETA Date</description>
+    <format>Tabular</format>
+    <name>Task T-01017</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Product_w_Case_w_Case_Line_Item_with_RP_Data__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Product2.Cases__r$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

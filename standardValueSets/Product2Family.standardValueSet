@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Accessories</fullName>
+        <default>false</default>
+        <label>Accessories</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Bath</fullName>
+        <default>false</default>
+        <label>Bath</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Furniture</fullName>
+        <default>false</default>
+        <label>Furniture</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Lighting</fullName>
+        <default>false</default>
+        <label>Lighting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Textiles</fullName>
+        <default>false</default>
+        <label>Textiles</label>
+    </standardValue>
+</StandardValueSet>

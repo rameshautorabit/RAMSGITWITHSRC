@@ -1,0 +1,69 @@
+<apex:component access="global">
+	<apex:attribute name="htmlmap" type="map" description="RH Email Footer Substituion Map" />
+	
+	<apex:outputPanel rendered="{!htmlMap['%orderTypeCode%'] == 'Z' || htmlMap['%notificationType%'] == 'Delay Notifications' || htmlMap['%membershipAutoRenewal%'] == 'FALSE'}">				
+		<tr>
+			<td style="background-color:#f1f1f1;color:#000000;text-align:center;font-size:12px;font-family:'minion-pro',Times,'Times New Roman';line-height:18px;width:700px;width:700px;padding:20px 0 20px 0;letter-spacing:1px" colspan="3">
+				
+				<apex:outputPanel rendered="{!htmlMap['%orderTypeCode%'] != 'Z'}">
+					<p style="text-transform:none">
+						For additional order details, please <a href="https://www.restorationhardware.com/my-account/sign-in.jsp" style="color:#000000" target="_blank">click here</a> to go to your account. For questions
+						<br/>
+						or comments, call <a style="color:#000000; text-decoration:none" href="tel:{!htmlMap['%phoneContact1%']}" value="+{!htmlMap['%phoneContact2%']}" target="_blank">{!htmlMap['%phoneContact1%']}</a> or email <a href="mailto:{!htmlMap['%emailContact%']}" style="color:#000000" target="_blank">{!htmlMap['%emailContact%']}</a>.
+						<br/>
+						<br/>
+						Want to be in the know? <a href="https://www.restorationhardware.com/customer-service/email-signup.jsp" style="color:#000000" target="_blank">Join our email list here.</a>
+						<br/>
+						<br/>
+						<a href="https://www.restorationhardware.com/membership.jsp" style="color:#000000;text-decoration:none;text-transform:uppercase" target="_blank">RH Members Program</a> | <a href="{!htmlMap['%privacyPolicyURL%']}" style="color:#000000;text-decoration:none;text-transform:uppercase" target="_blank">Privacy Policy</a> | <a href="{!htmlMap['%faqURL%']}" style="color:#000000;text-decoration:none;text-transform:uppercase" target="_blank">FAQs</a> | <a href="{!htmlMap['%contactUsURL%']}" style="color:#000000;text-decoration:none;text-transform:uppercase" target="_blank">Contact Us</a> | <a href="{!htmlMap['%customerServiceURL%']}" style="color:#000000;text-decoration:none;text-transform:uppercase" target="_blank">Customer Service</a>
+					</p>
+				</apex:outputPanel>
+				
+				<apex:outputPanel rendered="{!htmlMap['%orderTypeCode%']== 'Z'}">
+					<a href="https://www.restorationhardware.com/contract-sales/index.jsp" style="color:#000000;text-decoration:none;text-transform:uppercase" target="_blank">RH Contract</a> | <a href="{!htmlMap['%privacyPolicyURL%']}" style="color:#000000;text-decoration:none;text-transform:uppercase" target="_blank">Privacy Policy</a> | <a href="{!htmlMap['%faqURL%']}" style="color:#000000;text-decoration:none;text-transform:uppercase" target="_blank">FAQs</a>
+				</apex:outputPanel>
+				
+				<p style="text-decoration:none">
+					<br/>
+					&copy; 2016 RH&nbsp;15 Koch Road, Corte Madera, CA 94925
+				</p>
+			</td>
+		</tr>
+	</apex:outputPanel>
+	
+	<apex:outputPanel rendered="{!htmlMap['%orderTypeCode%'] != 'Z' && htmlMap['%notificationType%'] != 'Delay Notifications' && htmlMap['%membershipAutoRenewal%'] == 'TRUE'}">
+		<tr>
+			<td>
+				<div style="width: 675px; padding-top: 15px; border-bottom: 1px solid #ccc; margin: 0 auto"></div>
+			</td>
+		</tr>
+		
+		<tr>
+			<td style="color:#333;text-align:left;font-size:12px;font-family: Verdana, Geneva, sans-serif;line-height:18px;width:784px;width:700px;padding:35px 55px 20px 55px;letter-spacing:.02em">
+				<p style="color:#999; padding-bottom: 10px">
+					For additional order details, <a style="text-decoration:none; color:#999" href="https://www.restorationhardware.com/my-account/sign-in.jsp" target="_blank">visit your account &#9656;</a>
+					<br/>
+					For questions or comments, call <a style="color:#999; text-decoration:none" href="tel:800.910.9836" value="+18009109836" target="_blank">800.910.9836</a> or email <a style="text-decoration: none; color:#999" href="mailto:webcs@restorationhardware.com" target="_blank">webcs@restorationhardware.com. &#9656;</a>
+				</p>
+				
+				<p style="color:#999; padding-bottom: 10px">
+					Want to be in the know? <a style="text-decoration: none; color:#999" href="https://www.restorationhardware.com/customer-service/email-signup.jsp" target="_blank">Sign up for email. &#9656;</a>
+				</p>
+				
+				<p style="color:#999; padding-bottom: 15px">
+					<a style="text-decoration:none; color:#999" href="{!htmlMap['%galleryNearestYouURL%']}" target="_blank">Visit Us at the Gallery Nearest You &#9656;</a>
+				</p>
+				
+				<p>
+					<a style="color:#999;text-decoration:none;text-transform:uppercase; padding: bottom: 15px" href="https://www.restorationhardware.com/membership.jsp" target="_blank">RH Members Program</a> | <a style="color:#999;text-decoration:none;text-transform:uppercase" href="{!htmlMap['%privacyPolicyURL%']}" target="_blank">Privacy Policy</a> | <a style="color:#999;text-decoration:none;text-transform:uppercase"   href="{!htmlMap['%faqURL%']}" target="_blank">FAQs</a> | <a style="color:#999;text-decoration:none;text-transform:uppercase" href="{!htmlMap['%contactUsURL%']}" target="_blank">Contact Us</a> | <a style="color:#999;text-decoration:none;text-transform:uppercase" href="{!htmlMap['%customerServiceURL%']}" target="_blank">Customer Service</a>
+				</p>
+				
+				<p style="color: #999; text-decoration:none; padding-bottom: 20px">
+					<br/>
+					&copy; 2017 RH&nbsp;15 Koch Road, Corte Madera, CA 94925
+				</p>
+			</td>
+		</tr>
+	</apex:outputPanel>
+	
+</apex:component>

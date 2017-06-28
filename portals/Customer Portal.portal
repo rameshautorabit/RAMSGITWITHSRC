@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Portal xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <description>Customer Portal</description>
+    <emailSenderAddress>donotreply@rh.com</emailSenderAddress>
+    <emailSenderName>Restoration Hardware Customer Support</emailSenderName>
+    <enableSelfCloseCase>false</enableSelfCloseCase>
+    <forgotPassTemplate>Opportunity_Templates/Payment_Portal_Password_Reset</forgotPassTemplate>
+    <isSelfRegistrationActivated>false</isSelfRegistrationActivated>
+    <loginHeaderDocument>Images_and_Logos/RH_Portal_Header.html</loginHeaderDocument>
+    <logoutUrl>http://www.rh.com</logoutUrl>
+    <newPassTemplate>Opportunity_Templates/Payment_Portal_Password_Reset</newPassTemplate>
+    <newUserTemplate>Opportunity_Templates/Payment_Portal_Login_Message</newUserTemplate>
+    <selfRegUserTemplate>Contract_Misc_Templaters/CustomerPortalSelfRegUserEmail</selfRegUserTemplate>
+    <showActionConfirmation>false</showActionConfirmation>
+    <type>CustomerSuccess</type>
+</Portal>

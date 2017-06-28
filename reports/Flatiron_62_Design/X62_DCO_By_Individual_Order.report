@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>RH_Order__c.Entered_by_Associate__c</field>
+    </columns>
+    <columns>
+        <field>FK_OPP_CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>RH_Order__c.Order_Number_and_Amount__c</field>
+    </columns>
+    <columns>
+        <field>RH_Order__c.Order_Date__c</field>
+    </columns>
+    <columns>
+        <field>FK_OPP_STAGE_NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>RH_Order__c.Gallery_Number__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>62</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_OPP_STAGE_NAME</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Project On Hold,Project Inquiry,Project Quoted,Project DB Lead,Project Pricing,Quote &gt;3 Comp,Quote 1-2 Comp,Quote 0 Comp,Verbal Confirm,Payment Request,Quote finalized - Payment Link Sent,Engage &amp; Discover,Identify Opportunity,Initial Design Consultation,Design Development,Design Presentation,Purchasing Appointment,Closed/Lost</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>62 DCO By Individual Order</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$RH_Order__c@RH_Order__c.Opportunity__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>RH_Order__c.Order_Date__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>FK_OPP_CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

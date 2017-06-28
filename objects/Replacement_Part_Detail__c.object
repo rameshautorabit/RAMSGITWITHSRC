@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Case_Line_Item__c</fullName>
+        <externalId>false</externalId>
+        <label>Case Line Item</label>
+        <referenceTo>Case_Line_Items__c</referenceTo>
+        <relationshipLabel>Replacement Part Details</relationshipLabel>
+        <relationshipName>Replacement_Part_Details</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Case__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Case</label>
+        <referenceTo>Case</referenceTo>
+        <relationshipLabel>Replacement Part Details</relationshipLabel>
+        <relationshipName>Replacement_Part_Details</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Damaged_Detail__c</fullName>
+        <externalId>false</externalId>
+        <label>Damaged Detail</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Reason__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Customer Damaged</fullName>
+                    <default>false</default>
+                    <label>Customer Damaged</label>
+                </value>
+                <value>
+                    <fullName>RH Damaged</fullName>
+                    <default>false</default>
+                    <label>RH Damaged</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Damaged</controllingFieldValue>
+                <valueName>Customer Damaged</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Damaged</controllingFieldValue>
+                <valueName>RH Damaged</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ETA_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>ETA Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Missing_Detail__c</fullName>
+        <externalId>false</externalId>
+        <label>Missing Detail</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Reason__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>FMSO or Outlet</fullName>
+                    <default>false</default>
+                    <label>FMSO or Outlet</label>
+                </value>
+                <value>
+                    <fullName>Requesting Extra</fullName>
+                    <default>false</default>
+                    <label>Requesting Extra</label>
+                </value>
+                <value>
+                    <fullName>RH Caused</fullName>
+                    <default>false</default>
+                    <label>RH Caused</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Missing Part</controllingFieldValue>
+                <valueName>FMSO or Outlet</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Missing Part</controllingFieldValue>
+                <valueName>Requesting Extra</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Missing Part</controllingFieldValue>
+                <valueName>RH Caused</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Part_Identification__c</fullName>
+        <externalId>false</externalId>
+        <label>Part Identification</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Assembly Instructions</fullName>
+                    <default>false</default>
+                    <label>Assembly Instructions</label>
+                </value>
+                <value>
+                    <fullName>CW Item Number</fullName>
+                    <default>false</default>
+                    <label>CW Item Number</label>
+                </value>
+                <value>
+                    <fullName>Name/ Description</fullName>
+                    <default>false</default>
+                    <label>Name/ Description</label>
+                </value>
+                <value>
+                    <fullName>Photo</fullName>
+                    <default>false</default>
+                    <label>Photo</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Part_SKU_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Part SKU Notes</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Part_SKU_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Part SKU Number</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Part_Type_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Part Type Description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Part_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Part Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Accent Pillow Casing</fullName>
+                    <default>false</default>
+                    <label>Accent Pillow Casing</label>
+                </value>
+                <value>
+                    <fullName>Accent Pillow Core</fullName>
+                    <default>false</default>
+                    <label>Accent Pillow Core</label>
+                </value>
+                <value>
+                    <fullName>Back Casing</fullName>
+                    <default>false</default>
+                    <label>Back Casing</label>
+                </value>
+                <value>
+                    <fullName>Back Core</fullName>
+                    <default>false</default>
+                    <label>Back Core</label>
+                </value>
+                <value>
+                    <fullName>Bulbs</fullName>
+                    <default>false</default>
+                    <label>Bulbs</label>
+                </value>
+                <value>
+                    <fullName>Crystals</fullName>
+                    <default>false</default>
+                    <label>Crystals</label>
+                </value>
+                <value>
+                    <fullName>Feet/Foot Glide</fullName>
+                    <default>false</default>
+                    <label>Feet/Foot Glide</label>
+                </value>
+                <value>
+                    <fullName>Hardware Pack/Assembly Hardware</fullName>
+                    <default>false</default>
+                    <label>Hardware Pack/Assembly Hardware</label>
+                </value>
+                <value>
+                    <fullName>Mounting Hardware</fullName>
+                    <default>false</default>
+                    <label>Mounting Hardware</label>
+                </value>
+                <value>
+                    <fullName>Nail Head/ Button</fullName>
+                    <default>false</default>
+                    <label>Nail Head/ Button</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Seat Casing</fullName>
+                    <default>false</default>
+                    <label>Seat Casing</label>
+                </value>
+                <value>
+                    <fullName>Seat Core</fullName>
+                    <default>false</default>
+                    <label>Seat Core</label>
+                </value>
+                <value>
+                    <fullName>Shelf/ Bracket</fullName>
+                    <default>false</default>
+                    <label>Shelf/ Bracket</label>
+                </value>
+                <value>
+                    <fullName>Slipcover</fullName>
+                    <default>false</default>
+                    <label>Slipcover</label>
+                </value>
+                <value>
+                    <fullName>Tip Kit</fullName>
+                    <default>false</default>
+                    <label>Tip Kit</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Payment_Source__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Source</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Customer Paying</fullName>
+                    <default>false</default>
+                    <label>Customer Paying</label>
+                </value>
+                <value>
+                    <fullName>RH Paying</fullName>
+                    <default>false</default>
+                    <label>RH Paying</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Quantity_Needed__c</fullName>
+        <externalId>false</externalId>
+        <label>Quantity Needed</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Reason</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Damaged</fullName>
+                    <default>false</default>
+                    <label>Damaged</label>
+                </value>
+                <value>
+                    <fullName>Defective</fullName>
+                    <default>false</default>
+                    <label>Defective</label>
+                </value>
+                <value>
+                    <fullName>Missing Part</fullName>
+                    <default>false</default>
+                    <label>Missing Part</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Tracking_to_Client__c</fullName>
+        <externalId>false</externalId>
+        <label>Tracking to Client</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tracking_to_Corporate__c</fullName>
+        <externalId>false</externalId>
+        <label>Tracking to Corporate</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tracking_to_DC__c</fullName>
+        <externalId>false</externalId>
+        <label>Tracking to DC</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Replacement Part Detail</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>RPD-{0}</displayFormat>
+        <label>Replacement Part Detail Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Replacement Part Details</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

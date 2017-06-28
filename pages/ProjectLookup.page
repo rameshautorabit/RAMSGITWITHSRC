@@ -1,0 +1,114 @@
+<apex:page standardController="Opportunity" extensions="ProjectLookupController"  
+    title="Link or Create Project" 
+    showHeader="false" 
+    sideBar="false" 
+    tabStyle="Account"
+    id="searchpg">
+
+    <apex:outputField value="{!Opportunity.Name}" id="OpptyName" rendered="false"/>
+    <apex:outputField value="{!Opportunity.AccountId}" id="OpptyAccountId" rendered="false"/>
+    <apex:outputField value="{!Opportunity.Account_Name__c}" id="OpptyAccountName" rendered="false"/>
+    <apex:outputField value="{!Opportunity.Initial_Inquiry_Date__c}" id="OpptyInitialInquiryDate" rendered="false"/>
+    <apex:outputField value="{!Opportunity.CloseDate}" id="OpptyCloseDate" rendered="false"/>
+    <apex:outputField value="{!Opportunity.Amount}" id="OpptyAmount" rendered="false"/>
+    <apex:outputField value="{!Opportunity.Project_Budget__c}" id="OpptyBudget" rendered="false"/>
+    <apex:outputField value="{!Opportunity.Id}" id="OpptyId" rendered="false"/>
+    <script>
+        function associateCloseRefresh(associatedProjectID, originatingOpptyID){
+            Visualforce.remoting.Manager.invokeAction(
+                '{!$RemoteAction.ProjectLookupController.associateProject}',
+                associatedProjectID,
+                originatingOpptyID,
+                function(result, event){
+                    if (event.status) {                     
+                        closePopupAndRefreshParentWindow(); 
+                    } else if (event.type === 'exception') {
+                        document.getElementById("responseErrors").innerHTML = event.message;
+                    } else {
+						document.getElementById("responseErrors").innerHTML = event.message;
+                    }
+                }, 
+                {escape: true}
+            );
+        }
+            
+        function closePopupAndRefreshParentWindow(){
+            window.opener.location.href="/{!$CurrentPage.parameters.id}";
+            window.top.close(); 
+        }
+        
+        function closePopup(){
+            window.top.close();
+        }              
+    </script>
+    <apex:form >
+        <apex:outputPanel id="page" layout="block" style="margin:5px;padding:10px;padding-top:2px;">
+            <apex:tabPanel switchType="client" selectedTab="name1" id="tabbedPanel" >
+            <!-- LINK PROJECT TAB -->
+            <apex:tab label="Link Project" name="tab1" id="tabOne">
+            <apex:actionRegion >  
+            <apex:outputPanel id="top" layout="block" style="margin:5px;padding:10px;padding-top:2px;">
+            <apex:outputLabel value="Search" style="font-weight:Bold;padding-right:10px;" for="txtSearch"/>
+            <apex:inputText id="txtSearch" value="{!searchString}" />
+            <span style="padding-left:5px"><apex:commandButton id="btnGo" value="Go" action="{!Search}" rerender="searchResults"></apex:commandButton></span>
+        </apex:outputPanel>
+          <apex:outputPanel id="pnlSearchResults" style="margin:10px;height:150px;overflow-Y:auto;" layout="block">
+            <apex:pageBlock id="searchResults"> 
+              <apex:pageBlockTable value="{!results}" var="p" id="tblResults">
+                <apex:column >
+                  <apex:facet name="header">
+                    <apex:outputPanel >Project  (click to link)</apex:outputPanel>
+                  </apex:facet>  
+                <apex:commandLink value="{!p.name}" onclick="javascript:associateCloseRefresh('{!p.Id}', '{!$CurrentPage.parameters.Id}')" rerender="none" id="associatedProject"/>
+                </apex:column>                
+              </apex:pageBlockTable>
+            </apex:pageBlock>
+          </apex:outputPanel> 
+          <apex:commandButton onclick="javascript:closePopup()" value="Close"/>
+        </apex:actionRegion> 
+      </apex:tab>
+       <!-- NEW PROJECT TAB -->
+      <apex:tab label="Create Project" name="tab2" id="tabTwo">
+        <apex:pageBlock id="newProject" title="New Project" rendered="{!IF($Profile.Name !='Contract' && $Profile.Name !='Contract Manager' && $Profile.Name !='Contract Business Administrator', true, false)}"  >
+          <apex:pageBlockButtons >
+            <apex:commandButton action="{!saveProject}" value="Save & Close" oncomplete="javascript:closePopupAndRefreshParentWindow()"/>
+            <apex:commandButton onclick="javascript:closePopup()" value="Cancel"/>
+          </apex:pageBlockButtons>
+          <apex:pageMessages />
+          <apex:pageBlockSection columns="2">
+            <apex:inputField value="{!Project.Name}"/>
+            <apex:outputField value="{!Project.Initial_Inquiry_Date__c}"/>
+            <apex:outputField label="Account" value="{!Project.Temp_Account_Name__c}"/>
+            <apex:outputField label="Close Date" value="{!Project.Close_Date__c}"/>
+            <apex:outputField label="Total Project Budget" value="{!Project.Total_Project_Budget__c}"/>
+            <!--  
+            <apex:inputField label = "Start Date" value="{!Project.Start_Date__c}"/>
+            -->
+            <apex:outputField label="Total Project Amount" value="{!Project.Total_Project_Amount__c}"/>
+            <!--
+            <apex:inputField label = "End Date" value="{!Project.End_Date__c}"/>
+            -->
+          </apex:pageBlockSection> 
+        </apex:pageBlock>
+        <apex:pageBlock id="newContractProject" title="New Project" rendered="{!IF($Profile.Name =='Contract'||$Profile.Name =='Contract Manager'||$Profile.Name =='Contract Business Administrator', true , false)}" >
+          <apex:pageBlockButtons >
+            <apex:commandButton action="{!saveProject}" value="Save & Close" oncomplete="javascript:closePopupAndRefreshParentWindow()"/>
+            <apex:commandButton onclick="javascript:closePopup()" value="Cancel"/>
+          </apex:pageBlockButtons>
+          <apex:pageMessages />
+          <apex:pageBlockSection columns="2">
+            <apex:inputField value="{!Project.Name}"/>
+            <apex:outputField value="{!Project.Initial_Inquiry_Date__c}"/>
+            <apex:outputField label="Account" value="{!Project.Temp_Account_Name__c}"/>
+            <apex:outputField label="Close Date" value="{!Project.Close_Date__c}"/>
+            <apex:outputField label="Total Project Budget" value="{!Project.Total_Project_Budget__c}"/>
+            <apex:inputField label="Start Date" value="{!Project.Start_Date__c}"/>
+            <apex:outputField label="Total Project Amount" value="{!Project.Total_Project_Amount__c}"/>
+            <apex:inputField label="End Date" value="{!Project.End_Date__c}"/>
+          </apex:pageBlockSection> 
+        </apex:pageBlock>
+      </apex:tab>
+    </apex:tabPanel>
+  </apex:outputPanel>
+  </apex:form>
+</apex:page>

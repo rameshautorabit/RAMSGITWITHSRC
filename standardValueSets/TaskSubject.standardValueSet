@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>B/O Notification (Tracy)</fullName>
+        <default>false</default>
+        <label>B/O Notification (Tracy)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Call</fullName>
+        <default>false</default>
+        <label>Call</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Request Verifying Documentation</fullName>
+        <default>false</default>
+        <label>Request Verifying Documentation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Request Sample</fullName>
+        <default>false</default>
+        <label>Request Sample</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Send Application</fullName>
+        <default>false</default>
+        <label>Send Application</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Quote Follow Up</fullName>
+        <default>false</default>
+        <label>Quote Follow Up</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Process Order</fullName>
+        <default>false</default>
+        <label>Process Order</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Send Catalog</fullName>
+        <default>false</default>
+        <label>Send Catalog</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Send Letter</fullName>
+        <default>false</default>
+        <label>Send Letter</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Send Quote</fullName>
+        <default>false</default>
+        <label>Send Quote</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Set Meeting</fullName>
+        <default>false</default>
+        <label>Set Meeting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>WISMO</fullName>
+        <default>false</default>
+        <label>WISMO</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>RH - SF Tech Support</fullName>
+        <default>false</default>
+        <label>RH - SF Tech Support</label>
+    </standardValue>
+    <standardValue>
+        <fullName>RH - SF Admin Request</fullName>
+        <default>false</default>
+        <label>RH - SF Admin Request</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Client Follow-up</fullName>
+        <default>false</default>
+        <label>Client Follow-up</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Client Call Back</fullName>
+        <default>false</default>
+        <label>Client Call Back</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Client Requires Response by EOD</fullName>
+        <default>false</default>
+        <label>Client Requires Response by EOD</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Escalated Issue</fullName>
+        <default>false</default>
+        <label>Escalated Issue</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Waiting for Another Department</fullName>
+        <default>false</default>
+        <label>Waiting for Another Department</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Waiting for Authorization</fullName>
+        <default>false</default>
+        <label>Waiting for Authorization</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Waiting for Credit</fullName>
+        <default>false</default>
+        <label>Waiting for Credit</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Waiting for Delivery</fullName>
+        <default>false</default>
+        <label>Waiting for Delivery</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Waiting for Documentation (fax for Tax Exemption, contract, etc.)</fullName>
+        <default>false</default>
+        <label>Waiting for Documentation (fax for Tax Exemption, contract, etc.)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Waiting for Information</fullName>
+        <default>false</default>
+        <label>Waiting for Information</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Waiting for Item to Return</fullName>
+        <default>false</default>
+        <label>Waiting for Item to Return</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Waiting for Item to Ship</fullName>
+        <default>false</default>
+        <label>Waiting for Item to Ship</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Waiting for Vendor</fullName>
+        <default>false</default>
+        <label>Waiting for Vendor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>BO Date Validation</fullName>
+        <default>false</default>
+        <label>BO Date Validation</label>
+    </standardValue>
+</StandardValueSet>

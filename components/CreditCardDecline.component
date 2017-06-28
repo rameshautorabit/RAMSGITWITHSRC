@@ -1,0 +1,217 @@
+<apex:component controller="CreditCardDecline" access="global">
+	<apex:attribute name="cId" assignTo="{!caseId}" type="Id" description="Case Id" />
+	
+	<html>
+		<head>
+			<title></title>
+		</head>
+		
+		<body>
+			
+			<apex:outputPanel rendered="{!subMap['%orderTypeCode%'] != 'Z' && subMap['%membershipAutoRenewal%'] == 'TRUE'}" >
+				<table style="width:784px" align="center" cellpadding="0" cellspacing="0">
+					<tbody>
+						<tr>
+							<td>
+								<div style="display:none; font-size:1px; color:#333333; line-height:1px; max-height:0px; max-width:0px; opacity:0; overflow:hidden">
+									{!subMap['%previewText%']}
+								</div>
+								
+								<apex:outputPanel rendered="{!subMap['%notificationType%'] == 'Credit Card Declines - 1st Notice'}" >
+									<img src="https://media.restorationhardware.com/is/image/rhis/membership_email_renewal_v7_0005_V31?wid=784&amp;fmt=jpeg&amp;amp;qlt=85,0&amp;amp;op_sharpen=0&resMode=sharp&amp;amp;op_usm=0.3,1.0,5,0&amp;iccEmbed=1" usemap="#image-map" alt="You've elected to automatically extend your membership, but unfortunately we've been unable to authorize the charge to the credit card you have on file. Renewing your membership is simple. Just call our Membership Concierge at 888.889.4739 today to provide a valid form of payment."/>
+									
+									<map name="image-map">
+										<area target="_blank" alt="Membership Concierge Phone Number" title="Membership Concierge Phone Number" href="tel:888.889.4739" coords="390,338,525,361" shape="rect"/>
+										<area target="_blank" alt="Membership Concierge Phone Number" title="Membership Concierge Phone Number" href="tel:888.889.4739" coords="276,777,412,804" shape="rect"/>
+										<area target="_blank" alt="Membership Concierge International Phone Number" title="Membership Concierge International Phone Number" href="tel:209.834.1044" coords="396,823,529,854" shape="rect"/>
+										<area target="_blank" alt="RH" title="RH" href="https://www.restorationhardware.com/" coords="52,894,161,895,160,974,345,976,345,1004,50,1003" shape="poly"/>
+										<area target="_blank" alt="Update Your Payment Information" title="Update Your Payment Information" href="{!subMap['%membershipRenewalURL%']}" coords="56,465,448,492" shape="rect"/>
+									</map>
+								</apex:outputPanel>
+								
+								<apex:outputPanel rendered="{!subMap['%notificationType%'] == 'Credit Card Declines - 2nd Notice'}" >
+									<img src="https://media.restorationhardware.com/is/image/rhis/membership_email_renewal_v7_0004_v32?wid=784&amp;fmt=jpeg&amp;amp;qlt=85,0&amp;amp;op_sharpen=0&resMode=sharp&amp;op_usm=0.3,1.0,5,0&amp;amp;iccEmbed=1"  usemap="#image-map" alt="You've elected to automatically extend your membership, but unfortunately we've been unable to authorize the charge to the credit card you have on file. Renewing your membership is simple. Just call our Membership Concierge at 888.889.4739 today to provide a valid form of payment."/>
+									
+									<map name="image-map">
+										<area target="_blank" alt="Membership Concierge Phone Number" title="Membership Concierge Phone Number" href="tel:888.889.4739" coords="293,370,429,394" shape="rect"/>
+										<area target="_blank" alt="Update Your Payment Information" title="Update Your Payment Information" href="{!subMap['%membershipRenewalURL%']}" coords="54,499,448,525" shape="rect"/>
+										<area target="_blank" alt="Membership Concierge Phone Number" title="Membership Concierge Phone Number" href="tel:888.889.4739" coords="277,807,413,834" shape="rect"/>
+										<area target="_blank" alt="Membership Concierge International Phone Number" title="Membership Concierge International Phone Number" href="tel:209.834.1044" coords="396,853,529,880" shape="rect"/>
+										<area target="_blank" alt="RH" title="RH" href="https://www.restorationhardware.com" coords="52,930,160,931,161,1011,343,1012,344,1039,51,1040" shape="poly"/>
+									</map>
+								</apex:outputPanel>
+								
+								<apex:outputPanel rendered="{!subMap['%notificationType%'] == 'Credit Card Declines - Final Notice'}" >
+									<img src="https://media.restorationhardware.com/is/image/rhis/membership_email_renewal_v7_0003_v33?wid=784&amp;fmt=jpeg&qlt=85,0&amp;amp;op_sharpen=0&amp;resMode=sharp&amp;amp;op_usm=0.3,1.0,5,0&amp;amp;iccEmbed=1" usemap="#image-map" alt="You've elected to automatically extend your membership, but we've been unable to authorize the charge to the credit card you have on file. Renewing your membership is simple. Just call our Membership Concierge at 888.889.4739 today to provide a valid form of payment. If we don't hear from you within the next business day, we'll unfortunately have to cancel your benefits."/>
+									
+									<map name="image-map">
+										<area target="_blank" alt="Membership Concierge Phone Number" title="Membership Concierge Phone Number" href="tel:888.889.4739" coords="294,393,429,417" shape="rect"/>
+										<area target="_blank" alt="Update Your Payment Information" title="Update Your Payment Information" href="{!subMap['%membershipRenewalURL%']}" coords="52,522,448,549" shape="rect"/>
+										<area target="_blank" alt="Membership Concierge Phone Number" title="Membership Concierge Phone Number" href="tel:888.889.4739" coords="278,832,415,862" shape="rect"/>
+										<area target="_blank" alt="Membership Concierge International Phone Number" title="Membership Concierge International Phone Number" href="tel:209.834.1044" coords="398,879,531,908" shape="rect"/>
+										<area target="_blank" alt="RH" title="RH" href="https://www.restorationhardware.com" coords="52,953,160,953,160,1032,343,1033,344,1060,51,1060" shape="poly"/>
+									</map>
+								</apex:outputPanel>
+							</td>
+						</tr>
+						
+						<tr>
+							<td style="width: 784px; color: #999; padding:35px 55px 20px 55px">
+								<!-- Footnotes - T&Cs. -->
+								
+								<p style="color: #999; font-size: 11px; font-family: 'proxima-nova ', 'open-sans ', Arial, Helvetica, sans-serif; text-align:left;">
+									Click <a style="color: #999; text-decoration: underline;" href="{!subMap['%membershipRenewalURL%']}" target="_blank">here</a> to renew your membership.
+								</p>
+								
+								<p style="color: #999; font-size: 11px; font-family: 'proxima-nova ', 'open-sans ', Arial, Helvetica, sans-serif; text-align:left;">
+									&#42;Limited exclusions apply. See <a style="color: #999; text-decoration: underline;" href="https://www.restorationhardware.com/content/page.jsp?id=rhmembers-terms" target="_blank">RH Members Program Terms &amp; Conditions</a> for more details.
+								</p>
+								
+								<!-- This line is only for Canadian customers -->
+								
+								<p style="color: #999; font-size: 11px; font-family: 'proxima-nova ', 'open-sans ', Arial, Helvetica, sans-serif; text-align:left;">
+									&#42;&#42;Tax amounts are estimates only and may vary based on your billing address.
+								</p>
+								
+								<p style="color: #999; font-size: 11px; font-family: 'proxima-nova ', 'open-sans ', Arial, Helvetica, sans-serif; text-align:left;">
+									&dagger; Promotional financing available with RH credit card accounts offered by Comenity Bank, which determines qualifications for credit and promotion eligibility. Minimum purchase and minimum monthly payments are required. Subject to credit approval and availability. Account must be in good standing at time of transaction.
+								</p>
+							</td>
+						</tr>
+						
+						<c:RHEmailFooter htmlMap="{!footerMap}"/>
+						
+					</tbody>
+				</table>
+			</apex:outputPanel>
+			
+			<apex:outputPanel rendered="{!subMap['%orderTypeCode%'] == 'Z' || subMap['%membershipAutoRenewal%'] == 'FALSE'}" >
+			<table style="width:700px;font-size:12px;font-family:'minion-pro',sans-serif;line-height:18px" align="center" cellpadding="0" cellspacing="0">
+				<tbody>
+					<tr>
+						<td colspan="3" style="text-align:center;padding:15px 0 20px 0">
+							<a style="color:#000" href="{!subMap['%logoLink%']}" target="_blank"><img src="{!subMap['%logoURL%']}" width="{!subMap['%logoWidth%']}" height="{!subMap['%logoHeight%']}"/></a>
+						</td>
+					</tr>
+					
+					<tr>
+						<td colspan="3">
+							<div style="margin:10px 0;font-family:'minion-pro',Times,'Times New Roman';font-size:18px;text-align:center;font-weight:normal;text-transform:uppercase;padding:10px">
+								<apex:outputText value=" {!subMap['%previewText%']}" escape="true"/>
+							</div>
+						</td>
+					</tr>
+					
+					<tr>
+						<td colspan="3">
+							
+							<div style="margin:15px 10px 10px 10px">
+								
+								<p>Dear<apex:outputText value=" {!subMap['%customerName%']}" escape="true"/>,</p>
+								
+								<apex:outputPanel rendered="{!subMap['%orderTypeCode%'] != 'Z'}" >
+									
+									<apex:outputPanel rendered="{!subMap['%notificationType%'] == 'Credit Card Declines - 1st Notice' || subMap['%notificationType%'] == 'Credit Card Declines - 2nd Notice'}" >
+										<p>Thank you for shopping with RH and for your recent <span style="font-weight: bold">Order #<apex:outputText value=" {!subMap['%orderNumber%']}" escape="true"/></span>. Unfortunately, we have been unable to obtain authorization for the charges to your credit card, and your order is currently on hold.</p>
+										<p>Please contact our Customer Service Center at <a style="color:#000000; text-decoration:none" href="tel:%28855%29%20406-6198" value="+18554066198" target="_blank">855.406.6198</a> (or internationally at <a style="color:#000000; text-decoration:none" href="tel:%28209%29%20834-1044" value="+12098341044" target="_blank">209.834.1044</a>), and one of our associates will assist you with resolving this urgent issue.</p>
+										<p>For your security, please do not send any credit card information via email.</p>
+										<p>We look forward to hearing from you soon so we may proceed with processing your order. Thank you for shopping at RH.</p>
+									</apex:outputPanel>
+									
+									<apex:outputPanel rendered="{!subMap['%notificationType%'] == 'Credit Card Declines - Final Notice'}" >
+										<p>Thank you for shopping with RH. We are contacting you in regards to your <span style="font-weight: bold">Order #<apex:outputText value=" {!subMap['%orderNumber%']}" escape="true"/></span>, as we have been unable to obtain authorization for the charges to your credit card.</p>
+										<p>To prevent your order from being cancelled, we urgently request that you contact us by phone within the next two calendar days at <a style="color:#000000; text-decoration:none" href="tel:%28855%29%20406-6198" value="+18554066198" target="_blank">855.406.6198</a> (or internationally at <a style="color:#000000; text-decoration:none" href="tel:%28209%29%20834-1044" value="+12098341044" target="_blank">209.834.1044</a>) so that one of our associates may assist you.</p>
+										<p>For your security, please do not send any credit card information via email.</p>
+										<p>We look forward to hearing from you soon so that we may proceed with processing your order. Thank you for shopping at RH.</p>
+									</apex:outputPanel>
+									
+								</apex:outputPanel>
+								
+								<apex:outputPanel rendered="{!subMap['%orderTypeCode%'] == 'Z'}" >
+									
+									<apex:outputPanel rendered="{!subMap['%notificationType%'] == 'Credit Card Declines - 1st Notice' || subMap['%notificationType%'] == 'Credit Card Declines - 2nd Notice'}" >
+										<p>Thank you for your recent purchase with RH Contract and for your recent <span style="font-weight: bold">Order #<apex:outputText value=" {!subMap['%orderNumber%']}" escape="true"/></span>. Unfortunately, we have been unable to obtain authorization for the charges to your credit card, and your order is currently on hold.</p>
+										<p>Please contact James Warner, Sr. Finance Analyst at <a style="color:#000000; text-decoration:none" href="tel:%28415%29%20965-7660" value="+14159657660" target="_blank">415.965.7660</a> or email him at <a href="mailto:jwarner2@rh.com" style="color: #000000;">jwarner2@rh.com.</a> to assist you with resolving this urgent issue.</p>
+										<p>For your security, please do not send any credit card information via email.</p>
+										
+										<!-- 
+										<p style="text-align:center;">
+											<apex:outputPanel rendered="{!subMap['%customerName%'] != ' '}">
+												<apex:outputText value="{!subMap['%customerName%']}" escape="true"/>
+												<br/>
+											</apex:outputPanel>
+											<apex:outputPanel rendered="{!subMap['%addr1%'] != ' '}">
+												<apex:outputText value="{!subMap['%addr1%']}" escape="true"/>
+												<br/>
+											</apex:outputPanel>
+											<apex:outputPanel rendered="{!subMap['%addr2%'] != ' '}">
+												<apex:outputText value="{!subMap['%addr2%']}" escape="true"/>
+												<br/>
+											</apex:outputPanel>
+											<apex:outputPanel rendered="{!subMap['%addr3%'] != ' '}">
+												<apex:outputText value="{!subMap['%addr3%']}" escape="true"/>
+												<br/>
+											</apex:outputPanel>
+											<apex:outputPanel rendered="{!subMap['%cityStatePostalCode%'] != ' '}">
+												<apex:outputText value="{!subMap['%cityStatePostalCode%']}" escape="true"/>
+												<br/>
+											</apex:outputPanel>
+											<apex:outputText value="{!subMap['%countryCode%']}" escape="true" rendered="{!subMap['%countryCode%'] != ' '}"/>
+										</p>
+										-->
+										
+										<p>We look forward to hearing from you soon so we may proceed with processing your order.</p>
+									</apex:outputPanel>
+									
+									<apex:outputPanel rendered="{!subMap['%notificationType%'] == 'Credit Card Declines - Final Notice'}" >
+										<p>Thank you for your recent purchase. We are contacting you in regards to your <span style="font-weight: bold">Order #<apex:outputText value=" {!subMap['%orderNumber%']}" escape="true"/></span>, as we have been unable to obtain authorization for the charges to your credit card.</p>
+										<p>To prevent your order from being cancelled, we urgently request that you contact James Warner, Sr. Finance Analyst within the next two business days at <a style="color:#000000; text-decoration:none" href="tel:%28415%29%20965-7660" value="+14159657660" target="_blank">415.965.7660</a> or email him at <a href="mailto:jwarner2@rh.com" style="color: #000000;">jwarner2@rh.com.</a> so he may assist you.</p>
+										<p>For your security, please do not send any credit card information via email.</p>
+										
+										<!-- 
+										<p style="text-align:center;">
+											<apex:outputPanel rendered="{!subMap['%customerName%'] != ' '}">
+												<apex:outputText value="{!subMap['%customerName%']}" escape="true"/>
+												<br/>
+											</apex:outputPanel>
+											<apex:outputPanel rendered="{!subMap['%addr1%'] != ' '}">
+												<apex:outputText value="{!subMap['%addr1%']}" escape="true"/>
+												<br/>
+											</apex:outputPanel>
+											<apex:outputPanel rendered="{!subMap['%addr2%'] != ' '}">
+												<apex:outputText value="{!subMap['%addr2%']}" escape="true"/>
+												<br/>
+											</apex:outputPanel>
+											<apex:outputPanel rendered="{!subMap['%addr3%'] != ' '}">
+												<apex:outputText value="{!subMap['%addr3%']}" escape="true"/>
+												<br/>
+											</apex:outputPanel>
+											<apex:outputPanel rendered="{!subMap['%cityStatePostalCode%'] != ' '}">
+												<apex:outputText value="{!subMap['%cityStatePostalCode%']}" escape="true"/>
+												<br/>
+											</apex:outputPanel>
+											<apex:outputText value="{!subMap['%countryCode%']}" escape="true" rendered="{!subMap['%countryCode%'] != ' '}"/>
+										</p>
+										-->
+										
+										<p>We look forward to hearing from you soon so that we may proceed with processing your order.</p>
+									</apex:outputPanel>
+									
+								</apex:outputPanel>
+								
+							</div>
+						</td>
+					</tr>
+					
+					<c:RHEmailFooter htmlMap="{!footerMap}"/>
+					
+				</tbody>
+			</table>
+			</apex:outputPanel>
+			
+			<span style="color: white;">{!subMap['%emailThreadId%']}</span>
+			
+		</body>
+	</html>
+	
+</apex:component>

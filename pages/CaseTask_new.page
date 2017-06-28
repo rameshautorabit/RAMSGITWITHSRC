@@ -1,0 +1,6 @@
+<apex:page standardController="Task" extensions="TaskCtlExt" tabStyle="Task" action="{!newTask}">
+	<apex:form >
+		<apex:sectionHeader title="Task" subtitle="New Task"/>
+		<apex:pageMessages />
+	</apex:form>
+</apex:page>

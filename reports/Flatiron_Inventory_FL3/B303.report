@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Product2.Product_Image_Thumbnail__c</field>
+    </columns>
+    <columns>
+        <field>Product2.CW_Item_Description__c</field>
+    </columns>
+    <columns>
+        <field>Product2.Color__c</field>
+    </columns>
+    <columns>
+        <field>Product2.Member_Price__c</field>
+    </columns>
+    <columns>
+        <field>Product2.STSSku__c</field>
+    </columns>
+    <columns>
+        <field>NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Belgain Classic Roll</description>
+    <filter>
+        <criteriaItems>
+            <column>Product2.STSSku__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>57130005,57390004,57690010,62710074,62710072,57360918,61100106,61730242,61100057,62070648,62780040,61390198,68270209,68360153,68270074,68600064,68370003,68910068,68450046,68060851,68060847,40200792,40200790,40210115,41450057,41450030,41450031,41450032,41450053,41450054,41450055,15310658,40410372,40410371,39150026,39150023,39150025,39150027,39150022,39150016,39150013,40400934,40400935,40400933,40400931,40500831,35050237,40410422,31600010,31600008,31600005,31600006,31600003,18100435,18100437,18100439,18400148,18010378,18500214,18500011,18300150,18300210,16050863,16050877,16100009,16100007</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>B303</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ProductList</reportType>
+    <showDetails>true</showDetails>
+    <sortColumn>Product2.CW_Item_Description__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

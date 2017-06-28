@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This version has new fields to accurately calculate tax on separatate shipping (shelf stock) and handling (furniture), and checkbox for consolidation of furniture shipments.  It has been split with tabs for US, Canada, and International (single page only)</description>
+    <internalUseOnly>false</internalUseOnly>
+    <name>Contrac IC Quote Template_Freight_Tax Calc_Checkbox_by Country_121311.xls</name>
+    <public>true</public>
+</Document>

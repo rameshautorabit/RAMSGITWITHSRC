@@ -1,0 +1,131 @@
+<apex:page controller="Quote_To_CW" sidebar="false" id="page">
+
+<apex:includescript value="//code.jquery.com/jquery-1.11.1.min.js" / >
+
+
+ 
+<apex:form id="form">
+  
+  <apex:pageBlock id="pageblock">
+  
+    <style>
+            body .bPageBlock .pbBody .red .pbSubheader{
+                background-color:#c00000;
+            }
+            body .bPageBlock .pbBody .grey .pbSubheader{
+                background-color:#c0c0c0;
+            }
+            body .bPageBlock .pbBody .grey .pbSubheader h3{
+                color:#000;
+            }
+            
+            {
+         text-align:center;
+}
+            
+           </style>
+           
+    <style type="text/css">
+
+.wrapper {
+         text-align:center;
+}
+</style>
+
+	<script>
+      
+		function validateFunction(paramval,paramval1,paramval2,paramval3) {
+			
+			if ((paramval == 'Sent' || paramval == 'In Progress') && (paramval3 == 'false')) {
+      			alert('You cannot send this Quote to CW as this Quote has already been sent to CW.');
+    			return false;
+			}
+			
+			if (paramval1 == 'false') {
+				alert("Your Quote has not been synced. Please sync your quote before continuing.");
+				return false;
+			}
+			
+			if (paramval2 == 'true') {
+				alert("Please fill in the bill to name or bill to company fields, and the bill to address fields before continuing.");
+				return false;
+			}
+                  
+      }
+      
+     function WsResponse(response){
+     
+     
+     alert(response);
+     
+     
+     }
+          
+</script>
+
+<apex:actionStatus id="SaveButtonStatus">
+
+<apex:facet name="stop">
+       
+  <apex:outputPanel styleClass="red" id="outputpanel">
+  
+  
+  <apex:pageBlockSection title="Click on the Quote>CW button below to send the Quote to CW" collapsible="true" id="pbSection">
+  
+ 
+ <apex:pageMessages id="showmsg"/>
+             <div align="center" draggable="false">                    
+<apex:commandbutton onclick="validateFunction('{!Qlist[0].Conversion_Status__c}', '{!Qlist[0].IsSyncing}', '{!Qlist[0].Bill_To_Blank__c}', '{!isAdminUser}')"
+action="{!invokeMule}"  
+styleclass="commandbutton" value="Quote>CW" status="SaveButtonStatus"
+style="margin-left:500px;float:center;"
+id="saveButtonId" 
+rerender="showmsg"/> 
+ 
+<apex:commandButton action="{!Cancel}" style="margin-right:900px;float:center;"
+      value="Cancel" disabled="false" id="theCancelButton"/>
+      
+      </div>
+
+       </apex:pageBlockSection>
+           
+           
+          
+   </apex:outputPanel>
+  
+  </apex:facet>
+ 
+ 
+ 
+ 
+  <apex:facet name="start">
+  
+       <apex:outputPanel styleClass="red" 
+rendered="{!Qlist[0].Conversion_Status__C!='Sent'}">
+       <div align="center" draggable="false">
+       <apex:pageBlockSection title="Your Quote is being sent to CW. You will be redirected back to the Quote screen">
+       
+      <apex:pageMessages id="showmsg"/>
+        <apex:commandButton styleclass="commandbutton" 
+        onclick="validateFunction('{!Qlist[0].Conversion_Status__c}', '{!Qlist[0].IsSyncing}', '{!Qlist[0].Bill_To_Blank__c}', '{!isAdminUser}')"
+        rendered="{!Qlist[0].Conversion_Status__c != 'Sent'}"
+        style="margin-right:500px;float:center;"
+        value="Sending Quote to CW..." disabled="true"  rerender="showmsg"/>
+         
+          <apex:commandButton action="{!Cancel}" value="Cancel" disabled="true" id="theCancelButton" immediate="true"
+         style="margin-left:800px;float:center;" rendered="false"/>
+         
+         
+         
+        </apex:pageBlockSection>
+        
+         </div>
+       </apex:outputPanel> 
+      
+      </apex:facet>
+  
+  </apex:actionStatus>
+    
+  </apex:pageBlock>
+   </apex:form>
+</apex:page>

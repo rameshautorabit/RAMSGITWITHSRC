@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Contract_Letterhead</letterhead>
+    <name>Contract TO Trade</name>
+    <style>freeForm</style>
+    <subject>Account Update</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+
+With the objective of having our business customers served by the best team to support their needs, we have recently reviewed our RH Contract and RH Trade account membership.
+
+
+Our RH Contract division is focused on large architecture and design firms, developers, distributors, professional contractors and ownership groups working predominantly in the Hospitality, Commercial and Residential Building segments.
+
+
+Our RH Trade division is focused on Residential interior designers, stagers, architects and professional contractors working directly with homeowners on their individual residential design and home improvement projects.
+
+
+From our research, it seems that your primary business focus is working directly with homeowners on their residential interior design and improvement projects.
+
+On this basis, we are transitioning your account to the RH Trade program. Your Account# {!Account.X12_Digit_Member__c} remains the same.
+
+
+As an RH Trade account holder, you will enjoy:
+
+
+
+· Online ordering using your RH Trade account number
+
+· Dedicated, specialized support from your local RH Trade gallery team and RH Trade customer service team
+
+· 25% savings on RH, RH Modern, RH Baby &amp; Child, RH TEEN and RH Contemporary Art full priced products
+
+· 10% additional savings on all Sale items
+
+· Preferred financing plans on the RH Credit Card, subject to approval
+
+· Early access to clearance events
+
+· Use of our Design Atelier area in your local gallery as a venue to meet with your clients and utilize RH&apos;s design resources
+
+
+Our Trade team is copied on this email, and they will reach out to you over the next week to introduce themselves and explore how we can best support your design business.
+
+
+We&apos;re looking forward to providing improved support for your business and clients via our RH Trade program.
+
+
+Kind regards,
+
+RH</textOnly>
+    <type>html</type>
+</EmailTemplate>

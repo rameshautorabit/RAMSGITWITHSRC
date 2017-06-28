@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DelegateGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <groups>Acc - All</groups>
+    <groups>Acc - Callout</groups>
+    <groups>Acc - Canadian Freight Fee</groups>
+    <groups>Acc - Cash Accommodation</groups>
+    <groups>Acc - Gift Card</groups>
+    <groups>Acc - Gift Card Refund</groups>
+    <groups>Acc - Gift Return</groups>
+    <groups>Acc - Manual Charge</groups>
+    <groups>Acc - Price Adjustment</groups>
+    <groups>Acc - Tier 2</groups>
+    <groups>All CSC Associates</groups>
+    <groups>CSC DC/HDL - Tier 2</groups>
+    <groups>CSC DC/HDL - Tier 3</groups>
+    <groups>Product Information - All</groups>
+    <groups>Reorders - All</groups>
+    <groups>Replacement Parts - All</groups>
+    <groups>CSC Frontline and Product Supply Manager</groups>
+    <label>CSC Administrator</label>
+    <loginAccess>false</loginAccess>
+    <roles>Hospitality Product Supply Manager</roles>
+    <roles>Trade Coordinator</roles>
+    <roles>Administration</roles>
+    <roles>CSC Accommodations Advocate</roles>
+    <roles>CSC Accommodations Lead</roles>
+    <roles>CSC Accommodations Supervisor</roles>
+    <roles>CSC Backend Leader</roles>
+    <roles>CSC DC/HDL Advocate</roles>
+    <roles>CSC DC/HDL Lead</roles>
+    <roles>CSC DC/HDL Supervisor</roles>
+    <roles>CSC Director</roles>
+    <roles>CSC Frontline Advocate</roles>
+    <roles>CSC Frontline Advocates Tier 2</roles>
+    <roles>CSC Frontline Leader</roles>
+    <roles>CSC Frontline Supervisor</roles>
+    <roles>CSC Lead/Assist</roles>
+    <roles>CSC Order Processing Advocate</roles>
+    <roles>CSC Product Specialist Advocate</roles>
+    <roles>CSC Product Specialist Lead</roles>
+    <roles>CSC Product Specialist Supervisor</roles>
+    <roles>CSC Tier 2 Supervisor</roles>
+    <roles>CSC Tier 2 Leader</roles>
+    <roles>CSC Assimilation Supervisor</roles>
+    <roles>CSC Mentor</roles>
+</DelegateGroup>

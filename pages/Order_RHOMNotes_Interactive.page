@@ -1,0 +1,88 @@
+<apex:page standardController="RH_Order__c" extensions="Order_RHOMNotesIntCtrlExt" readOnly="true">
+	<apex:sectionHeader title="RHOM Notes for Order" subtitle="{!RH_Order__c.EXT_Order_Number__c}"/>
+	<head>
+		<apex:includescript value="https://code.jquery.com/jquery-1.11.1.min.js" / >
+		<apex:includescript value="https://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js" />
+		<apex:stylesheet value="https://cdn.datatables.net/1.10.4/css/jquery.dataTables.css" />
+		<apex:includeScript value="/soap/ajax/35.0/connection.js"/>
+    	<apex:includeScript value="/support/console/35.0/integration.js"/>
+    	
+    	<script type="text/javascript">
+   		// If the Order RHOM Notes UI is called from the Console then open a new subtab to display it underneath the main tab for the Order 
+    
+         function addLoadEvent(func){ 
+            var oldonload = window.onload; 
+            if (typeof window.onload != 'function') 
+                { 
+                    window.onload = func; 
+                } 
+            else
+                { 
+                    window.onload = function()  
+                    { 
+                        if (oldonload) 
+                        { 
+                            oldonload(); 
+                        } 
+                        func(); 
+                    } 
+                } 
+            } 
+        
+        addLoadEvent(function(){ 
+            openOrderRHOMNotesSubtab();
+        });
+    
+        function openOrderRHOMNotesSubtab() {
+            //First find the ID of the primary tab to put the new subtab in
+            sforce.console.getEnclosingPrimaryTabId(openSubtab);
+        };
+        
+        var openSubtab = function openSubtab(result){
+            var primaryTabId = result.id;
+            sforce.console.setTabTitle('Order Notes');
+        };    
+   		
+		j$ = jQuery.noConflict();
+		j$(document).ready( function () {
+			var orderLineHistoryTable = j$('[id$="orderRHOMnotestable"]').DataTable({
+			"aaSorting": [],
+			"aoColumnDefs": [ { "bSortable": false, "aTargets": [ 1, 2, 3, 4 ] } ],
+			"iDisplayLength": 100,
+			"aLengthMenu": [[5, 10, 25, 50, 100], [5, 10, 25, 50, 100]],
+			"language": {
+      			"emptyTable": "No RHOM notes for this order."
+    			}		
+			});
+		});
+		</script>
+	</head>
+	<body>
+		<table id="orderRHOMnotestable" class="display">
+		<caption title=""><strong>{!RH_Order__c.EXT_Order_Number__c}</strong></caption>
+			<thead>
+				<tr>
+					<th>Timestamp</th>
+					<th>Shipment #</th>
+					<th>HDL</th>
+					<th>Note</th>
+					<th>User</th>
+				</tr>
+			</thead>
+			<tbody>
+				<apex:repeat value="{!orderRHOMNoteList}" var="orn">
+					<tr>
+						<td>{!orn.ActionDateTime}</td>
+						<td>{!orn.ShipmentNumber}</td>	
+						<td>{!orn.HDLId}</td>
+						<td>{!orn.NoteBody}</td>
+						<td>{!orn.ActionUser}</td>	
+					</tr>
+				</apex:repeat>
+			</tbody>
+		</table>
+	</body>
+	<apex:pageblock >
+    	<apex:pageMessages id="showmsg"></apex:pageMessages>
+   	</apex:pageblock>		
+</apex:page>

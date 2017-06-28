@@ -1,0 +1,3 @@
+<apex:page standardController="RH_Order__c" extensions="Order_BillingSummaryCtlExt" tabStyle="RH_Order__c" sidebar="false" id="bsPage" action="{!EmailContent}"> 
+   <c:BillingEmailSummaryWrapper id="billingsummarydata" htmlmap="{!subMap}" rendered="{!!noInvoiceData}"/> 
+</apex:page>

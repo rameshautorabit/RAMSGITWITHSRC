@@ -1,0 +1,72 @@
+<apex:page standardController="Membership__c" extensions="MembershipExtensionForMembershipSKUs">
+
+<apex:includeScript value="/support/console/36.0/integration.js"/>
+<apex:includeScript value="/soap/ajax/36.0/connection.js"/>
+
+ <script type="text/javascript">           
+        function openSubTab(recId, tabName){
+            var redirectUrl = recId;
+            if (sforce.console.isInConsole()) {
+                sforce.console.getEnclosingTabId(function(enclosingResult){
+                    sforce.console.getEnclosingPrimaryTabId(function(primaryResult){
+                        sforce.console.openSubtab(primaryResult.id, redirectUrl, true, '', null);
+                        sforce.console.setTabTitle(tabName);
+                    });
+                });
+            } else {
+                // for inline Vf
+                window.top.location.href = '/'+redirectUrl
+                // for normal vf
+                // window.location.href = '/'+redirectUrl
+            }
+        }        
+    </script>
+    
+<apex:pageBlock rendered="{!lines.size = 0}">
+ <apex:outputText value="There are no Membership Order Lines for this membership"/>
+</apex:pageBlock>
+
+<apex:pageBlock title="Membership Order Lines" rendered="{!lines.size > 0}">
+
+<apex:dataTable value="{!lines}" var="line" title="Membership Order Lines" cellspacing="10px;">
+
+<apex:column title="Order Number" headerValue="Order Number">
+ <apex:outputText ><a href="#" onclick="openSubTab('{!line.RH_Order_Number__c}', '{!line.RH_Order_Number__r.Name}');">{!line.RH_Order_Number__r.Name}</a></apex:outputText>
+</apex:column>
+
+<apex:column title="Order Line Number" headerValue="Line Number">
+ <apex:outputText ><a href="#" onclick="openSubTab('{!line.Id}', '{!line.Name}');">{!line.Name}</a></apex:outputText>
+</apex:column>
+
+<apex:column title="Purchase Date" headerValue="Purchase Date">
+ <apex:outputField value="{!line.CreatedDate}"/>
+</apex:column>
+
+<apex:column title="SKU" headerValue="SKU">
+ <apex:outputText ><a href="#" onclick="openSubTab('{!line.CW_SKU_ID__c}', '{!line.CW_SKU_ID__r.Name}');">{!line.CW_SKU_ID__r.Name}</a></apex:outputText>
+</apex:column>
+
+<apex:column title="SKU Title/Description" headerValue="SKU Title/Description">
+ <apex:outputField value="{!line.CW_SKU_ID__r.ECommerce_Display_Name__c}"/>
+</apex:column>
+ 
+<apex:column title="Term" headerValue="Term">
+ <apex:outputField value="{!line.RH_Order_Number__r.Membership_Renewal_Term__c}"/>
+</apex:column>
+
+<apex:column title="Amount" headerValue="Amount">
+ <apex:outputField value="{!line.Line_Total__c}"/>
+</apex:column>
+
+<apex:column title="Line Status" headerValue="Line Status">
+ <apex:outputField value="{!line.Line_Status__c}"/>
+</apex:column>
+
+<apex:column title="Return Reason Description" headerValue="Return Reason Description">
+ <apex:outputField value="{!line.Return_Reason_Description__c}"/>
+</apex:column>
+
+</apex:dataTable> 
+                         
+ </apex:pageBlock>   
+</apex:page>

@@ -1,0 +1,11 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<font face="Arial, sans-serif" style="font-size: 12pt;">Hi {!Quote_Clone__c.Owner_First_Name__c},
+<br> 
+<br><font size="3">We appreciate you thinking of Restoration Hardware Contract for this project! Your quote, "{!Quote_Clone__c.Opportunity_Name__c}" totaling {!Quote_Clone__c.Contract_Total__c} is now ready for payment.</font><br><br><font size="3">Please click this link to log in to the secure RH Customer Portal and provide payment information: {!Quote_Clone__c.Portal_Link__c}</font><br><br><font size="3">If you are new to the RH Customer Portal, you will be receiving a separate automated email at this time with your login information. &nbsp;If you have previously completed another order with RH, please use your previous username for that order along with the permanent password you set upon your first login.</font><br><br></font><span style="font-family: Arial, sans-serif;"><u>Please note</u>: Payments made will apply <i>only</i>&nbsp;to the specific order listed in the payment page. &nbsp;To make a payment on a different order, please contact us to request a unique payment link for that order.&nbsp;</span><font face="Arial, sans-serif" style="font-size: 12pt;"><br><br><font size="3">Once your order has been placed, your will receive your order confirmation via email. &nbsp;</font></font><span style="font-family: Arial, sans-serif; font-size: 12pt;">Let us know if you have any questions.&nbsp;</span><div><font face="Arial, sans-serif"> 
+<br><font size="3" style="font-size: 12pt;">Thank you,
+</font><br>
+<br><font size="3" style="font-size: 12pt;">{!Quote_Clone__c.Prepared_By_First_Name__c}</font></font></div>]]></td>
+</tr>
+</table>

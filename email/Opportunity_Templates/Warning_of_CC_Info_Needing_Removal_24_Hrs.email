@@ -1,0 +1,6 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[Hello,<br><br>You've received credit card payment information for the following Opportunity:<br><br>Opportunity (Project) Name: {!Opportunity.Name}<br>Account Name: {!Opportunity.Account}<br><br>The credit card information for this Opportunity was entered more then 48 hours ago and is still in Salesforce. Please enter the credit card information in CW and then fill out the "Order Number" field on the Opportunity in order to have the system clear the sensitive credit card data from Salesforce.<br><br>Click here to go to the Opportunity: {!Opportunity.Link}<br><br>Thanks.]]></td>
+</tr>
+</table>

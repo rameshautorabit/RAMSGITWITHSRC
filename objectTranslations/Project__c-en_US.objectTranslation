@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Project</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Projects</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Projects --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- AutorabitExtId__c --></label>
+        <name>AutorabitExtId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Close Date --></label>
+        <name>Close_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Avg Discount --></label>
+        <name>Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial Inquiry Date --></label>
+        <name>Initial_Inquiry_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Avg MMU --></label>
+        <name>MMU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Opportunity Id --></label>
+        <name>Opportunity_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Avg Probability --></label>
+        <name>Probability__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Temp Account Name --></label>
+        <name>Temp_Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Project Amount --></label>
+        <name>Total_Project_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Project Budget --></label>
+        <name>Total_Project_Budget__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Project Lost Amount --></label>
+        <name>Total_Project_Lost_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Project Open Amount --></label>
+        <name>Total_Project_Open_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Project Won Amount --></label>
+        <name>Total_Project_Won_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- VIP --></label>
+        <name>VIP__c</name>
+    </fields>
+    <layouts>
+        <layout>Contract Project Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Gallery Project Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Contract --></label>
+        <name>Contract</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Gallery --></label>
+        <name>Gallery</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

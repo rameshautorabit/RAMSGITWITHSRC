@@ -1,0 +1,14 @@
+Dear {!Case.Contact},
+ 
+Thank you for your recent purchase. We are reaching out to you in regard to the [item name] on your order # {!Case.Order_Number__c}.
+ 
+Regrettably, this item is no longer available, and we are unable to fulfill your order as expected. We are truly sorry for the inconvenience this may cause.
+ 
+Please be assured that as we do not bill until shipment, no charges were incurred for this item.
+ 
+If you have any questions or would like assistance in finding a suitable replacement, please call our Customer Care Center at 877-777-7059 or contact us via email at webcs@restorationhardware.com, and any associate will be able to assist you.
+ 
+Thank you for being a valued customer to RH.
+
+Regards, 
+RH Customer Care

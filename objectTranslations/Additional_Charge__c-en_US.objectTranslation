@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Additional Charge</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Additional Charges</value>
+    </caseValues>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- CW Upload Date/Time --></label>
+        <name>CW_Upload_DateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charge Code --></label>
+        <name>Charge_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charge Description --></label>
+        <name>Charge_Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- External Id field for Additional Charge --></help>
+        <label><!-- Additional Charge --></label>
+        <name>EXT_Additional_Charge__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Number --></label>
+        <name>Order_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sequence Number --></label>
+        <name>Sequence_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To --></label>
+        <name>Ship_To__c</name>
+        <relationshipLabel><!-- Additional Charges --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Ship to Number --></label>
+        <name>Ship_to_Number__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

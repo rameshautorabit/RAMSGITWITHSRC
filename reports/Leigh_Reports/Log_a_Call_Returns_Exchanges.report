@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CREATED_BY</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>Activity.InMoment_Interaction_Type__c</field>
+    </columns>
+    <columns>
+        <field>Activity.InMoment_Who__c</field>
+    </columns>
+    <columns>
+        <field>Activity.InMoment_Reason__c</field>
+    </columns>
+    <columns>
+        <field>WHAT_NAME</field>
+    </columns>
+    <columns>
+        <field>CONTACT</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Calls logged where the customer called in regarding a return or exchange.</description>
+    <filter>
+        <criteriaItems>
+            <column>Activity.InMoment_Interaction_Type__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Inbound Call,Outbound Call,Email Reply</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity.InMoment_Who__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Customer,Trade Customer,Assistant,Customer’s Spouse,Delivery Agent,Designer,Field Leader,Freight Forwarder,Gallery,Gift Recipient,Transfer,Vendor/Merchant</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity.InMoment_Reason__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Return/Exchange</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>CREATED_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Log a Call: Returns &amp; Exchanges</name>
+    <params>
+        <name>closed</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>type</name>
+        <value>t</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Activity</reportType>
+    <roleHierarchyFilter>Administration</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Activity.InMoment_Who__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_LAST60</interval>
+    </timeFrameFilter>
+</Report>

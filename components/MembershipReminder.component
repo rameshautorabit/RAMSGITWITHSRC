@@ -1,0 +1,79 @@
+<apex:component access="global" controller="MembershipRenewalEmailTemplateController" allowDML="true" >
+<apex:attribute name="RHMembershipId" type="String" description="RH Membership Record Id" assignTo="{!membershipId}"/> 
+ 
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii"/>
+
+<title>The Members Program Renewal v10_0011</title>
+</head>
+
+<body>
+<table width="784" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top" align="center">
+
+<table alink="#999" link="#999" vlink="#999" cellpadding="0" cellspacing="0" style="color: #fff; margin: 0 auto; width: 784px; padding: 0 70px 35px 55px; background-color: #444446;">
+
+<div style="display:none; font-size:1px; color:#333333; line-height:1px; max-height:0px; max-width:0px; opacity:0; overflow:hidden">
+
+<apex:outputText escape="false" value="{!preview}"/>
+
+</div>
+<tbody>
+<tr>
+<td style="font-size: 24px; font-family: 'adobe-caslon-pro',Times,'Times New Roman',serif">
+
+<apex:outputText escape="false" value="{!header}"/>
+
+ 
+<apex:outputText escape="false" value="{!body}"/>
+
+
+
+<div style="padding: 40px 0 0 0"><img src="https://media.restorationhardware.com/is/image/rhis/logo_rh_white_20170421?wid=206&fmt=png-alpha&qlt=85,1&op_sharpen=0&resMode=sharp2&op_usm=1,1,6,0&iccEmbed=1" width="103" height="61"/></div>
+<div style="padding: 15px 0 30px 0; text-transform: uppercase; font-size: 19px; color: #fff; letter-spacing: .02em; font-family: Verdana, Geneva, sans-serif"><a style="color:#fff; text-decoration: none;" href="https://www.restorationhardware.com" target="_blank">EXPLORE THE WORLD OF RH &#9656;</a></div>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table cellpadding="0" cellspacing="0" style="margin: 0 auto; width: 675px;">
+<tbody>
+<tr>
+<td style="color: #999; padding:30px 0 0 0">
+<!-- Footnotes - T&Cs. -->
+
+
+<!--LEGAL-->
+<apex:outputText escape="false" value="{!legal}"/>
+  
+</td>
+</tr>
+<tr>
+<td style="color:#333;text-align:left;font-size:12px;font-family: Verdana, Geneva, sans-serif;line-height:18px;width:700px;width:700px;padding:25px 0 30px 0;letter-spacing:.02em">
+<p style="color:#999; padding-bottom: 10px">For additional order details, <a style="text-decoration:none; color:#999" href="https://www.restorationhardware.com/my-account/sign-in.jsp" target="_blank">visit your account &#9656;</a><br> </br> For questions or comments, call <a style="color:#999; text-decoration:none"
+href="tel:800.910.9836" value="+18009109836" target="_blank">800.910.9836</a> or email <a style="text-decoration: none; color:#999" href="mailto:webcs@restorationhardware.com" target="_blank">webcs@restorationhardware.com. &#9656;</a></p>
+
+<p style="color:#999; padding-bottom: 10px">Want to be in the know? <a style="text-decoration: none; color:#999" href="https://www.restorationhardware.com/customer-service/email-signup.jsp" target="_blank">Sign up for email. &#9656;</a></p>
+
+<p style="color:#999; padding-bottom: 15px"><a style="text-decoration:none; color:#999; font-weight: bold" href="https://www.restorationhardware.com/store-locations/index.jsp" target="_blank">Visit Us at the Gallery Nearest You &#9656;</a></p>
+
+<p><a style="color:#999;text-decoration:none;text-transform:uppercase"  href="https://www.restorationhardware.com/membership.jsp" target="_blank">RH Members Program</a> | 
+<a style="color:#999;text-decoration:none;text-transform:uppercase" href="https://www.restorationhardware.com/customer-service/privacy-policy.jsp" target="_blank">Privacy Policy</a> | <a style="color:#999;text-decoration:none;text-transform:uppercase" href="https://www.restorationhardware.com/customer-service/frequently-asked-questions.jsp"
+target="_blank">FAQs</a> | <a style="color:#999;text-decoration:none;text-transform:uppercase" href="https://www.restorationhardware.com/customer-service/contact-us.jsp" target="_blank">Contact Us</a> | <a style="color:#999;text-decoration:none;text-transform:uppercase"
+href="https://www.restorationhardware.com/customer-service/index.jsp" target="_blank">Customer Service</a></p>
+
+<p style="color: #999; text-decoration:none; padding-bottom: 20px"><br> </br> &copy; 2017 RH&nbsp;15 Koch Road, Corte Madera, CA 94925</p>
+</td>
+</tr>
+</tbody>
+</table>
+ 
+    </td>
+    </tr>
+    </table>
+ </body>
+</html>
+</apex:component>

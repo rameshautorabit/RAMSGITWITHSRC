@@ -1,0 +1,352 @@
+<apex:component controller="ManualReservation" access="global">
+	<apex:attribute name="manResId" assignTo="{!mrId}" type="Id" description="Manual Reservation Id" />
+	
+	<html>
+		<head>
+    		<title>RH Order Update</title>
+		</head>
+		
+		<body>
+			<table style="width: 700px; font-size: 12px; font-family: 'minion-pro', sans-serif; line-height: 18px;" align="center" cellpadding="0" cellspacing="0">
+				<tbody>
+					<tr>
+						<!-- 
+						<td style="text-align:center; padding: 30px 0 10px 0;" colspan="3"><a href="https://www.restorationhardware.com/" target="_blank"><img src="./RH Order Update1 10-12-2016_files/rh_logo_transemail_2x_20160511" width="62" height="41" alt="RH"/></a></td>
+						-->
+						<td style="text-align:center; padding: 30px 0 10px 0;" colspan="3">
+							<a style="color:#000" href="{!subMap['%logoLink%']}" target="_blank"><img src="{!subMap['%logoURL%']}" width="{!subMap['%logoWidth%']}" height="{!subMap['%logoHeight%']}"/></a>
+						</td>
+					</tr>
+					
+					<tr>
+						<td colspan="5" style="padding: 10px 0 10px 0; border-bottom: 1px solid #cccccc;"></td>
+					</tr>
+					
+					<tr>
+						<td colspan="3">
+							<div style="background-color: transparent; color: #303030; letter-spacing: 1px; font-family: 'minion-pro', Times, 'Times New Roman'; padding: 0; margin: 30px 0 30px 0px; font-weight: normal; text-align: center; padding: 0; font-size: 22px; text-transform: uppercase">Order Update</div>
+						</td>
+					</tr>
+					
+					<tr>
+						<td style="width: 80px;"></td>
+					</tr>
+					
+					<tr>
+						<td class="module" style="margin:10px 0 10px 0" colspan="3">
+							<p style="color:#666;margin:10px 10px 15px 10px;font-family:'minion-pro',Times,'Times New Roman';font-size:16px;text-align:center;font-weight:normal;text-transform:uppercase">Your Order #<apex:outputText value="{!subMap['%orderNumber%']}" escape="true"/></p>
+							<p style="margin: 10px 10px 0px 10px; text-align: center; letter-spacing: 1px; ">Your item is now available for delivery earlier than previously quoted.</p>
+							<p style="margin: 0px 10px 10px 10px; text-align: center; letter-spacing: 1px; ">We will contact you between&nbsp;<apex:outputText value="{!subMap['%earlyDeliveryDate%']}" escape="true"/> and&nbsp;<apex:outputText value="{!subMap['%lateDeliveryDate%']}" escape="true"/> to schedule a date for delivery.</p>
+						</td>
+					</tr>
+					
+					<tr>
+						<td colspan="3" style="width: 80px;"></td>
+					</tr>
+						
+					<tr>
+						<td style="vertical-align:top">
+							<table style="font-family:'minion-pro','Times New Roman',Times,serif;font-size:12px;vertical-align:top;vertical-align:top;margin:20px auto 10px auto;width:700px;height:auto">
+								<thead style="text-align:left">
+									<tr>
+										<th style="color:#333;width:510px;vertical-align:top;padding:10px 0 15px 0;text-transform:uppercase;font-size:13px">Shipping</th>
+										
+										<th style="color:#333;width:140px;vertical-align:top;padding:10px 0 15px 0;text-transform:uppercase;font-size:13px;white-space:nowrap; text-align: right"><apex:outputText value="{!subMap['%orderDescriptionHeader%']}" escape="true"/></th>
+									</tr>
+								</thead>
+								
+								<tbody>
+									<tr>
+										<td style="width:510px;vertical-align:top;padding:0 0 10px 0">
+											<table cellpadding="0" cellspacing="0" style="color:#666;line-height:20px;font-family:'minion-pro',sans-serif;font-size:12px;vertical-align:top">
+												<tbody>
+													<apex:outputPanel rendered="{!subMap['%shipToName%'] != ' '}">
+														<tr>
+															<td><apex:outputText value="{!subMap['%shipToName%']}" escape="true"/></td>
+														</tr>
+													</apex:outputPanel>
+													
+													<apex:outputPanel rendered="{!subMap['%shipToCompany%'] != ' '}">
+														<tr>
+															<td><apex:outputText value="{!subMap['%shipToCompany%']}" escape="true"/></td>
+														</tr>
+													</apex:outputPanel>
+													
+													<apex:outputPanel rendered="{!subMap['%shipToAddr1%'] != ' '}">
+														<tr>
+															<td><apex:outputText value="{!subMap['%shipToAddr1%']}" escape="true"/></td>
+														</tr>
+													</apex:outputPanel>
+													
+													<apex:outputPanel rendered="{!subMap['%shipToAddr2%'] != ' '}">
+														<tr>
+															<td><apex:outputText value="{!subMap['%shipToAddr2%']}" escape="true"/></td>
+														</tr>
+													</apex:outputPanel>
+													
+													<apex:outputPanel rendered="{!subMap['%shipToCityStatePostalCode%'] != ' '}">
+													<tr>
+														<td><apex:outputText value="{!subMap['%shipToCityStatePostalCode%']}" escape="true"/></td>
+													</tr>
+													</apex:outputPanel>
+													
+													<apex:outputPanel rendered="{!subMap['%shipToCountryCode%'] != ' '}">
+													<tr>
+														<td><apex:outputText value="{!subMap['%shipToCountryCode%']}" escape="true"/></td>
+													</tr>
+													</apex:outputPanel>
+												</tbody>
+											</table>
+										</td>
+										
+										<td style="padding:0 0 10px 0;float:right">
+											<table cellpadding="0" cellspacing="0" style="color:#666;width:140px;line-height:20px;font-family:'minion-pro',sans-serif;font-size:12px;vertical-align:top">
+												<tbody>
+													<tr>
+														<td style="text-align: left"><apex:outputText value="{!subMap['%orderDescription%']}" escape="true"/></td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+					
+					<tr>
+						<td class="module order-items" style="margin:10px 0 10px 0 " colspan="3">
+							<table style="width: 700px; margin-bottom: 30px" align="left" cellspacing="0" cellpadding="10">
+								<thead>
+									<tr width="100%" style="color: #000000; background-color: transparent; text-transform: uppercase; margin: 0; padding: 0px 5px 10px 5px; width: 100%;">
+										<th style="padding: 10px 5px; border-bottom: 1px solid #000000; font-weight: normal;">&nbsp;</th>
+										
+										<th style="padding: 10px 10px; border-bottom: 1px solid #000000; font-weight: normal; text-align: left">Item</th>
+										
+										<th style="padding: 10px 5px; border-bottom: 1px solid #000000; font-weight: normal;">Quantity</th>
+										
+										<th style="padding: 10px 5px; border-bottom: 1px solid #000000; font-weight: normal;">&nbsp;</th>
+									</tr>
+								</thead>
+								
+								<tbody>
+									<apex:repeat var="mi" value="{!mirvItems}">
+										<tr class="order-item-row">
+											<td valign="top" style="width:178px; vertical-align:top; padding-left:10px" class="order-item-image"><img height="164" width="168" src="{!mi.image}" alt="" title=""/></td>
+											
+											<td valign="top" style="vertical-align:top">
+												<span style="text-transform: uppercase; font-family: 'minion-pro', Times, 'Times New Roman'; font-size: 14px;">{!mi.description}</span><br/>
+												<br/>
+												
+												<div>
+													<span style="text-transform: uppercase; color: #6C6663; display: inline-block; min-width: 125px;">Item #</span>{!mi.item}
+												</div>
+												
+												<apex:outputPanel rendered="{!mi.color != ' '}">
+													<div class="order-item-attribute">
+														<span style="text-transform: uppercase; color: #6C6663; display: inline-block; min-width: 125px; float: left">Color</span>{!mi.color}
+													</div>
+												</apex:outputPanel>
+											</td>
+											
+											<td valign="top" align="center" style="width:50px; vertical-align:top; text-align: center">{!mi.quantity}</td>
+										</tr>
+										
+										<tr>
+											<td colspan="5" style="margin: 10px 0 10px 0; border-top: 1px solid #cccccc;"></td>
+										</tr>
+									</apex:repeat>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+					
+					<tr>
+						<td colspan="3" style="width: 80px;"></td>
+					</tr>
+					
+					<tr>
+						<td class="module" style="min-width: 700px" colspan="3" width="700"></td>
+					</tr>
+					
+					<tr>
+						<td style="width: 80px;"></td>
+					</tr>
+					
+					<tr>
+						<td colspan="3" style="width: 80px;"></td>
+					</tr>
+					
+					<c:RHEmailFooter htmlMap="{!footerMap}" orderTypeCode="{!subMap['%orderTypeCode%']}"/>
+					
+				</tbody>
+			</table>
+		</body>
+	</html>
+	
+	<!-- 
+	<html>
+		<head>
+			<title></title>
+		</head>
+		
+		<body>
+		
+			<table style="width: 700px; font-size: 12px; font-family: 'minion-pro', sans-serif; line-height: 18px;" align="center" cellpadding="0" cellspacing="0">
+				<tbody>
+					<tr>
+						<td style="text-align:center; padding: 30px 0 10px 0;" colspan="3">
+							<a style="color:#000" href="{!subMap['%logoLink%']}" target="_blank"><img src="{!subMap['%logoURL%']}" width="{!subMap['%logoWidth%']}" height="{!subMap['%logoHeight%']}"/></a>
+						</td>
+					</tr>
+					
+					<tr>
+						<td colspan="5" style="padding: 10px 0 10px 0; border-bottom: 1px solid #cccccc;"></td>
+					</tr>
+					
+					<tr>
+						<td colspan="3">
+							<div style="background-color: transparent; color: #5c5c5c; letter-spacing: 1px; font-family: 'minion-pro', Times, 'Times New Roman'; padding: 0; margin: 30px 0 30px 0px; font-weight: normal; text-align: center; padding: 0; font-size: 22px; text-transform: uppercase">Order Update</div>
+						</td>
+					</tr>
+					
+					<tr>
+						<td colspan="3">
+							<div style="background-color: transparent; color: #5c5c5c; letter-spacing: 1px; font-family: 'minion-pro', Times, 'Times New Roman'; padding: 0; margin: 30px 0 30px 0px; font-weight: normal; text-align: center; padding: 0; font-size: 16px; text-transform: uppercase">Your Order #<apex:outputText value="{!subMap['%orderNumber%']}" escape="true"/></div>
+						</td>
+					</tr>
+					
+					<tr>
+						<td style="width: 80px;"></td>
+					</tr>
+					
+					<tr>
+						<td class="module" style="margin:10px 0 10px 0; padding: 0 56px 20px 56px;" colspan="3">
+							
+							<p style="margin: 10px 10px 10px 10px; text-align: center; letter-spacing: 1px; color: #333333;">
+								Your item is now available for delivery earlier than previously quoted.
+								<br/>
+								We will contact you between&nbsp;<apex:outputText value="{!subMap['%earlyDeliveryDate%']}" escape="true"/> and&nbsp;<apex:outputText value="{!subMap['%lateDeliveryDate%']}" escape="true"/> to schedule a date for delivery.
+							</p>
+							<br/>
+						</td>
+					</tr>
+             
+					<tr>
+						<td colspan="3" style="width: 80px;"></td>
+					</tr>
+					
+					<tr>
+						<td valign="top" style="padding: 0 0 0 66px;">
+							<h3 style="color: #333333; background-color: transparent; text-indent: 10px; border-top: 0; border-right: 0;  border-bottom: none; border-left: 0; text-align: left; font-weight: normal; margin: 0 0 5px 0; font-family: 'minion-pro', Times, 'Times New Roman'; font-size: 14px; text-transform: uppercase; padding: 0; line-height: 30px; height: 30px; width: 310px;">
+								Shipping
+							</h3>
+							<div style="width: 310px; color: #6C6663; text-align: left; margin: 0 0 20px 0; letter-spacing: 1px;">
+								<p style="margin-left: 10px;">
+									<apex:outputPanel rendered="{!subMap['%shipToName%'] != ' '}">
+										<apex:outputText value="{!subMap['%shipToName%']}" escape="true"/>
+										<br/>
+									</apex:outputPanel>
+									<apex:outputPanel rendered="{!subMap['%shipToAddr1%'] != ' '}">
+										<apex:outputText value="{!subMap['%shipToAddr1%']}" escape="true"/>
+										<br/>
+									</apex:outputPanel>
+									<apex:outputPanel rendered="{!subMap['%shipToAddr2%'] != ' '}">
+										<apex:outputText value="{!subMap['%shipToAddr2%']}" escape="true"/>
+										<br/>
+									</apex:outputPanel>
+									<apex:outputPanel rendered="{!subMap['%shipToCityStatePostalCode%'] != ' '}">
+										<apex:outputText value="{!subMap['%shipToCityStatePostalCode%']}" escape="true"/>
+										<br/>
+									</apex:outputPanel>
+									<apex:outputText value="{!subMap['%shipToCountryCode%']}" escape="true" rendered="{!subMap['%shipToCountryCode%'] != ' '}"/>
+									<br/>
+								</p>
+							</div>
+						</td>
+						
+						<td style="width: 80px;"></td>
+						
+						<td class="module" style="margin:10px 0 10px 0; padding: 0 0 0 66px;">
+							<apex:outputPanel rendered="{!subMap['%orderDescription%'] != ' '}">
+								<h3 style="color: #333333; background-color: transparent; text-indent: 10px; border-top: 0; border-right: 0;  border-bottom: none; border-left: 0; text-align: left; font-weight: normal; margin: 0 0 5px 0; font-family: 'minion-pro', Times, 'Times New Roman'; font-size: 14px; text-transform: uppercase; padding: 0; line-height: 30px; height: 30px; width: 310px;">
+									Order Description
+								</h3>
+								<div style="width: 310px; color: #6C6663; text-align: left; margin: 0 0 20px 0; letter-spacing: 1px;">
+									<p style="margin-left: 10px;">
+										<apex:outputText value="{!subMap['%orderDescription%']}" escape="true"/>
+									</p>
+								</div>
+							</apex:outputPanel>
+							<br/>
+						</td>
+					</tr>
+            
+					<tr>
+						<td colspan="3" style="width: 80px;"></td>
+					</tr>
+					
+					<tr>
+						<td class="module order-items" style="margin:10px 0 10px 0 " colspan="3">
+							<table style="width: 700px;" align="left" cellspacing="0" cellpadding="10">
+								<thead>
+									<tr width="100%" style="color: #000000; background-color: transparent; text-transform: uppercase; margin: 0; padding: 0px 5px 10px 5px; width: 100%;">
+										<th style="padding: 15px 5px; border-bottom: 1px solid #000000; font-weight: normal;">&nbsp;</th>
+										<th style="padding: 15px 5px; border-bottom: 1px solid #000000; font-weight: normal;">Item</th>
+										<th style="padding: 15px 5px; border-bottom: 1px solid #000000; font-weight: normal;">Quantity</th>
+									</tr>
+								</thead>
+            					<tbody>
+            						
+            						<apex:repeat var="mi" value="{!mirvItems}">
+										<tr class="order-item-row">
+											<td valign="top" style="width:178px; padding: 15px 0 0 10px" class="order-item-image">
+												<img height="164" width="168" src="{!mi.image}" alt="" title=""/>
+											</td>
+											
+											<td style="padding-top: 15px">
+												<span style="text-transform: uppercase; font-family: 'minion-pro', Times, 'Times New Roman'; font-size: 14px;">{!mi.description}</span>
+												<br/>
+												<br/>
+												<div><span style="text-transform: uppercase; color: #6C6663; display: inline-block; min-width: 125px;">Item #</span>{!mi.item}</div>
+												
+												<apex:outputPanel rendered="{!mi.color != ' '}">
+													<div class="order-item-attribute"><span style="text-transform: uppercase; color: #6C6663; display: inline-block; min-width: 129px; float: left">Color</span> <span style="display: inline-block; width: 134px">{!mi.color}</span></div>
+												</apex:outputPanel>
+											</td>
+											
+											<td valign="top" align="center" style="width:50px; text-align: center; padding-top: 15px">
+												{!mi.quantity}
+											</td>
+										</tr>
+										
+										<tr>
+											<td colspan="3"><div style="height:1px; width: 100%; background-color: #ccc; margin: 10px 0 10px 0"></div></td>
+										</tr>
+									</apex:repeat>
+            					</tbody>
+            				</table>
+            			</td>
+            		</tr>
+					
+					<tr>
+						<td colspan="3" style="width: 80px;"></td>
+					</tr>
+					
+					<tr>
+						<td colspan="3" style="width: 80px;"></td>
+					</tr>
+					
+					<tr>
+						<td colspan="3" style="width: 80px;"></td>
+					</tr>
+					
+					<c:RHEmailFooter htmlMap="{!footerMap}" orderTypeCode="{!subMap['%orderTypeCode%']}"/>
+					
+				</tbody>
+			</table>
+		</body>
+	</html>
+	-->
+	
+</apex:component>

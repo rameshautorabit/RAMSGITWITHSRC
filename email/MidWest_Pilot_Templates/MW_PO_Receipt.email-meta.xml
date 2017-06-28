@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Use when customer sends PO &amp; PM responds with proforma invoice</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Contract_Letterhead</letterhead>
+    <name>MW_PO Receipt</name>
+    <style>freeForm</style>
+    <subject>PO Received</subject>
+    <textOnly>Hi {!Contact.FirstName},
+
+
+Thank you for your PO# {!Opportunity.PO__c}. Please see attached invoice and review for accuracy.
+
+
+Orders are released upon receipt of payment. Reference your invoice for payment details.
+
+
+
+For payment options please refer to the last page of your proforma invoice.
+
+
+Thank you,
+
+{!Opportunity.Ops_Contact__c}</textOnly>
+    <type>html</type>
+</EmailTemplate>

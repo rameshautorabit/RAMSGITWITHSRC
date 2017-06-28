@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>TriggerManager</value>
+    </caseValues>
+    <fields>
+        <label><!-- Enable performance triggers --></label>
+        <name>enablePerformanceTriggers__c</name>
+    </fields>
+    <fields>
+        <label><!-- runMDMTriggers --></label>
+        <name>runMDMTriggers__c</name>
+    </fields>
+    <fields>
+        <label><!-- runMembershipTriggers --></label>
+        <name>runMembershipTriggers__c</name>
+    </fields>
+    <fields>
+        <label><!-- runTriggers --></label>
+        <name>runTriggers__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

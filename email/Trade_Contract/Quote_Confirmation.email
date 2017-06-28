@@ -1,0 +1,28 @@
+Hi {!Contact.FirstName},
+ 
+Please find the attached quote for the {!Quote.Project_Name__c} project per your request.  We appreciate you thinking of RH Contract for this project!
+
+So that we can best serve you, please return the signed quote including ship to address, contact name & phone number with payment per the terms noted on your quote. Defer to the last page of your quote for payment details and your preferred method of payment.
+
+When sending checks via regular mail (USPS), please use the following addresses to submit payment:
+
+For Regular Mail Check Payment (i.e First Class USPS), remit payment to:
+Restoration Hardware, Inc.
+Bank of America Lockbox Services 
+PO BOX # 50081
+Los Angeles, CA 90074 - 0081
+
+
+***As a reminder, our address for sending Overnight/Courier/UPS/FedEx remains:
+
+For Expedited Check Payment (i.e Overnight/Courier Services; UPS/FedEx) remit payment to:
+Bank of America Lockbox Services
+Lockbox LAC-50081
+2706 Media Center Drive
+Los Angeles, CA 90065
+
+Please do not hesitate to contact us should you have any questions.
+
+Thank you,
+
+{!User.FirstName}

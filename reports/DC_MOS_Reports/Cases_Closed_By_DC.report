@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Product2.Cases__r$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>Product2$Name</field>
+    </columns>
+    <columns>
+        <field>Product2.Cases__r.Case_Line_Items__r$Name</field>
+    </columns>
+    <columns>
+        <field>Product2.Cases__r.Case_Line_Items__r.Replacement_Part_Details__r$Name</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Product2.Cases__r$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.Replacement_Parts</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Product2.Cases__r$Owner</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>DC - Mira Loma 97,DC - Ohio 89,DC - San Francisco 95,DC - Dallas 96,DC - Baltimore 98</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Product2.Cases__r$Status</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Closed - Successful,Closed - Unsuccessful</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Cases Closed By DC</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Product_with_Case_with_Case_Line_Item_with_RP_Data__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Product2$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>
