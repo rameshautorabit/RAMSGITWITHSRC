@@ -1,2 +1,0 @@
-<apex:page standardController="Membership__c" extensions="MembershipExtension" action="{!newMembership}">  
-</apex:page>

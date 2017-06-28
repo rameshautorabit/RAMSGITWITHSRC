@@ -1,7 +1,0 @@
-Dear {!Case.Contact},
-
-I am contacting you from Restoration Hardware regarding order number {!Case.Order_Number__c}. In order to deliver this order to (freight forwarder name) we are required to provide them with a booking number. This booking number should have been provided to you at the time that you/your client arranged export. Please respond at your earliest convenience so that we may schedule a delivery date with your freight service you as soon as possible. If we do not receive this number within 5 business days, we must return the order and will process a refund.
-
-For the quickest service, please call us at 844.552.4500 and reference the above order number.
-
-We look forward to hearing from you.

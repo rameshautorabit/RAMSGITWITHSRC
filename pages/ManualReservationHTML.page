@@ -1,5 +1,0 @@
-<apex:page controller="ManualReservation" id="mrHTMLPage" >
-	
-	<c:ManualReservation manResId="{!mrId}" />
-	
-</apex:page>

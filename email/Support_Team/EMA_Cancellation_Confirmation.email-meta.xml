@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
-    <available>true</available>
-    <encodingKey>ISO-8859-1</encodingKey>
-    <name>EMA - Cancellation Confirmation</name>
-    <style>none</style>
-    <subject>RH Order # {!Case.Order_Number__c} - Cancellation</subject>
-    <type>text</type>
-</EmailTemplate>

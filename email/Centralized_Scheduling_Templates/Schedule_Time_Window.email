@@ -1,5 +1,0 @@
-Thank you for shopping with RH! Items from order number {!Case.Order_Number__c} are being delivered on (insert delivery date). Our delivery team is expected to arrive between (insert delivery window).
- 
-The phone number we have for this delivery is {!Case.ShipTo1_Day_Phone__c}, and our team will call you 30 minutes prior to their arrival. If there is a different phone number that you wish for our team to contact you at on the day of delivery, please let us know at your earliest convenience. We can be reached by phone at 844.552.4500. Your delivery reference number is (insert CDN #).
- 
-We look forward to delivering to you.

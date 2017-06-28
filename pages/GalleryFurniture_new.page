@@ -1,3 +1,0 @@
-<apex:page standardController="Gallery_Furniture__c" extensions="GalleryFurnitureCtlExt" tabStyle="Gallery_Furniture__c" action="{!initGalleryFurniture}">
-	<apex:pageMessages />
-</apex:page>

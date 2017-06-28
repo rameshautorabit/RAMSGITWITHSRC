@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Document xmlns="http://soap.sforce.com/2006/04/metadata">
-    <description>What markets ship on which days</description>
-    <internalUseOnly>false</internalUseOnly>
-    <name>Tracy Warehouse (97) HDL market shipping sched</name>
-    <public>true</public>
-</Document>

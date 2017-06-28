@@ -1,8 +1,0 @@
-<apex:component access="global" controller="MembershipRenewalEmailTemplateController" allowDML="true">
-<apex:attribute name="RHMembershipId" type="String" description="RH Membership Record Id" assignTo="{!membershipId}"/> 
-
-  <apex:repeat value="{!MembershipDetails}" var="m">
-    <c:MembershipGenericHeader RHMembershipEmailContent="{!Content}"/>                                   
-  </apex:repeat>   
-
-</apex:component>

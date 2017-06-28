@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Document xmlns="http://soap.sforce.com/2006/04/metadata">
-    <description>Sales Team - pls use this template when gathering leads to upload to SF</description>
-    <internalUseOnly>false</internalUseOnly>
-    <name>Lead Upload Template 102507</name>
-    <public>true</public>
-</Document>

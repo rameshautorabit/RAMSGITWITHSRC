@@ -1,5 +1,0 @@
-<apex:page controller="ReturnReceipt" tabStyle="Case" sidebar="false" id="rrPDFPage" renderAs="PDF">
-	
-	<c:ReturnReceipt id="returnReceiptData" cId="{!caseId}" /> 
-	
-</apex:page>
