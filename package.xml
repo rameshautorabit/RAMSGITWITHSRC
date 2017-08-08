@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <version>39.0</version>
     <types>
         <members>AccountExtension</members>
         <members>AccountService</members>
@@ -144,6 +145,10 @@
         <members>IssueServiceTest</members>
         <members>Issue_InventoryCtrlExt</members>
         <members>Issue_InventoryCtrlExt_Test</members>
+        <members>Jul07Apex1</members>
+        <members>Jul07Apex2</members>
+        <members>Jul07Apex3</members>
+        <members>Jul07Apex4</members>
         <members>LazyRollUp</members>
         <members>LineItemRelatedListCtlExt</members>
         <members>LineItemSortCtlExt</members>
@@ -11152,6 +11157,33 @@
         <name>SamlSsoConfig</name>
     </types>
     <types>
+        <members>Account</members>
+        <members>Activities</members>
+        <members>Address</members>
+        <members>BusinessHours</members>
+        <members>Case</members>
+        <members>ChatterAnswers</members>
+        <members>Contract</members>
+        <members>Entitlement</members>
+        <members>FileUploadAndDownloadSecurity</members>
+        <members>Ideas</members>
+        <members>Knowledge</members>
+        <members>LiveAgent</members>
+        <members>Macro</members>
+        <members>Mobile</members>
+        <members>Name</members>
+        <members>Opportunity</members>
+        <members>Order</members>
+        <members>OrgPreference</members>
+        <members>PathAssistant</members>
+        <members>PersonalJourney</members>
+        <members>Product</members>
+        <members>Quote</members>
+        <members>Search</members>
+        <members>Security</members>
+        <name>Settings</name>
+    </types>
+    <types>
         <members>Account.Admin_Edit_Accounts</members>
         <members>Account.All_Internal_Account_Access</members>
         <members>Account.CSC_Account_Record_Types</members>
@@ -12470,32 +12502,4 @@
         <members>Quote_Clone__c.Sent_Customer_Notification_of_Order_Ready_for_Payment</members>
         <name>WorkflowTask</name>
     </types>
-    <types>
-        <members>Account</members>
-        <members>Activities</members>
-        <members>Address</members>
-        <members>BusinessHours</members>
-        <members>Case</members>
-        <members>ChatterAnswers</members>
-        <members>Contract</members>
-        <members>Entitlement</members>
-        <members>FileUploadAndDownloadSecurity</members>
-        <members>Ideas</members>
-        <members>Knowledge</members>
-        <members>LiveAgent</members>
-        <members>Macro</members>
-        <members>Mobile</members>
-        <members>Name</members>
-        <members>Opportunity</members>
-        <members>Order</members>
-        <members>OrgPreference</members>
-        <members>PathAssistant</members>
-        <members>PersonalJourney</members>
-        <members>Product</members>
-        <members>Quote</members>
-        <members>Search</members>
-        <members>Security</members>
-        <name>Settings</name>
-    </types>
-    <version>39.0</version>
 </Package>
