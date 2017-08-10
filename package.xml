@@ -156,6 +156,8 @@
         <members>Jul07Apex2</members>
         <members>Jul07Apex3</members>
         <members>Jul07Apex4</members>
+        <members>Jul13Apex1</members>
+        <members>Jun22Test1</members>
         <members>LazyRollUp</members>
         <members>LineItemRelatedListCtlExt</members>
         <members>LineItemSortCtlExt</members>
@@ -1139,10 +1141,12 @@
         <members>Case.Other_Notes__c</members>
         <members>Case.Owner__c</members>
         <members>Case.Payment_Source__c</members>
+        <members>Case.PotentialLiability__c</members>
         <members>Case.Primary_Object_Config__c</members>
         <members>Case.Primary_Request__c</members>
         <members>Case.Priority_Sort__c</members>
         <members>Case.Problem__c</members>
+        <members>Case.Product__c</members>
         <members>Case.Project_Coordinator__c</members>
         <members>Case.Project_Total__c</members>
         <members>Case.Project__c</members>

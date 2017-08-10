@@ -576,9 +576,9 @@
                     <label>Pre-Bill Refund</label>
                 </value>
                 <value>
-                    <fullName>Price Match – Sale/Promo</fullName>
+                    <fullName>Price Match Ã¢â‚¬â€œ Sale/Promo</fullName>
                     <default>false</default>
-                    <label>Price Match – Sale/Promo</label>
+                    <label>Price Match Ã¢â‚¬â€œ Sale/Promo</label>
                 </value>
                 <value>
                     <fullName>Refund for GC/SC/Reward MOP</fullName>
@@ -586,9 +586,9 @@
                     <label>Refund for GC/SC/Reward MOP</label>
                 </value>
                 <value>
-                    <fullName>Reissue System Refund – Incorrect/Cancelled/Did Not Generate</fullName>
+                    <fullName>Reissue System Refund Ã¢â‚¬â€œ Incorrect/Cancelled/Did Not Generate</fullName>
                     <default>false</default>
-                    <label>Reissue System Refund – Incorrect/Cancelled/Did Not Generate</label>
+                    <label>Reissue System Refund Ã¢â‚¬â€œ Incorrect/Cancelled/Did Not Generate</label>
                 </value>
                 <value>
                     <fullName>Tax Refund</fullName>
@@ -794,7 +794,7 @@
                 <controllingFieldValue>Gift Return</controllingFieldValue>
                 <controllingFieldValue>Manual Charge</controllingFieldValue>
                 <controllingFieldValue>Price Adjustment</controllingFieldValue>
-                <valueName>Reissue System Refund – Incorrect/Cancelled/Did Not Generate</valueName>
+                <valueName>Reissue System Refund Ã¢â‚¬â€œ Incorrect/Cancelled/Did Not Generate</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Complimentary Credit</controllingFieldValue>
@@ -817,7 +817,7 @@
                 <controllingFieldValue>Gift Return</controllingFieldValue>
                 <controllingFieldValue>Manual Charge</controllingFieldValue>
                 <controllingFieldValue>Price Adjustment</controllingFieldValue>
-                <valueName>Price Match – Sale/Promo</valueName>
+                <valueName>Price Match Ã¢â‚¬â€œ Sale/Promo</valueName>
             </valueSettings>
         </valueSet>
     </fields>
@@ -5847,9 +5847,9 @@ IF(Merchandise_Subtotal__c&gt;0,Flat_Rate_Accommodation_Amount__c/ Merchandise_S
                     <label>Additional Information Required</label>
                 </value>
                 <value>
-                    <fullName>Add SKU in RP Details to Order </fullName>
+                    <fullName>Add SKU in RP Details to OrderÃ‚Â </fullName>
                     <default>false</default>
-                    <label>Add SKU in RP Details to Order </label>
+                    <label>Add SKU in RP Details to OrderÃ‚Â </label>
                 </value>
                 <value>
                     <fullName>Approved</fullName>
@@ -5872,9 +5872,9 @@ IF(Merchandise_Subtotal__c&gt;0,Flat_Rate_Accommodation_Amount__c/ Merchandise_S
                     <label>Invalid</label>
                 </value>
                 <value>
-                    <fullName>Merchant Approved MOS/Exchange </fullName>
+                    <fullName>Merchant Approved MOS/ExchangeÃ‚Â </fullName>
                     <default>false</default>
-                    <label>Merchant Approved MOS/Exchange </label>
+                    <label>Merchant Approved MOS/ExchangeÃ‚Â </label>
                 </value>
                 <value>
                     <fullName>New Card Provided</fullName>
@@ -5982,9 +5982,9 @@ IF(Merchandise_Subtotal__c&gt;0,Flat_Rate_Accommodation_Amount__c/ Merchandise_S
                     <label>Working with Vendor</label>
                 </value>
                 <value>
-                    <fullName>Working with Vendor – Setting up SKU</fullName>
+                    <fullName>Working with Vendor Ã¢â‚¬â€œ Setting up SKU</fullName>
                     <default>false</default>
-                    <label>Working with Vendor – Setting up SKU</label>
+                    <label>Working with Vendor Ã¢â‚¬â€œ Setting up SKU</label>
                 </value>
                 <value>
                     <fullName>Denied</fullName>
@@ -7600,6 +7600,31 @@ false)</formula>
         </valueSet>
     </fields>
     <fields>
+        <fullName>PotentialLiability__c</fullName>
+        <externalId>false</externalId>
+        <label>Potential Liability</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>Primary_Object_Config__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>Please select the SFDC Object/Tab or configuration most directly impacted by this request/project</inlineHelpText>
@@ -7809,6 +7834,66 @@ false)</formula>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Product__c</fullName>
+        <externalId>false</externalId>
+        <label>Product</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>GC1040</fullName>
+                    <default>false</default>
+                    <label>GC1040</label>
+                </value>
+                <value>
+                    <fullName>GC1060</fullName>
+                    <default>false</default>
+                    <label>GC1060</label>
+                </value>
+                <value>
+                    <fullName>GC3020</fullName>
+                    <default>false</default>
+                    <label>GC3020</label>
+                </value>
+                <value>
+                    <fullName>GC3040</fullName>
+                    <default>false</default>
+                    <label>GC3040</label>
+                </value>
+                <value>
+                    <fullName>GC3060</fullName>
+                    <default>false</default>
+                    <label>GC3060</label>
+                </value>
+                <value>
+                    <fullName>GC5020</fullName>
+                    <default>false</default>
+                    <label>GC5020</label>
+                </value>
+                <value>
+                    <fullName>GC5040</fullName>
+                    <default>false</default>
+                    <label>GC5040</label>
+                </value>
+                <value>
+                    <fullName>GC5060</fullName>
+                    <default>false</default>
+                    <label>GC5060</label>
+                </value>
+                <value>
+                    <fullName>GC1020</fullName>
+                    <default>false</default>
+                    <label>GC1020</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Project_Coordinator__c</fullName>
@@ -8165,10 +8250,10 @@ false)</formula>
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
-                    <fullName>​Address Change</fullName>
+                    <fullName>Ã¢â‚¬â€¹Address Change</fullName>
                     <color>#0B6FCE</color>
                     <default>false</default>
-                    <label>​Address Change</label>
+                    <label>Ã¢â‚¬â€¹Address Change</label>
                 </value>
                 <value>
                     <fullName>All</fullName>
@@ -10560,9 +10645,9 @@ null
                     <label>Electrical components</label>
                 </value>
                 <value>
-                    <fullName>Customer has accepted “Keep As Is” discount</fullName>
+                    <fullName>Customer has accepted Ã¢â‚¬Å“Keep As IsÃ¢â‚¬ï¿½ discount</fullName>
                     <default>false</default>
-                    <label>Customer has accepted “Keep As Is” discount</label>
+                    <label>Customer has accepted Ã¢â‚¬Å“Keep As IsÃ¢â‚¬ï¿½ discount</label>
                 </value>
                 <value>
                     <fullName>Part is not listed on Assembly Instructions</fullName>
@@ -10630,7 +10715,7 @@ null
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Unapproved</controllingFieldValue>
-                <valueName>Customer has accepted “Keep As Is” discount</valueName>
+                <valueName>Customer has accepted Ã¢â‚¬Å“Keep As IsÃ¢â‚¬ï¿½ discount</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Unapproved</controllingFieldValue>
