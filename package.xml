@@ -4,6 +4,7 @@
     <types>
         <members>ALMAccount1</members>
         <members>ALMBuild1</members>
+        <members>ALMBuild2</members>
         <members>ALMFeb1</members>
         <members>ALMFeb2</members>
         <members>AccountExtension</members>
@@ -1683,6 +1684,7 @@
         <members>Delayed_Order_Rule__c.No_Auto_Email_After_Callout__c</members>
         <members>Delayed_Order_Rule__c.Order_Amount_Tier_1__c</members>
         <members>Delayed_Order_Rule__c.Order_Type_Category__c</members>
+        <members>DeployMay02Test1__c.Mayo2Field1__c</members>
         <members>Design_Atelier_Quote__c.Converted__c</members>
         <members>Design_Atelier_Quote__c.Count__c</members>
         <members>Design_Atelier_Quote__c.DA_Opportunity_Number__c</members>
