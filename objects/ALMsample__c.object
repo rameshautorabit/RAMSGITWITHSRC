@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>WorkItemNum__c</fullName>
+        <description>verifyin commit3</description>
+        <externalId>false</externalId>
+        <label>WorkItemNum</label>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+</CustomObject>

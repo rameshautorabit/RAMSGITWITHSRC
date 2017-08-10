@@ -138,6 +138,8 @@
         <members>EmailCleanUp</members>
         <members>FeatureFlagService</members>
         <members>FieldMapper</members>
+        <members>FinalJan03Test3</members>
+        <members>FinalJan03Test4</members>
         <members>ForgotPasswordController</members>
         <members>ForgotPasswordControllerTest</members>
         <members>FormatDateTimeLocal_Test</members>
@@ -688,6 +690,7 @@
         <name>CustomApplicationComponent</name>
     </types>
     <types>
+        <members>ALMsample__c.WorkItemNum__c</members>
         <members>AccRecTypes__c.Account_Record_Type__c</members>
         <members>AccRecTypes__c.RecordTypeId__c</members>
         <members>Account.Account_Count__c</members>
