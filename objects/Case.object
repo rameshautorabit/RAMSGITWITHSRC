@@ -576,9 +576,9 @@
                     <label>Pre-Bill Refund</label>
                 </value>
                 <value>
-                    <fullName>Price Match Ã¢â‚¬â€œ Sale/Promo</fullName>
+                    <fullName>Price Match ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ Sale/Promo</fullName>
                     <default>false</default>
-                    <label>Price Match Ã¢â‚¬â€œ Sale/Promo</label>
+                    <label>Price Match ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ Sale/Promo</label>
                 </value>
                 <value>
                     <fullName>Refund for GC/SC/Reward MOP</fullName>
@@ -586,9 +586,9 @@
                     <label>Refund for GC/SC/Reward MOP</label>
                 </value>
                 <value>
-                    <fullName>Reissue System Refund Ã¢â‚¬â€œ Incorrect/Cancelled/Did Not Generate</fullName>
+                    <fullName>Reissue System Refund ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ Incorrect/Cancelled/Did Not Generate</fullName>
                     <default>false</default>
-                    <label>Reissue System Refund Ã¢â‚¬â€œ Incorrect/Cancelled/Did Not Generate</label>
+                    <label>Reissue System Refund ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ Incorrect/Cancelled/Did Not Generate</label>
                 </value>
                 <value>
                     <fullName>Tax Refund</fullName>
@@ -794,7 +794,7 @@
                 <controllingFieldValue>Gift Return</controllingFieldValue>
                 <controllingFieldValue>Manual Charge</controllingFieldValue>
                 <controllingFieldValue>Price Adjustment</controllingFieldValue>
-                <valueName>Reissue System Refund Ã¢â‚¬â€œ Incorrect/Cancelled/Did Not Generate</valueName>
+                <valueName>Reissue System Refund ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ Incorrect/Cancelled/Did Not Generate</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Complimentary Credit</controllingFieldValue>
@@ -817,7 +817,7 @@
                 <controllingFieldValue>Gift Return</controllingFieldValue>
                 <controllingFieldValue>Manual Charge</controllingFieldValue>
                 <controllingFieldValue>Price Adjustment</controllingFieldValue>
-                <valueName>Price Match Ã¢â‚¬â€œ Sale/Promo</valueName>
+                <valueName>Price Match ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ Sale/Promo</valueName>
             </valueSettings>
         </valueSet>
     </fields>
@@ -5847,9 +5847,9 @@ IF(Merchandise_Subtotal__c&gt;0,Flat_Rate_Accommodation_Amount__c/ Merchandise_S
                     <label>Additional Information Required</label>
                 </value>
                 <value>
-                    <fullName>Add SKU in RP Details to OrderÃ‚Â </fullName>
+                    <fullName>Add SKU in RP Details to OrderÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â </fullName>
                     <default>false</default>
-                    <label>Add SKU in RP Details to OrderÃ‚Â </label>
+                    <label>Add SKU in RP Details to OrderÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â </label>
                 </value>
                 <value>
                     <fullName>Approved</fullName>
@@ -5872,9 +5872,9 @@ IF(Merchandise_Subtotal__c&gt;0,Flat_Rate_Accommodation_Amount__c/ Merchandise_S
                     <label>Invalid</label>
                 </value>
                 <value>
-                    <fullName>Merchant Approved MOS/ExchangeÃ‚Â </fullName>
+                    <fullName>Merchant Approved MOS/ExchangeÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â </fullName>
                     <default>false</default>
-                    <label>Merchant Approved MOS/ExchangeÃ‚Â </label>
+                    <label>Merchant Approved MOS/ExchangeÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â </label>
                 </value>
                 <value>
                     <fullName>New Card Provided</fullName>
@@ -5982,9 +5982,9 @@ IF(Merchandise_Subtotal__c&gt;0,Flat_Rate_Accommodation_Amount__c/ Merchandise_S
                     <label>Working with Vendor</label>
                 </value>
                 <value>
-                    <fullName>Working with Vendor Ã¢â‚¬â€œ Setting up SKU</fullName>
+                    <fullName>Working with Vendor ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ Setting up SKU</fullName>
                     <default>false</default>
-                    <label>Working with Vendor Ã¢â‚¬â€œ Setting up SKU</label>
+                    <label>Working with Vendor ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ Setting up SKU</label>
                 </value>
                 <value>
                     <fullName>Denied</fullName>
@@ -8250,10 +8250,10 @@ false)</formula>
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
-                    <fullName>Ã¢â‚¬â€¹Address Change</fullName>
+                    <fullName>ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¹Address Change</fullName>
                     <color>#0B6FCE</color>
                     <default>false</default>
-                    <label>Ã¢â‚¬â€¹Address Change</label>
+                    <label>ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¹Address Change</label>
                 </value>
                 <value>
                     <fullName>All</fullName>
@@ -9233,6 +9233,31 @@ false)</formula>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SLAViolation__c</fullName>
+        <externalId>false</externalId>
+        <label>SLA Violation</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>SendGrid_In_Process__c</fullName>
@@ -10645,9 +10670,9 @@ null
                     <label>Electrical components</label>
                 </value>
                 <value>
-                    <fullName>Customer has accepted Ã¢â‚¬Å“Keep As IsÃ¢â‚¬ï¿½ discount</fullName>
+                    <fullName>Customer has accepted ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“Keep As IsÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¯Ã‚Â¿Ã‚Â½ discount</fullName>
                     <default>false</default>
-                    <label>Customer has accepted Ã¢â‚¬Å“Keep As IsÃ¢â‚¬ï¿½ discount</label>
+                    <label>Customer has accepted ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“Keep As IsÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¯Ã‚Â¿Ã‚Â½ discount</label>
                 </value>
                 <value>
                     <fullName>Part is not listed on Assembly Instructions</fullName>
@@ -10715,7 +10740,7 @@ null
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Unapproved</controllingFieldValue>
-                <valueName>Customer has accepted Ã¢â‚¬Å“Keep As IsÃ¢â‚¬ï¿½ discount</valueName>
+                <valueName>Customer has accepted ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“Keep As IsÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¯Ã‚Â¿Ã‚Â½ discount</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Unapproved</controllingFieldValue>

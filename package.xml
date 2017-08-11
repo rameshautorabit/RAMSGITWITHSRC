@@ -138,6 +138,7 @@
         <members>EmailCleanUp</members>
         <members>FeatureFlagService</members>
         <members>FieldMapper</members>
+        <members>FinalJan03Test2</members>
         <members>FinalJan03Test3</members>
         <members>FinalJan03Test4</members>
         <members>ForgotPasswordController</members>
@@ -1180,6 +1181,7 @@
         <members>Case.Return_Location__c</members>
         <members>Case.Return_Receipt_Processed__c</members>
         <members>Case.SKUs__c</members>
+        <members>Case.SLAViolation__c</members>
         <members>Case.SendGrid_In_Process__c</members>
         <members>Case.SendGrid_Request_Date__c</members>
         <members>Case.SendGrid_Result__c</members>
@@ -1840,6 +1842,7 @@
         <members>Lead.Associate_Number__c</members>
         <members>Lead.Charge_Tax__c</members>
         <members>Lead.Closest_Store__c</members>
+        <members>Lead.CurrentGenerators__c</members>
         <members>Lead.Data_Quality_Description__c</members>
         <members>Lead.Data_Quality_Score__c</members>
         <members>Lead.Deal_Size__c</members>
