@@ -141,6 +141,7 @@
         <members>FinalJan03Test2</members>
         <members>FinalJan03Test3</members>
         <members>FinalJan03Test4</members>
+        <members>FirstClass1</members>
         <members>ForgotPasswordController</members>
         <members>ForgotPasswordControllerTest</members>
         <members>FormatDateTimeLocal_Test</members>
@@ -153,6 +154,8 @@
         <members>IssueServiceTest</members>
         <members>Issue_InventoryCtrlExt</members>
         <members>Issue_InventoryCtrlExt_Test</members>
+        <members>JiraTest1</members>
+        <members>JiraTest2</members>
         <members>Jul07Apex1</members>
         <members>Jul07Apex2</members>
         <members>Jul07Apex3</members>
@@ -361,6 +364,7 @@
         <members>ValidatorClass</members>
         <members>ViewCaseCommentsController</members>
         <members>ViewCaseCommentsController_Test</members>
+        <members>agf__ADM_ChatterFollowersControllerTest</members>
         <members>caseAssignment</members>
         <members>caseAssignment_Test</members>
         <members>caseEntitlementProcess_Test</members>
@@ -1861,6 +1865,7 @@
         <members>Lead.Membership_Number__c</members>
         <members>Lead.Membership_Support_Doc_Rec_d__c</members>
         <members>Lead.Number_of_Employees__c</members>
+        <members>Lead.NumberofLocations__c</members>
         <members>Lead.Phone_Additional1__c</members>
         <members>Lead.Phone_Additional2__c</members>
         <members>Lead.Proof_of_Qualification__c</members>
