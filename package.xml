@@ -73,6 +73,7 @@
         <members>Case_TakeOwnershipCtlExt</members>
         <members>ChangePasswordController</members>
         <members>ChangePasswordControllerTest</members>
+        <members>CheckinTwoProj2</members>
         <members>ChildHierarchyGroup</members>
         <members>ChildHierarchyGroupTest</members>
         <members>ChildHierarchyGroupTests</members>
@@ -3516,6 +3517,7 @@
         <members>User.TLnumber__c</members>
         <members>agf__ADM_Release__c.agf__Release_Type__c</members>
         <members>agf__ADM_Release__c.agf__Scheduled_End_Date__c</members>
+        <members>agf__ADM_Sprint__c.agf__Goals__c</members>
         <members>xtma_Email_Result__c.Bounce_Rate__c</members>
         <members>xtma_Email_Result__c.Campaign__c</members>
         <members>xtma_Email_Result__c.Click_Through_Rate__c</members>
