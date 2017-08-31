@@ -3574,6 +3574,7 @@
         <name>CustomLabels</name>
     </types>
     <types>
+        <members>ALMsample__c</members>
         <members>AccRecTypes__c</members>
         <members>Account</members>
         <members>AccountContactRole</members>
