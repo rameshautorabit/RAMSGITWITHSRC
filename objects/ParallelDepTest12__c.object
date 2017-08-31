@@ -43,7 +43,7 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <description>Testfdsfdsfsdfdsfdsfsdfdfdsfdsfdsf</description>
+    <description>Test</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
@@ -52,19 +52,12 @@
     <enableSearch>false</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <fields>
-        <fullName>TestNum__c</fullName>
-        <externalId>false</externalId>
-        <label>TestNum</label>
-        <trackTrending>false</trackTrending>
-        <type>AutoNumber</type>
-    </fields>
-    <label>ParallelTest</label>
+    <label>ParallelDepTest12</label>
     <nameField>
         <label>ParallelDepTest12 Name</label>
         <type>Text</type>
     </nameField>
-    <pluralLabel>ParallelTests</pluralLabel>
+    <pluralLabel>ParallelDepTest12s</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
