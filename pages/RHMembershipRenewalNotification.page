@@ -1,3 +1,0 @@
-<apex:page standardController="Membership__c" sidebar="false">     
- <c:MembershipRenewalNotification RHMembershipId="{!Membership__c.Id}"/>
-</apex:page>

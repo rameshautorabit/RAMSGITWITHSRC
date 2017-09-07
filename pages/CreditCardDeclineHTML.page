@@ -1,5 +1,0 @@
-<apex:page controller="CreditCardDecline" id="ccdHTMLPage" >
-	
-	<c:CreditCardDecline cId="{!caseId}" />
-	
-</apex:page>

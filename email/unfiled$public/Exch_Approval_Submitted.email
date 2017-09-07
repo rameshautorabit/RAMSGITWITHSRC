@@ -1,6 +1,0 @@
-Your approval is requested on a price override for Returns Case {!Case.CaseNumber}.
-
-{!Case.Executive_Summary_Text__c}
-
-To approve or reject this request, or to view the Returns Case, click the link below:
-{!Case.Link}

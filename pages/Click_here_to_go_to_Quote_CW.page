@@ -1,7 +1,0 @@
-<apex:page standardController="quote" extensions="Quote_To_CW_VFExtension" action="{!VFRedirect}">
-
-<apex:pageMessages id="showmsg"></apex:pageMessages>
-
-
-
- </apex:page>

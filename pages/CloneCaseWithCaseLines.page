@@ -1,5 +1,0 @@
-<apex:page standardController="Case" extensions="CloneCaseWithCaseLineController" action="{!cloneRecord}">
-
-	<apex:pageMessages />
-
-</apex:page>

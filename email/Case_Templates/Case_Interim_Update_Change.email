@@ -1,7 +1,0 @@
-Hello {!Case.OwnerFullName},
-
-A change has been made to the interim update field to {!Case.Interim_Update__c} for case {!Case.CaseNumber}. Please review if necessary.
-
-If not, please provide proposal.
-
-{!Case.Case_URL__c}

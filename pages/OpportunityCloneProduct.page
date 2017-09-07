@@ -1,8 +1,0 @@
-<apex:page standardController="Opportunity" extensions="OpportunityCloneProductCtlExt" tabStyle="Opportunity" action="{!executeClone}">
-	<apex:form >
-		<apex:pageMessages />
-		<apex:sectionHeader title="Opportunity: Clone with Products" subtitle="New Opportunity" />
-		<br/>
-		Click&nbsp;<apex:outputLink value="{!retURL}">here</apex:outputLink> to return to the previous page.
-	</apex:form>
-</apex:page>

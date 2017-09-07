@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Document xmlns="http://soap.sforce.com/2006/04/metadata">
-    <description>If customer requests quote for air freight, please fill out completely, paying particular attention to carton wt &amp; dim, and origin/destination.</description>
-    <internalUseOnly>false</internalUseOnly>
-    <name>Air Quote Authorization Form</name>
-    <public>true</public>
-</Document>

@@ -1,5 +1,0 @@
-<apex:page controller="DelayNotification" id="dnHTMLPage" >
-	
-	<c:DelayNotification cId="{!caseId}" />
-	
-</apex:page>

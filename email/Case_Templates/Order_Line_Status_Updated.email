@@ -1,3 +1,0 @@
-{!RH_Order__c.OwnerFullName} 
-
-The status of order line {!Order_Line_Items__c.Name} on order {!RH_Order__c.Name} has changed.

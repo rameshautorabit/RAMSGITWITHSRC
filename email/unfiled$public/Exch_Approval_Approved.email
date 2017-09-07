@@ -1,4 +1,0 @@
-Returns Case {!Case.CaseNumber} has been approved by {!User.Name}.
-
-To view Returns Case {!Case.CaseNumber} click the link below:
-{!Case.Link}

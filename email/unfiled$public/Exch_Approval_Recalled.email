@@ -1,4 +1,0 @@
-Returns Case {!Case.CaseNumber} has been recalled. No further action is required at this time.
-
-To view Returns Case {!Case.CaseNumber} click the link below:
-{!Case.Link}

@@ -1,5 +1,0 @@
-<messaging:emailTemplate subject="Welcome to the RH Members Program" recipientType="User" relatedToType="Membership__c">
-<messaging:htmlEmailBody >
- <c:RHMembershipWelcomeEmail RHMembershipId="{!relatedTo.Id}"/>
-</messaging:htmlEmailBody>
-</messaging:emailTemplate>

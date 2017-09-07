@@ -1,6 +1,0 @@
-<apex:page controller="ManageSkillSetClass">
-   
-</apex:page>
-
- <!-- <apex:commandLink value="Save" style="color:#0000EE" action="{!addNewSkillSet}" reRender="skillSetPageBlock" status="loadingStatus"/> | &nbsp;
-                    <apex:commandLink value="Cancel" style="color:#0000EE" action="{!cancelNewSkillSet}" reRender="skillSetPageBlock" immediate="true" status="loadingStatus"/>-->

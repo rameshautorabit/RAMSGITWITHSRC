@@ -1,4 +1,0 @@
-Operations Request {!Operations_Request__c.Name} has been approved by the customer.
-
-Click below to view the Operations Request:
-{!Operations_Request__c.Link}

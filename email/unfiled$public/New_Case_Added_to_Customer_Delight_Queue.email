@@ -1,3 +1,0 @@
-Case # {!Case.CaseNumber}: {!Case.Subject} has been added to the Customer Delight queue. Please click on the link below to view this case and assign it to the appropriate Customer Delight user for follow up.
-
-{!Case.Link}

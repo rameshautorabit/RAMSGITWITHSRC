@@ -1,5 +1,0 @@
-<messaging:emailTemplate subject="{!relatedTo.RenewalEmailSubjectLine__c}" recipientType="User" relatedToType="Membership__c">
-<messaging:htmlEmailBody >
- <c:MembershipReminder RHMembershipId="{!relatedTo.Id}"/>
-</messaging:htmlEmailBody>
-</messaging:emailTemplate>
