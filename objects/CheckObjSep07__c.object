@@ -68,6 +68,14 @@
         <trackTrending>false</trackTrending>
         <type>AutoNumber</type>
     </fields>
+    <fields>
+        <fullName>Num3__c</fullName>
+        <description>vcxvxc</description>
+        <externalId>false</externalId>
+        <label>Num3</label>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
     <label>CheckObjSep07</label>
     <nameField>
         <label>CheckObjSep07 Name</label>
