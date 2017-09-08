@@ -54,7 +54,7 @@
     <enableStreamingApi>true</enableStreamingApi>
     <fields>
         <fullName>Num1__c</fullName>
-        <description>dfdsfdsf</description>
+        <description>dfdsfdsfdsdsfdsfdsfdsf</description>
         <externalId>false</externalId>
         <label>Num1</label>
         <trackTrending>false</trackTrending>
