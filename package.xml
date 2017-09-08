@@ -288,6 +288,7 @@
         <members>CheckObjSep07__c.Num2__c</members>
         <members>CheckObjSep07__c.Num3__c</members>
         <members>CheckObjSep07__c.Num4__c</members>
+        <members>CheckObjSep07__c.Num5__c</members>
         <members>Contact.AccountId</members>
         <members>Contact.AssistantName</members>
         <members>Contact.AssistantPhone</members>
