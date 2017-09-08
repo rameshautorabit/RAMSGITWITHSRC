@@ -92,6 +92,14 @@
         <trackTrending>false</trackTrending>
         <type>AutoNumber</type>
     </fields>
+    <fields>
+        <fullName>Num6__c</fullName>
+        <description>yyyyyyyyygfdgfdg</description>
+        <externalId>false</externalId>
+        <label>Num6</label>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
     <label>CheckObjSep07</label>
     <nameField>
         <label>CheckObjSep07 Name</label>
