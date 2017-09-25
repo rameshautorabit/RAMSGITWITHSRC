@@ -1,4 +1,0 @@
-<aura:tokens >
-    <aura:token name="commitHeaderColor" value="#eef1f6"/>
-    <aura:token name="noCommitsTextColor" value="#16325c"/>
-</aura:tokens>
