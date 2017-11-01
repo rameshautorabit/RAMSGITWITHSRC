@@ -1146,6 +1146,7 @@
         <members>Campaign.ViewCampaignInfluenceReport</members>
         <members>Case.UpsellCrosssellOpportunity</members>
         <members>Opportunity.DeliveryStatus</members>
+        <members>Opportunity.DeliveryStatues</members>
         <name>WebLink</name>
     </types>
 </Package>
