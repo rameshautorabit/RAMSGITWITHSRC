@@ -14,6 +14,8 @@
         <members>ALMMarch09Test1</members>
         <members>ALMTest2</members>
         <members>April26Account1</members>
+        <members>CIJobUC1</members>
+        <members>CIJobUC2</members>
         <members>CancelDeploy1</members>
         <members>CancelDeploy2</members>
         <members>CheckinTwoProj1</members>
@@ -1145,8 +1147,8 @@
         <members>Account.Billing</members>
         <members>Campaign.ViewCampaignInfluenceReport</members>
         <members>Case.UpsellCrosssellOpportunity</members>
-        <members>Opportunity.DeliveryStatus</members>
         <members>Opportunity.DeliveryStatues</members>
+        <members>Opportunity.DeliveryStatus</members>
         <name>WebLink</name>
     </types>
 </Package>
