@@ -6,6 +6,7 @@
     <tab>standard-Workspace</tab>
     <tab>standard-ContentSearch</tab>
     <tab>standard-ContentSubscriptions</tab>
-    <tab>standard-ContentFavorites</tab>
     <tab>Test__c</tab>
+    <tab>Test43434__c</tab>
+    <tab>Book__c</tab>
 </CustomApplication>

@@ -2,6 +2,21 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <version>40.0</version>
     <types>
+        <members>A0</members>
+        <members>A0233</members>
+        <members>A081</members>
+        <members>A08123</members>
+        <members>A090</members>
+        <members>A1</members>
+        <members>A12</members>
+        <members>A28</members>
+        <members>A29</members>
+        <members>A600</members>
+        <members>A602</members>
+        <members>A603</members>
+        <members>A786</members>
+        <members>A789</members>
+        <members>A7891</members>
         <members>ALMAccount</members>
         <members>ALMAccount1</members>
         <members>ALMBuild1</members>
@@ -13,6 +28,8 @@
         <members>ALMFebX</members>
         <members>ALMMarch09Test1</members>
         <members>ALMTest2</members>
+        <members>AS1</members>
+        <members>AS2</members>
         <members>April26Account1</members>
         <members>CIJobUC1</members>
         <members>CIJobUC2</members>
@@ -26,6 +43,9 @@
         <members>CheckinTwoProj2</members>
         <members>CreatingAccount11</members>
         <members>CreatingAccount18</members>
+        <members>DClass2</members>
+        <members>DClass5</members>
+        <members>Dclass6</members>
         <members>DummyBuildTest1</members>
         <members>FEB21Apex1</members>
         <members>Feb27Class1</members>
@@ -36,6 +56,7 @@
         <members>FinalJan03Test4</members>
         <members>FinalJan03Test5</members>
         <members>FirstClass1</members>
+        <members>HelloWorldTestClass</members>
         <members>JiraTest1</members>
         <members>JiraTest2</members>
         <members>Jul07Apex1</members>
@@ -49,6 +70,7 @@
         <members>Jun22Test3</members>
         <members>Jun30Class1</members>
         <members>Jun30Class2</members>
+        <members>MyHelloWorld</members>
         <members>PlDepNov23Final</members>
         <members>PlDepNov23Final2</members>
         <members>PlDepNov23Test1</members>
@@ -73,6 +95,12 @@
         <members>VOneDec29Test3</members>
         <members>VOneJan03Test1</members>
         <members>VOneJan03Test2</members>
+        <members>ZCL1</members>
+        <members>a0testclass</members>
+        <members>a12testclass</members>
+        <members>a1testclass</members>
+        <members>a28testclass</members>
+        <members>a29testclass</members>
         <members>prevalidationTest1</members>
         <members>prevalidationTest2</members>
         <name>ApexClass</name>
@@ -80,6 +108,10 @@
     <types>
         <members>Job_Candidate_Help</members>
         <name>ApexPage</name>
+    </types>
+    <types>
+        <members>HelloWorldTrigger</members>
+        <name>ApexTrigger</name>
     </types>
     <types>
         <members>Salesforce1</members>
@@ -173,7 +205,6 @@
         <members>Asset.InstallDate</members>
         <members>Asset.IsCompetitorProduct</members>
         <members>Asset.IsInternal</members>
-        <members>Asset.LocationId</members>
         <members>Asset.Name</members>
         <members>Asset.OwnerId</members>
         <members>Asset.ParentId</members>
@@ -187,12 +218,15 @@
         <members>Asset.RootAssetId</members>
         <members>Asset.SerialNumber</members>
         <members>Asset.Status</members>
+        <members>Asset.StockKeepingUnit</members>
         <members>Asset.UsageEndDate</members>
         <members>AssetRelationship.AssetId</members>
         <members>AssetRelationship.FromDate</members>
         <members>AssetRelationship.RelatedAssetId</members>
         <members>AssetRelationship.RelationshipType</members>
         <members>AssetRelationship.ToDate</members>
+        <members>Book__c.Department__c</members>
+        <members>Book__c.price__c</members>
         <members>Campaign.ActualCost</members>
         <members>Campaign.AmountAllOpportunities</members>
         <members>Campaign.AmountWonOpportunities</members>
@@ -334,6 +368,7 @@
         <members>ContentVersion.Language</members>
         <members>ContentVersion.OwnerId</members>
         <members>ContentVersion.SharingOption</members>
+        <members>ContentVersion.SharingPrivacy</members>
         <members>ContentVersion.TagCsv</members>
         <members>ContentVersion.Title</members>
         <members>Contract.AccountId</members>
@@ -535,8 +570,10 @@
         <members>Lead.Website</members>
         <members>LeadCleanInfo.Industry</members>
         <members>Macro.Description</members>
+        <members>Macro.IsAlohaSupported</members>
         <members>Macro.Name</members>
         <members>Macro.OwnerId</members>
+        <members>Macro.StartingContext</members>
         <members>Opportunity.AccountId</members>
         <members>Opportunity.Amount</members>
         <members>Opportunity.CampaignId</members>
@@ -634,10 +671,18 @@
         <members>Product2.Name</members>
         <members>Product2.ProductCode</members>
         <members>Product2.QuantityUnitOfMeasure</members>
+        <members>Product2.StockKeepingUnit</members>
         <members>RameshRabit__c.AprilFool__c</members>
         <members>RameshRabit__c.TestField2__c</members>
         <members>RameshRabit__c.Testfield1__c</members>
         <members>RameshRabit__c.marchField__c</members>
+        <members>Scorecard.Description</members>
+        <members>Scorecard.Name</members>
+        <members>ScorecardMetric.Category</members>
+        <members>ScorecardMetric.Description</members>
+        <members>ScorecardMetric.Name</members>
+        <members>ScorecardMetric.ReportId</members>
+        <members>ScorecardMetric.ScorecardId</members>
         <members>SocialPersona.ExternalId</members>
         <members>SocialPersona.ExternalPictureURL</members>
         <members>SocialPersona.Name</members>
@@ -658,6 +703,7 @@
         <members>Task.Description</members>
         <members>Task.Email</members>
         <members>Task.IsRecurrence</members>
+        <members>Task.IsReminderSet</members>
         <members>Task.OwnerId</members>
         <members>Task.Phone</members>
         <members>Task.Priority</members>
@@ -711,6 +757,7 @@
         <members>Asset</members>
         <members>AssetRelationship</members>
         <members>AssistantProgress</members>
+        <members>Book__c</members>
         <members>Buildobject5__c</members>
         <members>Campaign</members>
         <members>CampaignMember</members>
@@ -758,11 +805,14 @@
         <members>PricebookEntry</members>
         <members>Product2</members>
         <members>RameshRabit__c</members>
+        <members>Scorecard</members>
+        <members>ScorecardMetric</members>
         <members>Site</members>
         <members>SocialPersona</members>
         <members>Solution</members>
         <members>StreamingChannel</members>
         <members>Task</members>
+        <members>Test43434__c</members>
         <members>TestNewFebDemo__c</members>
         <members>Test__c</members>
         <members>Trail__c</members>
@@ -778,6 +828,7 @@
         <members>April11Obj2__c-en_US</members>
         <members>April11Obj3__c-en_US</members>
         <members>April11Obj__c-en_US</members>
+        <members>Book__c-en_US</members>
         <members>Buildobject5__c-en_US</members>
         <members>Campsite_Reservation__c-en_US</members>
         <members>Campsite__c-en_US</members>
@@ -792,6 +843,7 @@
         <members>ParallelDepTest12__c-en_US</members>
         <members>ParallelTest__c-en_US</members>
         <members>RameshRabit__c-en_US</members>
+        <members>Test43434__c-en_US</members>
         <members>TestNewFebDemo__c-en_US</members>
         <members>Test__c-en_US</members>
         <members>Trail__c-en_US</members>
@@ -801,7 +853,9 @@
         <name>CustomObjectTranslation</name>
     </types>
     <types>
+        <members>Book__c</members>
         <members>Fundraiser__c</members>
+        <members>Test43434__c</members>
         <members>Test__c</members>
         <members>Vehicle__c</members>
         <name>CustomTab</name>
@@ -832,6 +886,10 @@
         <name>EscalationRule</name>
     </types>
     <types>
+        <members>BTechDeps</members>
+        <name>GlobalValueSet</name>
+    </types>
+    <types>
         <members>DE Default</members>
         <name>HomePageLayout</name>
     </types>
@@ -851,6 +909,7 @@
         <members>April11Obj3__c-April11Obj3 Layout</members>
         <members>April11Obj__c-April11Obj Layout</members>
         <members>Asset-Asset Layout</members>
+        <members>Book__c-Book Layout</members>
         <members>Buildobject5__c-Buildobject5 Layout</members>
         <members>Campaign-Campaign Layout</members>
         <members>CampaignMember-Campaign Member Page Layout</members>
@@ -900,8 +959,11 @@
         <members>PricebookEntry-Price Book Entry Layout</members>
         <members>Product2-Product Layout</members>
         <members>RameshRabit__c-RameshRabit Layout</members>
+        <members>Scorecard-Scorecard Layout</members>
+        <members>ScorecardMetric-Scorecard Metric Layout</members>
         <members>Solution-Solution Layout</members>
         <members>Task-Task Layout</members>
+        <members>Test43434__c-Test43434 Layout</members>
         <members>TestNewFebDemo__c-TestNewFebDemo Layout</members>
         <members>Test__c-Test Layout</members>
         <members>Trail__c-Trail Layout</members>
@@ -925,6 +987,7 @@
         <members>Activity.TodaysTasks</members>
         <members>Activity.UpcomingEvents</members>
         <members>Asset.AllAssets</members>
+        <members>Book__c.All</members>
         <members>Campaign.AllActiveCampaigns</members>
         <members>Campaign.MyActiveCampaigns</members>
         <members>Case.AllClosedCases</members>
@@ -964,6 +1027,7 @@
         <members>Product2.AllProducts</members>
         <members>Solution.AllReviewedSolutions</members>
         <members>Solution.AllUnreviewedSolutions</members>
+        <members>Test43434__c.All</members>
         <members>Test__c.All</members>
         <members>User.ActiveUsers</members>
         <members>User.AdminUsers</members>
@@ -1043,6 +1107,7 @@
         <members>Account.StadardUser</members>
         <members>April11Obj__c.Test2</members>
         <members>April11Obj__c.TestRams</members>
+        <members>Book__c.SamplerecordTypeName</members>
         <members>Idea.InternalIdeasIdeaRecordType</members>
         <name>RecordType</name>
     </types>
@@ -1101,7 +1166,40 @@
         <name>Settings</name>
     </types>
     <types>
-        <members>Task.UpdateStatus_0.quickAction</members>
+        <members>ALMsample__c</members>
+        <members>Account</members>
+        <members>April11Obj2__c</members>
+        <members>April11Obj3__c</members>
+        <members>April11Obj__c</members>
+        <members>Asset</members>
+        <members>Book__c</members>
+        <members>Buildobject5__c</members>
+        <members>Campaign</members>
+        <members>Campsite__c</members>
+        <members>Candidate__c</members>
+        <members>Case</members>
+        <members>CheckObjSep07__c</members>
+        <members>Contact</members>
+        <members>DeployMay02Test1__c</members>
+        <members>Fundraiser__c</members>
+        <members>JiraTestObj1__c</members>
+        <members>Jul13Obj1__c</members>
+        <members>Jun30Obj1__c</members>
+        <members>Lead</members>
+        <members>LoginPage__c</members>
+        <members>Opportunity</members>
+        <members>Order</members>
+        <members>ParallelDepTest12__c</members>
+        <members>ParallelTest__c</members>
+        <members>RameshRabit__c</members>
+        <members>Test43434__c</members>
+        <members>TestNewFebDemo__c</members>
+        <members>Test__c</members>
+        <members>Trail__c</members>
+        <members>User</members>
+        <members>Vehicle__c</members>
+        <members>aug31obj__c</members>
+        <members>march09Test__c</members>
         <name>SharingRules</name>
     </types>
     <types>
@@ -1148,10 +1246,13 @@
         <name>StandardValueSet</name>
     </types>
     <types>
+        <members>Book__c.SampleValidationRule</members>
+        <name>ValidationRule</name>
+    </types>
+    <types>
         <members>Account.Billing</members>
         <members>Campaign.ViewCampaignInfluenceReport</members>
         <members>Case.UpsellCrosssellOpportunity</members>
-        <members>Opportunity.DeliveryStatues</members>
         <members>Opportunity.DeliveryStatus</members>
         <name>WebLink</name>
     </types>

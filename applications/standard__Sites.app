@@ -5,4 +5,6 @@
     <tab>standard-Chatter</tab>
     <tab>standard-Sites</tab>
     <tab>Test__c</tab>
+    <tab>Test43434__c</tab>
+    <tab>Book__c</tab>
 </CustomApplication>

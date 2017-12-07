@@ -8,4 +8,6 @@
     <tab>standard-CollaborationGroup</tab>
     <tab>standard-File</tab>
     <tab>Test__c</tab>
+    <tab>Test43434__c</tab>
+    <tab>Book__c</tab>
 </CustomApplication>
