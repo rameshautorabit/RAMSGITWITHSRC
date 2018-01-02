@@ -8,5 +8,9 @@
         <plural>true</plural>
         <value>DeployMay02Test1s</value>
     </caseValues>
+    <fields>
+        <label><!-- Mayo2Field1 --></label>
+        <name>Mayo2Field1__c</name>
+    </fields>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

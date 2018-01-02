@@ -8,5 +8,17 @@
         <plural>true</plural>
         <value>Trails</value>
     </caseValues>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Distance --></label>
+        <name>Distance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Inspection Date --></label>
+        <name>Last_Inspection_Date__c</name>
+    </fields>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

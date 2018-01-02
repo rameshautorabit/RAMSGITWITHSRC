@@ -8,5 +8,9 @@
         <plural>true</plural>
         <value>ParallelTests</value>
     </caseValues>
+    <fields>
+        <label><!-- TestNum --></label>
+        <name>TestNum__c</name>
+    </fields>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

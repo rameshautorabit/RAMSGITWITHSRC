@@ -9,4 +9,6 @@
     <tab>standard-report</tab>
     <tab>standard-Dashboard</tab>
     <tab>Test__c</tab>
+    <tab>Test43434__c</tab>
+    <tab>Book__c</tab>
 </CustomApplication>

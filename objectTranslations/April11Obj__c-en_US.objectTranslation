@@ -8,5 +8,13 @@
         <plural>true</plural>
         <value>April11Objs</value>
     </caseValues>
+    <recordTypes>
+        <label><!-- Test2 --></label>
+        <name>Test2</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- TestRams --></label>
+        <name>TestRams</name>
+    </recordTypes>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

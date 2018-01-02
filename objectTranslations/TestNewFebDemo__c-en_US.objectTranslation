@@ -8,5 +8,9 @@
         <plural>true</plural>
         <value>TestNewFebDemos</value>
     </caseValues>
+    <fields>
+        <label><!-- SubField1 --></label>
+        <name>SubField1__c</name>
+    </fields>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

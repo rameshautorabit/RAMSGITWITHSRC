@@ -8,5 +8,22 @@
         <plural>true</plural>
         <value>JiraTestObj1s</value>
     </caseValues>
+    <fields>
+        <label><!-- FinalTestField1 --></label>
+        <name>FinalTestField1__c</name>
+    </fields>
+    <fields>
+        <label><!-- JiraRameshtest1 --></label>
+        <name>JiraRameshtest1__c</name>
+    </fields>
+    <fields>
+        <label><!-- NiruField1 --></label>
+        <name>NiruField1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Build --></label>
+        <name>testjira1__c</name>
+        <relationshipLabel><!-- JiraTestObj1s --></relationshipLabel>
+    </fields>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

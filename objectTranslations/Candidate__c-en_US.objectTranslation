@@ -8,5 +8,25 @@
         <plural>true</plural>
         <value>Candidates</value>
     </caseValues>
+    <fields>
+        <label><!-- Prospect Rating --></label>
+        <name>Procepe__c</name>
+        <picklistValues>
+            <masterLabel>Cool</masterLabel>
+            <translation><!-- Cool --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hot</masterLabel>
+            <translation><!-- Hot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manager Faviorite</masterLabel>
+            <translation><!-- Manager Faviorite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warm</masterLabel>
+            <translation><!-- Warm --></translation>
+        </picklistValues>
+    </fields>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>
