@@ -59,7 +59,7 @@
         <fullName>IsRecurrence</fullName>
     </fields>
     <fields>
-        <fullName>IsVisibleInSelfService</fullName>
+        <fullName>IsReminderSet</fullName>
     </fields>
     <fields>
         <fullName>OwnerId</fullName>

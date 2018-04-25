@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>RameshRabit</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>RameshRabits</value>
+    </caseValues>
+    <fields>
+        <label><!-- AprilFool --></label>
+        <name>AprilFool__c</name>
+    </fields>
+    <fields>
+        <label><!-- TestField2 --></label>
+        <name>TestField2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Testfield1 --></label>
+        <name>Testfield1__c</name>
+    </fields>
+    <fields>
+        <label><!-- marchField --></label>
+        <name>marchField__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -10,4 +10,7 @@
     <tab>Setup_VCS_branch__c</tab>
     <tab>setup_vcs__c</tab>
     <tab>CommitFetch__c</tab>
+    <tab>Test__c</tab>
+    <tab>Test43434__c</tab>
+    <tab>Book__c</tab>
 </CustomApplication>

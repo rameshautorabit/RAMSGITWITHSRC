@@ -12,10 +12,6 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>Description</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
                 <field>ImageUrl</field>
             </layoutItems>
         </layoutColumns>
@@ -23,6 +19,16 @@
             <layoutItems>
                 <behavior>Required</behavior>
                 <field>OwnerId</field>
+                <behavior>Readonly</behavior>
+                <field>Num6__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Num7__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Num8__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>

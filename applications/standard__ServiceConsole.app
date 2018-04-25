@@ -173,32 +173,18 @@
     <tab>standard-Case</tab>
     <tab>standard-Opportunity</tab>
     <tab>standard-Lead</tab>
-    <tab>standard-Knowledge</tab>
-    <tab>standard-LiveAgent</tab>
-    <tab>Customer_Satisfaction_Survey__c</tab>
-    <tab>Commit_History__c</tab>
-    <tab>Setup__c</tab>
-    <tab>Setup_VCS_branch__c</tab>
-    <tab>setup_vcs__c</tab>
-    <tab>CommitFetch__c</tab>
+    <tab>Test__c</tab>
+    <tab>Test43434__c</tab>
+    <tab>Book__c</tab>
     <workspaceMappings>
         <mapping>
-            <tab>CommitFetch__c</tab>
+            <tab>Book__c</tab>
         </mapping>
         <mapping>
-            <tab>Commit_History__c</tab>
+            <tab>Test43434__c</tab>
         </mapping>
         <mapping>
-            <tab>Customer_Satisfaction_Survey__c</tab>
-        </mapping>
-        <mapping>
-            <tab>Setup_VCS_branch__c</tab>
-        </mapping>
-        <mapping>
-            <tab>Setup__c</tab>
-        </mapping>
-        <mapping>
-            <tab>setup_vcs__c</tab>
+            <tab>Test__c</tab>
         </mapping>
         <mapping>
             <tab>standard-Account</tab>
@@ -210,9 +196,6 @@
         <mapping>
             <fieldName>AccountId</fieldName>
             <tab>standard-Contact</tab>
-        </mapping>
-        <mapping>
-            <tab>standard-Knowledge</tab>
         </mapping>
         <mapping>
             <tab>standard-Lead</tab>

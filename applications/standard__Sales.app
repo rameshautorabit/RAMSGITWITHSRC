@@ -19,4 +19,15 @@
     <tab>setup_vcs__c</tab>
     <tab>CommitFetch__c</tab>
     <tab>standard-Quote</tab>
+    <tab>standard-Forecasting3</tab>
+    <tab>standard-Contract</tab>
+    <tab>standard-Order</tab>
+    <tab>standard-Case</tab>
+    <tab>standard-Solution</tab>
+    <tab>standard-Product2</tab>
+    <tab>standard-report</tab>
+    <tab>standard-Dashboard</tab>
+    <tab>Test__c</tab>
+    <tab>Test43434__c</tab>
+    <tab>Book__c</tab>
 </CustomApplication>

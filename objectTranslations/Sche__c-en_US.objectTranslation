@@ -11,6 +11,8 @@
     <fields>
         <label><!-- Sam --></label>
         <name>Sam__c</name>
+        <label><!-- WorkItemNum --></label>
+        <name>WorkItemNum__c</name>
     </fields>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

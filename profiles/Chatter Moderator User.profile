@@ -81,7 +81,167 @@
         <visible>false</visible>
     </applicationVisibilities>
     <classAccesses>
+<<<<<<< HEAD
         <apexClass>ARApexclass2</apexClass>
+=======
+        <apexClass>A0</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>A0233</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>A081</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>A08123</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>A090</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>A1</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>A12</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>A28</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>A29</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>A600</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>A602</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>A603</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>A786</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>A789</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>A7891</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ALMAccount</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ALMAccount1</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ALMBuild1</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ALMBuild2</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ALMBuild3</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ALMFeb1</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ALMFeb100</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ALMFeb2</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ALMFebX</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ALMMarch09Test1</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ALMTest2</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>AS1</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>AS2</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>April26Account1</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CIJobUC1</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CIJobUC2</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CIJobUC3</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CIJobUC4</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CIJobUC5</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CIJobUC6</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CancelDeploy1</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CancelDeploy2</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CheckinTwoProj1</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CheckinTwoProj2</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CreatingAccount11</apexClass>
+>>>>>>> 6a871c5... Commit From AutoRABIT [Branch Baseline] [LabelName:FinalTestSpt07]
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -89,7 +249,23 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+<<<<<<< HEAD
         <apexClass>ARApexclass2345</apexClass>
+=======
+        <apexClass>DClass2</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>DClass5</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Dclass6</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>DummyBuildTest1</apexClass>
+>>>>>>> 6a871c5... Commit From AutoRABIT [Branch Baseline] [LabelName:FinalTestSpt07]
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -129,7 +305,15 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+<<<<<<< HEAD
         <apexClass>CommitHistoryController</apexClass>
+=======
+        <apexClass>HelloWorldTestClass</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>JiraTest1</apexClass>
+>>>>>>> 6a871c5... Commit From AutoRABIT [Branch Baseline] [LabelName:FinalTestSpt07]
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -181,7 +365,15 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+<<<<<<< HEAD
         <apexClass>MyProfilePageControllerTest</apexClass>
+=======
+        <apexClass>MyHelloWorld</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>PlDepNov23Final</apexClass>
+>>>>>>> 6a871c5... Commit From AutoRABIT [Branch Baseline] [LabelName:FinalTestSpt07]
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -261,7 +453,55 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+<<<<<<< HEAD
         <apexClass>testSumanthExtension</apexClass>
+=======
+        <apexClass>VOneDec29Test2</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>VOneDec29Test3</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>VOneJan03Test1</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>VOneJan03Test2</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ZCL1</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>a0testclass</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>a12testclass</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>a1testclass</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>a28testclass</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>a29testclass</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>prevalidationTest1</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>prevalidationTest2</apexClass>
+>>>>>>> 6a871c5... Commit From AutoRABIT [Branch Baseline] [LabelName:FinalTestSpt07]
         <enabled>false</enabled>
     </classAccesses>
     <custom>false</custom>
@@ -502,12 +742,22 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Asset.StockKeepingUnit</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Asset.UsageEndDate</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>AssetRelationship.RelationshipType</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Book__c.price__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -931,6 +1181,36 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>CheckObjSep07__c.Num3__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CheckObjSep07__c.Num4__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CheckObjSep07__c.Num5__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CheckObjSep07__c.Num6__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CheckObjSep07__c.Num7__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CheckObjSep07__c.Num8__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Contact.AccountId</field>
         <readable>true</readable>
@@ -1248,6 +1528,24 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Goal.OrigGoalId__c</field>
+<<<<<<< HEAD
+=======
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Idea.Attachment</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Idea.Status</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>JiraTestObj1__c.FinalTestField1__c</field>
+>>>>>>> 6a871c5... Commit From AutoRABIT [Branch Baseline] [LabelName:FinalTestSpt07]
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1423,6 +1721,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Lead.No_of_Users__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Metric.OrigMetricId__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1731,6 +2034,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Product2.StockKeepingUnit</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Professional__c.Customer_Success_User__c</field>
         <readable>false</readable>
@@ -1782,7 +2090,21 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+<<<<<<< HEAD
         <field>Questionnaire_Implementation__c.Email__c</field>
+=======
+        <field>User.agf__Certified_Product_Owner__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>User.agf__Certified_Scrum_Master__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>User.agf__External_ID__c</field>
+>>>>>>> 6a871c5... Commit From AutoRABIT [Branch Baseline] [LabelName:FinalTestSpt07]
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1797,7 +2119,21 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+<<<<<<< HEAD
         <field>Questionnaire_Implementation__c.Long_Term_Goals__c</field>
+=======
+        <field>User.agf__Product_Owner_Certified_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>User.agf__Scrum_Master_Certified_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>User.agf__Show_All_Work_Comments__c</field>
+>>>>>>> 6a871c5... Commit From AutoRABIT [Branch Baseline] [LabelName:FinalTestSpt07]
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1812,7 +2148,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+<<<<<<< HEAD
         <field>Questionnaire_Implementation__c.Opportunity__c</field>
+=======
+        <field>User.agf__User_Preference__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>User.agf__Wall_Preference__c</field>
+>>>>>>> 6a871c5... Commit From AutoRABIT [Branch Baseline] [LabelName:FinalTestSpt07]
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1835,6 +2180,7 @@
         <field>Questionnaire_Implementation__c.Text_Automation_Details__c</field>
         <readable>false</readable>
     </fieldPermissions>
+<<<<<<< HEAD
     <fieldPermissions>
         <editable>true</editable>
         <field>Quote.AccountId</field>
@@ -2570,21 +2916,52 @@
         <field>setup_vcs__c.remoteurl__c</field>
         <readable>false</readable>
     </fieldPermissions>
+=======
+    <layoutAssignments>
+        <layout>ALMsample__c-ALMsample Layout</layout>
+    </layoutAssignments>
+>>>>>>> 6a871c5... Commit From AutoRABIT [Branch Baseline] [LabelName:FinalTestSpt07]
     <layoutAssignments>
         <layout>Account-Account Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Account-Account Layout</layout>
+<<<<<<< HEAD
         <recordType>Account.Account</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Account-Account Layout</layout>
         <recordType>Account.Business_Account</recordType>
+=======
+        <recordType>Account.NewRT</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-Account Layout</layout>
+        <recordType>Account.StadardUser</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>April11Obj2__c-April11Obj2 Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>April11Obj3__c-April11Obj3 Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>April11Obj__c-April11Obj Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>April11Obj__c-April11Obj Layout</layout>
+        <recordType>April11Obj__c.Test2</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>April11Obj__c-April11Obj Layout</layout>
+        <recordType>April11Obj__c.TestRams</recordType>
+>>>>>>> 6a871c5... Commit From AutoRABIT [Branch Baseline] [LabelName:FinalTestSpt07]
     </layoutAssignments>
     <layoutAssignments>
         <layout>Asset-Asset Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+<<<<<<< HEAD
         <layout>Campaign-Campaign Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -2616,26 +2993,72 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Commit_History__c-Commit History Layout</layout>
+=======
+        <layout>Book__c-Book Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Book__c-Book Layout</layout>
+        <recordType>Book__c.SamplerecordTypeName</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Buildobject5__c-Buildobject5 Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Campaign-Campaign Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CampaignMember-Campaign Member Page Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Campsite_Reservation__c-Campsite Reservation Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Campsite__c-Campsite Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Candidate__c-Candidate Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CaseClose-Close Case Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CheckObjSep07__c-CheckObjSep07 Layout</layout>
+>>>>>>> 6a871c5... Commit From AutoRABIT [Branch Baseline] [LabelName:FinalTestSpt07]
     </layoutAssignments>
     <layoutAssignments>
         <layout>Contact-Contact Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+<<<<<<< HEAD
         <layout>ContentVersion-General</layout>
+=======
+        <layout>ContentVersion-Content Version Layout</layout>
+>>>>>>> 6a871c5... Commit From AutoRABIT [Branch Baseline] [LabelName:FinalTestSpt07]
     </layoutAssignments>
     <layoutAssignments>
         <layout>Contract-Contract Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+<<<<<<< HEAD
         <layout>Customer_Satisfaction_Survey__c-Customer Satisfaction Survey Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Deployment__c-Deployment Layout</layout>
+=======
+        <layout>DandBCompany-D%26B Company Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DeployMay02Test1__c-DeployMay02Test1 Layout</layout>
+>>>>>>> 6a871c5... Commit From AutoRABIT [Branch Baseline] [LabelName:FinalTestSpt07]
     </layoutAssignments>
     <layoutAssignments>
         <layout>DuplicateRecordSet-Duplicate Record Set Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+<<<<<<< HEAD
         <layout>EmailMessage-Email Message Layout - Email-to-Case</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -2646,6 +3069,15 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>FeedItem-Feed Item Layout</layout>
+=======
+        <layout>Event-Event Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FeedItem-Feed Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Fundraiser__c-Fundraiser Layout</layout>
+>>>>>>> 6a871c5... Commit From AutoRABIT [Branch Baseline] [LabelName:FinalTestSpt07]
     </layoutAssignments>
     <layoutAssignments>
         <layout>Global-Global Layout</layout>
@@ -2654,6 +3086,7 @@
         <layout>Idea-Idea Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+<<<<<<< HEAD
         <layout>IncomingEmail__c-IncomingEmail Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -2670,6 +3103,15 @@
     <layoutAssignments>
         <layout>Lead-Lead Layout</layout>
         <recordType>Lead.Consulting_Record_Type</recordType>
+=======
+        <layout>JiraTestObj1__c-JiraTestObj1 Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Jul13Obj1__c-Jul13Obj1 Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Jun30Obj1__c-Jun30Obj1 Layout</layout>
+>>>>>>> 6a871c5... Commit From AutoRABIT [Branch Baseline] [LabelName:FinalTestSpt07]
     </layoutAssignments>
     <layoutAssignments>
         <layout>Lead-Lead Layout</layout>
@@ -2756,13 +3198,26 @@
         <layout>Setup__c-Setup Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Scorecard-Scorecard Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ScorecardMetric-Scorecard Metric Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Solution-Solution Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Task-Task Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+<<<<<<< HEAD
         <layout>TestMove__c-TestMove Layout</layout>
+=======
+        <layout>Test43434__c-Test43434 Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>TestNewFebDemo__c-TestNewFebDemo Layout</layout>
+>>>>>>> 6a871c5... Commit From AutoRABIT [Branch Baseline] [LabelName:FinalTestSpt07]
     </layoutAssignments>
     <layoutAssignments>
         <layout>Testing_Object__c-Testing Object Layout</layout>
@@ -3105,6 +3560,11 @@
         <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>Book__c.SamplerecordTypeName</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
         <default>false</default>
         <recordType>Opportunity.AutoRABIT</recordType>
         <visible>false</visible>
@@ -3134,6 +3594,20 @@
         <recordType>Questionnaire_Implementation__c.Opportunity_Questionnaire</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Metric.Completion</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>Metric.Progress</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <tabVisibilities>
+        <tab>Book__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
     <tabVisibilities>
         <tab>AR_Check</tab>
         <visibility>Hidden</visibility>
@@ -3179,7 +3653,15 @@
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
+<<<<<<< HEAD
         <tab>Setup__c</tab>
+=======
+        <tab>Test43434__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Test__c</tab>
+>>>>>>> 6a871c5... Commit From AutoRABIT [Branch Baseline] [LabelName:FinalTestSpt07]
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
@@ -3263,6 +3745,10 @@
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>standard-Scorecard</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>standard-Solution</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
@@ -3283,6 +3769,10 @@
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <userLicense>Chatter Free</userLicense>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>AddDirectMessageMembers</name>
+    </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
         <name>ApiEnabled</name>
@@ -3313,6 +3803,10 @@
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
+        <name>DistributeFromPersWksp</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
         <name>EditTopics</name>
     </userPermissions>
     <userPermissions>
@@ -3330,6 +3824,10 @@
     <userPermissions>
         <enabled>true</enabled>
         <name>PasswordNeverExpires</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>RemoveDirectMessageMembers</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>

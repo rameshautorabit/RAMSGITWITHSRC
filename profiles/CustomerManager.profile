@@ -81,7 +81,199 @@
         <visible>true</visible>
     </applicationVisibilities>
     <classAccesses>
+<<<<<<< HEAD:profiles/CustomerManager.profile
         <apexClass>ARApexclass2</apexClass>
+=======
+        <apexClass>A0</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>A0233</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>A081</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>A08123</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>A090</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>A1</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>A12</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>A28</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>A29</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>A600</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>A602</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>A603</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>A786</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>A789</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>A7891</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ALMAccount</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ALMAccount1</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ALMBuild1</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ALMBuild2</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ALMBuild3</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ALMFeb1</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ALMFeb100</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ALMFeb2</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ALMFebX</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ALMMarch09Test1</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ALMTest2</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>AS1</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>AS2</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>April26Account1</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CIJobUC1</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CIJobUC2</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CIJobUC3</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CIJobUC4</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CIJobUC5</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CIJobUC6</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CancelDeploy1</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CancelDeploy2</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CheckinTwoProj1</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CheckinTwoProj2</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CreatingAccount11</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CreatingAccount18</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>DClass2</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>DClass5</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Dclass6</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>DummyBuildTest1</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FEB21Apex1</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Feb27Class1</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Feb27Class2</apexClass>
+>>>>>>> 6a871c5... Commit From AutoRABIT [Branch Baseline] [LabelName:FinalTestSpt07]:profiles/HighVolumePortal.profile
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -109,7 +301,15 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+<<<<<<< HEAD:profiles/CustomerManager.profile
         <apexClass>AppCls3</apexClass>
+=======
+        <apexClass>HelloWorldTestClass</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>JiraTest1</apexClass>
+>>>>>>> 6a871c5... Commit From AutoRABIT [Branch Baseline] [LabelName:FinalTestSpt07]:profiles/HighVolumePortal.profile
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -161,7 +361,15 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+<<<<<<< HEAD:profiles/CustomerManager.profile
         <apexClass>ForgotPasswordControllerTest</apexClass>
+=======
+        <apexClass>MyHelloWorld</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>PlDepNov23Final</apexClass>
+>>>>>>> 6a871c5... Commit From AutoRABIT [Branch Baseline] [LabelName:FinalTestSpt07]:profiles/HighVolumePortal.profile
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -257,7 +465,35 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+<<<<<<< HEAD:profiles/CustomerManager.profile
         <apexClass>scopeInformationController</apexClass>
+=======
+        <apexClass>ZCL1</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>a0testclass</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>a12testclass</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>a1testclass</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>a28testclass</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>a29testclass</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>prevalidationTest1</apexClass>
+>>>>>>> 6a871c5... Commit From AutoRABIT [Branch Baseline] [LabelName:FinalTestSpt07]:profiles/HighVolumePortal.profile
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -456,7 +692,11 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+<<<<<<< HEAD:profiles/CustomerManager.profile
         <editable>false</editable>
+=======
+        <editable>true</editable>
+>>>>>>> 6a871c5... Commit From AutoRABIT [Branch Baseline] [LabelName:FinalTestSpt07]:profiles/HighVolumePortal.profile
         <field>Asset.Price</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -501,7 +741,16 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+<<<<<<< HEAD:profiles/CustomerManager.profile
         <editable>false</editable>
+=======
+        <editable>true</editable>
+        <field>Asset.StockKeepingUnit</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+>>>>>>> 6a871c5... Commit From AutoRABIT [Branch Baseline] [LabelName:FinalTestSpt07]:profiles/HighVolumePortal.profile
         <field>Asset.UsageEndDate</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -512,6 +761,14 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+<<<<<<< HEAD:profiles/CustomerManager.profile
+=======
+        <field>Book__c.price__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+>>>>>>> 6a871c5... Commit From AutoRABIT [Branch Baseline] [LabelName:FinalTestSpt07]:profiles/HighVolumePortal.profile
         <field>Campaign.ActualCost</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -877,31 +1134,52 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+<<<<<<< HEAD:profiles/CustomerManager.profile
         <field>CommitFetch__c.Action__c</field>
+=======
+        <field>CheckObjSep07__c.Num3__c</field>
+>>>>>>> 6a871c5... Commit From AutoRABIT [Branch Baseline] [LabelName:FinalTestSpt07]:profiles/HighVolumePortal.profile
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+<<<<<<< HEAD:profiles/CustomerManager.profile
         <field>CommitFetch__c.Component__c</field>
+=======
+        <field>CheckObjSep07__c.Num4__c</field>
+>>>>>>> 6a871c5... Commit From AutoRABIT [Branch Baseline] [LabelName:FinalTestSpt07]:profiles/HighVolumePortal.profile
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+<<<<<<< HEAD:profiles/CustomerManager.profile
         <field>CommitFetch__c.Manageble_State__c</field>
+=======
+        <field>CheckObjSep07__c.Num5__c</field>
+>>>>>>> 6a871c5... Commit From AutoRABIT [Branch Baseline] [LabelName:FinalTestSpt07]:profiles/HighVolumePortal.profile
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+<<<<<<< HEAD:profiles/CustomerManager.profile
         <field>CommitFetch__c.Members__c</field>
+=======
+        <field>CheckObjSep07__c.Num6__c</field>
+>>>>>>> 6a871c5... Commit From AutoRABIT [Branch Baseline] [LabelName:FinalTestSpt07]:profiles/HighVolumePortal.profile
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+<<<<<<< HEAD:profiles/CustomerManager.profile
         <field>CommitFetch__c.Modified_Date__c</field>
+=======
+        <field>CheckObjSep07__c.Num7__c</field>
+>>>>>>> 6a871c5... Commit From AutoRABIT [Branch Baseline] [LabelName:FinalTestSpt07]:profiles/HighVolumePortal.profile
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+<<<<<<< HEAD:profiles/CustomerManager.profile
         <field>Commit_History__c.Branch__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -932,6 +1210,13 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+=======
+        <field>CheckObjSep07__c.Num8__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+>>>>>>> 6a871c5... Commit From AutoRABIT [Branch Baseline] [LabelName:FinalTestSpt07]:profiles/HighVolumePortal.profile
         <field>Contact.AccountId</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -1252,6 +1537,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Goal.OrigGoalId__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Idea.Attachment</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -1427,8 +1717,18 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+<<<<<<< HEAD:profiles/CustomerManager.profile
         <field>Lead.NumberOfEmployees</field>
         <readable>false</readable>
+=======
+        <field>Metric.OrigMetricId__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.AccountId</field>
+        <readable>true</readable>
+>>>>>>> 6a871c5... Commit From AutoRABIT [Branch Baseline] [LabelName:FinalTestSpt07]:profiles/HighVolumePortal.profile
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -1731,6 +2031,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Product2.StockKeepingUnit</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Professional__c.Customer_Success_User__c</field>
         <readable>false</readable>
@@ -1782,7 +2087,21 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+<<<<<<< HEAD:profiles/CustomerManager.profile
         <field>Questionnaire_Implementation__c.Email__c</field>
+=======
+        <field>User.agf__Certified_Product_Owner__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>User.agf__Certified_Scrum_Master__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>User.agf__External_ID__c</field>
+>>>>>>> 6a871c5... Commit From AutoRABIT [Branch Baseline] [LabelName:FinalTestSpt07]:profiles/HighVolumePortal.profile
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1797,7 +2116,21 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+<<<<<<< HEAD:profiles/CustomerManager.profile
         <field>Questionnaire_Implementation__c.Long_Term_Goals__c</field>
+=======
+        <field>User.agf__Product_Owner_Certified_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>User.agf__Scrum_Master_Certified_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>User.agf__Show_All_Work_Comments__c</field>
+>>>>>>> 6a871c5... Commit From AutoRABIT [Branch Baseline] [LabelName:FinalTestSpt07]:profiles/HighVolumePortal.profile
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1812,7 +2145,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+<<<<<<< HEAD:profiles/CustomerManager.profile
         <field>Questionnaire_Implementation__c.Opportunity__c</field>
+=======
+        <field>User.agf__User_Preference__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>User.agf__Wall_Preference__c</field>
+>>>>>>> 6a871c5... Commit From AutoRABIT [Branch Baseline] [LabelName:FinalTestSpt07]:profiles/HighVolumePortal.profile
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2585,6 +2927,19 @@
         <layout>Asset-Asset Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+<<<<<<< HEAD:profiles/CustomerManager.profile
+=======
+        <layout>Book__c-Book Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Book__c-Book Layout</layout>
+        <recordType>Book__c.SamplerecordTypeName</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Buildobject5__c-Buildobject5 Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+>>>>>>> 6a871c5... Commit From AutoRABIT [Branch Baseline] [LabelName:FinalTestSpt07]:profiles/HighVolumePortal.profile
         <layout>Campaign-Campaign Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -2756,13 +3111,26 @@
         <layout>Setup__c-Setup Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Scorecard-Scorecard Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ScorecardMetric-Scorecard Metric Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Solution-Solution Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Task-Task Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+<<<<<<< HEAD:profiles/CustomerManager.profile
         <layout>TestMove__c-TestMove Layout</layout>
+=======
+        <layout>Test43434__c-Test43434 Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>TestNewFebDemo__c-TestNewFebDemo Layout</layout>
+>>>>>>> 6a871c5... Commit From AutoRABIT [Branch Baseline] [LabelName:FinalTestSpt07]:profiles/HighVolumePortal.profile
     </layoutAssignments>
     <layoutAssignments>
         <layout>Testing_Object__c-Testing Object Layout</layout>
@@ -3034,11 +3402,17 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
+        <recordType>Book__c.SamplerecordTypeName</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
         <recordType>Idea.InternalIdeasIdeaRecordType</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
+<<<<<<< HEAD:profiles/CustomerManager.profile
         <recordType>Lead.AutoRABIT_RecordType</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
@@ -3069,6 +3443,8 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
+=======
+>>>>>>> 6a871c5... Commit From AutoRABIT [Branch Baseline] [LabelName:FinalTestSpt07]:profiles/HighVolumePortal.profile
         <recordType>Metric.Completion</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
@@ -3077,6 +3453,7 @@
         <recordType>Metric.Progress</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
+<<<<<<< HEAD:profiles/CustomerManager.profile
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Opportunity.AutoRABIT</recordType>
@@ -3107,6 +3484,12 @@
         <recordType>Questionnaire_Implementation__c.Opportunity_Questionnaire</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
+=======
+    <tabVisibilities>
+        <tab>Book__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+>>>>>>> 6a871c5... Commit From AutoRABIT [Branch Baseline] [LabelName:FinalTestSpt07]:profiles/HighVolumePortal.profile
     <tabVisibilities>
         <tab>AR_Check</tab>
         <visibility>DefaultOff</visibility>
@@ -3124,7 +3507,15 @@
         <visibility>DefaultOff</visibility>
     </tabVisibilities>
     <tabVisibilities>
+<<<<<<< HEAD:profiles/CustomerManager.profile
         <tab>ContactViewer</tab>
+=======
+        <tab>Test43434__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Test__c</tab>
+>>>>>>> 6a871c5... Commit From AutoRABIT [Branch Baseline] [LabelName:FinalTestSpt07]:profiles/HighVolumePortal.profile
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
@@ -3228,6 +3619,10 @@
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>standard-Scorecard</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>standard-SocialPersona</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
@@ -3258,7 +3653,15 @@
     <userLicense>Customer Portal Manager</userLicense>
     <userPermissions>
         <enabled>true</enabled>
+<<<<<<< HEAD:profiles/CustomerManager.profile
         <name>ApiEnabled</name>
+=======
+        <name>AddDirectMessageMembers</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>AllowUniversalSearch</name>
+>>>>>>> 6a871c5... Commit From AutoRABIT [Branch Baseline] [LabelName:FinalTestSpt07]:profiles/HighVolumePortal.profile
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
@@ -3290,6 +3693,10 @@
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
+        <name>RemoveDirectMessageMembers</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
         <name>SelectFilesFromSalesforce</name>
     </userPermissions>
     <userPermissions>
@@ -3298,6 +3705,10 @@
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
+<<<<<<< HEAD:profiles/CustomerManager.profile
         <name>ViewContent</name>
+=======
+        <name>UseWebLink</name>
+>>>>>>> 6a871c5... Commit From AutoRABIT [Branch Baseline] [LabelName:FinalTestSpt07]:profiles/HighVolumePortal.profile
     </userPermissions>
 </Profile>

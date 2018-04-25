@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>JiraTestObj1</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>JiraTestObj1s</value>
+    </caseValues>
+    <fields>
+        <label><!-- FinalTestField1 --></label>
+        <name>FinalTestField1__c</name>
+    </fields>
+    <fields>
+        <label><!-- JiraRameshtest1 --></label>
+        <name>JiraRameshtest1__c</name>
+    </fields>
+    <fields>
+        <label><!-- NiruField1 --></label>
+        <name>NiruField1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Build --></label>
+        <name>testjira1__c</name>
+        <relationshipLabel><!-- JiraTestObj1s --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>
