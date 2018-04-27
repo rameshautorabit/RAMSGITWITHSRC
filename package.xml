@@ -106,6 +106,9 @@
         <members>a29testclass</members>
         <members>prevalidationTest1</members>
         <members>prevalidationTest2</members>
+        <members>z3</members>
+        <members>z4</members>
+        <members>zcc</members>
         <name>ApexClass</name>
     </types>
     <types>
