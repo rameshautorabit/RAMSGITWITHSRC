@@ -1,6 +1,8 @@
+
+
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
-    <version>37.0</version>
+    <version>40.0</version>
     <types>
         <members>A0</members>
         <members>A0233</members>
@@ -44,8 +46,6 @@
         <members>CheckinTwoProj2</members>
         <members>CreatingAccount11</members>
         <members>CreatingAccount18</members>
-        <members>DBmartest4</members>
-        <members>DBmartest5</members>
         <members>DClass2</members>
         <members>DClass5</members>
         <members>Dclass6</members>
@@ -86,8 +86,6 @@
         <members>RetrieveCommitTest2</members>
         <members>RetrieveCommitTest3</members>
         <members>RetriveCommitTest1</members>
-        <members>SRclass1</members>
-        <members>SaiMaven1</members>
         <members>SaiMay13Test1</members>
         <members>SaiMay13Test2</members>
         <members>ScheduleCheckNov23</members>
@@ -106,13 +104,8 @@
         <members>a1testclass</members>
         <members>a28testclass</members>
         <members>a29testclass</members>
-        <members>bClass1</members>
         <members>prevalidationTest1</members>
         <members>prevalidationTest2</members>
-        <members>s1</members>
-        <members>z3</members>
-        <members>z4</members>
-        <members>zcc</members>
         <name>ApexClass</name>
     </types>
     <types>
